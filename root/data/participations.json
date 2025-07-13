@@ -1,1 +1,497 @@
-[]
+[
+    {
+        "name": "imo",
+        "year": 2004,
+        "start": "2004/07/06",
+        "end": "2004/07/18",
+        "country": "gr",
+        "website": "https://www.imo-official.org/team_r.aspx?code=SAU&year=2004",
+        "participants": {
+            "5": null,
+            "6": null,
+            "7": null,
+            "8": null,
+            "9": null,
+            "10": null
+        }
+    },
+    {
+        "name": "imo",
+        "year": 2005,
+        "start": "2005/07/08",
+        "end": "2005/07/19",
+        "country": "mx",
+        "website": "https://www.imo-official.org/team_r.aspx?code=SAU&year=2005",
+        "participants": {
+            "9": null,
+            "11": null,
+            "12": null,
+            "10": null,
+            "13": null
+        }
+    },
+    {
+        "name": "imo",
+        "year": 2006,
+        "start": "2006/07/13",
+        "end": "2006/07/24",
+        "country": "vn",
+        "website": "https://www.imo-official.org/team_r.aspx?code=SAU&year=2006",
+        "participants": {
+            "12": null,
+            "14": null,
+            "15": null,
+            "16": null
+        }
+    },
+    {
+        "name": "imo",
+        "year": 2007,
+        "start": "2007/07/25",
+        "end": "2007/08/04",
+        "country": "vn",
+        "website": "https://www.imo-official.org/team_r.aspx?code=SAU&year=2007",
+        "participants": {
+            "17": null,
+            "18": null,
+            "19": null,
+            "20": null
+        }
+    },
+    {
+        "name": "imo",
+        "year": 2008,
+        "start": "2008/07/10",
+        "end": "2008/07/22",
+        "country": "es",
+        "website": "https://www.imo-official.org/team_r.aspx?code=SAU&year=2008",
+        "participants": {
+            "21": null,
+            "18": null,
+            "22": null,
+            "23": null,
+            "24": null,
+            "25": null
+        }
+    },
+    {
+        "name": "imo",
+        "year": 2010,
+        "start": "2010/07/02",
+        "end": "2010/07/14",
+        "country": "kz",
+        "website": "https://www.imo-official.org/team_r.aspx?code=SAU&year=2010",
+        "participants": {
+            "26": "bronze",
+            "27": "bronze",
+            "28": "hm",
+            "29": "hm",
+            "30": null,
+            "31": null
+        }
+    },
+    {
+        "name": "imo",
+        "year": 2011,
+        "start": "2011/07/16",
+        "end": "2011/07/24",
+        "country": "nl",
+        "website": "https://www.imo-official.org/team_r.aspx?code=SAU&year=2011",
+        "participants": {
+            "26": "bronze",
+            "32": "bronze",
+            "33": null,
+            "34": null,
+            "30": null,
+            "35": null
+        }
+    },
+    {
+        "name": "imo",
+        "year": 2012,
+        "start": "2012/07/08",
+        "end": "2012/07/18",
+        "country": "ar",
+        "website": "https://www.imo-official.org/team_r.aspx?code=SAU&year=2012",
+        "participants": {
+            "32": "silver",
+            "36": "silver",
+            "37": "bronze",
+            "34": "bronze",
+            "26": "bronze",
+            "38": null
+        }
+    },
+    {
+        "name": "imo",
+        "year": 2013,
+        "start": "2013/07/18",
+        "end": "2013/07/28",
+        "country": "co",
+        "website": "https://www.imo-official.org/team_r.aspx?code=SAU&year=2013",
+        "participants": {
+            "32": "bronze",
+            "39": "bronze",
+            "40": "bronze",
+            "34": "bronze",
+            "41": null,
+            "42": null
+        }
+    },
+    {
+        "name": "imo",
+        "year": 2014,
+        "start": "2014/07/03",
+        "end": "2014/07/13",
+        "country": "za",
+        "website": "https://www.imo-official.org/team_r.aspx?code=SAU&year=2014",
+        "participants": {
+            "42": "bronze",
+            "43": "bronze",
+            "39": "bronze",
+            "44": "bronze",
+            "45": "hm",
+            "46": "hm"
+        }
+    },
+    {
+        "name": "imo",
+        "year": 2015,
+        "start": "2015/07/04",
+        "end": "2015/07/16",
+        "country": "th",
+        "website": "https://www.imo-official.org/team_r.aspx?code=SAU&year=2015",
+        "participants": {
+            "44": "silver",
+            "45": "bronze",
+            "42": "bronze",
+            "46": "bronze",
+            "47": "hm",
+            "48": "hm"
+        }
+    },
+    {
+        "name": "imo",
+        "year": 2016,
+        "start": "2016/07/06",
+        "end": "2016/07/16",
+        "country": "hk",
+        "website": "https://www.imo-official.org/team_r.aspx?code=SAU&year=2016",
+        "participants": {
+            "44": "bronze",
+            "42": "bronze",
+            "48": "bronze",
+            "46": "bronze",
+            "49": "hm",
+            "50": "hm"
+        }
+    },
+    {
+        "name": "imo",
+        "year": 2017,
+        "start": "2017/07/17",
+        "end": "2017/07/23",
+        "country": "br",
+        "website": "https://www.imo-official.org/team_r.aspx?code=SAU&year=2017",
+        "participants": {
+            "42": "silver",
+            "44": "silver",
+            "46": "bronze",
+            "51": "bronze",
+            "52": "hm",
+            "53": null
+        }
+    },
+    {
+        "name": "imo",
+        "year": 2018,
+        "start": "2018/07/08",
+        "end": "2018/07/14",
+        "country": "ro",
+        "website": "https://www.imo-official.org/team_r.aspx?code=SAU&year=2018",
+        "participants": {
+            "52": "silver",
+            "54": "bronze",
+            "55": "hm",
+            "53": null,
+            "56": null,
+            "57": null
+        }
+    },
+    {
+        "name": "imo",
+        "year": 2019,
+        "start": "2019/07/11",
+        "end": "2019/07/22",
+        "country": "gb",
+        "website": "https://www.imo-official.org/team_r.aspx?code=SAU&year=2019",
+        "participants": {
+            "52": "silver",
+            "58": "bronze",
+            "59": "bronze",
+            "56": "bronze",
+            "60": "bronze",
+            "61": null
+        }
+    },
+    {
+        "name": "imo",
+        "year": 2020,
+        "start": "2020/09/21",
+        "end": "2020/09/22",
+        "country": "ru",
+        "website": "https://www.imo-official.org/team_r.aspx?code=SAU&year=2020",
+        "participants": {
+            "59": "bronze",
+            "62": "bronze",
+            "60": "hm",
+            "61": "hm",
+            "63": "hm",
+            "64": "hm"
+        }
+    },
+    {
+        "name": "imo",
+        "year": 2021,
+        "start": "2021/07/14",
+        "end": "2021/07/24",
+        "country": "ru",
+        "website": "https://www.imo-official.org/team_r.aspx?code=SAU&year=2021",
+        "participants": {
+            "59": "silver",
+            "63": "bronze",
+            "65": "bronze",
+            "66": "bronze",
+            "68": "hm",
+            "67": "hm"
+        }
+    },
+    {
+        "name": "imo",
+        "year": 2022,
+        "start": "2022/07/10",
+        "end": "2022/07/18",
+        "country": "no",
+        "website": "https://www.imo-official.org/team_r.aspx?code=SAU&year=2022",
+        "participants": {
+            "66": "silver",
+            "59": "silver",
+            "65": "bronze",
+            "67": "bronze",
+            "69": "bronze",
+            "68": "bronze"
+        }
+    },
+    {
+        "name": "imo",
+        "year": 2023,
+        "start": "2023/07/02",
+        "end": "2023/07/13",
+        "country": "jp",
+        "website": "https://www.imo-official.org/team_r.aspx?code=SAU&year=2023",
+        "participants": {
+            "66": "silver",
+            "69": "bronze",
+            "74": "bronze",
+            "65": "bronze",
+            "70": "hm",
+            "71": "hm"
+        }
+    },
+    {
+        "name": "imo",
+        "year": 2024,
+        "start": "2024/07/10",
+        "end": "2024/07/20",
+        "country": "uk",
+        "website": "https://www.imo-official.org/team_r.aspx?code=SAU&year=2024",
+        "participants": {
+            "66": "silver",
+            "72": "bronze",
+            "73": "bronze",
+            "74": "bronze",
+            "75": "bronze",
+            "76": "hm"
+        }
+    },
+    {
+        "name": "apmo",
+        "year": 2016,
+        "start": "2016/03/08",
+        "end": "2016/03/08",
+        "country": "sa",
+        "website": "https://www.apmo-official.org/country_report/SAU/2016",
+        "participants": {
+            "44": "gold",
+            "42": "bronze",
+            "54": null,
+            "51": null,
+            "46": "hm",
+            "49": null,
+            "56": null,
+            "48": null,
+            "77": null,
+            "78": null
+        }
+    },
+    {
+        "name": "apmo",
+        "year": 2017,
+        "start": "2017/03/14",
+        "end": "2017/03/14",
+        "country": "sa",
+        "website": "https://www.apmo-official.org/country_report/SAU/2017",
+        "participants": {
+            "44": "gold",
+            "79": "bronze",
+            "51": "bronze",
+            "46": "bronze",
+            "53": "hm",
+            "56": "hm",
+            "49": "hm",
+            "57": "hm",
+            "52": null,
+            "80": null
+        }
+    },
+    {
+        "name": "apmo",
+        "year": 2018,
+        "start": "2018/03/13",
+        "end": "2018/03/13",
+        "country": "sa",
+        "website": "https://www.apmo-official.org/country_report/SAU/2018",
+        "participants": {
+            "56": "bronze",
+            "55": "bronze",
+            "52": "bronze",
+            "61": "hm",
+            "57": "hm",
+            "60": "hm",
+            "53": "hm",
+            "81": "hm",
+            "54": "hm",
+            "58": "hm"
+        }
+    },
+    {
+        "name": "apmo",
+        "year": 2019,
+        "start": "2019/03/12",
+        "end": "2019/03/12",
+        "country": "sa",
+        "website": "https://www.apmo-official.org/country_report/SAU/2019",
+        "participants": {
+            "82": "silver",
+            "64": "silver",
+            "58": "silver",
+            "60": "bronze",
+            "59": "bronze",
+            "52": "bronze",
+            "83": "bronze",
+            "84": "hm",
+            "61": "hm",
+            "85": "hm"
+        }
+    },
+    {
+        "name": "apmo",
+        "year": 2020,
+        "start": "2020/03/10",
+        "end": "2020/03/10",
+        "country": "sa",
+        "website": "https://www.apmo-official.org/country_report/SAU/2020",
+        "participants": {
+            "60": "silver",
+            "59": "silver",
+            "63": "silver",
+            "58": "bronze",
+            "64": "bronze",
+            "86": "bronze",
+            "87": "bronze",
+            "61": "hm",
+            "85": "hm",
+            "67": "hm"
+        }
+    },
+    {
+        "name": "apmo",
+        "year": 2021,
+        "start": "2021/03/09",
+        "end": "2021/03/09",
+        "country": "sa",
+        "website": "https://www.apmo-official.org/country_report/SAU/2021",
+        "participants": {
+            "59": "bronze",
+            "63": "bronze",
+            "67": "bronze",
+            "68": "hm",
+            "70": "hm",
+            "66": "hm",
+            "83": "hm",
+            "69": "hm",
+            "89": "hm",
+            "88": null
+        }
+    },
+    {
+        "name": "apmo",
+        "year": 2022,
+        "start": "2022/03/08",
+        "end": "2022/03/08",
+        "country": "sa",
+        "website": "https://www.apmo-official.org/country_report/SAU/2022",
+        "participants": {
+            "66": "silver",
+            "67": "silver",
+            "59": "silver",
+            "68": "bronze",
+            "90": "bronze",
+            "71": "bronze",
+            "91": "bronze",
+            "92": "hm",
+            "69": "hm",
+            "70": "hm"
+        }
+    },
+    {
+        "name": "apmo",
+        "year": 2023,
+        "start": "2023/03/14",
+        "end": "2023/03/14",
+        "country": "sa",
+        "website": "https://www.apmo-official.org/country_report/SAU/2023",
+        "participants": {
+            "66": "silver",
+            "69": "bronze",
+            "65": "bronze",
+            "71": "bronze",
+            "74": "bronze",
+            "73": "bronze",
+            "93": null,
+            "94": null,
+            "95": null,
+            "96": null
+        }
+    },
+    {
+        "name": "apmo",
+        "year": 2024,
+        "start": "2024/03/12",
+        "end": "2024/03/12",
+        "country": "sa",
+        "website": "https://www.apmo-official.org/country_report/SAU/2024",
+        "participants": {
+            "94": "silver",
+            "74": "silver",
+            "76": "bronze",
+            "75": "bronze",
+            "95": "bronze",
+            "97": "bronze",
+            "93": "bronze",
+            "73": "hm",
+            "98": "hm",
+            "99": "hm"
+        }
+    }
+]
