@@ -1,0 +1,24 @@
+{
+    "ar": {
+        "participations": "المشاركات",
+        "hall_of_fame": "لائحة الشرف",
+        "images": "مكتبة الصور",
+        "contact": "تواصل",
+        "olympiads": "الأولمبيادات",
+        "members_list": "قائمة الأعضاء",
+        "website_name": "فريق المعلوماتية السعودي",
+        "website_description": "موقع فيه المشاركات والأعضاء والصور وكل البيانات المتعلقة بالفريق",
+        "team_selection_tests": "اختبارات ترشيح الفريق"
+    },
+    "en": {
+        "participations": "Participations",
+        "hall_of_fame": "Hall of fame",
+        "images": "Images library",
+        "contact": "Contact",
+        "olympiads": "Olympiads",
+        "members_list": "Members list",
+        "website_name": "Saudi Informatics Team",
+        "website_description": "Website contains participations, members, images, and all related data",
+        "team_selection_tests": "Team selection tests"
+    }
+}

@@ -1,0 +1,27 @@
+.ruby-version
+.jekyll-cache
+__pycache__
+_site
+flake.nix
+
+# build artifacts
+root/*
+
+!root/_config.yml
+!root/_includes
+!root/_includes/*
+!root/_layouts
+!root/_layouts/*
+
+!root/_data
+root/_data/*
+!root/_data/ar.yml
+!root/_data/en.yml
+!root/img
+!root/img/*
+!root/data
+!root/data/*
+!root/resources
+!root/resources/*
+!root/404.html
+!root/debug.html
