@@ -1,65 +1,65 @@
 [
     {
-        "id": "ioi", "website": "https://ioinformatics.org",
-        "arname": "أولمبياد المعلوماتية الدولي",
-        "enname": "International Olympiad in Informatics",
-        "ardescription": "مسابقة يشارك فيها أكثر من 90 دولة حول العالم",
-        "endescription": "More than 90 countries around the world participates in this Olympiad",
-        "participants_count": 4,
-        "official": true
-    },
-    {
-        "id": "apio", "website": null,
-        "arname": "أولمبياد آسيا والباسفيك للمعلوماتية",
-        "enname": "Asia-Pasific Informatics Olympiad",
+        "id": "imo", "website": "https://imo-official.org",
+        "arname": "أولمبياد الرياضيات الدولي",
+        "enname": "International Mathematical Olympiad",
         "ardescription": "",
         "endescription": "",
-        "participants_count": 60,
+        "participants_count": 6,
         "official": true
     },
     {
-        "id": "egoi", "website": "https://egoi.org",
-        "arname": "أولمبياد البنات الأوربي للمعلوماتية",
-        "enname": "European Girls Olympiad in Informatics",
+        "id": "apmo", "website": "https://www.apmo-official.org/",
+        "arname": "آولمبياد آسيا والباسفيك للرياضيات",
+        "enname": "Asia-Pasific Mathematical Olympiad",
+        "ardescription": "",
+        "endescription": "",
+        "participants_count": 10,
+        "official": true
+    },
+    {
+        "id": "egmo", "website": "https://www.egmo.org/",
+        "arname": "أولمبياد البنات الأوربي للرياضيات",
+        "enname": "European Girls Mathematical Olympiad",
         "ardescription": "",
         "endescription": "",
         "participants_count": 4,
         "official": false
     },
     {
-        "id": "boi", "website": null,
-        "arname": "أولمبياد البلقان للمعلوماتية",
-        "enname": "Balkan Olympiad in Informatics",
+        "id": "bmo", "website": "https://www.massee-org.eu/mathematical/bmo",
+        "arname": "أولمبياد البلقان للرياضيات",
+        "enname": "Balkan Mathematical Olympiad",
         "ardescription": "",
         "endescription": "",
         "participants_count": 6,
         "official": false
     },
     {
-        "id": "jboi", "website": null,
-        "arname": "أولمبياد البلقان للمعلوماتية للناشئين",
-        "enname": "Junior Balkan Olympiad in Informatics",
+        "id": "jbmo", "website": "https://www.massee-org.eu/mathematical/jbmo",
+        "arname": "أولمبياد البلقان للرياضيات للناشئين",
+        "enname": "Junior Balkan Mathematical Olympiad",
         "ardescription": "",
         "endescription": "",
-        "participants_count": 4,
-        "official": false
-    },
-    {
-        "id": "naoi", "website": "https://naoi2025.algerianoi.com/",
-        "arname": "أولمبياد شمال أفريقيا للمعلوماتية",
-        "enname": "North African Olympiad in Informatics",
-        "ardescription": "أولمبياد بدأ سنة 2025 تشارك فيه: مصر، ليبيا، تونس، الجزائر، والمغرب",
-        "endescription": "Started at 2025, where Egypt, Libya, Tunisia, Algeria, and Morocco participate in",
         "participants_count": 6,
         "official": false
     },
     {
-        "id": "ejoi", "website": "https://ejoi.org",
-        "arname": "أولمبياد الناشئين الأوروبي للمعلوماتية",
-        "enname": "European Junior Olympiad in Informatics",
+        "id": "gmo", "website": null,
+        "arname": "أولمبياد الخليج للرياضيات",
+        "enname": "Gulf Mathematical Olympiad",
+        "ardescription": "",
+        "endescription": "",
+        "participants_count": 6,
+        "official": true
+    },
+    {
+        "id": "amo", "website": null,
+        "arname": "الأولمبياد العربي للرياضيات",
+        "enname": "Arab Mathematical Olympiad",
         "ardescription": "",
         "endescription": "",
         "participants_count": 4,
-        "official": false
+        "official": true
     }
 ]
