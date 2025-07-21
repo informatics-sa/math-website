@@ -48,6 +48,22 @@
         }
     },
     {
+        "name": "iomhss",
+        "year": 2025,
+        "start": "2025/4/21",
+        "end": "2025/4/26",
+        "country": "tm",
+        "website": null,
+        "participants": {
+            "74": "gold",
+            "3": "gold",
+            "6": "silver",
+            "36": "silver",
+            "41": "silver",
+            "106": "silver"
+        }
+    },
+    {
         "name": "egmo",
         "year": 2025,
         "start": "2025/04/11",

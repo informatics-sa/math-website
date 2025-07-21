@@ -61,5 +61,14 @@
         "endescription": "",
         "participants_count": 4,
         "official": true
+    },
+    {
+        "id": "iomhss", "website": null,
+        "arname": "أولمبياد الرياضيات الدولي في تركمانستان",
+        "enname": "International Mathematical Olympiad in Turkmenistan",
+        "ardescription": "",
+        "endescription": "",
+        "participants_count": 8,
+        "official": false
     }
 ]

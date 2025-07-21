@@ -1082,5 +1082,21 @@
             "ammar_alqatari": null,
             "shaden_alshammari": null
         }
+    },
+    {
+        "name": "iomhss",
+        "year": 2025,
+        "start": "2025/4/21",
+        "end": "2025/4/26",
+        "country": "tm",
+        "website": null,
+        "participants": {
+            "mohammed_shaiban": "gold",
+            "abdulelah_assaggaf": "gold",
+            "abdullah_alamer": "silver",
+            "elyas_alfaraj": "silver",
+            "fatimah_buali": "silver",
+            "yousif_alkhalawi": "silver"
+        }
     }
-]
+] 
