@@ -500,13 +500,13 @@ def main():
     print("Built home")
 
     build_images()
-    print("Built participations index")
+    print("Built images")
 
     build_members()
     print("Built members")
 
-    build_members_index()
-    print("Built members index")
+    # build_members_index()
+    # print("Built members index")
 
     build_olympiads()
     print("Built olympiads")
@@ -517,11 +517,11 @@ def main():
     build_participations_index()
     print("Built participations index")
 
-    build_tst_index()
-    print("Built TST index")
+    # build_tst_index()
+    # print("Built TST index")
 
-    build_exams()
-    print("Built exams")
+    # build_exams()
+    # print("Built exams")
 
 if __name__ == '__main__':
     main()

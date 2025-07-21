@@ -1,0 +1,848 @@
+[
+    {
+        "name": "imo",
+        "year": 2010,
+        "start": "2010/07/02",
+        "end": "2010/07/14",
+        "country": "kz",
+        "website": "https://www.imo-official.org/team_r.aspx?code=sau&year=2010",
+        "participants": {
+            "99": "bronze",
+            "8": "bronze",
+            "9": "hm",
+            "77": "hm",
+            "24": null,
+            "18": null
+        }
+    },
+    {
+        "name": "imo",
+        "year": 2011,
+        "start": "2011/07/16",
+        "end": "2011/07/24",
+        "country": "nl",
+        "website": "https://www.imo-official.org/team_r.aspx?code=sau&year=2011",
+        "participants": {
+            "99": "bronze",
+            "27": "bronze",
+            "96": null,
+            "10": null,
+            "24": null,
+            "51": null
+        }
+    },
+    {
+        "name": "imo",
+        "year": 2012,
+        "start": "2012/07/08",
+        "end": "2012/07/18",
+        "country": "ar",
+        "website": "https://www.imo-official.org/team_r.aspx?code=sau&year=2012",
+        "participants": {
+            "27": "silver",
+            "50": "silver",
+            "90": "bronze",
+            "10": "bronze",
+            "99": "bronze",
+            "49": null
+        }
+    },
+    {
+        "name": "imo",
+        "year": 2013,
+        "start": "2013/07/18",
+        "end": "2013/07/28",
+        "country": "co",
+        "website": "https://www.imo-official.org/team_r.aspx?code=sau&year=2013",
+        "participants": {
+            "27": "bronze",
+            "52": "bronze",
+            "93": "bronze",
+            "10": "bronze",
+            "28": null,
+            "25": null
+        }
+    },
+    {
+        "name": "imo",
+        "year": 2014,
+        "start": "2014/07/03",
+        "end": "2014/07/13",
+        "country": "za",
+        "website": "https://www.imo-official.org/team_r.aspx?code=sau&year=2014",
+        "participants": {
+            "79": "bronze",
+            "62": "bronze",
+            "52": "bronze",
+            "28": "bronze",
+            "97": "hm",
+            "92": "hm"
+        }
+    },
+    {
+        "name": "imo",
+        "year": 2015,
+        "start": "2015/07/04",
+        "end": "2015/07/16",
+        "country": "th",
+        "website": "https://www.imo-official.org/team_r.aspx?code=sau&year=2015",
+        "participants": {
+            "28": "silver",
+            "92": "bronze",
+            "79": "bronze",
+            "97": "bronze",
+            "23": "hm",
+            "31": "hm"
+        }
+    },
+    {
+        "name": "apmo",
+        "year": 2016,
+        "start": "2016/03/08",
+        "end": "2016/03/08",
+        "country": "sa",
+        "website": "https://www.apmo-official.org/country_report/sau/2016",
+        "participants": {
+            "28": "gold",
+            "79": "bronze",
+            "86": null,
+            "57": null,
+            "97": "hm",
+            "53": null,
+            "34": null,
+            "64": null,
+            "7": null,
+            "65": null
+        }
+    },
+    {
+        "name": "imo",
+        "year": 2016,
+        "start": "2016/07/06",
+        "end": "2016/07/16",
+        "country": "hk",
+        "website": "https://www.imo-official.org/team_r.aspx?code=sau&year=2016",
+        "participants": {
+            "28": "bronze",
+            "79": "bronze",
+            "64": "bronze",
+            "97": "bronze",
+            "53": "hm",
+            "48": "hm"
+        }
+    },
+    {
+        "name": "apmo",
+        "year": 2017,
+        "start": "2017/03/14",
+        "end": "2017/03/14",
+        "country": "sa",
+        "website": "https://www.apmo-official.org/country_report/sau/2017",
+        "participants": {
+            "28": "gold",
+            "32": "bronze",
+            "57": "bronze",
+            "97": "bronze",
+            "67": "hm",
+            "34": "hm",
+            "53": "hm",
+            "63": "hm",
+            "80": null,
+            "103": null
+        }
+    },
+    {
+        "name": "imo",
+        "year": 2017,
+        "start": "2017/07/17",
+        "end": "2017/07/23",
+        "country": "br",
+        "website": "https://www.imo-official.org/team_r.aspx?code=sau&year=2017",
+        "participants": {
+            "79": "silver",
+            "28": "silver",
+            "97": "bronze",
+            "57": "bronze",
+            "80": "hm",
+            "67": null
+        }
+    },
+    {
+        "name": "apmo",
+        "year": 2018,
+        "start": "2018/03/13",
+        "end": "2018/03/13",
+        "country": "sa",
+        "website": "https://www.apmo-official.org/country_report/sau/2018",
+        "participants": {
+            "34": "bronze",
+            "4": "bronze",
+            "80": "bronze",
+            "98": "hm",
+            "63": "hm",
+            "58": "hm",
+            "67": "hm",
+            "81": "hm",
+            "86": "hm",
+            "78": "hm"
+        }
+    },
+    {
+        "name": "imo",
+        "year": 2018,
+        "start": "2018/07/08",
+        "end": "2018/07/14",
+        "country": "ro",
+        "website": "https://www.imo-official.org/team_r.aspx?code=sau&year=2018",
+        "participants": {
+            "80": "silver",
+            "86": "bronze",
+            "4": "hm",
+            "67": null,
+            "34": null,
+            "63": null
+        }
+    },
+    {
+        "name": "apmo",
+        "year": 2019,
+        "start": "2019/03/12",
+        "end": "2019/03/12",
+        "country": "sa",
+        "website": "https://www.apmo-official.org/country_report/sau/2019",
+        "participants": {
+            "34": "silver",
+            "71": "silver",
+            "78": "silver",
+            "58": "bronze",
+            "66": "bronze",
+            "80": "bronze",
+            "59": "bronze",
+            "44": "hm",
+            "98": "hm",
+            "14": "hm"
+        }
+    },
+    {
+        "name": "imo",
+        "year": 2019,
+        "start": "2019/07/11",
+        "end": "2019/07/22",
+        "country": "gb",
+        "website": "https://www.imo-official.org/team_r.aspx?code=sau&year=2019",
+        "participants": {
+            "80": "silver",
+            "78": "bronze",
+            "66": "bronze",
+            "34": "bronze",
+            "58": "bronze",
+            "98": null
+        }
+    },
+    {
+        "name": "apmo",
+        "year": 2020,
+        "start": "2020/03/10",
+        "end": "2020/03/10",
+        "country": "sa",
+        "website": "https://www.apmo-official.org/country_report/sau/2020",
+        "participants": {
+            "58": "silver",
+            "66": "silver",
+            "47": "silver",
+            "78": "bronze",
+            "71": "bronze",
+            "91": "bronze",
+            "74": "bronze",
+            "98": "hm",
+            "14": "hm",
+            "68": "hm"
+        }
+    },
+        {
+        "name": "imo",
+        "year": 2020,
+        "start": "2020/09/21",
+        "end": "2020/09/22",
+        "country": "ru",
+        "website": "https://www.imo-official.org/team_r.aspx?code=sau&year=2020",
+        "participants": {
+            "66": "bronze",
+            "76": "bronze",
+            "58": "hm",
+            "98": "hm",
+            "47": "hm",
+            "71": "hm"
+        }
+    },
+    {
+        "name": "apmo",
+        "year": 2021,
+        "start": "2021/03/09",
+        "end": "2021/03/09",
+        "country": "sa",
+        "website": "https://www.apmo-official.org/country_report/sau/2021",
+        "participants": {
+            "66": "bronze",
+            "47": "bronze",
+            "68": "bronze",
+            "74": "hm",
+            "11": "hm",
+            "46": "hm",
+            "59": "hm",
+            "61": "hm",
+            "84": "hm",
+            "26": null
+        }
+    },
+    {
+        "name": "imo",
+        "year": 2021,
+        "start": "2021/07/14",
+        "end": "2021/07/24",
+        "country": "ru",
+        "website": "https://www.imo-official.org/team_r.aspx?code=sau&year=2021",
+        "participants": {
+            "66": "silver",
+            "47": "bronze",
+            "26": "bronze",
+            "46": "bronze",
+            "74": "hm",
+            "68": "hm"
+        }
+    },
+    {
+        "name": "apmo",
+        "year": 2022,
+        "start": "2022/03/08",
+        "end": "2022/03/08",
+        "country": "br",
+        "website": "https://www.apmo-official.org/country_report/sau/2022",
+        "participants": {
+            "46": "silver",
+            "68": "silver",
+            "66": "silver",
+            "74": "bronze",
+            "2": "bronze",
+            "38": "bronze",
+            "72": "bronze",
+            "75": "hm",
+            "61": "hm",
+            "11": "hm"
+        }
+    },
+    {
+        "name": "imo",
+        "year": 2022,
+        "start": "2022/07/10",
+        "end": "2022/07/18",
+        "country": "no",
+        "website": "https://www.imo-official.org/team_r.aspx?code=sau&year=2022",
+        "participants": {
+            "46": "silver",
+            "66": "silver",
+            "26": "bronze",
+            "68": "bronze",
+            "61": "bronze",
+            "74": "bronze"
+        }
+    },
+    {
+        "name": "apmo",
+        "year": 2023,
+        "start": "2023/03/14",
+        "end": "2023/03/14",
+        "country": "br",
+        "website": "https://www.apmo-official.org/country_report/sau/2023",
+        "participants": {
+            "46": "silver",
+            "61": "bronze",
+            "26": "bronze",
+            "38": "bronze",
+            "75": "bronze",
+            "72": "bronze",
+            "15": null,
+            "101": null,
+            "37": null,
+            "54": null
+        }
+    },
+    {
+        "name": "imo",
+        "year": 2023,
+        "start": "2023/07/02",
+        "end": "2023/07/13",
+        "country": "jp",
+        "website": "https://www.imo-official.org/team_r.aspx?code=sau&year=2023",
+        "participants": {
+            "46": "silver",
+            "61": "bronze",
+            "75": "bronze",
+            "26": "bronze",
+            "11": "hm",
+            "38": "hm"
+        }
+    },
+    {
+        "name": "apmo",
+        "year": 2024,
+        "start": "2024/03/12",
+        "end": "2024/03/12",
+        "country": "br",
+        "website": "https://www.apmo-official.org/country_report/sau/2024",
+        "participants": {
+            "101": "silver",
+            "75": "silver",
+            "69": "bronze",
+            "17": "bronze",
+            "37": "bronze",
+            "42": "bronze",
+            "15": "bronze",
+            "72": "hm",
+            "102": "hm",
+            "12": "hm"
+        }
+    },
+    {
+        "name": "imo",
+        "year": 2024,
+        "start": "2024/07/10",
+        "end": "2024/07/20",
+        "country": "uk",
+        "website": "https://www.imo-official.org/team_r.aspx?code=sau&year=2024",
+        "participants": {
+            "46": "silver",
+            "101": "bronze",
+            "72": "bronze",
+            "75": "bronze",
+            "17": "bronze",
+            "69": "hm"
+        }
+    },
+    {
+        "name": "apmo",
+        "year": 2025,
+        "start": "2025/03/12",
+        "end": "2025/03/12",
+        "country": "cn",
+        "website": "https://www.apmo-official.org/country_report/sau/2025",
+        "participants": {
+            "101": null,
+            "75": null,
+            "69": null,
+            "17": null,
+            "37": null,
+            "42": null,
+            "6": null,
+            "15": null,
+            "102": null,
+            "12": null
+        }
+    },
+    {
+        "name": "imo",
+        "year": 2025,
+        "start": "2025/07/10",
+        "end": "2025/07/20",
+        "country": "au",
+        "website": "https://www.imo-official.org/team_r.aspx?code=sau&year=2025",
+        "participants": {
+            "101": "bronze",
+            "12": "bronze",
+            "75": "bronze",
+            "17": "hm",
+            "15": "hm",
+            "69": "hm"
+        }
+    },
+         {
+        "name": "jbmo",
+        "year": 2013,
+        "start": "2013/6/21",
+        "end": "2013/6/26",
+        "country": "tr",
+        "website": "https://jbmo2013.tubitak.gov.tr/",
+        "participants": {
+            "28": "gold",
+            "20": null,
+            "83": null,
+            "53": null,
+            "94": null,
+            "79": null
+        }
+    },
+    {
+        "name": "jbmo",
+        "year": 2014,
+        "start": "2014/6/21",
+        "end": "2014/6/26",
+        "country": "mk",
+        "website": null,
+        "participants": {
+            "79": "silver",
+            "86": "silver",
+            "32": "bronze",
+            "53": "bronze",
+            "57": "bronze",
+            "30": "bronze"
+        }
+    },
+    {
+        "name": "jbmo",
+        "year": 2015,
+        "start": "2015/6/24",
+        "end": "2015/6/29",
+        "country": "rs",
+        "website": "https://www.dms.rs/jbmo/",
+        "participants": {
+            "86": "gold",
+            "81": "bronze",
+            "67": "silver",
+            "103": "bronze",
+            "34": "bronze",
+            "4": "bronze"
+        }
+    },
+    {
+        "name": "jbmo",
+        "year": 2016,
+        "start": "2016/6/24",
+        "end": "2016/6/29",
+        "country": "ro",
+        "website": "https://jbmo.ssmr.ro/",
+        "participants": {
+            "34": "silver",
+            "67": "bronze",
+            "80": "bronze",
+            "65": "bronze",
+            "39": "bronze",
+            "98": "bronze"
+
+        }
+    },
+    {
+        "name": "jbmo",
+        "year": 2017,
+        "start": "2017/6/24",
+        "end": "2017/6/29",
+        "country": "bg",
+        "website": "https://www.jbmo2017.bg/",
+        "participants": {
+            "80": "silver",
+            "78": "bronze",
+            "91": "bronze",
+            "58": "silver",
+            "98": "silver",
+            "44": "bronze"
+        }
+    },
+    {
+        "name": "jbmo",
+        "year": 2018,
+        "start": "2018/6/19",
+        "end": "2018/6/24",
+        "country": "gr",
+        "website": "https://www.hms.gr/22jbmo2018/",
+        "participants": {
+            "74": "bronze",
+            "10": "silver",
+            "59": "silver",
+            "66": "silver",
+            "16": "bronze",
+            "71": "bronze"
+        }
+    },
+    {
+        "name": "jbmo",
+        "year": 2019,
+        "start": "2019/6/20",
+        "end": "2019/6/25",
+        "country": "cy",
+        "website": "https://www.cms.org.cy/pages/competitions/jbmo-2019/jbmo-2019",
+        "participants": {
+            "19": null,
+            "68": "silver",
+            "74": "bronze",
+            "66": "gold",
+            "47": "gold",
+            "71": "silver"
+        }
+    },
+    {
+        "name": "jbmo",
+        "year": 2020,
+        "start": "2020/9/9",
+        "end": "2020/9/13",
+        "country": "gr",
+        "website": "https://www.hms.gr/24jbmo2020/index.html",
+        "participants": {
+            "47": "silver",
+            "68": "silver",
+            "61": "gold",
+            "46": "bronze",
+            "11": "silver",
+            "26": "silver"
+        }
+    },
+    {
+        "name": "jbmo",
+        "year": 2021,
+        "start": "2021/6/29",
+        "end": "2021/7/5",
+        "country": "md",
+        "website": "https://jbmo2021.ance.gov.md/",
+        "participants": {
+            "68": "gold",
+            "61": "gold",
+            "46": "gold",
+            "2": "bronze",
+            "72": "silver",
+            "75": "bronze"
+        }
+    },
+    {
+        "name": "jbmo",
+        "year": 2022,
+        "start": "2022/6/28",
+        "end": "2022/7/3",
+        "country": "ba",
+        "website": "https://jbmo2022.pmf.unsa.ba/",
+        "participants": {
+            "75": "gold",
+            "69": "bronze",
+            "17": "silver",
+            "101": "silver",
+            "5": "silver",
+            "70": "silver"
+        }
+    },
+    {
+        "name": "jbmo",
+        "year": 2023,
+        "start": "2023/6/23",
+        "end": "2023/6/28",
+        "country": "al",
+        "website": null,
+        "participants": {
+            "17": "bronze",
+            "70": "bronze",
+            "37": "silver",
+            "12": "silver",
+            "6": "bronze",
+            "89": null
+        }
+    },
+    {
+        "name": "jbmo",
+        "year": 2024,
+        "start": "2024/6/25",
+        "end": "2024/6/30",
+        "country": "tr",
+        "website": "https://jbmo2024.tubitak.gov.tr/participants",
+        "participants": {
+            "6": "silver",
+            "73": "bronze",
+            "41": "bronze",
+            "22": null,
+            "33": "bronze",
+            "35": "bronze"
+        }
+    },
+    {
+        "name": "jbmo",
+        "year": 2025,
+        "start": "2025/6/24",
+        "end": "2025/6/29",
+        "country": "mk",
+        "website": "https://jbmo2025.mk/",
+        "participants": {
+            "6": "gold",
+            "3": "gold",
+            "1": "bronze",
+            "73": "silver",
+            "100": "silver",
+            "35": "bronze"
+        }
+    },
+    {
+        "name": "egmo",
+        "year": 2012,
+        "start": "2012/04/10",
+        "end": "2012/04/16",
+        "country": "gb",
+        "website": "https://www.egmo.org/egmos/egmo1/",
+        "participants": {
+            "36": null,
+            "13": "bronze",
+            "29": null
+        }
+    },
+    {
+        "name": "egmo",
+        "year": 2014,
+        "start": "2014/04/14",
+        "end": "2014/04/20",
+        "country": "tr",
+        "website": "https://www.egmo.org/egmos/egmo3/",
+        "participants": {
+            "86": null,
+            "97": null,
+            "45": null,
+            "88": null
+        }
+    },
+    {
+        "name": "egmo",
+        "year": 2015,
+        "start": "2015/04/10",
+        "end": "2015/04/16",
+        "country": "by",
+        "website": "https://www.egmo.org/egmos/egmo4/",
+        "participants": {
+            "97": "bronze",
+            "82": null,
+            "30": "hm",
+            "57": "hm"
+        }
+    },
+    {
+        "name": "egmo",
+        "year": 2016,
+        "start": "2016/04/10",
+        "end": "2016/04/16",
+        "country": "ro",
+        "website": "https://www.egmo.org/egmos/egmo5/",
+        "participants": {
+            "97": "gold",
+            "86": "bronze",
+            "85": null,
+            "57": "bronze"
+        }
+    },
+    {
+        "name": "egmo",
+        "year": 2017,
+        "start": "2017/04/06",
+        "end": "2017/04/12",
+        "country": "ch",
+        "website": "https://www.egmo.org/egmos/egmo6/",
+        "participants": {
+            "97": "gold",
+            "57": "silver",
+            "86": "bronze",
+            "65": "hm"
+        }
+    },
+    {
+        "name": "egmo",
+        "year": 2018,
+        "start": "2018/04/09",
+        "end": "2018/04/15",
+        "country": "it",
+        "website": "https://www.egmo.org/egmos/egmo7/",
+        "participants": {
+            "86": "bronze",
+            "98": "silver",
+            "57": "silver",
+            "44": null
+        }
+    },
+    {
+        "name": "egmo",
+        "year": 2019,
+        "start": "2019/04/07",
+        "end": "2019/04/13",
+        "country": "ua",
+        "website": "https://www.egmo.org/egmos/egmo8/",
+        "participants": {
+            "98": "bronze",
+            "44": "silver",
+            "84": "hm",
+            "55": null
+        }
+    },
+    {
+        "name": "egmo",
+        "year": 2020,
+        "start": "2020/04/15",
+        "end": "2020/04/21",
+        "country": "nl",
+        "website": "https://www.egmo.org/egmos/egmo9/",
+        "participants": {
+            "98": "silver",
+            "84": null,
+            "56": "bronze",
+            "60": "hm"
+        }
+    },
+    {
+        "name": "egmo",
+        "year": 2021,
+        "start": "2021/04/09",
+        "end": "2021/04/15",
+        "country": "ge",
+        "website": "https://www.egmo.org/egmos/egmo10/",
+        "participants": {
+            "84": "silver",
+            "56": "bronze",
+            "60": "bronze",
+            "43": "bronze"
+        }
+    },
+    {
+        "name": "egmo",
+        "year": 2022,
+        "start": "2022/04/06",
+        "end": "2022/04/12",
+        "country": "hu",
+        "website": "https://www.egmo.org/egmos/egmo11/",
+        "participants": {
+            "84": "bronze",
+            "60": "hm",
+            "56": "hm",
+            "54": "hm"
+        }
+    },
+    {
+        "name": "egmo",
+        "year": 2023,
+        "start": "2023/04/13",
+        "end": "2023/04/19",
+        "country": "si",
+        "website": "https://www.egmo.org/egmos/egmo12/",
+        "participants": {
+            "54": "bronze",
+            "87": null,
+            "40": null,
+            "42": "hm"
+        }
+    },
+    {
+        "name": "egmo",
+        "year": 2024,
+        "start": "2024/04/11",
+        "end": "2024/04/17",
+        "country": "ge",
+        "website": "https://www.egmo.org/egmos/egmo13/",
+        "participants": {
+            "54": "bronze",
+            "87": "hm",
+            "40": null,
+            "42": null
+        }
+    },
+    {
+        "name": "egmo",
+        "year": 2025,
+        "start": "2025/04/11",
+        "end": "2025/04/17",
+        "country": "xk",
+        "website": "https://www.egmo.org/egmos/egmo14/",
+        "participants": {
+            "42": "silver",
+            "95": "bronze",
+            "87": "hm",
+            "21": "hm"
+        }
+    }
+]

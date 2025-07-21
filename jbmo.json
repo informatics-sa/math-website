@@ -1,0 +1,211 @@
+[
+     {
+        "name": "jbmo",
+        "year": 2013,
+        "start": "2013/6/21",
+        "end": "2013/6/26",
+        "country": "tr",
+        "website": "https://jbmo2013.tubitak.gov.tr/",
+        "participants": {
+            "Alzubair Habibullah": "gold",
+            "Albader Alhydary": null,
+            "Osama Khawjah": null,
+            "Ibrahim Abughararh": null,
+            "Sanad Saleh": null,
+            "Omar Alrabiah": null
+        }
+    },
+    {
+        "name": "jbmo",
+        "year": 2014,
+        "start": "2014/6/21",
+        "end": "2014/6/26",
+        "country": "mk",
+        "website": null,
+        "participants": {
+            "Omar Alrabiah": "silver",
+            "Renad Yahya Abualjamal ": "silver",
+            "Aous Abdulhafeedh Khan ": "bronze",
+            "Ibrahim muwffiqa Bughararh ": "bronze",
+            "Joud Tofiq Saleh ": "bronze",
+            "Amal Mohammed Meer ": "bronze"
+        }
+    },
+    {
+        "name": "jbmo",
+        "year": 2015,
+        "start": "2015/6/24",
+        "end": "2015/6/29",
+        "country": "rs",
+        "website": "https://www.dms.rs/jbmo/",
+        "participants": {
+            "Renad Abualjamal": "gold",
+            "Omar Shaikh Omar": "bronze",
+            "Mohammed Al Ansari": "silver",
+            "Zeyad Aljaali": "bronze",
+            "Asaad Mohammed Saleh": "bronze",
+            "Abdulhamid Aldoobi": "bronze"
+        }
+    },
+    {
+        "name": "jbmo",
+        "year": 2016,
+        "start": "2016/6/24",
+        "end": "2016/6/29",
+        "country": "ro",
+        "website": "https://jbmo.ssmr.ro/",
+        "participants": {
+            "Asaad Mohammed Saleh": "silver",
+            "Mohammed Al Ansari": "bronze",
+            "Omar Habibullah": "bronze",
+            "Manar Kurdi": "bronze",
+            "Fares Alsaygh": "bronze",
+            "Thnaa Alhydary": "bronze"
+
+        }
+    },
+    {
+        "name": "jbmo",
+        "year": 2017,
+        "start": "2017/6/24",
+        "end": "2017/6/29",
+        "country": "bg",
+        "website": "https://www.jbmo2017.bg/",
+        "participants": {
+            "Omar Mohammad Habibullah": "silver",
+            "Nawaf Khder Alghamdi": "bronze",
+            "Salman Abdullah Almutrash": "bronze",
+            "Khalid Hammad Ajran": "silver",
+            "Thnaa Khalid Alhydary": "silver",
+            "Ghadeer Mohammed Daghistani": "bronze"
+        }
+    },
+    {
+        "name": "jbmo",
+        "year": 2018,
+        "start": "2018/6/19",
+        "end": "2018/6/24",
+        "country": "gr",
+        "website": "https://www.hms.gr/22jbmo2018/",
+        "participants": {
+            "Muath Alghamdi": "bronze",
+            "Abdulrahman Alharbi": "silver",
+            "Khalid Aljabri": "silver",
+            "Marwan Alkhayat": "silver",
+            "Ahmed Almeshal": "bronze",
+            "Mohammed Alshehri": "bronze"
+        }
+    },
+    {
+        "name": "jbmo",
+        "year": 2019,
+        "start": "2019/6/20",
+        "end": "2019/6/25",
+        "country": "cy",
+        "website": "https://www.cms.org.cy/pages/competitions/jbmo-2019/jbmo-2019",
+        "participants": {
+            "Alaqsa Akbar": null,
+            "Mohammed Aldubaisi": "silver",
+            "Muath Alghamdi": "bronze",
+            "Marwan Alkhayat": "gold",
+            "Hamzah Alshaikhi": "gold",
+            "Mohammed Alshehri": "silver"
+        }
+    },
+    {
+        "name": "jbmo",
+        "year": 2020,
+        "start": "2020/9/9",
+        "end": "2020/9/13",
+        "country": "gr",
+        "website": "https://www.hms.gr/24jbmo2020/index.html",
+        "participants": {
+            "Hamza Alshaikhi": "silver",
+            "Mohammed Aldubaisi": "silver",
+            "Mahdi Albaik": "gold",
+            "Hadi Alaithan": "bronze",
+            "Abdulrahman Nassief": "silver",
+            "Ali Alramadhan": "silver"
+        }
+    },
+    {
+        "name": "jbmo",
+        "year": 2021,
+        "start": "2021/6/29",
+        "end": "2021/7/5",
+        "country": "md",
+        "website": "https://jbmo2021.ance.gov.md/",
+        "participants": {
+            "Mohammad Aldubaisi": "gold",
+            "Mahdi Albaik": "gold",
+            "Hadi Al Aithan": "gold",
+            "Abdulelah Altaf": "bronze",
+            "Mohammed Hafiz": "silver",
+            "Muath Al-Qahtaniț": "bronze"
+        }
+    },
+    {
+        "name": "jbmo",
+        "year": 2022,
+        "start": "2022/6/28",
+        "end": "2022/7/3",
+        "country": "ba",
+        "website": "https://jbmo2022.pmf.unsa.ba/",
+        "participants": {
+            "Muath Alqahtani": "gold",
+            "Mohammed Alghamdi": "bronze",
+            "Ahmed Alshehri": "silver",
+            "Yosuf Bakheet": "silver",
+            "Abdulkareem Alsalem": "silver",
+            "Mohammed Alsaeed": "silver"
+        }
+    },
+    {
+        "name": "jbmo",
+        "year": 2023,
+        "start": "2023/6/23",
+        "end": "2023/6/28",
+        "country": "al",
+        "website": null,
+        "participants": {
+            "Ahmed Alshehri": "bronze",
+            "Mohammed Alsaeed": "bronze",
+            "Elyas Alfaraj": "silver",
+            "Abdulsalam Alsulami": "silver",
+            "Abdullah Alamer": "bronze",
+            "Ruqaya Alobaidan": null
+        }
+    },
+    {
+        "name": "jbmo",
+        "year": 2024,
+        "start": "2024/6/25",
+        "end": "2024/6/30",
+        "country": "tr",
+        "website": "https://jbmo2024.tubitak.gov.tr/participants",
+        "participants": {
+            "Abdullah Alamer": "silver",
+            "Mohammed Shaiban": "bronze",
+            "Fatimah Almarhoun": "bronze",
+            "Albatool Alaidrous": null,
+            "Arar Alajmi": "bronze",
+            "Belal Alhejaili": "bronze"
+        }
+    },
+    {
+        "name": "jbmo",
+        "year": 2025,
+        "start": "2025/6/24",
+        "end": "2025/6/29",
+        "country": "mk",
+        "website": "https://jbmo2025.mk/",
+        "participants": {
+            "Abdullah Alamer": "gold",
+            "Abdulelah Assaggaf": "gold",
+            "Abdarahman Mansour": "bronze",
+            "Mohammed Shaiban": "silver",
+            "Yasir Habibullah": "silver",
+            "Belal Alhejaili": "bronze"
+        }
+    }
+]

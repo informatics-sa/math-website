@@ -1,0 +1,162 @@
+[
+    {
+        "name": "bmo",
+        "year": 2025,
+        "start": "2025/4/25",
+        "end": "2025/4/30",
+        "country": "ba",
+        "website": "https://bmo2025.pmf.unsa.ba/",
+        "participants": {
+            "yosuf_bakheet": "silver",
+            "ahmed_alkhalawi": "bronze",
+            "ahmed_alshehri": "bronze",
+            "abdulsalam_alsulami": null,
+            "muath_alqahtani": "silver",
+            "mohammed_alghamdi": "bronze"
+        }
+    },
+    {
+        "name": "bmo",
+        "year": 2024,
+        "start": "2024/5/27",
+        "end": "2024/5/2",
+        "country": "bg",
+        "website": "https://bmo2024.org/",
+        "participants": {
+            "muath_alqahtani": "silver",
+            "mohammad_hafez": "bronze",
+            "yosuf_bakhit": "bronze",
+            "ahmad_alshehri": "hm",
+            "ahmed_alkhalawi": "bronze",
+            "elyas_alfaraj": "bronze"
+        }
+    },
+    {
+        "name": "bmo",
+        "year": 2023,
+        "start": "2023/5/8",
+        "end": "2023/5/13",
+        "country": "tr",
+        "website": "https://bmo2023.tubitak.gov.tr/",
+        "participants": {
+            "hadi_alaithan": "bronze",
+            "ali_alramdan": "silver",
+            "mahdi_albaik": "bronze",
+            "muath_alqahtani": "bronze",
+            "eyad_alqatari": "bronze",
+            "abdulrahman_nassife": "bronze"
+        }
+    },
+    {
+        "name": "bmo",
+        "year": 2020,
+        "start": "2020/10/31",
+        "end": "2020/11/5",
+        "country": "ro",
+        "website": "https://bmo2020.ssmr.ro/",
+        "participants": {
+            "mohammed_aldubaisi": "silver",
+            "muath_alghamdi": "silver",
+            "marwan_alkhayat": "silver",
+            "hadi_alaithan": "silver",
+            "mahdi_albaik": "silver",
+            "ali_alramadan": "bronze"
+        }
+    },
+    {
+        "name": "bmo",
+        "year": 2019,
+        "start": "2019/4/30",
+        "end": "2019/5/5",
+        "country": "md",
+        "website": null,
+        "participants": {
+            "hamza_alshaikhi": "silver",
+            "ahmed_albahrani": "bronze",
+            "mahdi_albaik": "bronze",
+            "mohammad_aldubaisi": "bronze",
+            "marwan_alkhayat": "bronze",
+            "muath_alghamdi": "hm"
+        }
+    },
+    {
+        "name": "bmo",
+        "year": 2018,
+        "start": "2018/5/7",
+        "end": "2018/5/12",
+        "country": "rs",
+        "website": "https://bmo2018.dms.rs/",
+        "participants": {
+            "asaad_mohammedsaleh": "silver",
+            "nawaf_alghamdi": "bronze",
+            "khalid_ajran": "bronze",
+            "omar_habibullah": "bronze",
+            "marwan_alkhayat": null,
+            "thnaa_alhydary": null
+        }
+    },
+    {
+        "name": "bmo",
+        "year": 2017,
+        "start": "2017/5/2",
+        "end": "2017/5/7",
+        "country": "mk",
+        "website": null,
+        "participants": {
+            "mohammed_alansari": "bronze",
+            "omar_habibullah": "bronze",
+            "omar_jamal": "bronze",
+            "asaad_mohammedsaleh": "bronze",
+            "mahdi_buali": "bronze",
+            "renad_abualjamal": "bronze"
+
+        }
+    },
+    {
+        "name": "bmo",
+        "year": 2016,
+        "start": "2016/5/5",
+        "end": "2016/5/10",
+        "country": "al",
+        "website": null,
+        "participants": {
+            "omar_alrabiah": "gold",
+            "shaden_alshammari": "gold",
+            "alzubair_habibullah": "bronze",
+            "hamzah_shafi": "bronze",
+            "majid_almarhoumi": "bronze",
+            "joud_saleh": null
+        }
+    },
+    {
+        "name": "bmo",
+        "year": 2015,
+        "start": "2015/5/3",
+        "end": "2015/5/8",
+        "country": "gr",
+        "website": "https://www.hms.gr/32bmo2015/main.htm",
+        "participants": {
+            "alzubair_habibullah": "bronze",
+            "salman_saleh": "bronze",
+            "omar alrabiah ": "bronze",
+            "alhamzah_alnufaili": "bronze" ,
+            "renad_abualjmal": null 
+        }
+    },
+    {
+        "name": "bmo",
+        "year": 2014,
+        "start": "2014/5/2",
+        "end": "2014/5/7",
+        "country": "bg",
+        "website": null,
+        "participants": {
+            "alzubair_habibullah": "bronze",
+            "omar_alrabiah": "bronze",
+            "mahdi_alshaikh": "null",
+            "ibraheem_khan": "null",
+            "ammar_alqatari": null,
+            "shaden_alshammari": null
+        }
+    }
+]
