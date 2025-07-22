@@ -485,6 +485,11 @@ def build_data_vairables():
     }))
 
 def main():
+    from helper import update_participations, sort_by_date, generate_members
+    generate_members()
+    update_participations()
+    sort_by_date()
+
     test_utils()
 
     build_data_vairables()
