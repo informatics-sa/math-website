@@ -73,7 +73,7 @@
         "participants": {
             "41": "silver",
             "98": "bronze",
-            "89": "hm",
+            "110": "hm",
             "21": "hm"
         }
     },
@@ -184,7 +184,7 @@
         "website": "https://www.egmo.org/egmos/egmo13/",
         "participants": {
             "41": "bronze",
-            "89": "hm",
+            "110": "hm",
             "98": null,
             "60": null
         }
@@ -266,7 +266,7 @@
         "website": "https://www.egmo.org/egmos/egmo12/",
         "participants": {
             "54": "bronze",
-            "89": null,
+            "110": null,
             "39": null,
             "41": "hm"
         }
@@ -905,6 +905,22 @@
         }
     },
     {
+        "name": "gmo",
+        "year": 2016,
+        "start": "2016/4/3",
+        "end": "2016/4/6",
+        "country": "sa",
+        "website": null,
+        "participants": {
+            "27": "gold",
+            "100": "gold",
+            "88": "gold",
+            "80": "gold",
+            "65": "silver",
+            "47": "silver"
+        }
+    },
+    {
         "name": "apmo",
         "year": 2016,
         "start": "2016/03/08",
@@ -986,6 +1002,22 @@
         }
     },
     {
+        "name": "gmo",
+        "year": 2015,
+        "start": "2015/3/21",
+        "end": "2015/3/24",
+        "country": "kw",
+        "website": null,
+        "participants": {
+            "27": "gold",
+            "100": "gold",
+            "80": "silver",
+            "65": "silver",
+            "88": "silver",
+            "47": "silver"
+        }
+    },
+    {
         "name": "apmo",
         "year": 2015,
         "start": "2015/03/08",
@@ -1062,6 +1094,22 @@
         }
     },
     {
+        "name": "gmo",
+        "year": 2014,
+        "start": "2014/4/6",
+        "end": "2014/4/9",
+        "country": "om",
+        "website": null,
+        "participants": {
+            "52": "gold",
+            "27": "gold",
+            "100": "gold",
+            "63": "gold",
+            "30": "silver",
+            "65": "silver"
+        }
+    },
+    {
         "name": "apmo",
         "year": 2014,
         "start": "2014/03/08",
@@ -1107,6 +1155,21 @@
         }
     },
     {
+        "name": "gmo",
+        "year": 2013,
+        "start": "2013/4/1",
+        "end": "2013/4/4",
+        "country": "qa",
+        "website": null,
+        "participants": {
+            "96": "gold",
+            "63": "gold",
+            "27": "silver",
+            "52": "silver",
+            "95": "silver"
+        }
+    },
+    {
         "name": "apmo",
         "year": 2013,
         "start": "2013/03/08",
@@ -1124,6 +1187,22 @@
             "49": "hm",
             "104": "hm",
             "63": "hm"
+        }
+    },
+    {
+        "name": "bmo",
+        "year": 2012,
+        "start": "2012/11/25",
+        "end": "2012/11/29",
+        "country": "tr",
+        "website": null,
+        "participants": {
+            "26": "silver",
+            "93": "bronze",
+            "10": "bronze",
+            "108": "bronze",
+            "49": "bronze",
+            "50": null
         }
     },
     {
@@ -1156,6 +1235,22 @@
         }
     },
     {
+        "name": "gmo",
+        "year": 2012,
+        "start": "2012/4/2",
+        "end": "2012/4/6",
+        "country": "ae",
+        "website": null,
+        "participants": {
+            "26": "gold",
+            "108": "silver",
+            "49": "silver",
+            "50": "silver",
+            "10": "silver",
+            "93": "silver"
+        }
+    },
+    {
         "name": "apmo",
         "year": 2012,
         "start": "2012/03/08",
@@ -1167,6 +1262,22 @@
             "104": "hm",
             "92": "hm",
             "49": "hm"
+        }
+    },
+    {
+        "name": "bmo",
+        "year": 2011,
+        "start": "2011/11/25",
+        "end": "2011/11/29",
+        "country": "ro",
+        "website": null,
+        "participants": {
+            "102": "silver",
+            "26": "bronze",
+            "99": "bronze",
+            "23": null,
+            "10": null,
+            "51": null
         }
     },
     {
@@ -1196,6 +1307,22 @@
             "102": "silver",
             "26": "bronze",
             "48": "hm"
+        }
+    },
+    {
+        "name": "bmo",
+        "year": 2010,
+        "start": "2010/11/25",
+        "end": "2010/11/29",
+        "country": "ro",
+        "website": null,
+        "participants": {
+            "102": "bronze",
+            "9": "bronze",
+            "78": null,
+            "8": null,
+            "109": null,
+            "18": null
         }
     },
     {

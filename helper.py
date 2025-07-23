@@ -4,20 +4,18 @@ from lib.utils import *
 
 
 def update_participations():
-    members = get_members()
-    with open('./root/data/participations.old.json') as f:
+    members = load_json('people')
+    with open('./root/data/participations.old.json', encoding='utf-8') as f:
         parts_str = f.read()
-    for uid in members:
-        if 'iid' in members[uid]:
-            oid = members[uid]['id']
-            iid = members[uid]['iid']
-            parts_str = parts_str.replace(f'"{oid}"', f'"{iid}"')
-            print("replaced", oid, "with", iid)
+    for mem in members:
+        oid = mem['id']
+        iid = mem['iid']
+        parts_str = parts_str.replace(f'"{oid}"', f'"{iid}"')
     write_text('./root/data/participations.json', parts_str)
 
 def update_exams():
     members = get_members()
-    with open('./root/data/exams.json') as f:
+    with open('./root/data/exams.json', encoding='utf-8') as f:
         parts_str = f.read()
     for k, v in members.items():
         id = v['id']
@@ -37,45 +35,55 @@ def check_distinct_ids():
         print(i)
 
 def generate_members():
+    previous_members = load_json('people')
+    preunique_set = set()
+    for mem in previous_members:
+        preunique_set.add(mem['id'])
+        if mem['enname'] == mem['id']:
+            mem['enname'] = mem['id'].replace('_', ' ').title()
+    
     participations = load_json('participations.old')
     unique_names = set()
     for par in participations:
         for user in par['participants']:
             user = str(user).lower()
-            unique_names.add(user.lower())
+            if user not in preunique_set:
+                unique_names.add(user.lower())
+    
     names = sorted(list(unique_names))
-    data = []
-    idx = 1
+    data = previous_members
+    idx = len(preunique_set)+1
     for n in names:
         data.append({
             'iid': idx,
             'id': n,
             'arname': n,
-            'enname': n
+            'enname': n.replace('_', ' ').title()
         })
         idx += 1
-    write_text('./root/data/people.json', json.dumps(data))
+    write_text('./root/data/people.json', json.dumps(data, ensure_ascii=False))
 
 
 
 def generate_members_names():
     members = load_json('people')
     for p in members:
-        p['enname'] = p['id']
-        p['arname'] = p['id']
+        p['enname'] = p['id'].replace('_', ' ').title()
+        if p['arname'] == '':
+            p['arname'] = p['id']
     write_text('./root/data/people.json', json.dumps(members))
 
 def sort_by_date(date_format="%Y/%m/%d"):
     # Read JSON file
     from datetime import datetime
-    with open('./root/data/participations.json', 'r') as f:
+    with open('./root/data/participations.json', 'r', encoding='utf-8') as f:
         data = json.load(f)
     
     # Sort objects by start date
     sorted_data = sorted(data, key=lambda x: datetime.strptime(x['start'], date_format), reverse=True)
     
     # Write sorted data to output file
-    with open('./root/data/participations.json', 'w') as f:
+    with open('./root/data/participations.json', 'w', encoding='utf-8') as f:
         json.dump(sorted_data, f, indent=4)
 
 #generate_members_names()
@@ -83,5 +91,8 @@ def sort_by_date(date_format="%Y/%m/%d"):
 # exit(1)
 #update_exams()
 generate_members()
+print("Generated members")
 update_participations()
+print("Updated participations")
 sort_by_date()
+print("Sorted by date")

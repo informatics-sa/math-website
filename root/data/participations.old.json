@@ -1232,14 +1232,12 @@
         "country": "ro",
         "website": null,
         "participants": {
-            "wael_alsaeed": "broze",
+            "wael_alsaeed": "bronze",
             "abdulmajeed_alqasem": "bronze",
-            "nawaf_alansari": null ,
-            "abdullah_alsaeed": null ,
-            "hamzah_alahmadi": null ,
+            "nawaf_alansari": null,
+            "abdullah_alsaeed": null,
+            "hamzah_alahmadi": null,
             "ahmed_khan": null
-    
-    
         }
     },
     {
@@ -1283,7 +1281,7 @@
         "year": 2012,
         "start": "2012/4/2",
         "end": "2012/4/6",
-        "country": "em",
+        "country": "ae",
         "website": null,
         "participants": {
             "alyazeed_basuni": "gold",
