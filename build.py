@@ -493,7 +493,7 @@ def main():
 
     test_utils()
 
-    build_data_vairables()
+    build_data_vairables()   
     print("Built _data/build.yml")
 
     build_contact()
