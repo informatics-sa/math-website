@@ -7,6 +7,10 @@
     --theme-color-dark: #115740;
 }
 
+a {
+    text-decoration: none !important;
+}
+
 body {
     font-family: 'Tajawal', sans-serif;
 }
