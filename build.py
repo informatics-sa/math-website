@@ -1,3 +1,9 @@
+from helper import update_participations, sort_by_date, generate_members
+generate_members()
+update_participations()
+sort_by_date()
+print("Called helper functions")
+
 from lib import *
 from lib.utils import * # target to remove this.
 import datetime
@@ -485,12 +491,6 @@ def build_data_vairables():
     }))
 
 def main():
-    from helper import update_participations, sort_by_date, generate_members
-    generate_members()
-    update_participations()
-    sort_by_date()
-    print("Called helper functions")
-
     test_utils()
 
     build_data_vairables()   
