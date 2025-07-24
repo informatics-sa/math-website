@@ -340,6 +340,22 @@
         }
     },
     {
+        "name": "bmo",
+        "year": 2022,
+        "start": "2022/5/4",
+        "end": "2022/5/9",
+        "country": "cy",
+        "website": "https://bmo2020.ssmr.ro/",
+        "participants": {
+            "69": "silver",
+            "75": "silver",
+            "67": "silver",
+            "45": "silver",
+            "62": "silver",
+            "25": "bronze"
+        }
+    },
+    {
         "name": "egmo",
         "year": 2022,
         "start": "2022/04/06",
@@ -472,17 +488,17 @@
     {
         "name": "bmo",
         "year": 2020,
-        "start": "2020/10/31",
+        "start": "2020/10/30",
         "end": "2020/11/5",
         "country": "ro",
-        "website": "https://bmo2020.ssmr.ro/",
+        "website": null,
         "participants": {
-            "69": "silver",
-            "75": "silver",
-            "67": "silver",
-            "45": "silver",
-            "62": "silver",
-            "25": "bronze"
+            "46": "silver",
+            "14": "bronze",
+            "62": "bronze",
+            "69": "bronze",
+            "67": "bronze",
+            "75": "hm"
         }
     },
     {
@@ -559,11 +575,12 @@
         "country": "om",
         "website": null,
         "participants": {
-            "33": "gold",
-            "81": "gold",
-            "58": "silver",
             "67": "gold",
-            "4": "silver"
+            "58": "gold",
+            "101": "gold",
+            "79": "gold",
+            "59": "silver",
+            "112": "silver"
         }
     },
     {
@@ -606,12 +623,12 @@
         "country": "md",
         "website": null,
         "participants": {
-            "46": "silver",
-            "14": "bronze",
-            "62": "bronze",
-            "69": "bronze",
-            "67": "bronze",
-            "75": "hm"
+            "33": "silver",
+            "79": "bronze",
+            "58": "bronze",
+            "81": "bronze",
+            "67": null,
+            "101": null
         }
     },
     {
@@ -702,12 +719,12 @@
         "country": "rs",
         "website": "https://bmo2018.dms.rs/",
         "participants": {
-            "33": "silver",
-            "79": "bronze",
-            "58": "bronze",
+            "68": "bronze",
             "81": "bronze",
-            "67": null,
-            "101": null
+            "82": "bronze",
+            "33": "bronze",
+            "64": "bronze",
+            "88": "bronze"
         }
     },
     {
@@ -800,12 +817,12 @@
         "country": "mk",
         "website": null,
         "participants": {
-            "68": "bronze",
-            "81": "bronze",
-            "82": "bronze",
+            "100": "silver",
             "33": "bronze",
             "64": "bronze",
-            "88": "bronze"
+            "31": "hm",
+            "53": null,
+            "57": null
         }
     },
     {
@@ -981,8 +998,8 @@
         "website": "https://www.hms.gr/32bmo2015/main.htm",
         "participants": {
             "27": "bronze",
-            "95": "bronze",
             "80": "bronze",
+            "95": "bronze",
             "22": "bronze",
             "88": null
         }
@@ -1075,7 +1092,7 @@
             "80": "bronze",
             "63": null,
             "52": null,
-            "30": null,
+            "30": "hm",
             "100": null
         }
     },
@@ -1166,7 +1183,8 @@
             "63": "gold",
             "27": "silver",
             "52": "silver",
-            "95": "silver"
+            "95": "silver",
+            "111": " silver"
         }
     },
     {
