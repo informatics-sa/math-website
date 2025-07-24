@@ -1184,12 +1184,12 @@
         "country": "om",
         "website": null,
         "participants": {
-            "asaad_mohammedsaleh": "gold",
-            "omar_habibullah": "gold",
-            "khalid_ajran": "gold",
             "marwan_alkhayat": "gold",
-            "khalid_ajran": "silver",
-            "abdulhamid_aldoobi": "silver"
+            "khalid_ajran": "gold",
+            "thnaa_alhydary": "gold",
+            "nawaf_alghamdi": "gold",
+            "khalid_aljabri": "silver",
+            "abdulrahman_alahmadi": "silver"
         }
     },
     {
@@ -1320,7 +1320,8 @@
             "mahdi_alshaikh": "gold",
             "alzubair_habibullah": "silver",
             "ibraheem_khan": "silver",
-            "salman_saleh": "silver"
+            "salman_saleh": "silver",
+            "abdullah_alnashwan":" silver"
         }
     },
     {
