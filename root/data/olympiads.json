@@ -3,8 +3,8 @@
         "id": "imo", "website": "https://imo-official.org",
         "arname": "أولمبياد الرياضيات الدولي",
         "enname": "International Mathematical Olympiad",
-        "ardescription": "",
-        "endescription": "",
+        "ardescription": "هي المسابقة العالمية للرياضيات لطلاب المدارس الثانوية، وتُقام سنويًا في دولة مختلفة. أُقيمت المسابقة بنسختها الأولى في عام 1959 في رومانيا بمشاركة سبع دول. ومنذ ذلك الحين توسعت تدريجيًا لتشمل أكثر من 100 دولة من خمس قارات.",
+        "endescription": "IMO is the World Championship Mathematics Competition for High School students and is held annually in a different country. The first IMO was held in 1959 in Romania, with 7 countries participating. It has gradually expanded to over 100 countries from 5 continents. ",
         "participants_count": 6,
         "official": true
     },
