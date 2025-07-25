@@ -1,10 +1,4 @@
-.ruby-version
-.jekyll-cache
-__pycache__
-_site
-flake.nix
-
-# build artifacts
+# BUILD ARTIFACTS
 root/*
 
 !root/_config.yml
@@ -25,3 +19,12 @@ root/_data/*
 !root/resources/*
 !root/404.html
 !root/debug.html
+# END BUILD ARTIFACTS
+
+.DS_Store
+.ruby-version
+.jekyll-cache
+__pycache__
+_site
+flake.nix
+
