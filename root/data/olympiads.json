@@ -10,10 +10,10 @@
     },
     {
         "id": "apmo", "website": "https://www.apmo-official.org/",
-        "arname": "آولمبياد آسيا والباسفيك للرياضيات",
+        "arname": "أولمبياد آسيا والباسفيك للرياضيات",
         "enname": "Asia-Pasific Mathematical Olympiad",
-        "ardescription": "",
-        "endescription": "",
+        "ardescription": "تقام المسابقة سنويًا منذ عام 1989 . لكل دولة مشاركة ممثل مسؤول عن تنظيم المسابقة محليًا. وتقوم لجنة مركزية باختيار ورقة الأسئلة التي تتضمن 5 مسائل يجب حلها خلال 4 ساعات .",
+        "endescription": "The contest is held annually. Each participating country has a representative responsible for organizing the contest locally. A central committee selects a paper consisting of 5 problems to be solved in 4 hours.",
         "participants_count": 10,
         "official": true
     },
@@ -21,8 +21,8 @@
         "id": "egmo", "website": "https://www.egmo.org/",
         "arname": "أولمبياد البنات الأوربي للرياضيات",
         "enname": "European Girls Mathematical Olympiad",
-        "ardescription": "",
-        "endescription": "",
+        "ardescription": "هي المسابقة الأوروبية في مجال الرياضيات، والمخصصة  للطالبات . أُطلقت من قبل المملكة المتحدة في أبريل عام 2012، ومنذ ذلك الحين نمت مسابقة EGMO لتضم أكثر من خمسين دولة، مرحّبةً بمشاركات من خارج أوروبا أيضًا.",
+        "endescription": "It is the European mathematics competition dedicated to female students. Launched by the United Kingdom in April 2012, the EGMO has since grown to include more than fifty countries, welcoming participants from outside Europe as well.",
         "participants_count": 4,
         "official": false
     },
@@ -30,8 +30,8 @@
         "id": "bmo", "website": "https://www.massee-org.eu/mathematical/bmo",
         "arname": "أولمبياد البلقان للرياضيات",
         "enname": "Balkan Mathematical Olympiad",
-        "ardescription": "",
-        "endescription": "",
+        "ardescription": "أولمبياد البلقان للرياضيات (BMO) هي مسابقة سنوية في الرياضيات تنظّمها جمعية الرياضيات لجنوب شرق أوروبا (MASSEE). أقيم أول أولمبياد بلقان في أثينا، اليونان، عام 1984، وشاركت فيه أربع دول: بلغاريا، اليونان، رومانيا، ودولة أخرى. تشمل المسابقة دول المنطقة بالإضافة إلى دول ضيفة من خارجها. تُقام المسابقة في يوم واحد، حيث يتكون الاختبار من 4 مسائل يجب حلها خلال 4.5 ساعات",
+        "endescription": "The Balkan Mathematical Olympiad (BMO) is an annual mathematics competition organized by the Mathematical Society of South Eastern Europe (MASSEE). The first BMO was held in Athens, Greece, in 1984, with participation from four countries: Bulgaria, Greece, Romania, and one more. It includes countries from the region as well as guest countries from outside. The competition takes place over one day, with a test consisting of 4 problems to be solved within 4.5 hours.",
         "participants_count": 6,
         "official": false
     },
@@ -39,8 +39,8 @@
         "id": "jbmo", "website": "https://www.massee-org.eu/mathematical/jbmo",
         "arname": "أولمبياد البلقان للرياضيات للناشئين",
         "enname": "Junior Balkan Mathematical Olympiad",
-        "ardescription": "",
-        "endescription": "",
+        "ardescription": "أولمبياد البلقان للناشئين (JBMO) مسابقة رياضية سنوية لطلاب دون 15.5 سنة، تنظّمها جمعية جنوب شرق أوروبا (MASSEE) . تأسست الفكرة عام 1994 وأُقيمت أول دورة عام 1997 في صربيا، وتضم دولًا من المنطقة بالإضافة إلى دول ضيفة من خارجها. تقام المسابقة على يوم واحد حيث يكون الاختبار مكون من 4 مسائل يجب حلها في 4.5 ساعات .",
+        "endescription": "The Junior Balkan Mathematical Olympiad (JBMO) is an annual mathematics competition for students under 15.5 years old, organized by the Mathematical Society of South Eastern Europe (MASSEE). The idea was established in 1994, and the first edition was held in 1997 in Serbia. It includes countries from the region as well as guest countries from outside. The competition takes place over one day, with a test consisting of 4 problems to be solved within 4.5 hours.",
         "participants_count": 6,
         "official": false
     },
