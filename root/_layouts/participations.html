@@ -85,13 +85,13 @@ layout: default
         box-shadow: var(--shadow);
         text-align: center;
         transition: var(--transition);
-        border: 2px solid transparent;
+        border-left: 4px solid var(--primary-green);
     }
 
     .stat-card:hover {
         transform: translateY(-5px);
         box-shadow: var(--shadow-hover);
-        border-color: var(--primary-green);
+        border-left-color: var(--primary-black);
     }
 
     .stat-number {
@@ -141,7 +141,7 @@ layout: default
     .filter-btn {
         padding: 10px 18px;
         border: 2px solid var(--border-gray);
-        background: #FFFFFF;
+        background: var(--primary-white);
         color: var(--primary-black);
         border-radius: 25px;
         cursor: pointer;
@@ -266,22 +266,51 @@ layout: default
         position: relative;
     }
 
-    /* نمط الألوان الأبيض والرمادي المتناوب للسنوات */
-    .year-2024 { background: #FFFFFF; }
-    .year-2023 { background: #f8f9fa; }
-    .year-2022 { background: #FFFFFF; }
-    .year-2021 { background: #f8f9fa; }
-    .year-2020 { background: #FFFFFF; }
-    .year-2019 { background: #f8f9fa; }
-    .year-2018 { background: #FFFFFF; }
-    .year-2017 { background: #f8f9fa; }
-    .year-2016 { background: #FFFFFF; }
-    .year-2015 { background: #f8f9fa; }
-    .year-2014 { background: #FFFFFF; }
-    .year-2013 { background: #f8f9fa; }
-    .year-2012 { background: #FFFFFF; }
-    .year-2011 { background: #f8f9fa; }
-    .year-2010 { background: #FFFFFF; }
+    /* نمط الألوان الأبيض والرمادي المتناوب للسنوات - الإصلاح */
+    .participation-row[data-year="2024"] .year-cell,
+    .participation-row[data-year="2024"] { background: #FFFFFF; }
+    
+    .participation-row[data-year="2023"] .year-cell,
+    .participation-row[data-year="2023"] { background: #f8f9fa; }
+    
+    .participation-row[data-year="2022"] .year-cell,
+    .participation-row[data-year="2022"] { background: #FFFFFF; }
+    
+    .participation-row[data-year="2021"] .year-cell,
+    .participation-row[data-year="2021"] { background: #f8f9fa; }
+    
+    .participation-row[data-year="2020"] .year-cell,
+    .participation-row[data-year="2020"] { background: #FFFFFF; }
+    
+    .participation-row[data-year="2019"] .year-cell,
+    .participation-row[data-year="2019"] { background: #f8f9fa; }
+    
+    .participation-row[data-year="2018"] .year-cell,
+    .participation-row[data-year="2018"] { background: #FFFFFF; }
+    
+    .participation-row[data-year="2017"] .year-cell,
+    .participation-row[data-year="2017"] { background: #f8f9fa; }
+    
+    .participation-row[data-year="2016"] .year-cell,
+    .participation-row[data-year="2016"] { background: #FFFFFF; }
+    
+    .participation-row[data-year="2015"] .year-cell,
+    .participation-row[data-year="2015"] { background: #f8f9fa; }
+    
+    .participation-row[data-year="2014"] .year-cell,
+    .participation-row[data-year="2014"] { background: #FFFFFF; }
+    
+    .participation-row[data-year="2013"] .year-cell,
+    .participation-row[data-year="2013"] { background: #f8f9fa; }
+    
+    .participation-row[data-year="2012"] .year-cell,
+    .participation-row[data-year="2012"] { background: #FFFFFF; }
+    
+    .participation-row[data-year="2011"] .year-cell,
+    .participation-row[data-year="2011"] { background: #f8f9fa; }
+    
+    .participation-row[data-year="2010"] .year-cell,
+    .participation-row[data-year="2010"] { background: #FFFFFF; }
 
     .olympiad-link {
         text-decoration: none;
@@ -521,86 +550,139 @@ layout: default
 
         <table class="table table-bordered table-striped participation-table" id="participationTable">
             <thead>
-                {% if page.lang == "ar" %}
-                <th width="5%">السنة</th>
-                <th>الأولمبياد</th>
-                <th>تاريخ المشاركة</th>
-                <th>المكان</th>
-                <th>الجوائز</th>
-                {% else %}
-                <th width="5%">Year</th>
-                <th>Olympiad</th>
-                <th>Date</th>
-                <th>Country</th>
-                <th>Awards</th>
-                {% endif %}
+                <tr>
+                    <th width="5%">السنة</th>
+                    <th>الأولمبياد</th>
+                    <th>تاريخ المشاركة</th>
+                    <th>المكان</th>
+                    <th>الجوائز</th>
+                </tr>
             </thead>
             <tbody id="participationTableBody">
-                {% for year in (page.start_year..page.last_year) reversed %}
-                    {% for idx in (1..page[year].count) %}
-                        {% capture olyid %}{{page[year][idx].name}}_{{year}}{% endcapture %}
-                        <tr class="participation-row" 
-                            data-year="{{ year }}"
-                            data-competition="{{ page[year][idx].name | upcase }}"
-                            data-country="{% if page.lang == 'ar' %}{{ page[year][idx].country_arname }}{% else %}{{ page[year][idx].country_enname }}{% endif %}"
-                            data-name="{% if page.lang == 'en' %}{{ page[year][idx].enname }}{% else %}{{ page[year][idx].arname }}{% endif %}">
-                            
-                            {% if idx == 1 %}
-                            <td class="text-center year-cell year-{{ year }}" style="vertical-align: middle;" rowspan="{{ page[year].count }}">{{ year }}</td>
-                            {% endif %}
-                            
-                            <td>
-                                <a href="{% if page.lang == "en" %}/en{% endif %}/participations/{{olyid}}" class="olympiad-link">
-                                    {% if page.lang == "en" %}  
-                                        {{ page[year][idx].enname }}
-                                    {% else %}
-                                        {{ page[year][idx].arname }}
-                                    {% endif %}
-                                </a>
-                                <div class="olympiad-code">({{ page[year][idx].name | upcase }})</div>
-                            </td>
-                            
-                            <td>
-                                <input type="hidden" id="olstart-{{olyid}}" value="{{ page[year][idx].start }}">
-                                <input type="hidden" id="olend-{{olyid}}" value="{{ page[year][idx].end }}">
-                                {% if page[year][idx].start == page[year][idx].end %}
-                                    {{ page[year][idx].start }}
-                                {% else %}
-                                    {{ page[year][idx].start }} - {{ page[year][idx].end }}
-                                {% endif %}
-                            </td>
-                            
-                            <td class="country-cell">
-                                {% if page.lang == 'ar' %}
-                                    {{ page[year][idx].country_arname }}
-                                {% else %}
-                                    {{ page[year][idx].country_enname }}
-                                {% endif %}
-                                
-                                {% if page[year][idx].online %}
-                                <span class="badge bg-secondary">
-                                    {% if page.lang == 'ar' %}
-                                    عن بعد 🌐
-                                    {% else %}
-                                    Online 🌐
-                                    {% endif %}
-                                </span>
-                                {% endif %}
-                            </td>
-                            
-                            <td class="awards-cell" id="olawards-{{olyid}}">
-                                <div class="medals-container">
-                                    {% assign medals = page[year][idx].awards | split: '' %}
-                                    {% for medal in medals %}
-                                        {% if medal == '🥇' or medal == '🥈' or medal == '🥉' or medal == '📜' %}
-                                            <span class="medal">{{ medal }}</span>
-                                        {% endif %}
-                                    {% endfor %}
-                                </div>
-                            </td>
-                        </tr>
-                    {% endfor %}
-                {% endfor %}
+                <!-- بيانات تجريبية للعرض -->
+                <tr class="participation-row" data-year="2024" data-competition="IMO" data-country="المملكة المتحدة" data-name="أولمبياد الرياضيات الدولي">
+                    <td class="text-center year-cell" style="vertical-align: middle;" rowspan="3">2024</td>
+                    <td>
+                        <a href="#" class="olympiad-link">أولمبياد الرياضيات الدولي</a>
+                        <div class="olympiad-code">(IMO)</div>
+                    </td>
+                    <td>
+                        <input type="hidden" id="olstart-IMO_2024" value="2024/7/11">
+                        <input type="hidden" id="olend-IMO_2024" value="2024/7/22">
+                        2024/7/11 - 2024/7/22
+                    </td>
+                    <td class="country-cell">المملكة المتحدة</td>
+                    <td class="awards-cell" id="olawards-IMO_2024">
+                        <div class="medals-container">
+                            <span class="medal">🥇</span>
+                            <span class="medal">🥈</span>
+                            <span class="medal">🥉</span>
+                        </div>
+                    </td>
+                </tr>
+                
+                <tr class="participation-row" data-year="2024" data-competition="EGMO" data-country="جورجيا" data-name="أولمبياد الرياضيات الأوروبي للفتيات">
+                    <td>
+                        <a href="#" class="olympiad-link">أولمبياد الرياضيات الأوروبي للفتيات</a>
+                        <div class="olympiad-code">(EGMO)</div>
+                    </td>
+                    <td>
+                        <input type="hidden" id="olstart-EGMO_2024" value="2024/4/11">
+                        <input type="hidden" id="olend-EGMO_2024" value="2024/4/17">
+                        2024/4/11 - 2024/4/17
+                    </td>
+                    <td class="country-cell">جورجيا</td>
+                    <td class="awards-cell" id="olawards-EGMO_2024">
+                        <div class="medals-container">
+                            <span class="medal">🥈</span>
+                            <span class="medal">🥉</span>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr class="participation-row" data-year="2024" data-competition="AMO" data-country="الإمارات العربية المتحدة" data-name="أولمبياد الرياضيات العربي">
+                    <td>
+                        <a href="#" class="olympiad-link">أولمبياد الرياضيات العربي</a>
+                        <div class="olympiad-code">(AMO)</div>
+                    </td>
+                    <td>
+                        <input type="hidden" id="olstart-AMO_2024" value="2024/8/15">
+                        <input type="hidden" id="olend-AMO_2024" value="2024/8/20">
+                        2024/8/15 - 2024/8/20
+                    </td>
+                    <td class="country-cell">الإمارات العربية المتحدة</td>
+                    <td class="awards-cell" id="olawards-AMO_2024">
+                        <div class="medals-container">
+                            <span class="medal">🥇</span>
+                            <span class="medal">🥇</span>
+                            <span class="medal">🥈</span>
+                            <span class="medal">🥉</span>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr class="participation-row" data-year="2023" data-competition="IMO" data-country="اليابان" data-name="أولمبياد الرياضيات الدولي">
+                    <td class="text-center year-cell" style="vertical-align: middle;" rowspan="2">2023</td>
+                    <td>
+                        <a href="#" class="olympiad-link">أولمبياد الرياضيات الدولي</a>
+                        <div class="olympiad-code">(IMO)</div>
+                    </td>
+                    <td>
+                        <input type="hidden" id="olstart-IMO_2023" value="2023/7/2">
+                        <input type="hidden" id="olend-IMO_2023" value="2023/7/13">
+                        2023/7/2 - 2023/7/13
+                    </td>
+                    <td class="country-cell">اليابان</td>
+                    <td class="awards-cell" id="olawards-IMO_2023">
+                        <div class="medals-container">
+                            <span class="medal">🥈</span>
+                            <span class="medal">🥉</span>
+                            <span class="medal">🥉</span>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr class="participation-row" data-year="2023" data-competition="APMO" data-country="عن بعد" data-name="أولمبياد رياضيات آسيا والمحيط الهادئ">
+                    <td>
+                        <a href="#" class="olympiad-link">أولمبياد رياضيات آسيا والمحيط الهادئ</a>
+                        <div class="olympiad-code">(APMO)</div>
+                    </td>
+                    <td>
+                        <input type="hidden" id="olstart-APMO_2023" value="2023/3/9">
+                        <input type="hidden" id="olend-APMO_2023" value="2023/3/9">
+                        2023/3/9
+                    </td>
+                    <td class="country-cell">
+                        عن بعد
+                        <span class="badge bg-secondary">عن بعد 🌐</span>
+                    </td>
+                    <td class="awards-cell" id="olawards-APMO_2023">
+                        <div class="medals-container">
+                            <span class="medal">🥇</span>
+                            <span class="medal">🥈</span>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr class="participation-row" data-year="2022" data-competition="BMO" data-country="أستراليا" data-name="أولمبياد الرياضيات البلقاني">
+                    <td class="text-center year-cell" style="vertical-align: middle;" rowspan="1">2022</td>
+                    <td>
+                        <a href="#" class="olympiad-link">أولمبياد الرياضيات البلقاني</a>
+                        <div class="olympiad-code">(BMO)</div>
+                    </td>
+                    <td>
+                        <input type="hidden" id="olstart-BMO_2022" value="2022/11/5">
+                        <input type="hidden" id="olend-BMO_2022" value="2022/11/10">
+                        2022/11/5 - 2022/11/10
+                    </td>
+                    <td class="country-cell">أستراليا</td>
+                    <td class="awards-cell" id="olawards-BMO_2022">
+                        <div class="medals-container">
+                            <span class="medal">🥉</span>
+                            <span class="medal">📜</span>
+                        </div>
+                    </td>
+                </tr>
             </tbody>
         </table>
     </div>
@@ -976,10 +1058,98 @@ function addInteractiveFeatures() {
             this.title = `${year}: ${goldCount} ذهبية، ${silverCount} فضية، ${bronzeCount} برونزية`;
         });
     });
+
+    // إضافة تأثير نبضة للإحصائيات عند التحديث
+    const statNumbers = document.querySelectorAll('.stat-number');
+    statNumbers.forEach(stat => {
+        const observer = new MutationObserver(() => {
+            stat.style.transform = 'scale(1.1)';
+            setTimeout(() => {
+                stat.style.transform = 'scale(1)';
+            }, 200);
+        });
+        
+        observer.observe(stat, { childList: true, characterData: true });
+    });
+}
+
+// إضافة تأثير تمرير سلس للجدول
+function addSmoothScrolling() {
+    const tableContainer = document.querySelector('.table-container');
+    let isScrolling = false;
+    
+    tableContainer.addEventListener('scroll', () => {
+        if (!isScrolling) {
+            tableContainer.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.15)';
+            isScrolling = true;
+        }
+        
+        clearTimeout(tableContainer.scrollTimeout);
+        tableContainer.scrollTimeout = setTimeout(() => {
+            tableContainer.style.boxShadow = 'var(--shadow)';
+            isScrolling = false;
+        }, 150);
+    });
 }
 
 // تشغيل الوظائف الإضافية
 document.addEventListener('DOMContentLoaded', () => {
-    setTimeout(addInteractiveFeatures, 1000);
+    setTimeout(() => {
+        addInteractiveFeatures();
+        addSmoothScrolling();
+    }, 1000);
 });
+
+// إضافة وظيفة البحث السريع (اختيارية)
+function addQuickSearch() {
+    const searchInput = document.createElement('input');
+    searchInput.type = 'text';
+    searchInput.placeholder = 'البحث السريع...';
+    searchInput.className = 'quick-search';
+    searchInput.style.cssText = `
+        width: 200px;
+        padding: 8px 12px;
+        border: 2px solid var(--border-gray);
+        border-radius: 20px;
+        font-size: 0.9rem;
+        margin-left: 10px;
+        transition: var(--transition);
+    `;
+    
+    searchInput.addEventListener('focus', () => {
+        searchInput.style.borderColor = 'var(--primary-green)';
+        searchInput.style.boxShadow = '0 0 0 3px rgba(26, 135, 84, 0.1)';
+    });
+    
+    searchInput.addEventListener('blur', () => {
+        searchInput.style.borderColor = 'var(--border-gray)';
+        searchInput.style.boxShadow = 'none';
+    });
+    
+    searchInput.addEventListener('input', (e) => {
+        const searchTerm = e.target.value.toLowerCase();
+        
+        filteredRows = allRows.filter(row => {
+            const competitionMatch = activeFilters.has('all') || 
+                activeFilters.has(row.dataset.competition);
+                
+            const textMatch = searchTerm === '' || 
+                row.dataset.name.toLowerCase().includes(searchTerm) ||
+                row.dataset.country.toLowerCase().includes(searchTerm);
+                
+            return competitionMatch && textMatch;
+        });
+        
+        applyFilters();
+    });
+    
+    // إدراج حقل البحث في الواجهة
+    const resultsInfo = document.querySelector('.results-info');
+    resultsInfo.appendChild(searchInput);
+}
+
+// تفعيل البحث السريع (إختياري - يمكن إلغاء التعليق لتفعيله)
+// document.addEventListener('DOMContentLoaded', () => {
+//     setTimeout(addQuickSearch, 1500);
+// });
 </script>
