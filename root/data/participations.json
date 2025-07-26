@@ -82,7 +82,7 @@
         "year": 2025,
         "start": "2025/03/12",
         "end": "2025/03/12",
-        "country": "cn",
+        "country": "br",
         "website": "https://www.apmo-official.org/country_report/sau/2025",
         "participants": {
             "105": null,
@@ -390,7 +390,7 @@
         "year": 2022,
         "start": "2022/03/08",
         "end": "2022/03/08",
-        "country": "br",
+        "country": "id",
         "website": "https://www.apmo-official.org/country_report/sau/2022",
         "participants": {
             "45": "silver",
@@ -456,7 +456,7 @@
         "year": 2021,
         "start": "2021/03/09",
         "end": "2021/03/09",
-        "country": "sa",
+        "country": "id",
         "website": "https://www.apmo-official.org/country_report/sau/2021",
         "participants": {
             "67": "bronze",
@@ -552,7 +552,7 @@
         "year": 2020,
         "start": "2020/03/10",
         "end": "2020/03/10",
-        "country": "sa",
+        "country": "id",
         "website": "https://www.apmo-official.org/country_report/sau/2020",
         "participants": {
             "58": "silver",
@@ -650,7 +650,7 @@
         "year": 2019,
         "start": "2019/03/12",
         "end": "2019/03/12",
-        "country": "sa",
+        "country": "mx",
         "website": "https://www.apmo-official.org/country_report/sau/2019",
         "participants": {
             "33": "silver",
@@ -746,7 +746,7 @@
         "year": 2018,
         "start": "2018/03/13",
         "end": "2018/03/13",
-        "country": "sa",
+        "country": "mx",
         "website": "https://www.apmo-official.org/country_report/sau/2018",
         "participants": {
             "33": "bronze",
@@ -844,7 +844,7 @@
         "year": 2017,
         "start": "2017/03/14",
         "end": "2017/03/14",
-        "country": "sa",
+        "country": "mx",
         "website": "https://www.apmo-official.org/country_report/sau/2017",
         "participants": {
             "27": "gold",
@@ -942,7 +942,7 @@
         "year": 2016,
         "start": "2016/03/08",
         "end": "2016/03/08",
-        "country": "sa",
+        "country": "mx",
         "website": "https://www.apmo-official.org/country_report/sau/2016",
         "participants": {
             "27": "gold",
@@ -1039,7 +1039,7 @@
         "year": 2015,
         "start": "2015/03/08",
         "end": "2015/03/08",
-        "country": "sa",
+        "country": "kz",
         "website": null,
         "participants": {
             "100": "bronze",
@@ -1131,7 +1131,7 @@
         "year": 2014,
         "start": "2014/03/08",
         "end": "2014/03/08",
-        "country": "sa",
+        "country": "kz",
         "website": null,
         "participants": {
             "52": "bronze",
@@ -1192,7 +1192,7 @@
         "year": 2013,
         "start": "2013/03/08",
         "end": "2013/03/08",
-        "country": "sa",
+        "country": "kz",
         "website": null,
         "participants": {
             "26": "silver",
@@ -1218,7 +1218,7 @@
             "26": "silver",
             "93": "bronze",
             "10": "bronze",
-            "108": "bronze",
+            "114": "bronze",
             "49": "bronze",
             "50": null
         }
@@ -1261,7 +1261,7 @@
         "website": null,
         "participants": {
             "26": "gold",
-            "108": "silver",
+            "114": "silver",
             "49": "silver",
             "50": "silver",
             "10": "silver",
@@ -1273,7 +1273,7 @@
         "year": 2012,
         "start": "2012/03/08",
         "end": "2012/03/08",
-        "country": "sa",
+        "country": "jp",
         "website": null,
         "participants": {
             "26": "gold",
@@ -1319,7 +1319,7 @@
         "year": 2011,
         "start": "2011/03/08",
         "end": "2011/03/08",
-        "country": "sa",
+        "country": "jp",
         "website": null,
         "participants": {
             "102": "silver",

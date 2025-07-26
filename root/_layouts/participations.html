@@ -4,7 +4,6 @@ layout: default
 ---
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
     
     :root {
         --primary-black: #000000;
@@ -486,6 +485,8 @@ layout: default
                 <label class="filter-label">تصفية حسب المسابقة:</label>
                 <div class="filter-buttons" id="competitionFilters">
                     <button class="filter-btn all-filter active" data-filter="all"><span>الكل</span></button>
+                    
+                    <!-- TODO: For loop -->
                     <button class="filter-btn" data-filter="IMO"><span>IMO</span></button>
                     <button class="filter-btn" data-filter="EGMO"><span>EGMO</span></button>
                     <button class="filter-btn" data-filter="BMO"><span>BMO</span></button>
@@ -505,15 +506,6 @@ layout: default
     </div>
 
     <div class="table-container">
-        <div class="loading" id="loadingIndicator" style="display: none;">
-            <div class="spinner"></div>
-            جاري التحميل...
-        </div>
-
-        <div id="noResults" class="no-results" style="display: none;">
-            <div class="no-results-icon">🔍</div>
-            لا توجد نتائج مطابقة لبحثك
-        </div>
 
         <table class="table table-bordered table-striped participation-table" id="participationTable">
             <thead>
@@ -636,35 +628,13 @@ function updateStats() {
 
     const totalMedals = goldCount + silverCount + bronzeCount;
 
-    // تحديث العناصر مع تأثير العد التصاعدي
-    animateNumber('totalCompetitions', totalCompetitions);
-    animateNumber('goldMedals', goldCount);
-    animateNumber('silverMedals', silverCount);
-    animateNumber('bronzeMedals', bronzeCount);
-    animateNumber('totalMedals', totalMedals);
+    document.getElementById('totalCompetitions').textContent = totalCompetitions;
+    document.getElementById('goldMedals').textContent = goldCount;
+    document.getElementById('silverMedals').textContent = silverCount;
+    document.getElementById('bronzeMedals').textContent = bronzeCount;
+    document.getElementById('totalMedals').textContent = totalMedals;
 }
 
-// تأثير العد التصاعدي
-function animateNumber(elementId, targetValue) {
-    const element = document.getElementById(elementId);
-    const startValue = parseInt(element.textContent) || 0;
-    const duration = 1000;
-    const startTime = performance.now();
-
-    function updateNumber(currentTime) {
-        const elapsed = currentTime - startTime;
-        const progress = Math.min(elapsed / duration, 1);
-        
-        const currentValue = Math.floor(startValue + (targetValue - startValue) * progress);
-        element.textContent = currentValue;
-
-        if (progress < 1) {
-            requestAnimationFrame(updateNumber);
-        }
-    }
-
-    requestAnimationFrame(updateNumber);
-}
 
 // تحديث عدد النتائج
 function updateResultsCount() {

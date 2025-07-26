@@ -6,18 +6,12 @@ description: "Official website"
 ---
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap');
-
 :root {
     --primary-green: #1A8754;
     --text-black: #000000;
     --pure-white: #FFFFFF;
     --light-green: rgba(26, 135, 84, 0.1);
     --hover-green: #156b45;
-}
-
-* {
-    font-family: 'Tajawal', sans-serif;
 }
 
 body {
@@ -67,7 +61,7 @@ body {
     font-size: 2.5rem;
     font-weight: bold;
     user-select: none;
-    animation: gentleFloat 8s ease-in-out infinite;
+    /* animation: gentleFloat 8s ease-in-out infinite; */
 }
 
 /* توزيع أفضل للرموز لتجنب التراكب */
@@ -829,25 +823,25 @@ body {
     }
     
     // Initialize code highlighting
-    document.addEventListener('DOMContentLoaded', (event) => {
-        if (typeof hljs !== 'undefined') {
-            document.querySelectorAll('pre code').forEach((block) => {
-                hljs.highlightBlock(block);
-            });
-        }
-    });
+    // document.addEventListener('DOMContentLoaded', (event) => {
+    //     if (typeof hljs !== 'undefined') {
+    //         document.querySelectorAll('pre code').forEach((block) => {
+    //             hljs.highlightBlock(block);
+    //         });
+    //     }
+    // });
     
     // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
-    });
+    // document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    //     anchor.addEventListener('click', function (e) {
+    //         e.preventDefault();
+    //         const target = document.querySelector(this.getAttribute('href'));
+    //         if (target) {
+    //             target.scrollIntoView({
+    //                 behavior: 'smooth',
+    //                 block: 'start'
+    //             });
+    //         }
+    //     });
+    // });
 </script>
