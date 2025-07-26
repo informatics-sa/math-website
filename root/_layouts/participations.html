@@ -4,488 +4,441 @@ layout: default
 ---
 
 <style>
-    :root {
-        --primary-black: #000000;
-        --primary-white: #FFFFFF;
-        --primary-green: #1A8754;
-        --light-green: #e8f5e8;
-        --dark-green: #155a3c;
-    }
+:root {
+    --primary-color: #1A8754;
+    --dark-color: #000000;
+    --light-color: #FFFFFF;
+    --success-color: #1A8754;
+    --warning-color: #ffc107;
+    --info-color: #0dcaf0;
+    --secondary-color: #6c757d;
+}
 
-    .filter-container {
-        background: var(--primary-white);
-        border: 2px solid var(--primary-green);
-        border-radius: 10px;
-        padding: 20px;
-        margin-bottom: 25px;
-        box-shadow: 0 4px 6px rgba(26, 135, 84, 0.1);
-    }
+.olympiad-container {
+    background: var(--light-color);
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin: 20px 0;
+}
 
-    .filter-title {
-        color: var(--primary-green);
-        font-weight: bold;
-        font-size: 1.2em;
-        margin-bottom: 15px;
-        border-bottom: 2px solid var(--primary-green);
-        padding-bottom: 8px;
-    }
+.filter-section {
+    background: linear-gradient(135deg, var(--primary-color), #228B5B);
+    color: var(--light-color);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
 
-    .olympiad-filter {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin-bottom: 15px;
-    }
+.filter-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
 
-    .filter-chip {
-        background: var(--light-green);
-        border: 2px solid var(--primary-green);
-        color: var(--dark-green);
-        padding: 8px 15px;
-        border-radius: 20px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        font-weight: 500;
-        user-select: none;
-    }
+.olympiad-checkbox {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 8px 15px;
+    border-radius: 25px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: 5px;
+}
 
-    .filter-chip:hover {
-        background: var(--primary-green);
-        color: var(--primary-white);
-        transform: translateY(-2px);
-        box-shadow: 0 4px 8px rgba(26, 135, 84, 0.3);
-    }
+.olympiad-checkbox:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: var(--light-color);
+}
 
-    .filter-chip.active {
-        background: var(--primary-green);
-        color: var(--primary-white);
-        font-weight: bold;
-    }
+.olympiad-checkbox input[type="checkbox"] {
+    margin-left: 10px;
+    transform: scale(1.2);
+    accent-color: var(--light-color);
+}
 
+.olympiad-checkbox label {
+    color: var(--light-color);
+    font-weight: 500;
+    cursor: pointer;
+    margin: 0;
+}
+
+.control-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.btn-custom {
+    background: var(--light-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.table-container {
+    overflow-x: auto;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+}
+
+.table {
+    margin: 0;
+    background: var(--light-color);
+}
+
+.table thead th {
+    background: linear-gradient(135deg, var(--primary-color), #228B5B);
+    color: var(--light-color);
+    border: none;
+    font-weight: 600;
+    text-align: center;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.table tbody tr {
+    transition: all 0.3s ease;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.table tbody tr:hover {
+    background: linear-gradient(135deg, rgba(26, 135, 84, 0.05), rgba(26, 135, 84, 0.02));
+    transform: scale(1.01);
+}
+
+.table tbody td {
+    padding: 12px 15px;
+    vertical-align: middle;
+    border: none;
+}
+
+.year-cell {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    font-weight: bold;
+    font-size: 1.1em;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.olympiad-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.olympiad-link:hover {
+    color: #228B5B;
+    text-decoration: underline;
+}
+
+.badge {
+    font-size: 0.8em;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-weight: 500;
+}
+
+.bg-success {
+    background-color: var(--success-color) !important;
+}
+
+.bg-warning {
+    background-color: var(--warning-color) !important;
+    color: var(--dark-color) !important;
+}
+
+.bg-info {
+    background-color: var(--info-color) !important;
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color) !important;
+}
+
+.no-results {
+    text-align: center;
+    padding: 40px;
+    color: var(--secondary-color);
+    font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
     .filter-controls {
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
+        flex-direction: column;
     }
-
-    .control-btn {
-        background: var(--primary-black);
-        color: var(--primary-white);
-        border: 2px solid var(--primary-black);
-        padding: 8px 16px;
-        border-radius: 6px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        font-weight: 500;
+    
+    .olympiad-checkbox {
+        width: 100%;
+        justify-content: center;
     }
-
-    .control-btn:hover {
-        background: var(--primary-white);
-        color: var(--primary-black);
-        transform: translateY(-1px);
+    
+    .table-container {
+        font-size: 0.9em;
     }
-
-    .enhanced-table {
-        background: var(--primary-white);
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-        border: 2px solid var(--primary-green);
-    }
-
-    .enhanced-table thead th {
-        background: var(--primary-green);
-        color: var(--primary-white);
-        font-weight: bold;
-        text-align: center;
-        padding: 15px 10px;
-        border: none;
-    }
-
-    .enhanced-table tbody tr {
-        transition: all 0.3s ease;
-        border-bottom: 1px solid #e9ecef;
-    }
-
-    .enhanced-table tbody tr:hover {
-        background: var(--light-green);
-        transform: scale(1.01);
-    }
-
-    .enhanced-table tbody tr.hidden {
-        display: none;
-    }
-
-    .enhanced-table tbody td {
-        padding: 12px 10px;
-        vertical-align: middle;
-        border: none;
-    }
-
-    .year-cell {
-        background: var(--primary-black);
-        color: var(--primary-white);
-        font-weight: bold;
-        font-size: 1.1em;
-        text-align: center;
-    }
-
-    .olympiad-link {
-        color: var(--primary-green);
-        text-decoration: none;
-        font-weight: 600;
-        transition: color 0.3s ease;
-    }
-
-    .olympiad-link:hover {
-        color: var(--dark-green);
-        text-decoration: underline;
-    }
-
-    .status-badge {
-        border-radius: 15px;
-        padding: 4px 10px;
-        font-size: 0.85em;
-        font-weight: bold;
-        margin-left: 8px;
-    }
-
-    .badge-upcoming {
-        background: #e3f2fd;
-        color: #1976d2;
-        border: 1px solid #1976d2;
-    }
-
-    .badge-ongoing {
-        background: #fff3e0;
-        color: #f57c00;
-        border: 1px solid #f57c00;
-    }
-
-    .badge-online {
-        background: var(--light-green);
-        color: var(--dark-green);
-        border: 1px solid var(--primary-green);
-    }
-
-    .no-results {
-        text-align: center;
-        padding: 40px;
-        color: var(--primary-green);
-        font-size: 1.1em;
-        background: var(--light-green);
-        border-radius: 10px;
-        margin-top: 20px;
-        display: none;
-    }
-
-    @media (max-width: 768px) {
-        .filter-container {
-            padding: 15px;
-        }
-        
-        .olympiad-filter {
-            justify-content: center;
-        }
-        
-        .filter-controls {
-            justify-content: center;
-        }
-        
-        .enhanced-table {
-            font-size: 0.9em;
-        }
-        
-        .enhanced-table th,
-        .enhanced-table td {
-            padding: 8px 6px;
-        }
-    }
+}
 </style>
 
-<div class="filter-container">
-    <div class="filter-title">
-        {% if page.lang == "ar" %}
-        🎯 تصفية الأولمبيادات
-        {% else %}
-        🎯 Filter Olympiads
-        {% endif %}
+<div class="olympiad-container">
+    <!-- Filter Section -->
+    <div class="filter-section">
+        <h4 class="text-center mb-3">
+            {% if page.lang == "ar" %}
+                تصفية الأولمبيادات
+            {% else %}
+                Filter Olympiads
+            {% endif %}
+        </h4>
+        
+        <div class="filter-controls" id="filterControls">
+            <!-- Checkboxes will be populated by JavaScript -->
+        </div>
+        
+        <div class="control-buttons">
+            <button class="btn btn-custom" onclick="selectAll()">
+                {% if page.lang == "ar" %}
+                    تحديد الكل
+                {% else %}
+                    Select All
+                {% endif %}
+            </button>
+            <button class="btn btn-custom" onclick="deselectAll()">
+                {% if page.lang == "ar" %}
+                    إلغاء تحديد الكل
+                {% else %}
+                    Deselect All
+                {% endif %}
+            </button>
+        </div>
     </div>
-    
-    <div class="olympiad-filter" id="olympiadFilter">
-        <!-- Filter chips will be generated dynamically -->
-    </div>
-    
-    <div class="filter-controls">
-        <button class="control-btn" onclick="selectAllOlympiads()">
-            {% if page.lang == "ar" %}
-            ✅ اختيار الكل
-            {% else %}
-            ✅ Select All
-            {% endif %}
-        </button>
-        <button class="control-btn" onclick="clearAllOlympiads()">
-            {% if page.lang == "ar" %}
-            ❌ إلغاء الكل
-            {% else %}
-            ❌ Clear All
-            {% endif %}
-        </button>
-        <button class="control-btn" onclick="showOnlyOngoing()">
-            {% if page.lang == "ar" %}
-            ⏰ الجارية حالياً
-            {% else %}
-            ⏰ Ongoing Only
-            {% endif %}
-        </button>
-        <button class="control-btn" onclick="showOnlyUpcoming()">
-            {% if page.lang == "ar" %}
-            🔮 القادمة
-            {% else %}
-            🔮 Upcoming Only
-            {% endif %}
-        </button>
-    </div>
-</div>
 
-<table class="enhanced-table table table-bordered table-striped">
-    <thead>
-        {% if page.lang == "ar" %}
-        <th width="5%">السنة</th>
-        <th>الأولمبياد</th>
-        <th>تاريخ المشاركة</th>
-        <th>المكان</th>
-        <th>الجوائز</th>
-        {% else %}
-        <th width="5%">Year</th>
-        <th>Olympiad</th>
-        <th>Date</th>
-        <th>Country</th>
-        <th>Awards</th>
-        {% endif %}
-    </thead>
-    <tbody id="olympiadTableBody">
-        {% for year in (page.start_year..page.last_year) reversed %}
-            {% for idx in (1..page[year].count) %}
-                {% capture olyid %}{{page[year][idx].name}}_{{year}}{% endcapture %}
-                <tr data-olympiad="{{page[year][idx].name}}" data-year="{{year}}" data-olyid="{{olyid}}">
-                    {% if idx == 1 %}
-                    <td class="text-center year-cell" style="vertical-align: middle;" rowspan="{{ page[year].count }}">{{ year }}</td>
-                    {% endif %}
-                    <td>
-                        <a href="{% if page.lang == "en" %}/en{% endif %}/participations/{{olyid}}" class="olympiad-link">
-                            {% if page.lang == "en" %}  
-                                {{ page[year][idx].enname }}
-                            {% else %}
-                                {{ page[year][idx].arname }}
+    <!-- Table -->
+    <div class="table-container">
+        <table class="table table-bordered table-striped">
+            <thead>
+                {% if page.lang == "ar" %}
+                <th width="5%">السنة</th>
+                <th>الأولمبياد</th>
+                <th>تاريخ المشاركة</th>
+                <th>المكان</th>
+                <th>الجوائز</th>
+                {% else %}
+                <th width="5%">Year</th>
+                <th>Olympiad</th>
+                <th>Date</th>
+                <th>Country</th>
+                <th>Awards</th>
+                {% endif %}
+            </thead>
+            <tbody id="olympiadTableBody">
+                {% for year in (page.start_year..page.last_year) reversed %}
+                    {% for idx in (1..page[year].count) %}
+                        {% capture olyid %}{{page[year][idx].name}}_{{year}}{% endcapture %}
+                        <tr class="olympiad-row" data-olympiad="{{ page[year][idx].name }}">
+                            {% if idx == 1 %}
+                            <td class="text-center year-cell" style="vertical-align: middle;" rowspan="{{ page[year].count }}">{{ year }}</td>
                             {% endif %}
-                            <br><small>({{ page[year][idx].name | upcase }})</small>
-                        </a>
-                    </td>
-                    <td>
-                        <input type="hidden" id="olstart-{{olyid}}" value="{{ page[year][idx].start }}">
-                        <input type="hidden" id="olend-{{olyid}}" value="{{ page[year][idx].end }}">
-                        {% if page[year][idx].start == page[year][idx].end %}
-                            {{ page[year][idx].start }}
-                        {% else %}
-                            {{ page[year][idx].start }} - {{ page[year][idx].end }}
-                        {% endif %}
-                    </td>
-                    <td>
-                        {% if page.lang == 'ar' %}
-                            {{ page[year][idx].country_arname }}
-                        {% else %}
-                            {{ page[year][idx].country_enname }}
-                        {% endif %}
-                        
-                        {% if page[year][idx].online %}
-                        <span class="status-badge badge-online">
-                            {% if page.lang == 'ar' %}
-                            عن بعد 🌐
-                            {% else %}
-                            Online 🌐
-                            {% endif %}
-                        </span>
-                        {% endif %}
-                    </td>
-                    <td id="olawards-{{olyid}}">
-                        {{ page[year][idx].awards }}
-                    </td>
-                </tr>
-            {% endfor %}
-        {% endfor %}
-    </tbody>
-</table>
-
-<div class="no-results" id="noResults">
-    {% if page.lang == "ar" %}
-    🔍 لا توجد أولمبيادات تطابق الفلتر المحدد
-    {% else %}
-    🔍 No olympiads match the selected filters
-    {% endif %}
+                            <td>
+                                <a href="{% if page.lang == "en" %}/en{% endif %}/participations/{{olyid}}" class="olympiad-link">
+                                    {% if page.lang == "en" %}  
+                                        {{ page[year][idx].enname }}
+                                    {% else %}
+                                        {{ page[year][idx].arname }}
+                                    {% endif %}
+                                    ({{ page[year][idx].name | upcase }})
+                                </a>
+                            </td>
+                            <td>
+                                <input type="hidden" id="olstart-{{olyid}}" value="{{ page[year][idx].start }}">
+                                <input type="hidden" id="olend-{{olyid}}" value="{{ page[year][idx].end }}">
+                                {% if page[year][idx].start == page[year][idx].end %}
+                                    {{ page[year][idx].start }}
+                                {% else %}
+                                    {{ page[year][idx].start }} - {{ page[year][idx].end }}
+                                {% endif %}
+                            </td>
+                            <td>
+                                {% if page.lang == 'ar' %}
+                                    {{ page[year][idx].country_arname }}
+                                {% else %}
+                                    {{ page[year][idx].country_enname }}
+                                {% endif %}
+                                
+                                {% if page[year][idx].online %}
+                                <span class="badge bg-secondary">
+                                    {% if page.lang == 'ar' %}
+                                    عن بعد 🌐
+                                    {% else %}
+                                    Online 🌐
+                                    {% endif %}
+                                </span>
+                                {% endif %}
+                            </td>
+                            <td id="olawards-{{olyid}}">
+                                {{ page[year][idx].awards }}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                {% endfor %}
+            </tbody>
+        </table>
+        
+        <div id="noResults" class="no-results" style="display: none;">
+            {% if page.lang == "ar" %}
+                لا توجد نتائج تطابق التصفية المحددة
+            {% else %}
+                No results match the selected filters
+            {% endif %}
+        </div>
+    </div>
 </div>
 
 <script>
-let selectedOlympiads = new Set();
-let allOlympiads = new Set();
-const isArabic = document.documentElement.lang === 'ar' || '{{ page.lang }}' === 'ar';
+// Global variables
+let olympiadTypes = new Set();
+const isArabic = document.documentElement.lang === 'ar';
 
-function initializeFilters() {
-    const rows = document.querySelectorAll('#olympiadTableBody tr[data-olympiad]');
-    const olympiadNames = new Map();
-    
+// Initialize page
+document.addEventListener('DOMContentLoaded', function() {
+    collectOlympiadTypes();
+    createFilterControls();
+    refresh_tags();
+});
+
+// Collect all unique olympiad types
+function collectOlympiadTypes() {
+    const rows = document.querySelectorAll('.olympiad-row');
     rows.forEach(row => {
-        const olympiadCode = row.dataset.olympiad;
-        const olympiadLink = row.querySelector('.olympiad-link');
-        const olympiadName = olympiadLink ? olympiadLink.textContent.trim().split('\n')[0] : olympiadCode;
+        const olympiadName = row.dataset.olympiad;
+        if (olympiadName) {
+            olympiadTypes.add(olympiadName);
+        }
+    });
+}
+
+// Create filter control checkboxes
+function createFilterControls() {
+    const filterControls = document.getElementById('filterControls');
+    
+    olympiadTypes.forEach(olympiadName => {
+        const checkboxContainer = document.createElement('div');
+        checkboxContainer.className = 'olympiad-checkbox';
         
-        allOlympiads.add(olympiadCode);
-        if (!olympiadNames.has(olympiadCode)) {
-            olympiadNames.set(olympiadCode, olympiadName);
-        }
-    });
-    
-    selectedOlympiads = new Set(allOlympiads);
-    
-    const filterContainer = document.getElementById('olympiadFilter');
-    filterContainer.innerHTML = '';
-    
-    Array.from(olympiadNames.entries())
-        .sort((a, b) => a[1].localeCompare(b[1]))
-        .forEach(([code, name]) => {
-            const chip = document.createElement('div');
-            chip.className = 'filter-chip active';
-            chip.textContent = name;
-            chip.dataset.olympiad = code;
-            chip.onclick = () => toggleOlympiad(code);
-            filterContainer.appendChild(chip);
-        });
-}
-
-function toggleOlympiad(olympiadCode) {
-    if (selectedOlympiads.has(olympiadCode)) {
-        selectedOlympiads.delete(olympiadCode);
-    } else {
-        selectedOlympiads.add(olympiadCode);
-    }
-    updateFilterDisplay();
-    filterTable();
-}
-
-function selectAllOlympiads() {
-    selectedOlympiads = new Set(allOlympiads);
-    updateFilterDisplay();
-    filterTable();
-}
-
-function clearAllOlympiads() {
-    selectedOlympiads.clear();
-    updateFilterDisplay();
-    filterTable();
-}
-
-function showOnlyOngoing() {
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
-    
-    selectedOlympiads.clear();
-    
-    document.querySelectorAll('#olympiadTableBody tr[data-olyid]').forEach(row => {
-        const olyid = row.dataset.olyid;
-        const startElement = document.getElementById('olstart-' + olyid);
-        const endElement = document.getElementById('olend-' + olyid);
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.id = `filter-${olympiadName}`;
+        checkbox.checked = true; // Default: all visible
+        checkbox.addEventListener('change', filterTable);
         
-        if (startElement && endElement) {
-            const startDate = parseDate(startElement.value);
-            const endDate = parseDate(endElement.value);
-            
-            if (startDate && endDate && today >= startDate && today <= endDate) {
-                selectedOlympiads.add(row.dataset.olympiad);
-            }
-        }
-    });
-    
-    updateFilterDisplay();
-    filterTable();
-}
-
-function showOnlyUpcoming() {
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
-    
-    selectedOlympiads.clear();
-    
-    document.querySelectorAll('#olympiadTableBody tr[data-olyid]').forEach(row => {
-        const olyid = row.dataset.olyid;
-        const startElement = document.getElementById('olstart-' + olyid);
+        const label = document.createElement('label');
+        label.htmlFor = `filter-${olympiadName}`;
+        label.textContent = olympiadName.toUpperCase();
         
-        if (startElement) {
-            const startDate = parseDate(startElement.value);
-            
-            if (startDate && today < startDate) {
-                selectedOlympiads.add(row.dataset.olympiad);
-            }
-        }
-    });
-    
-    updateFilterDisplay();
-    filterTable();
-}
-
-function updateFilterDisplay() {
-    document.querySelectorAll('.filter-chip').forEach(chip => {
-        if (selectedOlympiads.has(chip.dataset.olympiad)) {
-            chip.classList.add('active');
-        } else {
-            chip.classList.remove('active');
-        }
+        checkboxContainer.appendChild(label);
+        checkboxContainer.appendChild(checkbox);
+        filterControls.appendChild(checkboxContainer);
     });
 }
 
+// Filter table based on selected checkboxes
 function filterTable() {
-    const rows = document.querySelectorAll('#olympiadTableBody tr');
-    let visibleCount = 0;
+    const rows = document.querySelectorAll('.olympiad-row');
+    const noResults = document.getElementById('noResults');
+    let visibleRows = 0;
     let currentYear = null;
-    let yearRowspan = 0;
+    let yearRowSpan = 0;
     let yearCell = null;
     
     // First pass: count visible rows per year and hide/show rows
-    const yearCounts = {};
+    const yearVisibility = {};
+    
     rows.forEach(row => {
-        if (row.dataset.olympiad) {
-            const year = row.dataset.year;
-            const olympiad = row.dataset.olympiad;
-            const isVisible = selectedOlympiads.has(olympiad);
-            
-            if (isVisible) {
-                yearCounts[year] = (yearCounts[year] || 0) + 1;
-                row.classList.remove('hidden');
-                visibleCount++;
-            } else {
-                row.classList.add('hidden');
+        const olympiadName = row.dataset.olympiad;
+        const checkbox = document.getElementById(`filter-${olympiadName}`);
+        const isVisible = checkbox && checkbox.checked;
+        
+        // Get year from previous sibling or current row
+        const yearCellInRow = row.querySelector('.year-cell');
+        if (yearCellInRow) {
+            currentYear = yearCellInRow.textContent.trim();
+            yearVisibility[currentYear] = yearVisibility[currentYear] || 0;
+        }
+        
+        if (isVisible) {
+            row.style.display = '';
+            visibleRows++;
+            if (currentYear) {
+                yearVisibility[currentYear]++;
             }
+        } else {
+            row.style.display = 'none';
         }
     });
     
     // Second pass: update rowspan for year cells
     rows.forEach(row => {
-        if (row.dataset.olympiad) {
-            const year = row.dataset.year;
-            const yearCellInRow = row.querySelector('.year-cell');
-            
-            if (yearCellInRow && yearCounts[year] > 0) {
-                yearCellInRow.rowSpan = yearCounts[year];
-                yearCellInRow.style.display = '';
-            } else if (yearCellInRow && yearCounts[year] === 0) {
-                yearCellInRow.style.display = 'none';
+        const yearCellInRow = row.querySelector('.year-cell');
+        if (yearCellInRow) {
+            const year = yearCellInRow.textContent.trim();
+            const visibleCount = yearVisibility[year] || 0;
+            if (visibleCount > 0) {
+                yearCellInRow.setAttribute('rowspan', visibleCount);
+                row.style.display = '';
+            } else {
+                row.style.display = 'none';
             }
         }
     });
     
     // Show/hide no results message
-    document.getElementById('noResults').style.display = visibleCount === 0 ? 'block' : 'none';
+    if (visibleRows === 0) {
+        noResults.style.display = 'block';
+    } else {
+        noResults.style.display = 'none';
+    }
 }
 
+// Select all checkboxes
+function selectAll() {
+    olympiadTypes.forEach(olympiadName => {
+        const checkbox = document.getElementById(`filter-${olympiadName}`);
+        if (checkbox) {
+            checkbox.checked = true;
+        }
+    });
+    filterTable();
+}
+
+// Deselect all checkboxes
+function deselectAll() {
+    olympiadTypes.forEach(olympiadName => {
+        const checkbox = document.getElementById(`filter-${olympiadName}`);
+        if (checkbox) {
+            checkbox.checked = false;
+        }
+    });
+    filterTable();
+}
+
+// Enhanced refresh_tags function with better styling
 function refresh_tags() {
     const today = new Date();
     today.setHours(0, 0, 0, 0);
@@ -497,6 +450,7 @@ function refresh_tags() {
     
     function parseDate(dateStr) {
         if (!dateStr) return null;
+        
         const parts = dateStr.split('/');
         if (parts.length !== 3) return null;
         
@@ -505,13 +459,15 @@ function refresh_tags() {
         const day = parseInt(parts[2], 10);
         
         const parsedDate = new Date(year, month, day);
+        
         return isNaN(parsedDate.getTime()) ? null : parsedDate;
     }
     
     function createBadge(text, type = 'info') {
-        const badgeClass = type === 'warning' ? 'status-badge badge-ongoing' : 
-                          type === 'info' ? 'status-badge badge-upcoming' : 'status-badge';
-        return `<span class="${badgeClass}">${text}</span>`;
+        const badgeClass = type === 'warning' ? 'bg-warning' : 
+                          type === 'success' ? 'bg-success' : 
+                          type === 'info' ? 'bg-info' : 'bg-secondary';
+        return `<span class="badge ${badgeClass} ms-2">${text}</span>`;
     }
     
     const allOlympiads = document.querySelectorAll('[id^="olstart-"]');
@@ -561,23 +517,4 @@ function refresh_tags() {
         }
     });
 }
-
-function parseDate(dateStr) {
-    if (!dateStr) return null;
-    const parts = dateStr.split('/');
-    if (parts.length !== 3) return null;
-    
-    const year = parseInt(parts[0], 10);
-    const month = parseInt(parts[1], 10) - 1;
-    const day = parseInt(parts[2], 10);
-    
-    const parsedDate = new Date(year, month, day);
-    return isNaN(parsedDate.getTime()) ? null : parsedDate;
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-    initializeFilters();
-    refresh_tags();
-    filterTable();
-});
 </script>
