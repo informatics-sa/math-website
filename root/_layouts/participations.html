@@ -1,1012 +1,964 @@
----
-id: participations
-layout: default
----
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مشاركات المملكة العربية السعودية في أولمبياد الرياضيات</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+        
+        :root {
+            --primary-black: #000000;
+            --primary-white: #FFFFFF;
+            --primary-green: #1A8754;
+            --light-gray: #f8f9fa;
+            --border-gray: #e9ecef;
+            --text-gray: #6c757d;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            --shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.15);
+            --border-radius: 12px;
+            --transition: all 0.3s ease;
+        }
 
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
-    
-    :root {
-        --primary-black: #000000;
-        --primary-white: #FFFFFF;
-        --primary-green: #1A8754;
-        --light-gray: #f8f9fa;
-        --border-gray: #e9ecef;
-        --text-gray: #6c757d;
-        --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        --shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.15);
-        --border-radius: 12px;
-        --transition: all 0.3s ease;
-    }
+        * {
+            font-family: 'Tajawal', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
 
-    * {
-        font-family: 'Tajawal', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    }
-
-    .participation-container {
-        max-width: 1400px;
-        margin: 0 auto;
-        padding: 20px;
-    }
-
-    .page-header {
-        background: linear-gradient(135deg, var(--primary-green) 0%, #2a9b66 100%);
-        color: var(--primary-white);
-        padding: 40px;
-        border-radius: var(--border-radius);
-        text-align: center;
-        margin-bottom: 30px;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .page-header::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-        animation: shine 3s ease-in-out infinite;
-    }
-
-    @keyframes shine {
-        0% { left: -100%; }
-        100% { left: 100%; }
-    }
-
-    .page-header h1 {
-        font-size: 2.5rem;
-        margin-bottom: 10px;
-        font-weight: 700;
-        position: relative;
-        z-index: 2;
-    }
-
-    .page-header p {
-        font-size: 1.2rem;
-        opacity: 0.9;
-        position: relative;
-        z-index: 2;
-    }
-
-    .stats-overview {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 20px;
-        margin-bottom: 30px;
-    }
-
-    .stat-card {
-        background: var(--primary-white);
-        padding: 25px;
-        border-radius: var(--border-radius);
-        box-shadow: var(--shadow);
-        text-align: center;
-        transition: var(--transition);
-        border: 2px solid transparent;
-    }
-
-    .stat-card:hover {
-        transform: translateY(-5px);
-        box-shadow: var(--shadow-hover);
-        border-color: var(--primary-green);
-    }
-
-    .stat-number {
-        font-size: 2.5rem;
-        font-weight: bold;
-        color: var(--primary-green);
-        margin-bottom: 8px;
-        display: block;
-    }
-
-    .stat-label {
-        color: var(--text-gray);
-        font-size: 1rem;
-        font-weight: 600;
-    }
-
-    .controls-section {
-        background: var(--primary-white);
-        padding: 30px;
-        border-radius: var(--border-radius);
-        box-shadow: var(--shadow);
-        margin-bottom: 30px;
-    }
-
-    .filters-section {
-        margin-bottom: 20px;
-    }
-
-    .filter-group {
-        margin-bottom: 20px;
-    }
-
-    .filter-label {
-        font-weight: 600;
-        color: var(--primary-black);
-        margin-bottom: 10px;
-        display: block;
-        font-size: 1rem;
-    }
-
-    .filter-buttons {
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-    }
-
-    .filter-btn {
-        padding: 10px 18px;
-        border: 2px solid var(--border-gray);
-        background: #ffffff;
-        color: var(--primary-black);
-        border-radius: 25px;
-        cursor: pointer;
-        transition: var(--transition);
-        font-size: 0.95rem;
-        font-weight: 600;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .filter-btn::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background: var(--primary-green);
-        transition: left 0.3s ease;
-        z-index: 1;
-    }
-
-    .filter-btn span {
-        position: relative;
-        z-index: 2;
-        color: inherit;
-    }
-
-    .filter-btn:hover::before,
-    .filter-btn.active::before {
-        left: 0;
-    }
-
-    .filter-btn:hover,
-    .filter-btn.active {
-        color: #ffffff;
-        border-color: var(--primary-green);
-        transform: translateY(-2px);
-        box-shadow: 0 6px 20px rgba(26, 135, 84, 0.3);
-    }
-
-    .filter-btn.all-filter.active {
-        background: var(--primary-black);
-        border-color: var(--primary-black);
-        color: #ffffff;
-    }
-
-    .filter-btn.all-filter.active::before {
-        background: var(--primary-black);
-        left: 0;
-    }
-
-    .results-info {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 20px;
-        color: var(--text-gray);
-        font-weight: 500;
-    }
-
-    .clear-filters {
-        background: var(--primary-black);
-        color: var(--primary-white);
-        border: none;
-        padding: 8px 16px;
-        border-radius: 20px;
-        cursor: pointer;
-        font-size: 0.9rem;
-        transition: var(--transition);
-    }
-
-    .clear-filters:hover {
-        background: #333333;
-        transform: translateY(-1px);
-    }
-
-    .table-container {
-        background: var(--primary-white);
-        border-radius: var(--border-radius);
-        box-shadow: var(--shadow);
-        overflow: hidden;
-    }
-
-    .participation-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 0;
-    }
-
-    .participation-table thead {
-        background: var(--primary-black);
-        color: var(--primary-white);
-    }
-
-    .participation-table th {
-        padding: 20px 15px;
-        text-align: right;
-        font-weight: 600;
-        font-size: 1rem;
-        border: none;
-    }
-
-    .participation-table td {
-        padding: 18px 15px;
-        border-bottom: 1px solid var(--border-gray);
-        vertical-align: middle;
-        transition: var(--transition);
-    }
-
-    .participation-table tbody tr {
-        transition: var(--transition);
-    }
-
-    .participation-table tbody tr:hover {
-        background: rgba(26, 135, 84, 0.05) !important;
-    }
-
-    .year-cell {
-        font-weight: bold;
-        font-size: 1.1rem;
-        color: var(--primary-black);
-        text-align: center;
-        border-right: 3px solid var(--primary-green);
-        position: relative;
-    }
-
-    /* تلوين السنوات - إزالة التلوين المتناوب القديم */
-    .participation-table tbody tr:nth-child(odd),
-    .participation-table tbody tr:nth-child(even) {
-        background: inherit;
-    }
-
-    .participation-table tbody tr:nth-child(odd) .year-cell,
-    .participation-table tbody tr:nth-child(even) .year-cell {
-        background: inherit;
-    }
-
-    /* تلوين جديد حسب السنة الزوجية/الفردية */
-    .participation-table tbody tr[data-year-type="even"] {
-        background: var(--primary-white);
-    }
-
-    .participation-table tbody tr[data-year-type="odd"] {
-        background: var(--light-gray);
-    }
-
-    .participation-table tbody tr[data-year-type="even"] .year-cell {
-        background: var(--primary-white);
-    }
-
-    .participation-table tbody tr[data-year-type="odd"] .year-cell {
-        background: var(--light-gray);
-    }
-
-    .olympiad-link {
-        text-decoration: none;
-        color: var(--primary-black);
-        font-weight: 600;
-        transition: var(--transition);
-    }
-
-    .olympiad-link:hover {
-        color: var(--primary-green);
-        text-decoration: underline;
-    }
-
-    .olympiad-code {
-        color: var(--text-gray);
-        font-weight: 500;
-        font-size: 0.9rem;
-    }
-
-    .country-cell {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }
-
-    .awards-cell {
-        font-size: 1.2rem;
-        display: flex;
-        align-items: center;
-        gap: 5px;
-        flex-wrap: wrap;
-    }
-
-    .medal {
-        font-size: 1.4rem;
-        transition: var(--transition);
-        cursor: default;
-    }
-
-    .medal:hover {
-        transform: scale(1.2);
-        filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
-    }
-
-    .badge {
-        padding: 4px 8px;
-        border-radius: 12px;
-        font-size: 0.8rem;
-        font-weight: 600;
-        margin-left: 8px;
-    }
-
-    .bg-info {
-        background: #17a2b8;
-        color: white;
-    }
-
-    .bg-warning {
-        background: #ffc107;
-        color: black;
-    }
-
-    .bg-success {
-        background: var(--primary-green);
-        color: white;
-    }
-
-    .bg-secondary {
-        background: #6c757d;
-        color: white;
-    }
-
-    .no-results {
-        text-align: center;
-        padding: 60px 20px;
-        color: var(--text-gray);
-        font-size: 1.2rem;
-    }
-
-    .no-results-icon {
-        font-size: 3rem;
-        margin-bottom: 15px;
-        opacity: 0.5;
-    }
-
-    .loading {
-        text-align: center;
-        padding: 40px;
-        color: var(--text-gray);
-    }
-
-    .spinner {
-        border: 3px solid var(--border-gray);
-        border-top: 3px solid var(--primary-green);
-        border-radius: 50%;
-        width: 30px;
-        height: 30px;
-        animation: spin 1s linear infinite;
-        margin: 0 auto 15px;
-    }
-
-    @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-    }
-
-    .hidden {
-        display: none !important;
-    }
-
-    /* الاستجابة للشاشات الصغيرة */
-    @media (max-width: 768px) {
         .participation-container {
-            padding: 10px;
-        }
-
-        .page-header {
-            padding: 30px 20px;
-        }
-
-        .page-header h1 {
-            font-size: 2rem;
-        }
-
-        .controls-section {
+            max-width: 1400px;
+            margin: 0 auto;
             padding: 20px;
         }
 
-        .filter-buttons {
-            gap: 8px;
+        .page-header {
+            background: linear-gradient(135deg, var(--primary-green) 0%, #2a9b66 100%);
+            color: var(--primary-white);
+            padding: 40px;
+            border-radius: var(--border-radius);
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
         }
 
-        .filter-btn {
-            padding: 8px 14px;
-            font-size: 0.9rem;
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            animation: shine 3s ease-in-out infinite;
         }
 
-        .participation-table {
-            font-size: 0.9rem;
+        @keyframes shine {
+            0% { left: -100%; }
+            100% { left: 100%; }
         }
 
-        .participation-table th,
-        .participation-table td {
-            padding: 12px 8px;
+        .page-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+            position: relative;
+            z-index: 2;
+        }
+
+        .page-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 2;
         }
 
         .stats-overview {
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
         }
 
         .stat-card {
-            padding: 20px 15px;
+            background: var(--primary-white);
+            padding: 25px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: var(--transition);
+            border: 2px solid transparent;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--primary-green);
         }
 
         .stat-number {
-            font-size: 2rem;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--primary-green);
+            margin-bottom: 8px;
+            display: block;
         }
-    }
 
-    @media (max-width: 480px) {
-        .stats-overview {
-            grid-template-columns: 1fr;
+        .stat-label {
+            color: var(--text-gray);
+            font-size: 1rem;
+            font-weight: 600;
         }
-        
-        .results-info {
-            flex-direction: column;
+
+        .controls-section {
+            background: var(--primary-white);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            margin-bottom: 30px;
+        }
+
+        .filters-section {
+            margin-bottom: 20px;
+        }
+
+        .filter-group {
+            margin-bottom: 20px;
+        }
+
+        .filter-label {
+            font-weight: 600;
+            color: var(--primary-black);
+            margin-bottom: 10px;
+            display: block;
+            font-size: 1rem;
+        }
+
+        .filter-buttons {
+            display: flex;
             gap: 10px;
-            text-align: center;
+            flex-wrap: wrap;
         }
-    }
-</style>
 
-<div class="participation-container">
-    <div class="page-header">
-        <h1>🏆 مشاركات المملكة العربية السعودية</h1>
-        <p>في أولمبياد الرياضيات الدولية والإقليمية</p>
-    </div>
+        .filter-btn {
+            padding: 10px 18px;
+            border: 2px solid var(--border-gray);
+            background: #ffffff;
+            color: var(--primary-black);
+            border-radius: 25px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 0.95rem;
+            font-weight: 600;
+            position: relative;
+            overflow: hidden;
+        }
 
-    <div class="stats-overview">
-        <div class="stat-card">
-            <span class="stat-number" id="totalCompetitions">0</span>
-            <div class="stat-label">إجمالي المشاركات</div>
-        </div>
-        <div class="stat-card">
-            <span class="stat-number" id="goldMedals">0</span>
-            <div class="stat-label">الميداليات الذهبية</div>
-        </div>
-        <div class="stat-card">
-            <span class="stat-number" id="silverMedals">0</span>
-            <div class="stat-label">الميداليات الفضية</div>
-        </div>
-        <div class="stat-card">
-            <span class="stat-number" id="bronzeMedals">0</span>
-            <div class="stat-label">الميداليات البرونزية</div>
-        </div>
-        <div class="stat-card">
-            <span class="stat-number" id="totalMedals">0</span>
-            <div class="stat-label">إجمالي الميداليات</div>
-        </div>
-    </div>
+        .filter-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: var(--primary-green);
+            transition: left 0.3s ease;
+            z-index: 1;
+        }
 
-    <div class="controls-section">
-        <div class="filters-section">
-            <div class="filter-group">
-                <label class="filter-label">تصفية حسب المسابقة:</label>
-                <div class="filter-buttons" id="competitionFilters">
-                    <button class="filter-btn all-filter active" data-filter="all"><span>الكل</span></button>
-                    <button class="filter-btn" data-filter="IMO"><span>IMO</span></button>
-                    <button class="filter-btn" data-filter="EGMO"><span>EGMO</span></button>
-                    <button class="filter-btn" data-filter="BMO"><span>BMO</span></button>
-                    <button class="filter-btn" data-filter="JBMO"><span>JBMO</span></button>
-                    <button class="filter-btn" data-filter="APMO"><span>APMO</span></button>
-                    <button class="filter-btn" data-filter="GMO"><span>GMO</span></button>
-                    <button class="filter-btn" data-filter="AMO"><span>AMO</span></button>
-                    <button class="filter-btn" data-filter="IOMHSS"><span>IOMHSS</span></button>
-                </div>
+        .filter-btn span {
+            position: relative;
+            z-index: 2;
+            color: inherit;
+        }
+
+        .filter-btn:hover::before,
+        .filter-btn.active::before {
+            left: 0;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            color: #ffffff;
+            border-color: var(--primary-green);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(26, 135, 84, 0.3);
+        }
+
+        .filter-btn.all-filter.active {
+            background: var(--primary-black);
+            border-color: var(--primary-black);
+            color: #ffffff;
+        }
+
+        .filter-btn.all-filter.active::before {
+            background: var(--primary-black);
+            left: 0;
+        }
+
+        .results-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            color: var(--text-gray);
+            font-weight: 500;
+        }
+
+        .clear-filters {
+            background: var(--primary-black);
+            color: var(--primary-white);
+            border: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .clear-filters:hover {
+            background: #333333;
+            transform: translateY(-1px);
+        }
+
+        .table-container {
+            background: var(--primary-white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+
+        .participation-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0;
+        }
+
+        .participation-table thead {
+            background: var(--primary-black);
+            color: var(--primary-white);
+        }
+
+        .participation-table th {
+            padding: 20px 15px;
+            text-align: right;
+            font-weight: 600;
+            font-size: 1rem;
+            border: none;
+        }
+
+        .participation-table td {
+            padding: 18px 15px;
+            border-bottom: 1px solid var(--border-gray);
+            vertical-align: middle;
+            transition: var(--transition);
+        }
+
+        .participation-table tbody tr {
+            transition: var(--transition);
+        }
+
+        .participation-table tbody tr:hover {
+            background: rgba(26, 135, 84, 0.05) !important;
+        }
+
+        .year-cell {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: var(--primary-black);
+            text-align: center;
+            border-right: 3px solid var(--primary-green);
+            position: relative;
+        }
+
+        /* تلوين السنوات - السنوات الزوجية بيضاء والفردية رمادية */
+        .participation-table tbody tr[data-year-type="even"] {
+            background: var(--primary-white);
+        }
+
+        .participation-table tbody tr[data-year-type="odd"] {
+            background: var(--light-gray);
+        }
+
+        .participation-table tbody tr[data-year-type="even"] .year-cell {
+            background: var(--primary-white);
+        }
+
+        .participation-table tbody tr[data-year-type="odd"] .year-cell {
+            background: var(--light-gray);
+        }
+
+        .olympiad-link {
+            text-decoration: none;
+            color: var(--primary-black);
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .olympiad-link:hover {
+            color: var(--primary-green);
+            text-decoration: underline;
+        }
+
+        .olympiad-code {
+            color: var(--text-gray);
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .country-cell {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .awards-cell {
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            flex-wrap: wrap;
+        }
+
+        .medal {
+            font-size: 1.4rem;
+            transition: var(--transition);
+            cursor: default;
+        }
+
+        .medal:hover {
+            transform: scale(1.2);
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+        }
+
+        .badge {
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-left: 8px;
+        }
+
+        .bg-info {
+            background: #17a2b8;
+            color: white;
+        }
+
+        .bg-warning {
+            background: #ffc107;
+            color: black;
+        }
+
+        .bg-success {
+            background: var(--primary-green);
+            color: white;
+        }
+
+        .bg-secondary {
+            background: #6c757d;
+            color: white;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-gray);
+            font-size: 1.2rem;
+        }
+
+        .no-results-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            opacity: 0.5;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-gray);
+        }
+
+        .spinner {
+            border: 3px solid var(--border-gray);
+            border-top: 3px solid var(--primary-green);
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 15px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        /* الاستجابة للشاشات الصغيرة */
+        @media (max-width: 768px) {
+            .participation-container {
+                padding: 10px;
+            }
+
+            .page-header {
+                padding: 30px 20px;
+            }
+
+            .page-header h1 {
+                font-size: 2rem;
+            }
+
+            .controls-section {
+                padding: 20px;
+            }
+
+            .filter-buttons {
+                gap: 8px;
+            }
+
+            .filter-btn {
+                padding: 8px 14px;
+                font-size: 0.9rem;
+            }
+
+            .participation-table {
+                font-size: 0.9rem;
+            }
+
+            .participation-table th,
+            .participation-table td {
+                padding: 12px 8px;
+            }
+
+            .stats-overview {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+
+            .stat-card {
+                padding: 20px 15px;
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .stats-overview {
+                grid-template-columns: 1fr;
+            }
+            
+            .results-info {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="participation-container">
+        <div class="page-header">
+            <h1>🏆 مشاركات المملكة العربية السعودية</h1>
+            <p>في أولمبياد الرياضيات الدولية والإقليمية</p>
+        </div>
+
+        <div class="stats-overview">
+            <div class="stat-card">
+                <span class="stat-number" id="totalCompetitions">0</span>
+                <div class="stat-label">إجمالي المشاركات</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" id="goldMedals">0</span>
+                <div class="stat-label">الميداليات الذهبية</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" id="silverMedals">0</span>
+                <div class="stat-label">الميداليات الفضية</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" id="bronzeMedals">0</span>
+                <div class="stat-label">الميداليات البرونزية</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" id="totalMedals">0</span>
+                <div class="stat-label">إجمالي الميداليات</div>
             </div>
         </div>
 
-        <div class="results-info">
-            <span id="resultsCount">عرض جميع النتائج</span>
-            <button class="clear-filters" id="clearFilters" style="display: none;">مسح جميع المرشحات</button>
+        <div class="controls-section">
+            <div class="filters-section">
+                <div class="filter-group">
+                    <label class="filter-label">تصفية حسب المسابقة:</label>
+                    <div class="filter-buttons" id="competitionFilters">
+                        <button class="filter-btn all-filter active" data-filter="all"><span>الكل</span></button>
+                        <button class="filter-btn" data-filter="IMO"><span>IMO</span></button>
+                        <button class="filter-btn" data-filter="EGMO"><span>EGMO</span></button>
+                        <button class="filter-btn" data-filter="BMO"><span>BMO</span></button>
+                        <button class="filter-btn" data-filter="JBMO"><span>JBMO</span></button>
+                        <button class="filter-btn" data-filter="APMO"><span>APMO</span></button>
+                        <button class="filter-btn" data-filter="GMO"><span>GMO</span></button>
+                        <button class="filter-btn" data-filter="AMO"><span>AMO</span></button>
+                        <button class="filter-btn" data-filter="IOMHSS"><span>IOMHSS</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="results-info">
+                <span id="resultsCount">عرض جميع النتائج</span>
+                <button class="clear-filters" id="clearFilters" style="display: none;">مسح جميع المرشحات</button>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <div class="loading" id="loadingIndicator" style="display: none;">
+                <div class="spinner"></div>
+                جاري التحميل...
+            </div>
+
+            <div id="noResults" class="no-results" style="display: none;">
+                <div class="no-results-icon">🔍</div>
+                لا توجد نتائج مطابقة لبحثك
+            </div>
+
+            <table class="table table-bordered table-striped participation-table" id="participationTable">
+                <thead>
+                    <th width="5%">السنة</th>
+                    <th>الأولمبياد</th>
+                    <th>تاريخ المشاركة</th>
+                    <th>المكان</th>
+                    <th>الجوائز</th>
+                </thead>
+                <tbody id="participationTableBody">
+                    <!-- بيانات تجريبية -->
+                    <tr class="participation-row" data-year="2024" data-competition="IMO" data-country="المملكة المتحدة" data-name="أولمبياد الرياضيات الدولية">
+                        <td class="text-center year-cell year-2024" style="vertical-align: middle;" rowspan="3">2024</td>
+                        <td>
+                            <a href="#" class="olympiad-link">أولمبياد الرياضيات الدولية</a>
+                            <div class="olympiad-code">(IMO)</div>
+                        </td>
+                        <td>2024/7/11 - 2024/7/22</td>
+                        <td class="country-cell">المملكة المتحدة</td>
+                        <td class="awards-cell">
+                            <div class="medals-container">
+                                <span class="medal">🥇</span>
+                                <span class="medal">🥈</span>
+                                <span class="medal">🥉</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="participation-row" data-year="2024" data-competition="EGMO" data-country="جورجيا" data-name="أولمبياد أوروبا للفتيات في الرياضيات">
+                        <td>
+                            <a href="#" class="olympiad-link">أولمبياد أوروبا للفتيات في الرياضيات</a>
+                            <div class="olympiad-code">(EGMO)</div>
+                        </td>
+                        <td>2024/4/14 - 2024/4/20</td>
+                        <td class="country-cell">جورجيا</td>
+                        <td class="awards-cell">
+                            <div class="medals-container">
+                                <span class="medal">🥈</span>
+                                <span class="medal">🥉</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="participation-row" data-year="2024" data-competition="APMO" data-country="عن بعد" data-name="أولمبياد آسيا والمحيط الهادئ في الرياضيات">
+                        <td>
+                            <a href="#" class="olympiad-link">أولمبياد آسيا والمحيط الهادئ في الرياضيات</a>
+                            <div class="olympiad-code">(APMO)</div>
+                        </td>
+                        <td>2024/3/12</td>
+                        <td class="country-cell">
+                            عن بعد
+                            <span class="badge bg-secondary">عن بعد 🌐</span>
+                        </td>
+                        <td class="awards-cell">
+                            <div class="medals-container">
+                                <span class="medal">🥇</span>
+                                <span class="medal">🥉</span>
+                                <span class="medal">📜</span>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="participation-row" data-year="2023" data-competition="IMO" data-country="اليابان" data-name="أولمبياد الرياضيات الدولية">
+                        <td class="text-center year-cell year-2023" style="vertical-align: middle;" rowspan="2">2023</td>
+                        <td>
+                            <a href="#" class="olympiad-link">أولمبياد الرياضيات الدولية</a>
+                            <div class="olympiad-code">(IMO)</div>
+                        </td>
+                        <td>2023/7/2 - 2023/7/13</td>
+                        <td class="country-cell">اليابان</td>
+                        <td class="awards-cell">
+                            <div class="medals-container">
+                                <span class="medal">🥈</span>
+                                <span class="medal">🥉</span>
+                                <span class="medal">🥉</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="participation-row" data-year="2023" data-competition="EGMO" data-country="سلوفينيا" data-name="أولمبياد أوروبا للفتيات في الرياضيات">
+                        <td>
+                            <a href="#" class="olympiad-link">أولمبياد أوروبا للفتيات في الرياضيات</a>
+                            <div class="olympiad-code">(EGMO)</div>
+                        </td>
+                        <td>2023/4/13 - 2023/4/19</td>
+                        <td class="country-cell">سلوفينيا</td>
+                        <td class="awards-cell">
+                            <div class="medals-container">
+                                <span class="medal">🥉</span>
+                                <span class="medal">📜</span>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="participation-row" data-year="2022" data-competition="IMO" data-country="النرويج" data-name="أولمبياد الرياضيات الدولية">
+                        <td class="text-center year-cell year-2022" style="vertical-align: middle;">2022</td>
+                        <td>
+                            <a href="#" class="olympiad-link">أولمبياد الرياضيات الدولية</a>
+                            <div class="olympiad-code">(IMO)</div>
+                        </td>
+                        <td>2022/7/6 - 2022/7/16</td>
+                        <td class="country-cell">النرويج</td>
+                        <td class="awards-cell">
+                            <div class="medals-container">
+                                <span class="medal">🥈</span>
+                                <span class="medal">🥉</span>
+                                <span class="medal">🥉</span>
+                                <span class="medal">📜</span>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="participation-row" data-year="2021" data-competition="IMO" data-country="روسيا" data-name="أولمبياد الرياضيات الدولية">
+                        <td class="text-center year-cell year-2021" style="vertical-align: middle;">2021</td>
+                        <td>
+                            <a href="#" class="olympiad-link">أولمبياد الرياضيات الدولية</a>
+                            <div class="olympiad-code">(IMO)</div>
+                        </td>
+                        <td>2021/7/14 - 2021/7/24</td>
+                        <td class="country-cell">
+                            روسيا
+                            <span class="badge bg-secondary">عن بعد 🌐</span>
+                        </td>
+                        <td class="awards-cell">
+                            <div class="medals-container">
+                                <span class="medal">🥉</span>
+                                <span class="medal">🥉</span>
+                                <span class="medal">📜</span>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 
-    <div class="table-container">
-        <div class="loading" id="loadingIndicator" style="display: none;">
-            <div class="spinner"></div>
-            جاري التحميل...
-        </div>
+    <script>
+        // الحصول على جميع الصفوف
+        let allRows = [];
+        let filteredRows = [];
+        let activeFilters = new Set(['all']);
 
-        <div id="noResults" class="no-results" style="display: none;">
-            <div class="no-results-icon">🔍</div>
-            لا توجد نتائج مطابقة لبحثك
-        </div>
-
-        <table class="table table-bordered table-striped participation-table" id="participationTable">
-            <thead>
-                {% if page.lang == "ar" %}
-                <th width="5%">السنة</th>
-                <th>الأولمبياد</th>
-                <th>تاريخ المشاركة</th>
-                <th>المكان</th>
-                <th>الجوائز</th>
-                {% else %}
-                <th width="5%">Year</th>
-                <th>Olympiad</th>
-                <th>Date</th>
-                <th>Country</th>
-                <th>Awards</th>
-                {% endif %}
-            </thead>
-            <tbody id="participationTableBody">
-                {% for year in (page.start_year..page.last_year) reversed %}
-                    {% for idx in (1..page[year].count) %}
-                        {% capture olyid %}{{page[year][idx].name}}_{{year}}{% endcapture %}
-                        <tr class="participation-row" 
-                            data-year="{{ year }}"
-                            data-competition="{{ page[year][idx].name | upcase }}"
-                            data-country="{% if page.lang == 'ar' %}{{ page[year][idx].country_arname }}{% else %}{{ page[year][idx].country_enname }}{% endif %}"
-                            data-name="{% if page.lang == 'en' %}{{ page[year][idx].enname }}{% else %}{{ page[year][idx].arname }}{% endif %}">
-                            
-                            {% if idx == 1 %}
-                            <td class="text-center year-cell year-{{ year }}" style="vertical-align: middle;" rowspan="{{ page[year].count }}">{{ year }}</td>
-                            {% endif %}
-                            
-                            <td>
-                                <a href="{% if page.lang == "en" %}/en{% endif %}/participations/{{olyid}}" class="olympiad-link">
-                                    {% if page.lang == "en" %}  
-                                        {{ page[year][idx].enname }}
-                                    {% else %}
-                                        {{ page[year][idx].arname }}
-                                    {% endif %}
-                                </a>
-                                <div class="olympiad-code">({{ page[year][idx].name | upcase }})</div>
-                            </td>
-                            
-                            <td>
-                                <input type="hidden" id="olstart-{{olyid}}" value="{{ page[year][idx].start }}">
-                                <input type="hidden" id="olend-{{olyid}}" value="{{ page[year][idx].end }}">
-                                {% if page[year][idx].start == page[year][idx].end %}
-                                    {{ page[year][idx].start }}
-                                {% else %}
-                                    {{ page[year][idx].start }} - {{ page[year][idx].end }}
-                                {% endif %}
-                            </td>
-                            
-                            <td class="country-cell">
-                                {% if page.lang == 'ar' %}
-                                    {{ page[year][idx].country_arname }}
-                                {% else %}
-                                    {{ page[year][idx].country_enname }}
-                                {% endif %}
-                                
-                                {% if page[year][idx].online %}
-                                <span class="badge bg-secondary">
-                                    {% if page.lang == 'ar' %}
-                                    عن بعد 🌐
-                                    {% else %}
-                                    Online 🌐
-                                    {% endif %}
-                                </span>
-                                {% endif %}
-                            </td>
-                            
-                            <td class="awards-cell" id="olawards-{{olyid}}">
-                                <div class="medals-container">
-                                    {% assign medals = page[year][idx].awards | split: '' %}
-                                    {% for medal in medals %}
-                                        {% if medal == '🥇' or medal == '🥈' or medal == '🥉' or medal == '📜' %}
-                                            <span class="medal">{{ medal }}</span>
-                                        {% endif %}
-                                    {% endfor %}
-                                </div>
-                            </td>
-                        </tr>
-                    {% endfor %}
-                {% endfor %}
-            </tbody>
-        </table>
-    </div>
-</div>
-
-<script>
-// الحصول على جميع الصفوف
-let allRows = [];
-let filteredRows = [];
-let activeFilters = new Set(['all']);
-
-// تهيئة البيانات
-function initializeData() {
-    const rows = document.querySelectorAll('.participation-row');
-    allRows = Array.from(rows);
-    filteredRows = [...allRows];
-    
-    // تطبيق تلوين السنوات
-    applyYearColoring();
-    
-    updateStats();
-    updateResultsCount();
-}
-
-// تطبيق تلوين السنوات حسب كونها زوجية أو فردية
-function applyYearColoring() {
-    allRows.forEach(row => {
-        const year = parseInt(row.dataset.year);
-        const yearType = year % 2 === 0 ? 'even' : 'odd';
-        row.setAttribute('data-year-type', yearType);
-    });
-}
-
-// حساب الإحصائيات
-function updateStats() {
-    let totalCompetitions = filteredRows.length;
-    let goldCount = 0;
-    let silverCount = 0;
-    let bronzeCount = 0;
-
-    filteredRows.forEach(row => {
-        const awardsCell = row.querySelector('.awards-cell');
-        if (awardsCell) {
-            const medals = awardsCell.textContent;
-            goldCount += (medals.match(/🥇/g) || []).length;
-            silverCount += (medals.match(/🥈/g) || []).length;
-            bronzeCount += (medals.match(/🥉/g) || []).length;
+        // تهيئة البيانات
+        function initializeData() {
+            const rows = document.querySelectorAll('.participation-row');
+            allRows = Array.from(rows);
+            filteredRows = [...allRows];
+            
+            // تطبيق تلوين السنوات - السنوات الزوجية بيضاء والفردية رمادية
+            applyYearColoring();
+            
+            updateStats();
+            updateResultsCount();
         }
-    });
 
-    const totalMedals = goldCount + silverCount + bronzeCount;
+        // تطبيق تلوين السنوات - السنوات الزوجية بيضاء والفردية رمادية
+        function applyYearColoring() {
+            allRows.forEach(row => {
+                const year = parseInt(row.dataset.year);
+                // السنوات الزوجية (مثل 2024, 2022, 2020) بيضاء
+                // السنوات الفردية (مثل 2023, 2021, 2019) رمادية
+                const yearType = year % 2 === 0 ? 'even' : 'odd';
+                row.setAttribute('data-year-type', yearType);
+            });
+        }
 
-    // تحديث العناصر مع تأثير العد التصاعدي
-    animateNumber('totalCompetitions', totalCompetitions);
-    animateNumber('goldMedals', goldCount);
-    animateNumber('silverMedals', silverCount);
-    animateNumber('bronzeMedals', bronzeCount);
-    animateNumber('totalMedals', totalMedals);
-}
+        // حساب الإحصائيات
+        function updateStats() {
+            let totalCompetitions = filteredRows.length;
+            let goldCount = 0;
+            let silverCount = 0;
+            let bronzeCount = 0;
 
-// تأثير العد التصاعدي
-function animateNumber(elementId, targetValue) {
-    const element = document.getElementById(elementId);
-    const startValue = parseInt(element.textContent) || 0;
-    const duration = 1000;
-    const startTime = performance.now();
+            filteredRows.forEach(row => {
+                const awardsCell = row.querySelector('.awards-cell');
+                if (awardsCell) {
+                    const medals = awardsCell.textContent;
+                    goldCount += (medals.match(/🥇/g) || []).length;
+                    silverCount += (medals.match(/🥈/g) || []).length;
+                    bronzeCount += (medals.match(/🥉/g) || []).length;
+                }
+            });
 
-    function updateNumber(currentTime) {
-        const elapsed = currentTime - startTime;
-        const progress = Math.min(elapsed / duration, 1);
-        
-        const currentValue = Math.floor(startValue + (targetValue - startValue) * progress);
-        element.textContent = currentValue;
+            const totalMedals = goldCount + silverCount + bronzeCount;
 
-        if (progress < 1) {
+            // تحديث العناصر مع تأثير العد التصاعدي
+            animateNumber('totalCompetitions', totalCompetitions);
+            animateNumber('goldMedals', goldCount);
+            animateNumber('silverMedals', silverCount);
+            animateNumber('bronzeMedals', bronzeCount);
+            animateNumber('totalMedals', totalMedals);
+        }
+
+        // تأثير العد التصاعدي
+        function animateNumber(elementId, targetValue) {
+            const element = document.getElementById(elementId);
+            const startValue = parseInt(element.textContent) || 0;
+            const duration = 1000;
+            const startTime = performance.now();
+
+            function updateNumber(currentTime) {
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                
+                const currentValue = Math.floor(startValue + (targetValue - startValue) * progress);
+                element.textContent = currentValue;
+
+                if (progress < 1) {
+                    requestAnimationFrame(updateNumber);
+                }
+            }
+
             requestAnimationFrame(updateNumber);
         }
-    }
 
-    requestAnimationFrame(updateNumber);
-}
-
-// تحديث عدد النتائج
-function updateResultsCount() {
-    const resultsElement = document.getElementById('resultsCount');
-    const count = filteredRows.length;
-    const total = allRows.length;
-    
-    if (count === total) {
-        resultsElement.textContent = `عرض جميع النتائج (${total})`;
-    } else {
-        resultsElement.textContent = `عرض ${count} من ${total} نتيجة`;
-    }
-}
-
-// تطبيق المرشحات
-function applyFilters() {
-    filteredRows = allRows.filter(row => {
-        // فلترة المسابقات
-        const competitionMatch = activeFilters.has('all') || 
-            activeFilters.has(row.dataset.competition);
-
-        return competitionMatch;
-    });
-
-    // إخفاء/إظهار الصفوف
-    allRows.forEach(row => {
-        if (filteredRows.includes(row)) {
-            row.style.display = '';
-        } else {
-            row.style.display = 'none';
-        }
-    });
-
-    // تحديث السنوات المرئية
-    updateYearCells();
-    
-    // إظهار/إخفاء رسالة عدم وجود نتائج
-    const noResults = document.getElementById('noResults');
-    const table = document.getElementById('participationTable');
-    
-    if (filteredRows.length === 0) {
-        noResults.style.display = 'block';
-        table.style.display = 'none';
-    } else {
-        noResults.style.display = 'none';
-        table.style.display = '';
-    }
-
-    updateStats();
-    updateResultsCount();
-    updateClearButton();
-}
-
-// تحديث خلايا السنوات
-function updateYearCells() {
-    const yearCells = document.querySelectorAll('.year-cell');
-    
-    yearCells.forEach(cell => {
-        const year = cell.textContent;
-        const yearRows = filteredRows.filter(row => row.dataset.year === year);
-        
-        if (yearRows.length > 0) {
-            cell.style.display = '';
-            cell.setAttribute('rowspan', yearRows.length);
-        } else {
-            cell.style.display = 'none';
-        }
-    });
-}
-
-// تحديث زر مسح المرشحات
-function updateClearButton() {
-    const clearButton = document.getElementById('clearFilters');
-    const hasActiveFilters = !activeFilters.has('all');
-    
-    clearButton.style.display = hasActiveFilters ? 'inline-block' : 'none';
-}
-
-// إضافة مستمعي الأحداث
-function setupEventListeners() {
-    // أزرار التصفية
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    filterButtons.forEach(button => {
-        button.addEventListener('click', (e) => {
-            const filter = e.currentTarget.dataset.filter;
+        // تحديث عدد النتائج
+        function updateResultsCount() {
+            const resultsElement = document.getElementById('resultsCount');
+            const count = filteredRows.length;
+            const total = allRows.length;
             
-            if (filter === 'all') {
-                // إزالة جميع المرشحات الأخرى
-                filterButtons.forEach(btn => btn.classList.remove('active'));
-                e.currentTarget.classList.add('active');
-                activeFilters.clear();
-                activeFilters.add('all');
+            if (count === total) {
+                resultsElement.textContent = `عرض جميع النتائج (${total})`;
             } else {
-                // إزالة "الكل" إذا تم اختيار مرشح آخر
-                const allButton = document.querySelector('[data-filter="all"]');
-                allButton.classList.remove('active');
-                activeFilters.delete('all');
-                
-                // تبديل حالة المرشح الحالي
-                if (activeFilters.has(filter)) {
-                    activeFilters.delete(filter);
-                    e.currentTarget.classList.remove('active');
-                } else {
-                    activeFilters.add(filter);
-                    e.currentTarget.classList.add('active');
-                }
-                
-                // إذا لم يبق أي مرشح، اختر "الكل"
-                if (activeFilters.size === 0) {
-                    allButton.classList.add('active');
-                    activeFilters.add('all');
-                }
-            }
-            
-            applyFilters();
-        });
-    });
-
-    // مسح المرشحات
-    const clearButton = document.getElementById('clearFilters');
-    clearButton.addEventListener('click', clearAllFilters);
-}
-
-// مسح جميع المرشحات
-function clearAllFilters() {
-    // مسح مرشحات المسابقات
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    filterButtons.forEach(btn => btn.classList.remove('active'));
-    document.querySelector('[data-filter="all"]').classList.add('active');
-    
-    activeFilters.clear();
-    activeFilters.add('all');
-    
-    // إعادة تطبيق المرشحات
-    applyFilters();
-}
-
-// تحديث حالة الجوائز (الوقت الحالي)
-function refresh_tags() {
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
-    
-    const isArabic = document.documentElement.lang === 'ar' || true; // افتراض العربية
-    
-    function daysDifference(date1, date2) {
-        const diffTime = Math.abs(date2 - date1);
-        return Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-    }
-    
-    function parseDate(dateStr) {
-        if (!dateStr) return null;
-        
-        const parts = dateStr.split('/');
-        if (parts.length !== 3) return null;
-        
-        const year = parseInt(parts[0], 10);
-        const month = parseInt(parts[1], 10) - 1;
-        const day = parseInt(parts[2], 10);
-        
-        const parsedDate = new Date(year, month, day);
-        return isNaN(parsedDate.getTime()) ? null : parsedDate;
-    }
-    
-    function createBadge(text, type = 'info') {
-        const badgeClass = type === 'warning' ? 'bg-warning' : 
-                          type === 'success' ? 'bg-success' : 
-                          type === 'info' ? 'bg-info' : 'bg-secondary';
-        return `<span class="badge ${badgeClass}">${text}</span>`;
-    }
-    
-    function arabicDaysStr(days) {
-        if (days == 1) return "يوم";
-        if (days == 2) return "يومين";
-        if (days <= 10) return `${days} أيام`;
-        return `${days} يوم`;
-    }
-
-    const allOlympiads = document.querySelectorAll('[id^="olstart-"]');
-    
-    allOlympiads.forEach(function(startElement) {
-        const olyid = startElement.id.replace('olstart-', '');
-        const endElement = document.getElementById('olend-' + olyid);
-        const awardsElement = document.getElementById('olawards-' + olyid);
-        
-        if (!endElement || !awardsElement) return;
-        
-        const startDateStr = startElement.value;
-        const endDateStr = endElement.value;
-        
-        const startDate = parseDate(startDateStr);
-        const endDate = parseDate(endDateStr);
-        
-        if (!startDate || !endDate) return;
-        
-        let badgeHtml = '';
-        
-        if (today < startDate) {
-            const daysToStart = daysDifference(today, startDate);
-            const text = isArabic ? 
-                `سيبدأ بعد ${arabicDaysStr(daysToStart)}` :
-                `Will start in ${daysToStart} day${daysToStart === 1 ? '' : 's'}`;
-            badgeHtml = createBadge(text, 'info');
-            
-        } else if (today >= startDate && today <= endDate) {
-            const daysToEnd = daysDifference(today, endDate);
-            const text = isArabic ? 
-                `سينتهي بعد ${arabicDaysStr(daysToEnd)}` :
-                `Will finish in ${daysToEnd} day${daysToEnd === 1 ? '' : 's'}`;
-            badgeHtml = createBadge(text, 'warning');
-        }
-        
-        if (badgeHtml) {
-            const medalsContainer = awardsElement.querySelector('.medals-container');
-            if (medalsContainer) {
-                medalsContainer.insertAdjacentHTML('afterend', badgeHtml);
-            } else {
-                awardsElement.insertAdjacentHTML('beforeend', badgeHtml);
+                resultsElement.textContent = `عرض ${count} من ${total} نتيجة`;
             }
         }
-    });
-}
 
-// تهيئة الصفحة
-document.addEventListener('DOMContentLoaded', function() {
-    // إضافة تأخير بسيط لضمان تحميل جميع العناصر
-    setTimeout(() => {
-        initializeData();
-        setupEventListeners();
-        refresh_tags();
-        
-        // إضافة تأثيرات بصرية إضافية
-        addVisualEnhancements();
-    }, 100);
-});
+        // تطبيق المرشحات
+        function applyFilters() {
+            filteredRows = allRows.filter(row => {
+                // فلترة المسابقات
+                const competitionMatch = activeFilters.has('all') || 
+                    activeFilters.has(row.dataset.competition);
 
-// إضافة تأثيرات بصرية إضافية
-function addVisualEnhancements() {
-    // تأثير التحميل للجدول
-    const table = document.getElementById('participationTable');
-    table.style.opacity = '0';
-    table.style.transform = 'translateY(20px)';
-    
-    setTimeout(() => {
-        table.style.transition = 'all 0.6s ease';
-        table.style.opacity = '1';
-        table.style.transform = 'translateY(0)';
-    }, 200);
-
-    // تأثير الظهور التدريجي للصفوف
-    const rows = document.querySelectorAll('.participation-row');
-    rows.forEach((row, index) => {
-        row.style.opacity = '0';
-        row.style.transform = 'translateX(20px)';
-        
-        setTimeout(() => {
-            row.style.transition = 'all 0.4s ease';
-            row.style.opacity = '1';
-            row.style.transform = 'translateX(0)';
-        }, 300 + (index * 50));
-    });
-
-    // تأثير الهوفر للميداليات
-    const medals = document.querySelectorAll('.medal');
-    medals.forEach(medal => {
-        medal.addEventListener('mouseenter', function() {
-            this.style.filter = 'drop-shadow(0 4px 8px rgba(0,0,0,0.3))';
-        });
-        
-        medal.addEventListener('mouseleave', function() {
-            this.style.filter = 'none';
-        });
-    });
-}
-
-// إضافة وظائف إضافية للتفاعل
-function addInteractiveFeatures() {
-    // إضافة tooltip للميداليات
-    const medals = document.querySelectorAll('.medal');
-    medals.forEach(medal => {
-        const tooltipText = {
-            '🥇': 'ميدالية ذهبية',
-            '🥈': 'ميدالية فضية', 
-            '🥉': 'ميدالية برونزية',
-            '📜': 'شهادة تقدير'
-        };
-        
-        medal.title = tooltipText[medal.textContent] || medal.textContent;
-    });
-
-    // إضافة إحصائيات ديناميكية عند التحويم على السنوات
-    const yearCells = document.querySelectorAll('.year-cell');
-    yearCells.forEach(yearCell => {
-        yearCell.addEventListener('mouseenter', function() {
-            const year = this.textContent;
-            const yearRows = allRows.filter(row => row.dataset.year === year);
-            
-            let goldCount = 0, silverCount = 0, bronzeCount = 0;
-            yearRows.forEach(row => {
-                const medals = row.querySelector('.awards-cell').textContent;
-                goldCount += (medals.match(/🥇/g) || []).length;
-                silverCount += (medals.match(/🥈/g) || []).length;
-                bronzeCount += (medals.match(/🥉/g) || []).length;
+                return competitionMatch;
             });
-            
-            this.title = `${year}: ${goldCount} ذهبية، ${silverCount} فضية، ${bronzeCount} برونزية`;
-        });
-    });
-}
 
-// تشغيل الوظائف الإضافية
-document.addEventListener('DOMContentLoaded', () => {
-    setTimeout(addInteractiveFeatures, 1000);
-});
-</script>
+            // إخفاء/إظهار الصفوف
+            allRows.forEach(row => {
+                if (filteredRows.includes(row)) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+
+            // تحديث السنوات المرئية
+            updateYearCells();
+            
+            // إظهار/إخفاء رسالة عدم وجود نتائج
+            const noResults = document.getElementById('noResults');
+            const table = document.getElementById('participationTable');
+            
+            if (filteredRows.length === 0) {
+                noResults.style.display = 'block';
+                table.style.display = 'none';
+            } else {
+                noResults.style.display = 'none';
+                table.style.display = '';
+            }
+
+            updateStats();
+            updateResultsCount();
+            updateClearButton();
+        }
+
+        // تحديث خلايا السنوات
+        function updateYearCells() {
+            const yearCells = document.querySelectorAll('.year-cell');
+            
+            yearCells.forEach(cell => {
+                const year = cell.textContent;
+                const yearRows = filteredRows.filter(row => row.dataset.year === year);
+                
+                if (yearRows.length > 0) {
+                    cell.style.display = '';
+                    cell.setAttribute('rowspan', yearRows.length);
+                } else {
+                    cell.style.display = 'none';
+                }
+            });
+        }
+
+        // تحديث زر مسح المرشحات
+        function updateClearButton() {
+            const clearButton = document.getElementById('clearFilters');
+            const hasActiveFilters = !activeFilters.has('all');
+            
+            clearButton.style.display = hasActiveFilters ? 'inline-block' : 'none';
+        }
+
+        // إضافة مستمعي الأحداث
+        function setupEventListeners() {
+            // أزرار التصفية
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            filterButtons.forEach(button => {
+                button.addEventListener('click', (e) => {
+                    const filter = e.currentTarget.dataset.filter;
+                    
+                    if (filter === 'all') {
+                        // إزالة جميع المرشحات الأخرى
+                        filterButtons.forEach(btn => btn.classList.remove('active'));
+                        e.currentTarget.classList.add('active');
+                        activeFilters.clear();
+                        activeFilters.add('all');
+                    } else {
+                        // إزالة "الكل" إذا تم اختيار مرشح آخر
+                        const allButton = document.querySelector('[data-filter="all"]');
+                        allButton.classList.remove('active');
+                        activeFilters.delete('all');
+                        
+                        // تبديل حالة المرشح الحالي
+                        if (activeFilters.has(filter)) {
+                            activeFilters.delete(filter);
+                            e.currentTarget.classList.remove('active');
+                        } else {
+                            activeFilters.add(filter);
+                            e.currentTarget.classList.add('active');
+                        }
+                        
+                        // إذا لم يبق أي مرشح، اختر "الكل"
+                        if (activeFilters.size === 0) {
+                            allButton.classList.add('active');
+                            activeFilters.add('all');
+                        }
+                    }
+                    
+                    applyFilters();
+                });
+            });
+
+            // مسح المرشحات
+            const clearButton = document.getElementById('clearFilters');
+            clearButton.addEventListener('click', clearAllFilters);
+        }
+
+        // مسح جميع المرشحات
+        function clearAllFilters() {
+            // مسح مرشحات المسابقات
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            document.querySelector('[data-filter="all"]').classList.add('active');
+            
+            activeFilters.clear();
+            activeFilters.add('all');
+            
+            // إعادة تطبيق المرشحات
+            applyFilters();
+        }
+
+        // إضافة تأثيرات بصرية إضافية
+        function addVisualEnhancements() {
+            // تأثير التحميل للجدول
+            const table = document.getElementById('participationTable');
+            table.style.opacity = '0';
+            table.style.transform = 'translateY(20px)';
+            
+            setTimeout(() => {
+                table.style.transition = 'all 0.6s ease';
+                table.style.opacity = '1';
+                table.style.transform = 'translateY(0)';
+            }, 200);
+
+            // تأثير الظهور التدريجي للصفوف
+            const rows = document.querySelectorAll('.participation-row');
+            rows.forEach((row, index) => {
+                row.style.opacity = '0';
+                row.style.transform = 'translateX(20px)';
+                
+                setTimeout(() => {
+                    row.style.transition = 'all 0.4s ease';
+                    row.style.opacity = '1';
+                    row.style.transform = 'translateX(0)';
+                }, 300 + (index * 50));
+            });
+
+            // تأثير الهوفر للميداليات
+            const medals = document.querySelectorAll('.medal');
+            medals.forEach(medal => {
+                medal.addEventListener('mouseenter', function() {
+                    this.style.filter = 'drop-shadow(0 4px 8px rgba(0,0,0,0.3))';
+                });
+                
+                medal.addEventListener('mouseleave', function() {
+                    this.style.filter = 'none';
+                });
+            });
+        }
+
+        // إضافة وظائف إضافية للتفاعل
+        function addInteractiveFeatures() {
+            // إضافة tooltip للميداليات
+            const medals = document.querySelectorAll('.medal');
+            medals.forEach(medal => {
+                const tooltipText = {
+                    '🥇': 'ميدالية ذهبية',
+                    '🥈': 'ميدالية فضية', 
+                    '🥉': 'ميدالية برونزية',
+                    '📜': 'شهادة تقدير'
+                };
+                
+                medal.title = tooltipText[medal.textContent] || medal.textContent;
+            });
+
+            // إضافة إحصائيات ديناميكية عند التحويم على السنوات
+            const yearCells = document.querySelectorAll('.year-cell');
+            yearCells.forEach(yearCell => {
+                yearCell.addEventListener('mouseenter', function() {
+                    const year = this.textContent;
+                    const yearRows = allRows.filter(row => row.dataset.year === year);
+                    
+                    let goldCount = 0, silverCount = 0, bronzeCount = 0;
+                    yearRows.forEach(row => {
+                        const medals = row.querySelector('.awards-cell').textContent;
+                        goldCount += (medals.match(/🥇/g) || []).length;
+                        silverCount += (medals.match(/🥈/g) || []).length;
+                        bronzeCount += (medals.match(/🥉/g) || []).length;
+                    });
+                    
+                    this.title = `${year}: ${goldCount} ذهبية، ${silverCount} فضية، ${bronzeCount} برونزية`;
+                });
+            });
+        }
+
+        // تهيئة الصفحة
+        document.addEventListener('DOMContentLoaded', function() {
+            // إضافة تأخير بسيط لضمان تحميل جميع العناصر
+            setTimeout(() => {
+                initializeData();
+                setupEventListeners();
+                
+                // إضافة تأثيرات بصرية إضافية
+                addVisualEnhancements();
+                
+                // تشغيل الوظائف الإضافية
+                setTimeout(addInteractiveFeatures, 1000);
+            }, 100);
+        });
+    </script>
+</body>
+</html>
