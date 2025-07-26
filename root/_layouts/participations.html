@@ -2,7 +2,253 @@
 id: participations
 layout: default
 ---
-<table class="table table-bordered table-striped">
+
+<style>
+    :root {
+        --primary-black: #000000;
+        --primary-white: #FFFFFF;
+        --primary-green: #1A8754;
+        --light-green: #e8f5e8;
+        --dark-green: #155a3c;
+    }
+
+    .filter-container {
+        background: var(--primary-white);
+        border: 2px solid var(--primary-green);
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 25px;
+        box-shadow: 0 4px 6px rgba(26, 135, 84, 0.1);
+    }
+
+    .filter-title {
+        color: var(--primary-green);
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-bottom: 15px;
+        border-bottom: 2px solid var(--primary-green);
+        padding-bottom: 8px;
+    }
+
+    .olympiad-filter {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .filter-chip {
+        background: var(--light-green);
+        border: 2px solid var(--primary-green);
+        color: var(--dark-green);
+        padding: 8px 15px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-weight: 500;
+        user-select: none;
+    }
+
+    .filter-chip:hover {
+        background: var(--primary-green);
+        color: var(--primary-white);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(26, 135, 84, 0.3);
+    }
+
+    .filter-chip.active {
+        background: var(--primary-green);
+        color: var(--primary-white);
+        font-weight: bold;
+    }
+
+    .filter-controls {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .control-btn {
+        background: var(--primary-black);
+        color: var(--primary-white);
+        border: 2px solid var(--primary-black);
+        padding: 8px 16px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-weight: 500;
+    }
+
+    .control-btn:hover {
+        background: var(--primary-white);
+        color: var(--primary-black);
+        transform: translateY(-1px);
+    }
+
+    .enhanced-table {
+        background: var(--primary-white);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        border: 2px solid var(--primary-green);
+    }
+
+    .enhanced-table thead th {
+        background: var(--primary-green);
+        color: var(--primary-white);
+        font-weight: bold;
+        text-align: center;
+        padding: 15px 10px;
+        border: none;
+    }
+
+    .enhanced-table tbody tr {
+        transition: all 0.3s ease;
+        border-bottom: 1px solid #e9ecef;
+    }
+
+    .enhanced-table tbody tr:hover {
+        background: var(--light-green);
+        transform: scale(1.01);
+    }
+
+    .enhanced-table tbody tr.hidden {
+        display: none;
+    }
+
+    .enhanced-table tbody td {
+        padding: 12px 10px;
+        vertical-align: middle;
+        border: none;
+    }
+
+    .year-cell {
+        background: var(--primary-black);
+        color: var(--primary-white);
+        font-weight: bold;
+        font-size: 1.1em;
+        text-align: center;
+    }
+
+    .olympiad-link {
+        color: var(--primary-green);
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s ease;
+    }
+
+    .olympiad-link:hover {
+        color: var(--dark-green);
+        text-decoration: underline;
+    }
+
+    .status-badge {
+        border-radius: 15px;
+        padding: 4px 10px;
+        font-size: 0.85em;
+        font-weight: bold;
+        margin-left: 8px;
+    }
+
+    .badge-upcoming {
+        background: #e3f2fd;
+        color: #1976d2;
+        border: 1px solid #1976d2;
+    }
+
+    .badge-ongoing {
+        background: #fff3e0;
+        color: #f57c00;
+        border: 1px solid #f57c00;
+    }
+
+    .badge-online {
+        background: var(--light-green);
+        color: var(--dark-green);
+        border: 1px solid var(--primary-green);
+    }
+
+    .no-results {
+        text-align: center;
+        padding: 40px;
+        color: var(--primary-green);
+        font-size: 1.1em;
+        background: var(--light-green);
+        border-radius: 10px;
+        margin-top: 20px;
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+        .filter-container {
+            padding: 15px;
+        }
+        
+        .olympiad-filter {
+            justify-content: center;
+        }
+        
+        .filter-controls {
+            justify-content: center;
+        }
+        
+        .enhanced-table {
+            font-size: 0.9em;
+        }
+        
+        .enhanced-table th,
+        .enhanced-table td {
+            padding: 8px 6px;
+        }
+    }
+</style>
+
+<div class="filter-container">
+    <div class="filter-title">
+        {% if page.lang == "ar" %}
+        🎯 تصفية الأولمبيادات
+        {% else %}
+        🎯 Filter Olympiads
+        {% endif %}
+    </div>
+    
+    <div class="olympiad-filter" id="olympiadFilter">
+        <!-- Filter chips will be generated dynamically -->
+    </div>
+    
+    <div class="filter-controls">
+        <button class="control-btn" onclick="selectAllOlympiads()">
+            {% if page.lang == "ar" %}
+            ✅ اختيار الكل
+            {% else %}
+            ✅ Select All
+            {% endif %}
+        </button>
+        <button class="control-btn" onclick="clearAllOlympiads()">
+            {% if page.lang == "ar" %}
+            ❌ إلغاء الكل
+            {% else %}
+            ❌ Clear All
+            {% endif %}
+        </button>
+        <button class="control-btn" onclick="showOnlyOngoing()">
+            {% if page.lang == "ar" %}
+            ⏰ الجارية حالياً
+            {% else %}
+            ⏰ Ongoing Only
+            {% endif %}
+        </button>
+        <button class="control-btn" onclick="showOnlyUpcoming()">
+            {% if page.lang == "ar" %}
+            🔮 القادمة
+            {% else %}
+            🔮 Upcoming Only
+            {% endif %}
+        </button>
+    </div>
+</div>
+
+<table class="enhanced-table table table-bordered table-striped">
     <thead>
         {% if page.lang == "ar" %}
         <th width="5%">السنة</th>
@@ -18,23 +264,22 @@ layout: default
         <th>Awards</th>
         {% endif %}
     </thead>
-    <tbody>
+    <tbody id="olympiadTableBody">
         {% for year in (page.start_year..page.last_year) reversed %}
             {% for idx in (1..page[year].count) %}
                 {% capture olyid %}{{page[year][idx].name}}_{{year}}{% endcapture %}
-                <tr>
+                <tr data-olympiad="{{page[year][idx].name}}" data-year="{{year}}" data-olyid="{{olyid}}">
                     {% if idx == 1 %}
-                    <td class="text-center" style="vertical-align: middle;" rowspan="{{ page[year].count }}">{{ year }}</td>
+                    <td class="text-center year-cell" style="vertical-align: middle;" rowspan="{{ page[year].count }}">{{ year }}</td>
                     {% endif %}
                     <td>
-                        <a href="{% if page.lang == "en" %}/en{% endif %}/participations/{{olyid}}">
+                        <a href="{% if page.lang == "en" %}/en{% endif %}/participations/{{olyid}}" class="olympiad-link">
                             {% if page.lang == "en" %}  
                                 {{ page[year][idx].enname }}
                             {% else %}
                                 {{ page[year][idx].arname }}
                             {% endif %}
-
-                            ({{ page[year][idx].name | upcase }})
+                            <br><small>({{ page[year][idx].name | upcase }})</small>
                         </a>
                     </td>
                     <td>
@@ -54,7 +299,7 @@ layout: default
                         {% endif %}
                         
                         {% if page[year][idx].online %}
-                        <span class="badge bg-secondary">
+                        <span class="status-badge badge-online">
                             {% if page.lang == 'ar' %}
                             عن بعد 🌐
                             {% else %}
@@ -71,47 +316,204 @@ layout: default
         {% endfor %}
     </tbody>
 </table>
+
+<div class="no-results" id="noResults">
+    {% if page.lang == "ar" %}
+    🔍 لا توجد أولمبيادات تطابق الفلتر المحدد
+    {% else %}
+    🔍 No olympiads match the selected filters
+    {% endif %}
+</div>
+
 <script>
-function refresh_tags() {
-    // Get current date
+let selectedOlympiads = new Set();
+let allOlympiads = new Set();
+const isArabic = document.documentElement.lang === 'ar' || '{{ page.lang }}' === 'ar';
+
+function initializeFilters() {
+    const rows = document.querySelectorAll('#olympiadTableBody tr[data-olympiad]');
+    const olympiadNames = new Map();
+    
+    rows.forEach(row => {
+        const olympiadCode = row.dataset.olympiad;
+        const olympiadLink = row.querySelector('.olympiad-link');
+        const olympiadName = olympiadLink ? olympiadLink.textContent.trim().split('\n')[0] : olympiadCode;
+        
+        allOlympiads.add(olympiadCode);
+        if (!olympiadNames.has(olympiadCode)) {
+            olympiadNames.set(olympiadCode, olympiadName);
+        }
+    });
+    
+    selectedOlympiads = new Set(allOlympiads);
+    
+    const filterContainer = document.getElementById('olympiadFilter');
+    filterContainer.innerHTML = '';
+    
+    Array.from(olympiadNames.entries())
+        .sort((a, b) => a[1].localeCompare(b[1]))
+        .forEach(([code, name]) => {
+            const chip = document.createElement('div');
+            chip.className = 'filter-chip active';
+            chip.textContent = name;
+            chip.dataset.olympiad = code;
+            chip.onclick = () => toggleOlympiad(code);
+            filterContainer.appendChild(chip);
+        });
+}
+
+function toggleOlympiad(olympiadCode) {
+    if (selectedOlympiads.has(olympiadCode)) {
+        selectedOlympiads.delete(olympiadCode);
+    } else {
+        selectedOlympiads.add(olympiadCode);
+    }
+    updateFilterDisplay();
+    filterTable();
+}
+
+function selectAllOlympiads() {
+    selectedOlympiads = new Set(allOlympiads);
+    updateFilterDisplay();
+    filterTable();
+}
+
+function clearAllOlympiads() {
+    selectedOlympiads.clear();
+    updateFilterDisplay();
+    filterTable();
+}
+
+function showOnlyOngoing() {
     const today = new Date();
-    today.setHours(0, 0, 0, 0); // Set to start of day for accurate comparison
+    today.setHours(0, 0, 0, 0);
     
-    // Get language from page (assuming it's available in the page context)
-    const isArabic = document.documentElement.lang === 'ar';
+    selectedOlympiads.clear();
     
-    // Helper function to calculate days difference
+    document.querySelectorAll('#olympiadTableBody tr[data-olyid]').forEach(row => {
+        const olyid = row.dataset.olyid;
+        const startElement = document.getElementById('olstart-' + olyid);
+        const endElement = document.getElementById('olend-' + olyid);
+        
+        if (startElement && endElement) {
+            const startDate = parseDate(startElement.value);
+            const endDate = parseDate(endElement.value);
+            
+            if (startDate && endDate && today >= startDate && today <= endDate) {
+                selectedOlympiads.add(row.dataset.olympiad);
+            }
+        }
+    });
+    
+    updateFilterDisplay();
+    filterTable();
+}
+
+function showOnlyUpcoming() {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    
+    selectedOlympiads.clear();
+    
+    document.querySelectorAll('#olympiadTableBody tr[data-olyid]').forEach(row => {
+        const olyid = row.dataset.olyid;
+        const startElement = document.getElementById('olstart-' + olyid);
+        
+        if (startElement) {
+            const startDate = parseDate(startElement.value);
+            
+            if (startDate && today < startDate) {
+                selectedOlympiads.add(row.dataset.olympiad);
+            }
+        }
+    });
+    
+    updateFilterDisplay();
+    filterTable();
+}
+
+function updateFilterDisplay() {
+    document.querySelectorAll('.filter-chip').forEach(chip => {
+        if (selectedOlympiads.has(chip.dataset.olympiad)) {
+            chip.classList.add('active');
+        } else {
+            chip.classList.remove('active');
+        }
+    });
+}
+
+function filterTable() {
+    const rows = document.querySelectorAll('#olympiadTableBody tr');
+    let visibleCount = 0;
+    let currentYear = null;
+    let yearRowspan = 0;
+    let yearCell = null;
+    
+    // First pass: count visible rows per year and hide/show rows
+    const yearCounts = {};
+    rows.forEach(row => {
+        if (row.dataset.olympiad) {
+            const year = row.dataset.year;
+            const olympiad = row.dataset.olympiad;
+            const isVisible = selectedOlympiads.has(olympiad);
+            
+            if (isVisible) {
+                yearCounts[year] = (yearCounts[year] || 0) + 1;
+                row.classList.remove('hidden');
+                visibleCount++;
+            } else {
+                row.classList.add('hidden');
+            }
+        }
+    });
+    
+    // Second pass: update rowspan for year cells
+    rows.forEach(row => {
+        if (row.dataset.olympiad) {
+            const year = row.dataset.year;
+            const yearCellInRow = row.querySelector('.year-cell');
+            
+            if (yearCellInRow && yearCounts[year] > 0) {
+                yearCellInRow.rowSpan = yearCounts[year];
+                yearCellInRow.style.display = '';
+            } else if (yearCellInRow && yearCounts[year] === 0) {
+                yearCellInRow.style.display = 'none';
+            }
+        }
+    });
+    
+    // Show/hide no results message
+    document.getElementById('noResults').style.display = visibleCount === 0 ? 'block' : 'none';
+}
+
+function refresh_tags() {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    
     function daysDifference(date1, date2) {
         const diffTime = Math.abs(date2 - date1);
         return Math.ceil(diffTime / (1000 * 60 * 60 * 24));
     }
     
-    // Helper function to parse date string (format: YYYY/M/D)
     function parseDate(dateStr) {
         if (!dateStr) return null;
-        
-        // Parse YYYY/M/D format
         const parts = dateStr.split('/');
         if (parts.length !== 3) return null;
         
         const year = parseInt(parts[0], 10);
-        const month = parseInt(parts[1], 10) - 1; // JavaScript months are 0-based
+        const month = parseInt(parts[1], 10) - 1;
         const day = parseInt(parts[2], 10);
         
         const parsedDate = new Date(year, month, day);
-        
         return isNaN(parsedDate.getTime()) ? null : parsedDate;
     }
     
-    // Helper function to create badge HTML
     function createBadge(text, type = 'info') {
-        const badgeClass = type === 'warning' ? 'bg-warning' : 
-                          type === 'success' ? 'bg-success' : 
-                          type === 'info' ? 'bg-info' : 'bg-secondary';
-        return `<span class="badge ${badgeClass} ms-2">${text}</span>`;
+        const badgeClass = type === 'warning' ? 'status-badge badge-ongoing' : 
+                          type === 'info' ? 'status-badge badge-upcoming' : 'status-badge';
+        return `<span class="${badgeClass}">${text}</span>`;
     }
     
-    // Process each olympiad
     const allOlympiads = document.querySelectorAll('[id^="olstart-"]');
     
     function arabicDaysStr(days) {
@@ -139,9 +541,7 @@ function refresh_tags() {
         
         let badgeHtml = '';
         
-        // Check olympiad status
         if (today < startDate) {
-            // Not started yet
             const daysToStart = daysDifference(today, startDate);
             const text = isArabic ? 
                 `سيبدأ بعد ${arabicDaysStr(daysToStart)}` :
@@ -149,20 +549,35 @@ function refresh_tags() {
             badgeHtml = createBadge(text, 'info');
             
         } else if (today >= startDate && today <= endDate) {
-            // Currently running
             const daysToEnd = daysDifference(today, endDate);
             const text = isArabic ? 
                 `سينتهي بعد ${arabicDaysStr(daysToEnd)}` :
                 `Will finish in ${daysToEnd} day${daysToEnd === 1 ? '' : 's'}`;
             badgeHtml = createBadge(text, 'warning');
-            
         }
         
-        // Add the badge to the awards cell
         if (badgeHtml) {
             awardsElement.innerHTML += badgeHtml;
         }
     });
 }
-document.addEventListener('DOMContentLoaded', refresh_tags);
+
+function parseDate(dateStr) {
+    if (!dateStr) return null;
+    const parts = dateStr.split('/');
+    if (parts.length !== 3) return null;
+    
+    const year = parseInt(parts[0], 10);
+    const month = parseInt(parts[1], 10) - 1;
+    const day = parseInt(parts[2], 10);
+    
+    const parsedDate = new Date(year, month, day);
+    return isNaN(parsedDate.getTime()) ? null : parsedDate;
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    initializeFilters();
+    refresh_tags();
+    filterTable();
+});
 </script>
