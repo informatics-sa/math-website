@@ -89,7 +89,23 @@ description: "Official website"
                 <div class="col-lg-2 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="100">
                     <div class="stats-card stats-gold">
                         <div class="stats-icon-wrapper">
-                            <i class="bi bi-trophy-fill"></i>
+                            <div class="medal-icon gold-medal">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <circle cx="12" cy="12" r="8" fill="url(#goldGradient)"/>
+                                    <circle cx="12" cy="12" r="6" fill="url(#goldInner)"/>
+                                    <text x="12" y="16" text-anchor="middle" font-size="8" font-weight="bold" fill="#B8860B">1</text>
+                                    <defs>
+                                        <radialGradient id="goldGradient">
+                                            <stop offset="0%" stop-color="#FFD700"/>
+                                            <stop offset="100%" stop-color="#FFA500"/>
+                                        </radialGradient>
+                                        <radialGradient id="goldInner">
+                                            <stop offset="0%" stop-color="#FFED4E"/>
+                                            <stop offset="100%" stop-color="#FFD700"/>
+                                        </radialGradient>
+                                    </defs>
+                                </svg>
+                            </div>
                         </div>
                         <div class="stats-number">{{ page.stats.gold }}</div>
                         <div class="stats-label">
@@ -106,7 +122,23 @@ description: "Official website"
                 <div class="col-lg-2 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="200">
                     <div class="stats-card stats-silver">
                         <div class="stats-icon-wrapper">
-                            <i class="bi bi-trophy-fill"></i>
+                            <div class="medal-icon silver-medal">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <circle cx="12" cy="12" r="8" fill="url(#silverGradient)"/>
+                                    <circle cx="12" cy="12" r="6" fill="url(#silverInner)"/>
+                                    <text x="12" y="16" text-anchor="middle" font-size="8" font-weight="bold" fill="#666">2</text>
+                                    <defs>
+                                        <radialGradient id="silverGradient">
+                                            <stop offset="0%" stop-color="#E5E5E5"/>
+                                            <stop offset="100%" stop-color="#C0C0C0"/>
+                                        </radialGradient>
+                                        <radialGradient id="silverInner">
+                                            <stop offset="0%" stop-color="#F5F5F5"/>
+                                            <stop offset="100%" stop-color="#E5E5E5"/>
+                                        </radialGradient>
+                                    </defs>
+                                </svg>
+                            </div>
                         </div>
                         <div class="stats-number">{{ page.stats.silver }}</div>
                         <div class="stats-label">
@@ -123,7 +155,23 @@ description: "Official website"
                 <div class="col-lg-2 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="300">
                     <div class="stats-card stats-bronze">
                         <div class="stats-icon-wrapper">
-                            <i class="bi bi-trophy-fill"></i>
+                            <div class="medal-icon bronze-medal">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <circle cx="12" cy="12" r="8" fill="url(#bronzeGradient)"/>
+                                    <circle cx="12" cy="12" r="6" fill="url(#bronzeInner)"/>
+                                    <text x="12" y="16" text-anchor="middle" font-size="8" font-weight="bold" fill="#8B4513">3</text>
+                                    <defs>
+                                        <radialGradient id="bronzeGradient">
+                                            <stop offset="0%" stop-color="#DAA520"/>
+                                            <stop offset="100%" stop-color="#CD7F32"/>
+                                        </radialGradient>
+                                        <radialGradient id="bronzeInner">
+                                            <stop offset="0%" stop-color="#F4A460"/>
+                                            <stop offset="100%" stop-color="#DAA520"/>
+                                        </radialGradient>
+                                    </defs>
+                                </svg>
+                            </div>
                         </div>
                         <div class="stats-number">{{ page.stats.bronze }}</div>
                         <div class="stats-label">
@@ -140,7 +188,17 @@ description: "Official website"
                 <div class="col-lg-2 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="400">
                     <div class="stats-card stats-hm enable-debugger">
                         <div class="stats-icon-wrapper">
-                            <i class="bi bi-award-fill"></i>
+                            <div class="award-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2L15.09 8.26L22 9L17 14L18.18 21L12 17.77L5.82 21L7 14L2 9L8.91 8.26L12 2Z" fill="url(#honorGradient)"/>
+                                    <defs>
+                                        <linearGradient id="honorGradient">
+                                            <stop offset="0%" stop-color="#8A63D2"/>
+                                            <stop offset="100%" stop-color="#6F42C1"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
                         </div>
                         <div class="stats-number">{{ page.stats.hm }}</div>
                         <div class="stats-label">
@@ -157,7 +215,22 @@ description: "Official website"
                 <div class="col-lg-2 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="500">
                     <div class="stats-card stats-participation">
                         <div class="stats-icon-wrapper">
-                            <i class="bi bi-globe-americas"></i>
+                            <div class="globe-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <circle cx="12" cy="12" r="10" fill="url(#globeGradient)"/>
+                                    <path d="M12 2C12 2 15 6 15 12S12 22 12 22" stroke="#fff" stroke-width="1" fill="none"/>
+                                    <path d="M12 2C12 2 9 6 9 12S12 22 12 22" stroke="#fff" stroke-width="1" fill="none"/>
+                                    <path d="M2 12H22" stroke="#fff" stroke-width="1"/>
+                                    <path d="M4 8H20" stroke="#fff" stroke-width="0.5"/>
+                                    <path d="M4 16H20" stroke="#fff" stroke-width="0.5"/>
+                                    <defs>
+                                        <radialGradient id="globeGradient">
+                                            <stop offset="0%" stop-color="#20C997"/>
+                                            <stop offset="100%" stop-color="#17A2B8"/>
+                                        </radialGradient>
+                                    </defs>
+                                </svg>
+                            </div>
                         </div>
                         <div class="stats-number">{{ page.stats.participations }}</div>
                         <div class="stats-label">
@@ -278,11 +351,11 @@ description: "Official website"
                                     </div>
                                     <div class="requirement-content">
                                         {% if page.lang == "en" %}
-                                        <h5>Qualify Through ATHKA</h5>
-                                        <p>Achieve qualification via <a href="https://aiolympics.mawhiba.org/" class="text-decoration-none fw-semibold">ATHKA competition</a> organized by Mawhiba Foundation.</p>
+                                        <h5>Qualify Through National Programs</h5>
+                                        <p>Achieve qualification through national talent development programs organized by Mawhiba Foundation.</p>
                                         {% else %}
-                                        <h5>التأهل عبر مسابقة أذكى</h5>
-                                        <p>حقق التأهل عبر <a href="https://aiolympics.mawhiba.org/" class="text-decoration-none fw-semibold">مسابقة أذكى</a> التي تنظمها مؤسسة موهبة.</p>
+                                        <h5>التأهل عبر البرامج الوطنية</h5>
+                                        <p>حقق التأهل من خلال برامج تطوير المواهب الوطنية التي تنظمها مؤسسة موهبة.</p>
                                         {% endif %}
                                     </div>
                                 </div>
@@ -483,29 +556,92 @@ description: "Official website"
     z-index: 2;
 }
 
+/* Enhanced Medal Icons */
+.medal-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+    animation: medalShine 3s ease-in-out infinite;
+}
+
+.medal-icon svg {
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
+}
+
+.award-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: starTwinkle 2s ease-in-out infinite;
+}
+
+.award-icon svg {
+    width: 45px;
+    height: 45px;
+    filter: drop-shadow(0 4px 8px rgba(111, 66, 193, 0.3));
+}
+
+.globe-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: globeRotate 4s linear infinite;
+}
+
+.globe-icon svg {
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(0 4px 8px rgba(23, 162, 184, 0.3));
+}
+
+@keyframes medalShine {
+    0%, 100% { transform: scale(1) rotateY(0deg); }
+    50% { transform: scale(1.05) rotateY(15deg); }
+}
+
+@keyframes starTwinkle {
+    0%, 100% { transform: scale(1) rotate(0deg); opacity: 1; }
+    50% { transform: scale(1.1) rotate(5deg); opacity: 0.8; }
+}
+
+@keyframes globeRotate {
+    0% { transform: rotateY(0deg); }
+    100% { transform: rotateY(360deg); }
+}
+
 .stats-gold .stats-icon-wrapper {
-    background: linear-gradient(45deg, #ffd700, #ffed4e);
-    color: #b8860b;
+    background: linear-gradient(45deg, rgba(255, 215, 0, 0.1), rgba(255, 237, 78, 0.1));
+    border: 2px solid rgba(255, 215, 0, 0.3);
 }
 
 .stats-silver .stats-icon-wrapper {
-    background: linear-gradient(45deg, #c0c0c0, #e5e5e5);
-    color: #757575;
+    background: linear-gradient(45deg, rgba(192, 192, 192, 0.1), rgba(229, 229, 229, 0.1));
+    border: 2px solid rgba(192, 192, 192, 0.3);
 }
 
 .stats-bronze .stats-icon-wrapper {
-    background: linear-gradient(45deg, #cd7f32, #daa520);
-    color: #8b4513;
+    background: linear-gradient(45deg, rgba(205, 127, 50, 0.1), rgba(218, 165, 32, 0.1));
+    border: 2px solid rgba(205, 127, 50, 0.3);
 }
 
 .stats-hm .stats-icon-wrapper {
-    background: linear-gradient(45deg, #6f42c1, #8a63d2);
-    color: white;
+    background: linear-gradient(45deg, rgba(111, 66, 193, 0.1), rgba(138, 99, 210, 0.1));
+    border: 2px solid rgba(111, 66, 193, 0.3);
 }
 
 .stats-participation .stats-icon-wrapper {
-    background: linear-gradient(45deg, #17a2b8, #20c997);
-    color: white;
+    background: linear-gradient(45deg, rgba(23, 162, 184, 0.1), rgba(32, 201, 151, 0.1));
+    border: 2px solid rgba(23, 162, 184, 0.3);
 }
 
 .stats-number {
@@ -874,6 +1010,21 @@ description: "Official website"
         margin-bottom: 1.5rem;
     }
     
+    .medal-icon, .award-icon, .globe-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .medal-icon svg, .globe-icon svg {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .award-icon svg {
+        width: 35px;
+        height: 35px;
+    }
+    
     .modern-card {
         padding: 2rem;
     }
@@ -908,6 +1059,21 @@ description: "Official website"
     
     .join-title {
         font-size: 2rem;
+    }
+    
+    .medal-icon, .award-icon, .globe-icon {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .medal-icon svg, .globe-icon svg {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .award-icon svg {
+        width: 30px;
+        height: 30px;
     }
 }
 
@@ -1000,14 +1166,26 @@ html {
             }
         });
         
-        // Add hover effects to stats cards
+        // Add hover effects to stats cards with enhanced medal animations
         document.querySelectorAll('.stats-card').forEach(card => {
             card.addEventListener('mouseenter', function() {
                 this.style.transform = 'translateY(-10px) scale(1.02)';
+                
+                // Add special animation for medal icons
+                const medalIcon = this.querySelector('.medal-icon, .award-icon, .globe-icon');
+                if (medalIcon) {
+                    medalIcon.style.transform = 'scale(1.1) rotateY(15deg)';
+                }
             });
             
             card.addEventListener('mouseleave', function() {
                 this.style.transform = 'translateY(0) scale(1)';
+                
+                // Reset medal icon animation
+                const medalIcon = this.querySelector('.medal-icon, .award-icon, .globe-icon');
+                if (medalIcon) {
+                    medalIcon.style.transform = 'scale(1) rotateY(0deg)';
+                }
             });
         });
         
@@ -1028,6 +1206,24 @@ html {
             
             setTimeout(typeWriter, 1000);
         }
+        
+        // Enhanced medal shine effect on scroll
+        const medalObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const medal = entry.target.querySelector('.medal-icon, .award-icon, .globe-icon');
+                    if (medal) {
+                        setTimeout(() => {
+                            medal.style.animation = medal.style.animation + ', medalHighlight 1s ease-in-out';
+                        }, 500);
+                    }
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        document.querySelectorAll('.stats-card').forEach(card => {
+            medalObserver.observe(card);
+        });
     });
     
     // Add intersection observer for additional animations
@@ -1048,4 +1244,15 @@ html {
     document.querySelectorAll('.stats-card, .modern-card, .requirement-item').forEach(el => {
         observer.observe(el);
     });
+    
+    // Add medal highlight keyframe animation
+    const style = document.createElement('style');
+    style.textContent = `
+        @keyframes medalHighlight {
+            0% { filter: brightness(1) drop-shadow(0 4px 8px rgba(0,0,0,0.2)); }
+            50% { filter: brightness(1.2) drop-shadow(0 6px 12px rgba(255,215,0,0.4)); }
+            100% { filter: brightness(1) drop-shadow(0 4px 8px rgba(0,0,0,0.2)); }
+        }
+    `;
+    document.head.appendChild(style);
 </script>
