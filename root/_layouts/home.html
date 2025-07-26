@@ -29,7 +29,7 @@ body {
 .hero-section {
     background: linear-gradient(135deg, var(--primary-green) 0%, var(--hover-green) 100%);
     color: var(--pure-white);
-    padding: 120px 0 80px;
+    padding: 160px 0 120px;
     position: relative;
     overflow: hidden;
 }
@@ -45,24 +45,49 @@ body {
     opacity: 0.3;
 }
 
+/* إضافة رموز رياضية متحركة في الخلفية */
+.hero-section::after {
+    content: '∫ ∑ π √ ∞ ∆ ∂ ∮ ∇ α β γ θ λ μ σ φ ψ ω ≤ ≥ ≈ ≠ ± × ÷ ∈ ∉ ⊂ ⊃ ∪ ∩ ∅ ℝ ℂ ℕ ℤ ℚ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.08);
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    line-height: 3;
+    padding: 20px;
+    animation: floatSymbols 20s linear infinite;
+    pointer-events: none;
+    z-index: 1;
+}
+
+@keyframes floatSymbols {
+    0% { transform: translateY(100vh) rotate(0deg); }
+    100% { transform: translateY(-100vh) rotate(360deg); }
+}
+
 .hero-section .container {
     position: relative;
     z-index: 2;
 }
 
 .hero-section h1 {
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-size: clamp(3rem, 6vw, 5rem);
     font-weight: 700;
-    margin-bottom: 1.5rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    margin-bottom: 2rem;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
 }
 
 .hero-section .lead {
-    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+    font-size: clamp(1.3rem, 3vw, 1.6rem);
     font-weight: 500;
     opacity: 0.95;
-    max-width: 600px;
-    margin: 0 auto 2rem;
+    max-width: 700px;
+    margin: 0 auto 2.5rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
 .btn {
@@ -196,12 +221,45 @@ body {
     margin-bottom: 1rem;
     position: relative;
     z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
 }
 
-.medal-gold { color: #FFD700; text-shadow: 2px 2px 4px rgba(255, 215, 0, 0.3); }
-.medal-silver { color: #C0C0C0; text-shadow: 2px 2px 4px rgba(192, 192, 192, 0.3); }
-.medal-bronze { color: #CD7F32; text-shadow: 2px 2px 4px rgba(205, 127, 50, 0.3); }
-.medal-hm { color: var(--primary-green); text-shadow: 2px 2px 4px rgba(26, 135, 84, 0.3); }
+/* توحيد أيقونات الميداليات */
+.medal-gold { 
+    color: #FFD700; 
+    text-shadow: 2px 2px 4px rgba(255, 215, 0, 0.3);
+}
+.medal-silver { 
+    color: #C0C0C0; 
+    text-shadow: 2px 2px 4px rgba(192, 192, 192, 0.3);
+}
+.medal-bronze { 
+    color: #CD7F32; 
+    text-shadow: 2px 2px 4px rgba(205, 127, 50, 0.3);
+}
+.medal-hm { 
+    color: var(--primary-green); 
+    text-shadow: 2px 2px 4px rgba(26, 135, 84, 0.3);
+}
+.medal-participation {
+    color: var(--primary-green);
+    text-shadow: 2px 2px 4px rgba(26, 135, 84, 0.3);
+}
+
+/* إضافة أيقونات Bootstrap Icons متسقة */
+.stats-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
 
 .stats-card h3 {
     font-size: 3rem;
@@ -322,7 +380,7 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero-section {
-        padding: 80px 0 60px;
+        padding: 120px 0 80px;
     }
     
     .stats-section, .info-section, .join-section {
@@ -360,8 +418,9 @@ body {
         padding: 30px 15px;
     }
     
-    .medal-icon {
+    .medal-icon, .stats-icon {
         font-size: 3rem;
+        height: 60px;
     }
     
     .stats-card h3 {
@@ -442,7 +501,9 @@ body {
                 
                 <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
                     <div class="stats-card">
-                        <div class="medal-icon medal-gold">🥇</div>
+                        <div class="stats-icon medal-gold">
+                            <i class="bi bi-award-fill"></i>
+                        </div>
                         <h3 class="fw-bold">{{ page.stats.gold }}</h3>
                         {% if page.lang == "en" %}
                         <p class="mb-0">Gold medals</p>
@@ -454,7 +515,9 @@ body {
                 
                 <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
                     <div class="stats-card">
-                        <div class="medal-icon medal-silver">🥈</div>
+                        <div class="stats-icon medal-silver">
+                            <i class="bi bi-award-fill"></i>
+                        </div>
                         <h3 class="fw-bold">{{ page.stats.silver }}</h3>
                         {% if page.lang == "en" %}
                         <p class="mb-0">Silver medals</p>
@@ -466,7 +529,9 @@ body {
                 
                 <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
                     <div class="stats-card">
-                        <div class="medal-icon medal-bronze">🥉</div>
+                        <div class="stats-icon medal-bronze">
+                            <i class="bi bi-award-fill"></i>
+                        </div>
                         <h3 class="fw-bold">{{ page.stats.bronze }}</h3>
                         {% if page.lang == "en" %}
                         <p class="mb-0">Bronze medals</p>
@@ -478,7 +543,9 @@ body {
                 
                 <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
                     <div class="stats-card enable-debugger">
-                        <div class="medal-icon medal-hm">🏅</div>
+                        <div class="stats-icon medal-hm">
+                            <i class="bi bi-patch-check-fill"></i>
+                        </div>
                         <h3 class="fw-bold">{{ page.stats.hm }}</h3>
                         {% if page.lang == "en" %}
                         <p class="mb-0">Honorable mention</p>
@@ -490,7 +557,9 @@ body {
                 
                 <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
                     <div class="stats-card">
-                        <div class="medal-icon" style="color: var(--primary-green);">🌍</div>
+                        <div class="stats-icon medal-participation">
+                            <i class="bi bi-globe-americas"></i>
+                        </div>
                         <h3 class="fw-bold">{{ page.stats.participations }}</h3>
                         {% if page.lang == "en" %}
                         <p class="mb-0">International participation</p>
