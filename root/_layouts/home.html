@@ -1,1149 +1,636 @@
----
-layout: defaultnocontainer
-id: home
-title: "Saudi Math Team"
-description: "Official website"
----
-
-<!-- Enhanced Hero Section with Gradient Background -->
-<section class="hero-section text-center position-relative overflow-hidden">
-    <div class="hero-background"></div>
-    <div class="hero-particles"></div>
-    <div class="container position-relative">
-        <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
-            <div class="hero-badge mb-4">
-                <span class="badge bg-light text-dark fs-6 px-3 py-2 rounded-pill">
-                    {% if page.lang == "en" %}
-                    🏆 International Excellence in Mathematics
-                    {% else %}
-                    🏆 التميز الدولي في الرياضيات
-                    {% endif %}
-                </span>
-            </div>
-            <h1 class="display-3 fw-bold mb-4 hero-title">
-                {% if page.lang == "en" %}
-                <span class="gradient-text">Saudi Math Team</span>
-                {% else %}
-                <span class="gradient-text">فريق الرياضيات السعودي</span>
-                {% endif %}
-            </h1>
-            <p class="lead mb-5 hero-subtitle" data-aos="fade-up" data-aos-delay="200">
-                {% if page.lang == "en" %}
-                Representing the Kingdom of Saudi Arabia with pride and excellence in International Mathematical Olympiads
-                {% else %}
-                نمثل المملكة العربية السعودية بفخر وتميز في أولمبيادات الرياضيات الدولية
-                {% endif %}
-            </p>
-            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center" data-aos="fade-up" data-aos-delay="400">
-                <a href="#join" class="btn btn-hero-primary btn-lg px-5 py-3">
-                    <i class="bi bi-rocket-takeoff me-2"></i>
-                    {% if page.lang == "en" %}
-                    Join Our Team
-                    {% else %}
-                    انضم للفريق
-                    {% endif %}
-                </a>
-                {% if page.lang == "en" %}
-                <a href="/en/participations" class="btn btn-hero-secondary btn-lg px-5 py-3">
-                    <i class="bi bi-trophy me-2"></i>
-                    Our Achievements
-                </a>
-                {% else %}
-                <a href="/participations" class="btn btn-hero-secondary btn-lg px-5 py-3">
-                    <i class="bi bi-trophy me-2"></i>
-                    إنجازاتنا
-                </a>
-                {% endif %}
-            </div>
-        </div>
-    </div>
-    <div class="hero-wave">
-        <svg viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0,60 C300,120 900,0 1200,60 L1200,120 L0,120 Z" fill="white"></path>
-        </svg>
-    </div>
-</section>
-
-<div class="container-fluid px-0">
-    <!-- Enhanced Stats Section -->
-    <section class="stats-section py-5">
-        <div class="container">
-            <div class="text-center mb-5" data-aos="fade-up">
-                <h2 class="display-5 fw-bold mb-3">
-                    {% if page.lang == "en" %} 
-                    Our <span class="text-gradient">Achievements</span>
-                    {% else %}
-                    <span class="text-gradient">إنجازات</span> الفريق 
-                    {% endif %}    
-                </h2>
-                <p class="lead text-muted">
-                    {% if page.lang == "en" %}
-                    A testament to our dedication and mathematical excellence
-                    {% else %}
-                    شاهد على تفانينا وتميزنا الرياضي
-                    {% endif %}
-                </p>
-            </div>
-            
-            <div class="row g-4 justify-content-center">
-                <div class="col-lg-2 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="stats-card stats-gold">
-                        <div class="stats-icon-wrapper">
-                            <div class="medal-icon gold-medal">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <circle cx="12" cy="12" r="8" fill="url(#goldGradient)"/>
-                                    <circle cx="12" cy="12" r="6" fill="url(#goldInner)"/>
-                                    <text x="12" y="16" text-anchor="middle" font-size="8" font-weight="bold" fill="#B8860B">1</text>
-                                    <defs>
-                                        <radialGradient id="goldGradient">
-                                            <stop offset="0%" stop-color="#FFD700"/>
-                                            <stop offset="100%" stop-color="#FFA500"/>
-                                        </radialGradient>
-                                        <radialGradient id="goldInner">
-                                            <stop offset="0%" stop-color="#FFED4E"/>
-                                            <stop offset="100%" stop-color="#FFD700"/>
-                                        </radialGradient>
-                                    </defs>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="stats-number">{{ page.stats.gold }}</div>
-                        <div class="stats-label">
-                            {% if page.lang == "en" %}
-                            Gold Medals
-                            {% else %}
-                            ميداليات ذهبية
-                            {% endif %}
-                        </div>
-                        <div class="stats-glow stats-glow-gold"></div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-2 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="stats-card stats-silver">
-                        <div class="stats-icon-wrapper">
-                            <div class="medal-icon silver-medal">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <circle cx="12" cy="12" r="8" fill="url(#silverGradient)"/>
-                                    <circle cx="12" cy="12" r="6" fill="url(#silverInner)"/>
-                                    <text x="12" y="16" text-anchor="middle" font-size="8" font-weight="bold" fill="#666">2</text>
-                                    <defs>
-                                        <radialGradient id="silverGradient">
-                                            <stop offset="0%" stop-color="#E5E5E5"/>
-                                            <stop offset="100%" stop-color="#C0C0C0"/>
-                                        </radialGradient>
-                                        <radialGradient id="silverInner">
-                                            <stop offset="0%" stop-color="#F5F5F5"/>
-                                            <stop offset="100%" stop-color="#E5E5E5"/>
-                                        </radialGradient>
-                                    </defs>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="stats-number">{{ page.stats.silver }}</div>
-                        <div class="stats-label">
-                            {% if page.lang == "en" %}
-                            Silver Medals
-                            {% else %}
-                            ميداليات فضية
-                            {% endif %}
-                        </div>
-                        <div class="stats-glow stats-glow-silver"></div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-2 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="stats-card stats-bronze">
-                        <div class="stats-icon-wrapper">
-                            <div class="medal-icon bronze-medal">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <circle cx="12" cy="12" r="8" fill="url(#bronzeGradient)"/>
-                                    <circle cx="12" cy="12" r="6" fill="url(#bronzeInner)"/>
-                                    <text x="12" y="16" text-anchor="middle" font-size="8" font-weight="bold" fill="#8B4513">3</text>
-                                    <defs>
-                                        <radialGradient id="bronzeGradient">
-                                            <stop offset="0%" stop-color="#DAA520"/>
-                                            <stop offset="100%" stop-color="#CD7F32"/>
-                                        </radialGradient>
-                                        <radialGradient id="bronzeInner">
-                                            <stop offset="0%" stop-color="#F4A460"/>
-                                            <stop offset="100%" stop-color="#DAA520"/>
-                                        </radialGradient>
-                                    </defs>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="stats-number">{{ page.stats.bronze }}</div>
-                        <div class="stats-label">
-                            {% if page.lang == "en" %}
-                            Bronze Medals
-                            {% else %}
-                            ميداليات برونزية
-                            {% endif %}
-                        </div>
-                        <div class="stats-glow stats-glow-bronze"></div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-2 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="400">
-                    <div class="stats-card stats-hm enable-debugger">
-                        <div class="stats-icon-wrapper">
-                            <div class="award-icon">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M12 2L15.09 8.26L22 9L17 14L18.18 21L12 17.77L5.82 21L7 14L2 9L8.91 8.26L12 2Z" fill="url(#honorGradient)"/>
-                                    <defs>
-                                        <linearGradient id="honorGradient">
-                                            <stop offset="0%" stop-color="#8A63D2"/>
-                                            <stop offset="100%" stop-color="#6F42C1"/>
-                                        </linearGradient>
-                                    </defs>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="stats-number">{{ page.stats.hm }}</div>
-                        <div class="stats-label">
-                            {% if page.lang == "en" %}
-                            Honorable Mentions
-                            {% else %}
-                            شهادات تقدير
-                            {% endif %}
-                        </div>
-                        <div class="stats-glow stats-glow-hm"></div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-2 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="500">
-                    <div class="stats-card stats-participation">
-                        <div class="stats-icon-wrapper">
-                            <div class="globe-icon">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <circle cx="12" cy="12" r="10" fill="url(#globeGradient)"/>
-                                    <path d="M12 2C12 2 15 6 15 12S12 22 12 22" stroke="#fff" stroke-width="1" fill="none"/>
-                                    <path d="M12 2C12 2 9 6 9 12S12 22 12 22" stroke="#fff" stroke-width="1" fill="none"/>
-                                    <path d="M2 12H22" stroke="#fff" stroke-width="1"/>
-                                    <path d="M4 8H20" stroke="#fff" stroke-width="0.5"/>
-                                    <path d="M4 16H20" stroke="#fff" stroke-width="0.5"/>
-                                    <defs>
-                                        <radialGradient id="globeGradient">
-                                            <stop offset="0%" stop-color="#20C997"/>
-                                            <stop offset="100%" stop-color="#17A2B8"/>
-                                        </radialGradient>
-                                    </defs>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="stats-number">{{ page.stats.participations }}</div>
-                        <div class="stats-label">
-                            {% if page.lang == "en" %}
-                            Participations
-                            {% else %}
-                            مشاركة دولية
-                            {% endif %}
-                        </div>
-                        <div class="stats-glow stats-glow-participation"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Enhanced Info Section -->
-    <section class="info-section py-5">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
-                    <div class="info-card modern-card">
-                        <div class="card-icon-wrapper mb-4">
-                            <div class="icon-background">
-                                <i class="bi bi-calculator-fill"></i>
-                            </div>
-                        </div>
-                        {% if page.lang == "en" %}
-                        <h3 class="card-title">What are Math Olympiads?</h3>
-                        <p class="card-description">Math olympiads are prestigious competitive mathematical competitions for students under 20. These competitions feature challenging problems requiring creative problem-solving, logical reasoning, and deep mathematical understanding.</p>
-                        <p class="card-description">This intellectual sport demands analytical thinking, mathematical creativity, and proof-writing skills to tackle complex problems within limited time frames.</p>
-                        <a href="/en/olympiads" class="btn btn-modern-primary">
-                            <i class="bi bi-arrow-right me-2"></i>
-                            Explore Olympiads
-                        </a>
-                        {% else %}
-                        <h3 class="card-title">ما هي أولمبيادات الرياضيات؟</h3>
-                        <p class="card-description">أولمبيادات الرياضيات هي مسابقات رياضية تنافسية مرموقة للطلاب دون سن 20 عامًا. تتألف من مسائل صعبة تتطلب حل المشكلات الإبداعي والتفكير المنطقي والفهم الرياضي العميق.</p>
-                        <p class="card-description">تعتمد هذه الرياضة الذهنية على التفكير التحليلي والإبداع الرياضي ومهارات كتابة البراهين لحل المشكلات المعقدة في إطار زمني محدود.</p>
-                        <a href="/olympiads" class="btn btn-modern-primary">
-                            <i class="bi bi-arrow-left me-2"></i>
-                            تعرف على الأولمبياد
-                        </a>
-                        {% endif %}
-                    </div>
-                </div>
-                
-                <div class="col-md-6" data-aos="fade-left" data-aos-delay="200">
-                    <div class="info-card modern-card">
-                        <div class="card-icon-wrapper mb-4">
-                            <div class="icon-background icon-background-alt">
-                                <i class="bi bi-people-fill"></i>
-                            </div>
-                        </div>
-                        {% if page.lang == "en" %}
-                        <h3 class="card-title">Why Our Math Team?</h3>
-                        <p class="card-description">The Saudi Math Team brings together the Kingdom's most exceptional mathematical talents. Our members are selected through rigorous competitions and intensive training programs.</p>
-                        <p class="card-description">We proudly represent Saudi Arabia in the International Mathematical Olympiad (IMO) and regional competitions, consistently achieving remarkable results on the global stage.</p>
-                        <a href="/en/members" class="btn btn-modern-secondary">
-                            <i class="bi bi-people me-2"></i>
-                            Meet Our Team
-                        </a>
-                        {% else %}
-                        <h3 class="card-title">لماذا فريقنا للرياضيات؟</h3>
-                        <p class="card-description">يضم فريق الرياضيات السعودي أبرز المواهب الرياضية في المملكة. يتم اختيار أعضائنا من خلال مسابقات صارمة وبرامج تدريبية مكثفة.</p>
-                        <p class="card-description">نمثل المملكة بفخر في أولمبياد الرياضيات الدولي والمسابقات الإقليمية، محققين نتائج متميزة على المستوى العالمي.</p>
-                        <a href="/members" class="btn btn-modern-secondary">
-                            <i class="bi bi-people me-2"></i>
-                            تعرف على فريقنا
-                        </a>
-                        {% endif %}
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Enhanced Join Section -->
-    <section id="join" class="join-section py-5">
-        <div class="container">
-            <div class="join-card" data-aos="fade-up">
-                <div class="row align-items-center g-5">
-                    <div class="col-lg-6 text-center">
-                        <div class="image-container">
-                            <img src="/img/naser_md_thinking.jpg" alt="Student participating in math competition" class="img-fluid rounded-4 shadow-lg">
-                            <div class="image-overlay"></div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="join-content">
-                            {% if page.lang == "en" %}
-                            <h2 class="join-title mb-4">Ready to Join Our Team?</h2>
-                            <p class="join-subtitle mb-4">Begin your journey to mathematical excellence through these pathways:</p>
-                            {% else %}
-                            <h2 class="join-title mb-4">مستعد للانضمام لفريقنا؟</h2>
-                            <p class="join-subtitle mb-4">ابدأ رحلتك نحو التميز الرياضي من خلال هذه المسارات:</p>
-                            {% endif %}
-                            
-                            <div class="requirements-list">
-                                <div class="requirement-item" data-aos="fade-up" data-aos-delay="100">
-                                    <div class="requirement-icon">
-                                        <i class="bi bi-trophy-fill"></i>
-                                    </div>
-                                    <div class="requirement-content">
-                                        {% if page.lang == "en" %}
-                                        <h5>Excel in National Competitions</h5>
-                                        <p>Participate in national mathematics competitions and achieve outstanding results to showcase your mathematical prowess.</p>
-                                        {% else %}
-                                        <h5>التميز في المسابقات الوطنية</h5>
-                                        <p>شارك في المسابقات الرياضية الوطنية وحقق نتائج متميزة لإظهار براعتك الرياضية.</p>
-                                        {% endif %}
-                                    </div>
-                                </div>
-                                
-                                <div class="requirement-item" data-aos="fade-up" data-aos-delay="200">
-                                    <div class="requirement-icon">
-                                        <i class="bi bi-award-fill"></i>
-                                    </div>
-                                    <div class="requirement-content">
-                                        {% if page.lang == "en" %}
-                                        <h5>Qualify Through National Programs</h5>
-                                        <p>Achieve qualification through national talent development programs organized by Mawhiba Foundation.</p>
-                                        {% else %}
-                                        <h5>التأهل عبر البرامج الوطنية</h5>
-                                        <p>حقق التأهل من خلال برامج تطوير المواهب الوطنية التي تنظمها مؤسسة موهبة.</p>
-                                        {% endif %}
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="join-actions mt-5">
-                                {% if page.lang == "en" %}
-                                <a href="/en/contact" class="btn btn-join-primary btn-lg">
-                                    <i class="bi bi-envelope-fill me-2"></i>
-                                    Contact Us
-                                </a>
-                                {% else %}
-                                <a href="/contact" class="btn btn-join-primary btn-lg">
-                                    <i class="bi bi-envelope-fill me-2"></i>
-                                    تواصل معنا
-                                </a>
-                                {% endif %}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
-
-<style>
-/* Enhanced Hero Section */
-.hero-section {
-    min-height: 100vh;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    display: flex;
-    align-items: center;
-}
-
-.hero-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: 
-        radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 40% 80%, rgba(120, 119, 198, 0.2) 0%, transparent 50%);
-}
-
-.hero-particles {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.hero-particles::before,
-.hero-particles::after {
-    content: '';
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    animation: float 6s ease-in-out infinite;
-}
-
-.hero-particles::before {
-    top: 20%;
-    left: 20%;
-    animation-delay: 0s;
-}
-
-.hero-particles::after {
-    top: 60%;
-    right: 20%;
-    animation-delay: 3s;
-}
-
-@keyframes float {
-    0%, 100% { transform: translateY(0px) rotate(0deg); }
-    50% { transform: translateY(-20px) rotate(180deg); }
-}
-
-.hero-badge .badge {
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.hero-title {
-    font-size: 4.5rem;
-    line-height: 1.1;
-}
-
-.gradient-text {
-    background: linear-gradient(45deg, #fff, #f8f9fa);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.hero-subtitle {
-    font-size: 1.25rem;
-    opacity: 0.9;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.btn-hero-primary {
-    background: linear-gradient(45deg, #28a745, #20c997);
-    border: none;
-    border-radius: 50px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    transition: all 0.3s ease;
-    box-shadow: 0 10px 30px rgba(40, 167, 69, 0.3);
-}
-
-.btn-hero-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 15px 40px rgba(40, 167, 69, 0.4);
-    background: linear-gradient(45deg, #218838, #1cb690);
-}
-
-.btn-hero-secondary {
-    background: transparent;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 50px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    backdrop-filter: blur(10px);
-    transition: all 0.3s ease;
-}
-
-.btn-hero-secondary:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.5);
-    transform: translateY(-2px);
-}
-
-.hero-wave {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.hero-wave svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 60px;
-}
-
-/* Enhanced Stats Section */
-.stats-section {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-}
-
-.text-gradient {
-    background: linear-gradient(45deg, #667eea, #764ba2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.stats-card {
-    background: white;
-    border-radius: 20px;
-    padding: 2rem;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-}
-
-.stats-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
-}
-
-.stats-icon-wrapper {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto 1.5rem;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.5rem;
-    position: relative;
-    z-index: 2;
-}
-
-/* Enhanced Medal Icons */
-.medal-icon {
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    position: relative;
-    animation: medalShine 3s ease-in-out infinite;
-}
-
-.medal-icon svg {
-    width: 50px;
-    height: 50px;
-    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
-}
-
-.award-icon {
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation: starTwinkle 2s ease-in-out infinite;
-}
-
-.award-icon svg {
-    width: 45px;
-    height: 45px;
-    filter: drop-shadow(0 4px 8px rgba(111, 66, 193, 0.3));
-}
-
-.globe-icon {
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation: globeRotate 4s linear infinite;
-}
-
-.globe-icon svg {
-    width: 50px;
-    height: 50px;
-    filter: drop-shadow(0 4px 8px rgba(23, 162, 184, 0.3));
-}
-
-@keyframes medalShine {
-    0%, 100% { transform: scale(1) rotateY(0deg); }
-    50% { transform: scale(1.05) rotateY(15deg); }
-}
-
-@keyframes starTwinkle {
-    0%, 100% { transform: scale(1) rotate(0deg); opacity: 1; }
-    50% { transform: scale(1.1) rotate(5deg); opacity: 0.8; }
-}
-
-@keyframes globeRotate {
-    0% { transform: rotateY(0deg); }
-    100% { transform: rotateY(360deg); }
-}
-
-.stats-gold .stats-icon-wrapper {
-    background: linear-gradient(45deg, rgba(255, 215, 0, 0.1), rgba(255, 237, 78, 0.1));
-    border: 2px solid rgba(255, 215, 0, 0.3);
-}
-
-.stats-silver .stats-icon-wrapper {
-    background: linear-gradient(45deg, rgba(192, 192, 192, 0.1), rgba(229, 229, 229, 0.1));
-    border: 2px solid rgba(192, 192, 192, 0.3);
-}
-
-.stats-bronze .stats-icon-wrapper {
-    background: linear-gradient(45deg, rgba(205, 127, 50, 0.1), rgba(218, 165, 32, 0.1));
-    border: 2px solid rgba(205, 127, 50, 0.3);
-}
-
-.stats-hm .stats-icon-wrapper {
-    background: linear-gradient(45deg, rgba(111, 66, 193, 0.1), rgba(138, 99, 210, 0.1));
-    border: 2px solid rgba(111, 66, 193, 0.3);
-}
-
-.stats-participation .stats-icon-wrapper {
-    background: linear-gradient(45deg, rgba(23, 162, 184, 0.1), rgba(32, 201, 151, 0.1));
-    border: 2px solid rgba(23, 162, 184, 0.3);
-}
-
-.stats-number {
-    font-size: 3rem;
-    font-weight: 800;
-    margin-bottom: 0.5rem;
-    background: linear-gradient(45deg, #333, #666);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.stats-label {
-    font-weight: 600;
-    color: #6c757d;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    font-size: 0.9rem;
-}
-
-.stats-glow {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 1;
-}
-
-.stats-card:hover .stats-glow {
-    opacity: 0.1;
-}
-
-.stats-glow-gold { background: radial-gradient(circle, #ffd700, transparent); }
-.stats-glow-silver { background: radial-gradient(circle, #c0c0c0, transparent); }
-.stats-glow-bronze { background: radial-gradient(circle, #cd7f32, transparent); }
-.stats-glow-hm { background: radial-gradient(circle, #6f42c1, transparent); }
-.stats-glow-participation { background: radial-gradient(circle, #17a2b8, transparent); }
-
-/* Enhanced Info Section */
-.info-section {
-    background: white;
-    position: relative;
-}
-
-.modern-card {
-    background: white;
-    border-radius: 24px;
-    padding: 3rem;
-    height: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.modern-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, #667eea, #764ba2);
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-}
-
-.modern-card:hover::before {
-    transform: scaleX(1);
-}
-
-.modern-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.15);
-}
-
-.card-icon-wrapper {
-    text-align: center;
-}
-
-.icon-background {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: linear-gradient(45deg, #667eea, #764ba2);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-    color: white;
-    position: relative;
-}
-
-.icon-background-alt {
-    background: linear-gradient(45deg, #28a745, #20c997);
-}
-
-.icon-background::after {
-    content: '';
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
-    border-radius: 50%;
-    background: linear-gradient(45deg, #667eea, #764ba2);
-    opacity: 0.2;
-    z-index: -1;
-    animation: pulse 2s infinite;
-}
-
-.icon-background-alt::after {
-    background: linear-gradient(45deg, #28a745, #20c997);
-}
-
-@keyframes pulse {
-    0% { transform: scale(1); opacity: 0.2; }
-    50% { transform: scale(1.1); opacity: 0.1; }
-    100% { transform: scale(1); opacity: 0.2; }
-}
-
-.card-title {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    color: #333;
-}
-
-.card-description {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: #6c757d;
-    margin-bottom: 1.5rem;
-}
-
-.btn-modern-primary {
-    background: linear-gradient(45deg, #667eea, #764ba2);
-    border: none;
-    border-radius: 50px;
-    padding: 12px 30px;
-    font-weight: 600;
-    color: white;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    transition: all 0.3s ease;
-    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
-}
-
-.btn-modern-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 35px rgba(102, 126, 234, 0.4);
-    color: white;
-}
-
-.btn-modern-secondary {
-    background: linear-gradient(45deg, #28a745, #20c997);
-    border: none;
-    border-radius: 50px;
-    padding: 12px 30px;
-    font-weight: 600;
-    color: white;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    transition: all 0.3s ease;
-    box-shadow: 0 8px 25px rgba(40, 167, 69, 0.3);
-}
-
-.btn-modern-secondary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 35px rgba(40, 167, 69, 0.4);
-    color: white;
-}
-
-/* Enhanced Join Section */
-.join-section {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    position: relative;
-    overflow: hidden;
-}
-
-.join-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: 
-        radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 90% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
-}
-
-.join-card {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(20px);
-    border-radius: 30px;
-    padding: 4rem;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.1);
-    position: relative;
-}
-
-.image-container {
-    position: relative;
-    display: inline-block;
-}
-
-.image-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
-    border-radius: 1rem;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.image-container:hover .image-overlay {
-    opacity: 1;
-}
-
-.join-title {
-    font-size: 3rem;
-    font-weight: 800;
-    background: linear-gradient(45deg, #667eea, #764ba2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    line-height: 1.2;
-}
-
-.join-subtitle {
-    font-size: 1.2rem;
-    color: #6c757d;
-    line-height: 1.6;
-}
-
-.requirements-list {
-    margin: 2rem 0;
-}
-
-.requirement-item {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 2rem;
-    padding: 1.5rem;
-    background: rgba(102, 126, 234, 0.05);
-    border-radius: 16px;
-    border-left: 4px solid transparent;
-    background-image: linear-gradient(white, white), linear-gradient(45deg, #667eea, #764ba2);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    transition: all 0.3s ease;
-}
-
-.requirement-item:hover {
-    transform: translateX(10px);
-    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.1);
-}
-
-.requirement-icon {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: linear-gradient(45deg, #667eea, #764ba2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 1.5rem;
-    flex-shrink: 0;
-    font-size: 1.5rem;
-    color: white;
-    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
-}
-
-.requirement-content h5 {
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 0.5rem;
-    font-size: 1.25rem;
-}
-
-.requirement-content p {
-    color: #6c757d;
-    margin: 0;
-    line-height: 1.6;
-}
-
-.requirement-content a {
-    color: #667eea;
-    position: relative;
-}
-
-.requirement-content a::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: linear-gradient(45deg, #667eea, #764ba2);
-    transition: width 0.3s ease;
-}
-
-.requirement-content a:hover::after {
-    width: 100%;
-}
-
-.btn-join-primary {
-    background: linear-gradient(45deg, #28a745, #20c997);
-    border: none;
-    border-radius: 50px;
-    padding: 15px 40px;
-    font-weight: 700;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    box-shadow: 0 15px 40px rgba(40, 167, 69, 0.3);
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.btn-join-primary::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    transition: left 0.5s;
-}
-
-.btn-join-primary:hover::before {
-    left: 100%;
-}
-
-.btn-join-primary:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 20px 50px rgba(40, 167, 69, 0.4);
-    background: linear-gradient(45deg, #218838, #1cb690);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .hero-title {
-        font-size: 3rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 1.1rem;
-    }
-    
-    .stats-card {
-        margin-bottom: 1.5rem;
-    }
-    
-    .medal-icon, .award-icon, .globe-icon {
-        width: 50px;
-        height: 50px;
-    }
-    
-    .medal-icon svg, .globe-icon svg {
-        width: 40px;
-        height: 40px;
-    }
-    
-    .award-icon svg {
-        width: 35px;
-        height: 35px;
-    }
-    
-    .modern-card {
-        padding: 2rem;
-    }
-    
-    .join-card {
-        padding: 2rem;
-    }
-    
-    .join-title {
-        font-size: 2.5rem;
-    }
-    
-    .requirement-item {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .requirement-icon {
-        margin-right: 0;
-        margin-bottom: 1rem;
-    }
-}
-
-@media (max-width: 576px) {
-    .hero-title {
-        font-size: 2.5rem;
-    }
-    
-    .stats-number {
-        font-size: 2.5rem;
-    }
-    
-    .join-title {
-        font-size: 2rem;
-    }
-    
-    .medal-icon, .award-icon, .globe-icon {
-        width: 45px;
-        height: 45px;
-    }
-    
-    .medal-icon svg, .globe-icon svg {
-        width: 35px;
-        height: 35px;
-    }
-    
-    .award-icon svg {
-        width: 30px;
-        height: 30px;
-    }
-}
-
-/* Additional animations */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.hero-content {
-    animation: fadeInUp 1s ease-out;
-}
-
-/* Smooth scrolling */
-html {
-    scroll-behavior: smooth;
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(45deg, #667eea, #764ba2);
-    border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(45deg, #5a6fd8, #6a4c93);
-}
-</style>
-
-<script>
-    var clicks_count = 0;
-    document.querySelector('.enable-debugger').addEventListener('click', () => {
-        clicks_count++;
-        if (clicks_count == 10) {
-            setCookie('debugger', 'iReadTheSource', 71);
-            alert("Enabled debugger successfully")
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saudi Math Team - Official Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-    });
-</script>
 
-<script>
-    // Initialize AOS with enhanced settings
-    AOS.init({
-        duration: 1000,
-        once: true,
-        offset: 100,
-        easing: 'ease-out-cubic'
-    });
-    
-    // Initialize code highlighting
-    document.addEventListener('DOMContentLoaded', (event) => {
-        document.querySelectorAll('pre code').forEach((block) => {
-            hljs.highlightBlock(block);
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #000000;
+            background: #FFFFFF;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #1A8754 0%, #0d5d36 100%);
+            color: #FFFFFF;
+            padding: 2rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="math" patternUnits="userSpaceOnUse" width="50" height="50"><text x="10" y="20" font-size="12" fill="rgba(255,255,255,0.1)">∑</text><text x="30" y="35" font-size="10" fill="rgba(255,255,255,0.08)">∫</text><text x="5" y="45" font-size="8" fill="rgba(255,255,255,0.06)">π</text></pattern></defs><rect width="100" height="100" fill="url(%23math)"/></svg>') repeat;
+            opacity: 0.3;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: #FFFFFF;
+            color: #1A8754;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: #FFFFFF;
+            border: 2px solid #FFFFFF;
+        }
+
+        .btn-outline:hover {
+            background: #FFFFFF;
+            color: #1A8754;
+            transform: translateY(-2px);
+        }
+
+        /* Stats Section */
+        .stats-section {
+            padding: 5rem 0;
+            background: linear-gradient(to bottom, #f8f9fa, #FFFFFF);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1A8754;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #1A8754, #0d5d36);
+            border-radius: 2px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .stat-card {
+            background: #FFFFFF;
+            padding: 2rem;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(26, 135, 84, 0.1);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(26, 135, 84, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #1A8754, #0d5d36);
+        }
+
+        .stat-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(26, 135, 84, 0.2);
+        }
+
+        /* Medal Icons */
+        .medal-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1rem;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .medal-base {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            position: relative;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .medal-base::before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 3px;
+            height: 20px;
+            background: #8B4513;
+            border-radius: 2px;
+        }
+
+        .medal-base::after {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 30px;
+            height: 8px;
+            background: #8B4513;
+            border-radius: 4px;
+        }
+
+        .medal-gold .medal-base {
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            color: #8B4513;
+        }
+
+        .medal-silver .medal-base {
+            background: linear-gradient(135deg, #C0C0C0, #A8A8A8);
+            color: #4A4A4A;
+        }
+
+        .medal-bronze .medal-base {
+            background: linear-gradient(135deg, #CD7F32, #B8860B);
+            color: #FFFFFF;
+        }
+
+        .medal-hm .medal-base {
+            background: linear-gradient(135deg, #1A8754, #0d5d36);
+            color: #FFFFFF;
+        }
+
+        .medal-participation .medal-base {
+            background: linear-gradient(135deg, #4169E1, #1E90FF);
+            color: #FFFFFF;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #1A8754;
+            margin: 1rem 0 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            color: #666;
+            font-weight: 500;
+        }
+
+        /* Info Section */
+        .info-section {
+            padding: 5rem 0;
+            background: #FFFFFF;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .info-card {
+            background: #FFFFFF;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(26, 135, 84, 0.1);
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .info-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #1A8754, #0d5d36);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            color: #FFFFFF;
+            font-size: 2rem;
+        }
+
+        .info-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #1A8754;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .info-text {
+            color: #666;
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .btn-success {
+            background: #1A8754;
+            color: #FFFFFF;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+
+        .btn-success:hover {
+            background: #0d5d36;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(26, 135, 84, 0.3);
+        }
+
+        /* Join Section */
+        .join-section {
+            padding: 5rem 0;
+            background: linear-gradient(135deg, #1A8754, #0d5d36);
+            color: #FFFFFF;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .join-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="40" r="1.5" fill="rgba(255,255,255,0.08)"/><circle cx="40" cy="70" r="1" fill="rgba(255,255,255,0.06)"/></svg>') repeat;
+        }
+
+        .join-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .join-image {
+            text-align: center;
+        }
+
+        .join-image img {
+            max-width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .join-text h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .join-text .lead {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .join-list {
+            list-style: none;
+            margin: 2rem 0;
+        }
+
+        .join-list li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .join-list li::before {
+            content: '✓';
+            background: #FFFFFF;
+            color: #1A8754;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 1rem;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .join-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 1rem;
+            }
+
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .stat-number {
+                font-size: 2.5rem;
+            }
+
+            .medal-icon {
+                width: 60px;
+                height: 60px;
+            }
+
+            .medal-base {
+                width: 45px;
+                height: 45px;
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="header">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Saudi Math Team</h1>
+                <p class="hero-subtitle">We represent Saudi Arabia in International Math Olympiads</p>
+                <div class="cta-buttons">
+                    <a href="#join" class="btn btn-primary">
+                        <span>How to join the team?</span>
+                        <span>→</span>
+                    </a>
+                    <a href="#participations" class="btn btn-outline">
+                        <span>Past participations</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <h2 class="section-title fade-in">Our Team's Achievements</h2>
+            <div class="stats-grid">
+                <div class="stat-card fade-in">
+                    <div class="medal-icon medal-gold">
+                        <div class="medal-base">🥇</div>
+                    </div>
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">Gold Medals</div>
+                </div>
+                
+                <div class="stat-card fade-in">
+                    <div class="medal-icon medal-silver">
+                        <div class="medal-base">🥈</div>
+                    </div>
+                    <div class="stat-number">18</div>
+                    <div class="stat-label">Silver Medals</div>
+                </div>
+                
+                <div class="stat-card fade-in">
+                    <div class="medal-icon medal-bronze">
+                        <div class="medal-base">🥉</div>
+                    </div>
+                    <div class="stat-number">25</div>
+                    <div class="stat-label">Bronze Medals</div>
+                </div>
+                
+                <div class="stat-card fade-in">
+                    <div class="medal-icon medal-hm">
+                        <div class="medal-base">🏆</div>
+                    </div>
+                    <div class="stat-number">31</div>
+                    <div class="stat-label">Honorable Mentions</div>
+                </div>
+                
+                <div class="stat-card fade-in">
+                    <div class="medal-icon medal-participation">
+                        <div class="medal-base">🌍</div>
+                    </div>
+                    <div class="stat-number">15</div>
+                    <div class="stat-label">International Participations</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-section">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card fade-in">
+                    <div class="info-icon">
+                        🧮
+                    </div>
+                    <h3 class="info-title">What are Math Olympiads?</h3>
+                    <p class="info-text">Math olympiads are competitive mathematical competitions for students under the age of 20. A competition consists of challenging mathematical problems that require creative problem-solving, logical reasoning, and deep mathematical understanding.</p>
+                    <p class="info-text">This intellectual sport relies on analytical thinking, mathematical creativity, and proof-writing skills to tackle complex problems within a limited time frame.</p>
+                    <a href="#olympiads" class="btn-success">See Olympiads</a>
+                </div>
+                
+                <div class="info-card fade-in">
+                    <div class="info-icon">
+                        👥
+                    </div>
+                    <h3 class="info-title">Why Math Team?</h3>
+                    <p class="info-text">The Saudi Math Team includes the strongest mathematical talents in the Kingdom of Saudi Arabia. Team members are selected through a rigorous selection process that includes competitions and intensive mathematical training.</p>
+                    <p class="info-text">The team represents the Kingdom in the International Mathematical Olympiad (IMO) and regional competitions, and has achieved many accomplishments at the global level.</p>
+                    <a href="#members" class="btn-success">Meet the Members</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Section -->
+    <section id="join" class="join-section">
+        <div class="container">
+            <div class="join-content">
+                <div class="join-image">
+                    <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Student solving mathematical problems">
+                </div>
+                <div class="join-text">
+                    <h2>How to Join the Team?</h2>
+                    <p class="lead">You can join the Saudi Math Team through:</p>
+                    <ul class="join-list">
+                        <li>Participating in national mathematics competitions and achieving excellent results</li>
+                        <li>Demonstrating exceptional mathematical talent and problem-solving abilities</li>
+                        <li>Completing intensive training programs and qualifying examinations</li>
+                        <li>Showing dedication to mathematical excellence and continuous learning</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all fade-in elements
+        document.querySelectorAll('.fade-in').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+            observer.observe(el);
         });
-        
-        // Add smooth scroll behavior for anchor links
+
+        // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -1156,103 +643,51 @@ html {
                 }
             });
         });
-        
-        // Add parallax effect to hero section
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const heroBackground = document.querySelector('.hero-background');
-            if (heroBackground) {
-                heroBackground.style.transform = `translateY(${scrolled * 0.5}px)`;
-            }
-        });
-        
-        // Add hover effects to stats cards with enhanced medal animations
-        document.querySelectorAll('.stats-card').forEach(card => {
+
+        // Add hover effect to stat cards
+        document.querySelectorAll('.stat-card').forEach(card => {
             card.addEventListener('mouseenter', function() {
                 this.style.transform = 'translateY(-10px) scale(1.02)';
-                
-                // Add special animation for medal icons
-                const medalIcon = this.querySelector('.medal-icon, .award-icon, .globe-icon');
-                if (medalIcon) {
-                    medalIcon.style.transform = 'scale(1.1) rotateY(15deg)';
-                }
             });
             
             card.addEventListener('mouseleave', function() {
                 this.style.transform = 'translateY(0) scale(1)';
-                
-                // Reset medal icon animation
-                const medalIcon = this.querySelector('.medal-icon, .award-icon, .globe-icon');
-                if (medalIcon) {
-                    medalIcon.style.transform = 'scale(1) rotateY(0deg)';
-                }
             });
         });
-        
-        // Add typing effect to hero title (optional enhancement)
-        const heroTitle = document.querySelector('.hero-title .gradient-text');
-        if (heroTitle && window.innerWidth > 768) {
-            const text = heroTitle.textContent;
-            heroTitle.textContent = '';
-            let i = 0;
-            
-            const typeWriter = () => {
-                if (i < text.length) {
-                    heroTitle.textContent += text.charAt(i);
-                    i++;
-                    setTimeout(typeWriter, 100);
+
+        // Counter animation for stats
+        function animateCounter(element, target) {
+            let current = 0;
+            const increment = target / 50;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
                 }
-            };
-            
-            setTimeout(typeWriter, 1000);
+                element.textContent = Math.floor(current);
+            }, 30);
         }
-        
-        // Enhanced medal shine effect on scroll
-        const medalObserver = new IntersectionObserver((entries) => {
+
+        // Trigger counter animations when stats section is visible
+        const statsObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    const medal = entry.target.querySelector('.medal-icon, .award-icon, .globe-icon');
-                    if (medal) {
-                        setTimeout(() => {
-                            medal.style.animation = medal.style.animation + ', medalHighlight 1s ease-in-out';
-                        }, 500);
-                    }
+                    const numbers = entry.target.querySelectorAll('.stat-number');
+                    numbers.forEach(num => {
+                        const target = parseInt(num.textContent);
+                        num.textContent = '0';
+                        setTimeout(() => animateCounter(num, target), 200);
+                    });
+                    statsObserver.unobserve(entry.target);
                 }
             });
         }, { threshold: 0.5 });
-        
-        document.querySelectorAll('.stats-card').forEach(card => {
-            medalObserver.observe(card);
-        });
-    });
-    
-    // Add intersection observer for additional animations
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-    
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animate-in');
-            }
-        });
-    }, observerOptions);
-    
-    // Observe elements for additional animations
-    document.querySelectorAll('.stats-card, .modern-card, .requirement-item').forEach(el => {
-        observer.observe(el);
-    });
-    
-    // Add medal highlight keyframe animation
-    const style = document.createElement('style');
-    style.textContent = `
-        @keyframes medalHighlight {
-            0% { filter: brightness(1) drop-shadow(0 4px 8px rgba(0,0,0,0.2)); }
-            50% { filter: brightness(1.2) drop-shadow(0 6px 12px rgba(255,215,0,0.4)); }
-            100% { filter: brightness(1) drop-shadow(0 4px 8px rgba(0,0,0,0.2)); }
+
+        const statsSection = document.querySelector('.stats-section');
+        if (statsSection) {
+            statsObserver.observe(statsSection);
         }
-    `;
-    document.head.appendChild(style);
-</script>
+    </script>
+</body>
+</html>
