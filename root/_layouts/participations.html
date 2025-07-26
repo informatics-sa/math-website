@@ -5,462 +5,441 @@ layout: default
 
 <style>
 :root {
-    --color-black: #000000;
-    --color-white: #FFFFFF;
-    --color-green: #1A8754;
+    --primary-color: #1A8754;
+    --dark-color: #000000;
+    --light-color: #FFFFFF;
+    --success-color: #1A8754;
+    --warning-color: #ffc107;
+    --info-color: #0dcaf0;
+    --secondary-color: #6c757d;
+}
+
+.olympiad-container {
+    background: var(--light-color);
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin: 20px 0;
 }
 
 .filter-section {
-    background: var(--color-white);
-    border: 2px solid var(--color-black);
-    border-radius: 8px;
+    background: linear-gradient(135deg, var(--primary-color), #228B5B);
+    color: var(--light-color);
+    border-radius: 10px;
     padding: 20px;
     margin-bottom: 25px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.filter-title {
-    color: var(--color-black);
-    font-weight: bold;
-    font-size: 1.2em;
-    margin-bottom: 15px;
-    text-align: center;
 }
 
 .filter-controls {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+    gap: 15px;
     align-items: center;
-}
-
-.select-all-btn, .clear-all-btn {
-    background: var(--color-green);
-    color: var(--color-white);
-    border: none;
-    padding: 8px 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
-
-.select-all-btn:hover, .clear-all-btn:hover {
-    background: #145a42;
-    transform: translateY(-1px);
-}
-
-.clear-all-btn {
-    background: var(--color-black);
-}
-
-.clear-all-btn:hover {
-    background: #333333;
-}
-
-.olympiad-filter {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
     justify-content: center;
-    margin-top: 15px;
 }
 
 .olympiad-checkbox {
-    display: none;
-}
-
-.olympiad-label {
-    background: var(--color-white);
-    color: var(--color-black);
-    border: 2px solid var(--color-black);
-    padding: 6px 12px;
-    border-radius: 20px;
-    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 8px 15px;
+    border-radius: 25px;
+    border: 2px solid transparent;
     transition: all 0.3s ease;
-    font-size: 0.9em;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.olympiad-checkbox:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: var(--light-color);
+}
+
+.olympiad-checkbox input[type="checkbox"] {
+    margin-left: 10px;
+    transform: scale(1.2);
+    accent-color: var(--light-color);
+}
+
+.olympiad-checkbox label {
+    color: var(--light-color);
     font-weight: 500;
-    user-select: none;
+    cursor: pointer;
+    margin: 0;
 }
 
-.olympiad-label:hover {
-    background: #f8f9fa;
-    transform: translateY(-1px);
+.control-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    justify-content: center;
 }
 
-.olympiad-checkbox:checked + .olympiad-label {
-    background: var(--color-green);
-    color: var(--color-white);
-    border-color: var(--color-green);
+.btn-custom {
+    background: var(--light-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.table-container {
+    overflow-x: auto;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
 }
 
 .table {
-    border: 2px solid var(--color-black);
-    border-radius: 8px;
-    overflow: hidden;
-    background: var(--color-white);
+    margin: 0;
+    background: var(--light-color);
 }
 
 .table thead th {
-    background: var(--color-black);
-    color: var(--color-white);
+    background: linear-gradient(135deg, var(--primary-color), #228B5B);
+    color: var(--light-color);
     border: none;
-    padding: 12px;
-    font-weight: bold;
+    font-weight: 600;
     text-align: center;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .table tbody tr {
-    border-bottom: 1px solid #e0e0e0;
-    transition: background-color 0.2s ease;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid #f0f0f0;
 }
 
 .table tbody tr:hover {
-    background: #f8f9fa;
-}
-
-.table tbody tr.hidden-row {
-    display: none;
+    background: linear-gradient(135deg, rgba(26, 135, 84, 0.05), rgba(26, 135, 84, 0.02));
+    transform: scale(1.01);
 }
 
 .table tbody td {
-    padding: 12px;
-    border: none;
+    padding: 12px 15px;
     vertical-align: middle;
+    border: none;
 }
 
-.table tbody td a {
-    color: var(--color-green);
+.year-cell {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    font-weight: bold;
+    font-size: 1.1em;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.olympiad-link {
+    color: var(--primary-color);
     text-decoration: none;
-    font-weight: 500;
-    transition: color 0.2s ease;
+    font-weight: 600;
+    transition: all 0.3s ease;
 }
 
-.table tbody td a:hover {
-    color: #145a42;
+.olympiad-link:hover {
+    color: #228B5B;
     text-decoration: underline;
 }
 
 .badge {
-    font-size: 0.75em;
-    padding: 4px 8px;
-    border-radius: 12px;
-    font-weight: bold;
-}
-
-.bg-secondary {
-    background-color: var(--color-black) !important;
-    color: var(--color-white) !important;
-}
-
-.bg-warning {
-    background-color: #ffc107 !important;
-    color: var(--color-black) !important;
+    font-size: 0.8em;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-weight: 500;
 }
 
 .bg-success {
-    background-color: var(--color-green) !important;
-    color: var(--color-white) !important;
+    background-color: var(--success-color) !important;
+}
+
+.bg-warning {
+    background-color: var(--warning-color) !important;
+    color: var(--dark-color) !important;
 }
 
 .bg-info {
-    background-color: #17a2b8 !important;
-    color: var(--color-white) !important;
+    background-color: var(--info-color) !important;
 }
 
-.results-summary {
+.bg-secondary {
+    background-color: var(--secondary-color) !important;
+}
+
+.no-results {
     text-align: center;
-    margin: 15px 0;
-    padding: 10px;
-    background: #f8f9fa;
-    border-radius: 5px;
-    border: 1px solid #e0e0e0;
-    color: var(--color-black);
-    font-weight: 500;
+    padding: 40px;
+    color: var(--secondary-color);
+    font-size: 1.2em;
 }
 
 @media (max-width: 768px) {
     .filter-controls {
         flex-direction: column;
-        align-items: stretch;
     }
     
-    .olympiad-filter {
+    .olympiad-checkbox {
+        width: 100%;
         justify-content: center;
     }
     
-    .olympiad-label {
-        font-size: 0.8em;
-        padding: 5px 10px;
-    }
-    
-    .table {
+    .table-container {
         font-size: 0.9em;
     }
 }
 </style>
 
-<div class="filter-section">
-    <div class="filter-title">
-        {% if page.lang == "ar" %}
-        تصفية الأولمبيادات
-        {% else %}
-        Filter Olympiads
-        {% endif %}
-    </div>
-    
-    <div class="filter-controls">
-        <button class="select-all-btn" onclick="selectAllOlympiads()">
+<div class="olympiad-container">
+    <!-- Filter Section -->
+    <div class="filter-section">
+        <h4 class="text-center mb-3">
             {% if page.lang == "ar" %}
-            تحديد الكل
+                تصفية الأولمبيادات
             {% else %}
-            Select All
+                Filter Olympiads
             {% endif %}
-        </button>
+        </h4>
         
-        <button class="clear-all-btn" onclick="clearAllOlympiads()">
-            {% if page.lang == "ar" %}
-            إلغاء الكل
-            {% else %}
-            Clear All
-            {% endif %}
-        </button>
+        <div class="filter-controls" id="filterControls">
+            <!-- Checkboxes will be populated by JavaScript -->
+        </div>
+        
+        <div class="control-buttons">
+            <button class="btn btn-custom" onclick="selectAll()">
+                {% if page.lang == "ar" %}
+                    تحديد الكل
+                {% else %}
+                    Select All
+                {% endif %}
+            </button>
+            <button class="btn btn-custom" onclick="deselectAll()">
+                {% if page.lang == "ar" %}
+                    إلغاء تحديد الكل
+                {% else %}
+                    Deselect All
+                {% endif %}
+            </button>
+        </div>
     </div>
-    
-    <div class="olympiad-filter" id="olympiadFilter">
-        <!-- سيتم ملؤها بواسطة JavaScript -->
+
+    <!-- Table -->
+    <div class="table-container">
+        <table class="table table-bordered table-striped">
+            <thead>
+                {% if page.lang == "ar" %}
+                <th width="5%">السنة</th>
+                <th>الأولمبياد</th>
+                <th>تاريخ المشاركة</th>
+                <th>المكان</th>
+                <th>الجوائز</th>
+                {% else %}
+                <th width="5%">Year</th>
+                <th>Olympiad</th>
+                <th>Date</th>
+                <th>Country</th>
+                <th>Awards</th>
+                {% endif %}
+            </thead>
+            <tbody id="olympiadTableBody">
+                {% for year in (page.start_year..page.last_year) reversed %}
+                    {% for idx in (1..page[year].count) %}
+                        {% capture olyid %}{{page[year][idx].name}}_{{year}}{% endcapture %}
+                        <tr class="olympiad-row" data-olympiad="{{ page[year][idx].name }}">
+                            {% if idx == 1 %}
+                            <td class="text-center year-cell" style="vertical-align: middle;" rowspan="{{ page[year].count }}">{{ year }}</td>
+                            {% endif %}
+                            <td>
+                                <a href="{% if page.lang == "en" %}/en{% endif %}/participations/{{olyid}}" class="olympiad-link">
+                                    {% if page.lang == "en" %}  
+                                        {{ page[year][idx].enname }}
+                                    {% else %}
+                                        {{ page[year][idx].arname }}
+                                    {% endif %}
+                                    ({{ page[year][idx].name | upcase }})
+                                </a>
+                            </td>
+                            <td>
+                                <input type="hidden" id="olstart-{{olyid}}" value="{{ page[year][idx].start }}">
+                                <input type="hidden" id="olend-{{olyid}}" value="{{ page[year][idx].end }}">
+                                {% if page[year][idx].start == page[year][idx].end %}
+                                    {{ page[year][idx].start }}
+                                {% else %}
+                                    {{ page[year][idx].start }} - {{ page[year][idx].end }}
+                                {% endif %}
+                            </td>
+                            <td>
+                                {% if page.lang == 'ar' %}
+                                    {{ page[year][idx].country_arname }}
+                                {% else %}
+                                    {{ page[year][idx].country_enname }}
+                                {% endif %}
+                                
+                                {% if page[year][idx].online %}
+                                <span class="badge bg-secondary">
+                                    {% if page.lang == 'ar' %}
+                                    عن بعد 🌐
+                                    {% else %}
+                                    Online 🌐
+                                    {% endif %}
+                                </span>
+                                {% endif %}
+                            </td>
+                            <td id="olawards-{{olyid}}">
+                                {{ page[year][idx].awards }}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                {% endfor %}
+            </tbody>
+        </table>
+        
+        <div id="noResults" class="no-results" style="display: none;">
+            {% if page.lang == "ar" %}
+                لا توجد نتائج تطابق التصفية المحددة
+            {% else %}
+                No results match the selected filters
+            {% endif %}
+        </div>
     </div>
 </div>
 
-<div class="results-summary" id="resultsSummary"></div>
-
-<table class="table table-bordered table-striped" id="participationsTable">
-    <thead>
-        {% if page.lang == "ar" %}
-        <th width="5%">السنة</th>
-        <th>الأولمبياد</th>
-        <th>تاريخ المشاركة</th>
-        <th>المكان</th>
-        <th>الجوائز</th>
-        {% else %}
-        <th width="5%">Year</th>
-        <th>Olympiad</th>
-        <th>Date</th>
-        <th>Country</th>
-        <th>Awards</th>
-        {% endif %}
-    </thead>
-    <tbody>
-        {% for year in (page.start_year..page.last_year) reversed %}
-            {% for idx in (1..page[year].count) %}
-                {% capture olyid %}{{page[year][idx].name}}_{{year}}{% endcapture %}
-                <tr data-olympiad="{{ page[year][idx].name }}" data-year="{{ year }}" data-olyid="{{ olyid }}">
-                    {% if idx == 1 %}
-                    <td class="text-center" style="vertical-align: middle;" rowspan="{{ page[year].count }}">{{ year }}</td>
-                    {% endif %}
-                    <td>
-                        <a href="{% if page.lang == "en" %}/en{% endif %}/participations/{{olyid}}">
-                            {% if page.lang == "en" %}  
-                                {{ page[year][idx].enname }}
-                            {% else %}
-                                {{ page[year][idx].arname }}
-                            {% endif %}
-
-                            ({{ page[year][idx].name | upcase }})
-                        </a>
-                    </td>
-                    <td>
-                        <input type="hidden" id="olstart-{{olyid}}" value="{{ page[year][idx].start }}">
-                        <input type="hidden" id="olend-{{olyid}}" value="{{ page[year][idx].end }}">
-                        {% if page[year][idx].start == page[year][idx].end %}
-                            {{ page[year][idx].start }}
-                        {% else %}
-                            {{ page[year][idx].start }} - {{ page[year][idx].end }}
-                        {% endif %}
-                    </td>
-                    <td>
-                        {% if page.lang == 'ar' %}
-                            {{ page[year][idx].country_arname }}
-                        {% else %}
-                            {{ page[year][idx].country_enname }}
-                        {% endif %}
-                        
-                        {% if page[year][idx].online %}
-                        <span class="badge bg-secondary">
-                            {% if page.lang == 'ar' %}
-                            عن بعد 🌐
-                            {% else %}
-                            Online 🌐
-                            {% endif %}
-                        </span>
-                        {% endif %}
-                    </td>
-                    <td id="olawards-{{olyid}}">
-                        {{ page[year][idx].awards }}
-                    </td>
-                </tr>
-            {% endfor %}
-        {% endfor %}
-    </tbody>
-</table>
-
 <script>
 // Global variables
-let selectedOlympiads = new Set();
-let allOlympiads = new Set();
+let olympiadTypes = new Set();
 const isArabic = document.documentElement.lang === 'ar';
 
-function initializeFilters() {
-    // جمع جميع الأولمبيادات الفريدة
-    const rows = document.querySelectorAll('#participationsTable tbody tr[data-olympiad]');
-    const olympiadData = new Map();
-    
+// Initialize page
+document.addEventListener('DOMContentLoaded', function() {
+    collectOlympiadTypes();
+    createFilterControls();
+    refresh_tags();
+});
+
+// Collect all unique olympiad types
+function collectOlympiadTypes() {
+    const rows = document.querySelectorAll('.olympiad-row');
     rows.forEach(row => {
-        const olympiad = row.getAttribute('data-olympiad');
-        const olympiadName = row.querySelector('td:nth-child(2) a').textContent.trim();
-        
-        if (!olympiadData.has(olympiad)) {
-            olympiadData.set(olympiad, olympiadName);
-            allOlympiads.add(olympiad);
+        const olympiadName = row.dataset.olympiad;
+        if (olympiadName) {
+            olympiadTypes.add(olympiadName);
         }
     });
+}
+
+// Create filter control checkboxes
+function createFilterControls() {
+    const filterControls = document.getElementById('filterControls');
     
-    // إنشاء عناصر التصفية
-    const filterContainer = document.getElementById('olympiadFilter');
-    filterContainer.innerHTML = '';
-    
-    // ترتيب الأولمبيادات أبجدياً
-    const sortedOlympiads = Array.from(olympiadData.entries()).sort((a, b) => {
-        return a[1].localeCompare(b[1]);
-    });
-    
-    sortedOlympiads.forEach(([olympiad, name]) => {
+    olympiadTypes.forEach(olympiadName => {
+        const checkboxContainer = document.createElement('div');
+        checkboxContainer.className = 'olympiad-checkbox';
+        
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
-        checkbox.id = `olympiad-${olympiad}`;
-        checkbox.className = 'olympiad-checkbox';
-        checkbox.checked = true;
-        checkbox.addEventListener('change', () => toggleOlympiad(olympiad));
+        checkbox.id = `filter-${olympiadName}`;
+        checkbox.checked = true; // Default: all visible
+        checkbox.addEventListener('change', filterTable);
         
         const label = document.createElement('label');
-        label.htmlFor = `olympiad-${olympiad}`;
-        label.className = 'olympiad-label';
-        label.textContent = name;
+        label.htmlFor = `filter-${olympiadName}`;
+        label.textContent = olympiadName.toUpperCase();
         
-        filterContainer.appendChild(checkbox);
-        filterContainer.appendChild(label);
-        
-        selectedOlympiads.add(olympiad);
+        checkboxContainer.appendChild(label);
+        checkboxContainer.appendChild(checkbox);
+        filterControls.appendChild(checkboxContainer);
     });
-    
-    updateResultsSummary();
 }
 
-function toggleOlympiad(olympiad) {
-    const checkbox = document.getElementById(`olympiad-${olympiad}`);
+// Filter table based on selected checkboxes
+function filterTable() {
+    const rows = document.querySelectorAll('.olympiad-row');
+    const noResults = document.getElementById('noResults');
+    let visibleRows = 0;
+    let currentYear = null;
+    let yearRowSpan = 0;
+    let yearCell = null;
     
-    if (checkbox.checked) {
-        selectedOlympiads.add(olympiad);
-    } else {
-        selectedOlympiads.delete(olympiad);
-    }
+    // First pass: count visible rows per year and hide/show rows
+    const yearVisibility = {};
     
-    applyFilter();
-    updateResultsSummary();
-}
-
-function selectAllOlympiads() {
-    selectedOlympiads = new Set(allOlympiads);
-    
-    // تحديد جميع صناديق الاختيار
-    document.querySelectorAll('.olympiad-checkbox').forEach(checkbox => {
-        checkbox.checked = true;
-    });
-    
-    applyFilter();
-    updateResultsSummary();
-}
-
-function clearAllOlympiads() {
-    selectedOlympiads.clear();
-    
-    // إلغاء تحديد جميع صناديق الاختيار
-    document.querySelectorAll('.olympiad-checkbox').forEach(checkbox => {
-        checkbox.checked = false;
-    });
-    
-    applyFilter();
-    updateResultsSummary();
-}
-
-function applyFilter() {
-    const rows = document.querySelectorAll('#participationsTable tbody tr[data-olympiad]');
-    const yearCells = document.querySelectorAll('#participationsTable tbody td[rowspan]');
-    
-    // إخفاء جميع الصفوف أولاً
     rows.forEach(row => {
-        const olympiad = row.getAttribute('data-olympiad');
-        if (selectedOlympiads.has(olympiad)) {
-            row.classList.remove('hidden-row');
+        const olympiadName = row.dataset.olympiad;
+        const checkbox = document.getElementById(`filter-${olympiadName}`);
+        const isVisible = checkbox && checkbox.checked;
+        
+        // Get year from previous sibling or current row
+        const yearCellInRow = row.querySelector('.year-cell');
+        if (yearCellInRow) {
+            currentYear = yearCellInRow.textContent.trim();
+            yearVisibility[currentYear] = yearVisibility[currentYear] || 0;
+        }
+        
+        if (isVisible) {
+            row.style.display = '';
+            visibleRows++;
+            if (currentYear) {
+                yearVisibility[currentYear]++;
+            }
         } else {
-            row.classList.add('hidden-row');
+            row.style.display = 'none';
         }
     });
     
-    // إعادة حساب rowspan للسنوات
-    const years = new Map();
+    // Second pass: update rowspan for year cells
     rows.forEach(row => {
-        if (!row.classList.contains('hidden-row')) {
-            const year = row.getAttribute('data-year');
-            if (!years.has(year)) {
-                years.set(year, []);
-            }
-            years.get(year).push(row);
-        }
-    });
-    
-    // إخفاء جميع خلايا السنوات أولاً
-    yearCells.forEach(cell => {
-        cell.style.display = 'none';
-    });
-    
-    // إظهار وتحديث خلايا السنوات المطلوبة
-    years.forEach((rowsInYear, year) => {
-        if (rowsInYear.length > 0) {
-            const firstRow = rowsInYear[0];
-            const yearCell = firstRow.querySelector('td[rowspan]');
-            if (yearCell) {
-                yearCell.style.display = 'table-cell';
-                yearCell.setAttribute('rowspan', rowsInYear.length);
-            }
-            
-            // إزالة خلايا السنة من الصفوف الأخرى في نفس السنة
-            for (let i = 1; i < rowsInYear.length; i++) {
-                const otherYearCell = rowsInYear[i].querySelector('td[rowspan]');
-                if (otherYearCell) {
-                    otherYearCell.style.display = 'none';
-                }
+        const yearCellInRow = row.querySelector('.year-cell');
+        if (yearCellInRow) {
+            const year = yearCellInRow.textContent.trim();
+            const visibleCount = yearVisibility[year] || 0;
+            if (visibleCount > 0) {
+                yearCellInRow.setAttribute('rowspan', visibleCount);
+                row.style.display = '';
+            } else {
+                row.style.display = 'none';
             }
         }
     });
-}
-
-function updateResultsSummary() {
-    const totalRows = document.querySelectorAll('#participationsTable tbody tr[data-olympiad]').length;
-    const visibleRows = document.querySelectorAll('#participationsTable tbody tr[data-olympiad]:not(.hidden-row)').length;
     
-    const summaryElement = document.getElementById('resultsSummary');
-    
-    if (isArabic) {
-        summaryElement.textContent = `عرض ${visibleRows} من أصل ${totalRows} مشاركة`;
+    // Show/hide no results message
+    if (visibleRows === 0) {
+        noResults.style.display = 'block';
     } else {
-        summaryElement.textContent = `Showing ${visibleRows} of ${totalRows} participations`;
+        noResults.style.display = 'none';
     }
 }
 
+// Select all checkboxes
+function selectAll() {
+    olympiadTypes.forEach(olympiadName => {
+        const checkbox = document.getElementById(`filter-${olympiadName}`);
+        if (checkbox) {
+            checkbox.checked = true;
+        }
+    });
+    filterTable();
+}
+
+// Deselect all checkboxes
+function deselectAll() {
+    olympiadTypes.forEach(olympiadName => {
+        const checkbox = document.getElementById(`filter-${olympiadName}`);
+        if (checkbox) {
+            checkbox.checked = false;
+        }
+    });
+    filterTable();
+}
+
+// Enhanced refresh_tags function with better styling
 function refresh_tags() {
-    // الكود الأصلي لتحديث العلامات الزمنية
     const today = new Date();
     today.setHours(0, 0, 0, 0);
     
@@ -538,10 +517,4 @@ function refresh_tags() {
         }
     });
 }
-
-// تهيئة الصفحة عند التحميل
-document.addEventListener('DOMContentLoaded', function() {
-    initializeFilters();
-    refresh_tags();
-});
 </script>
