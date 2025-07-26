@@ -10,26 +10,26 @@ description: "Official website"
 
 :root {
     --primary-green: #1A8754;
-    --black: #000000;
-    --white: #FFFFFF;
-    --light-gray: #f8f9fa;
-    --shadow: rgba(26, 135, 84, 0.15);
+    --text-black: #000000;
+    --pure-white: #FFFFFF;
+    --light-green: rgba(26, 135, 84, 0.1);
+    --hover-green: #156b45;
 }
 
 * {
-    font-family: 'Mirza', cursive;
+    font-family: 'Mirza', serif;
 }
 
 body {
-    background: var(--white);
-    color: var(--black);
+    background: linear-gradient(135deg, var(--pure-white) 0%, rgba(26, 135, 84, 0.05) 100%);
+    color: var(--text-black);
     line-height: 1.6;
 }
 
 .hero-section {
-    background: linear-gradient(135deg, var(--primary-green) 0%, #0d4d2b 100%);
-    color: var(--white);
-    padding: 80px 0;
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--hover-green) 100%);
+    color: var(--pure-white);
+    padding: 120px 0 80px;
     position: relative;
     overflow: hidden;
 }
@@ -41,7 +41,8 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
 }
 
 .hero-section .container {
@@ -50,306 +51,290 @@ body {
 }
 
 .hero-section h1 {
-    font-size: 3.5rem;
+    font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 700;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
     margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 
 .hero-section .lead {
-    font-size: 1.25rem;
+    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
     font-weight: 500;
     opacity: 0.95;
-    margin-bottom: 2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
 }
 
-.btn-custom {
-    font-family: 'Mirza', cursive;
-    font-weight: 600;
-    padding: 12px 24px;
-    border-radius: 5px;
+.btn {
+    font-family: 'Mirza', serif;
+    font-weight: 500;
+    border-radius: 50px;
+    padding: 12px 30px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
     text-decoration: none;
     display: inline-block;
-    transition: all 0.3s ease;
 }
 
-.btn-light-custom {
-    background: var(--white);
+.btn-light {
+    background: var(--pure-white);
     color: var(--primary-green);
-    border: none;
+    border-color: var(--pure-white);
 }
 
-.btn-light-custom:hover {
-    background: rgba(255, 255, 255, 0.9);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-}
-
-.btn-outline-light-custom {
+.btn-light:hover {
     background: transparent;
-    color: var(--white);
-    border: 2px solid var(--white);
+    color: var(--pure-white);
+    border-color: var(--pure-white);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
 }
 
-.btn-outline-light-custom:hover {
-    background: var(--white);
+.btn-outline-light {
+    background: transparent;
+    color: var(--pure-white);
+    border-color: var(--pure-white);
+}
+
+.btn-outline-light:hover {
+    background: var(--pure-white);
     color: var(--primary-green);
     transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
 }
 
-/* Stats Section - العودة للتخطيط الأصلي */
+.btn-success {
+    background: var(--primary-green);
+    color: var(--pure-white);
+    border-color: var(--primary-green);
+}
+
+.btn-success:hover {
+    background: var(--hover-green);
+    border-color: var(--hover-green);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(26, 135, 84, 0.3);
+}
+
+.btn-outline-success {
+    background: transparent;
+    color: var(--primary-green);
+    border-color: var(--primary-green);
+}
+
+.btn-outline-success:hover {
+    background: var(--primary-green);
+    color: var(--pure-white);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(26, 135, 84, 0.3);
+}
+
 .stats-section {
-    padding: 60px 0;
-    background: var(--white);
+    padding: 80px 0;
+    background: var(--pure-white);
 }
 
 .stats-section h2 {
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 700;
-    color: var(--black);
-    margin-bottom: 2rem;
+    color: var(--text-black);
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.stats-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-green), var(--hover-green));
+    border-radius: 2px;
 }
 
 .stats-card {
-    background: var(--white);
-    padding: 2rem 1rem;
-    border-radius: 15px;
+    background: var(--pure-white);
+    padding: 40px 20px;
+    border-radius: 20px;
     text-align: center;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 20px var(--shadow);
-    border: 1px solid rgba(26, 135, 84, 0.1);
+    border: 2px solid transparent;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.stats-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, var(--light-green), transparent);
+    transition: left 0.5s ease;
+}
+
+.stats-card:hover::before {
+    left: 100%;
 }
 
 .stats-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(26, 135, 84, 0.2);
+    transform: translateY(-10px);
+    border-color: var(--primary-green);
+    box-shadow: 0 20px 40px rgba(26, 135, 84, 0.15);
 }
 
 .medal-icon {
-    width: 60px;
-    height: 60px;
-    margin: 0 auto 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    font-size: 2rem;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 2;
 }
 
-.medal-gold {
-    background: linear-gradient(135deg, #FFD700, #FFA500);
-    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
-}
-
-.medal-gold::before {
-    content: '🥇';
-}
-
-.medal-silver {
-    background: linear-gradient(135deg, #C0C0C0, #A8A8A8);
-    box-shadow: 0 4px 15px rgba(192, 192, 192, 0.3);
-}
-
-.medal-silver::before {
-    content: '🥈';
-}
-
-.medal-bronze {
-    background: linear-gradient(135deg, #CD7F32, #A0522D);
-    box-shadow: 0 4px 15px rgba(205, 127, 50, 0.3);
-}
-
-.medal-bronze::before {
-    content: '🥉';
-}
-
-.medal-hm {
-    background: linear-gradient(135deg, var(--primary-green), #0d4d2b);
-    box-shadow: 0 4px 15px var(--shadow);
-}
-
-.medal-hm::before {
-    content: '🏆';
-}
-
-.medal-participation {
-    background: linear-gradient(135deg, #4169E1, #1E90FF);
-    box-shadow: 0 4px 15px rgba(65, 105, 225, 0.3);
-}
-
-.medal-participation::before {
-    content: '🌍';
-}
+.medal-gold { color: #FFD700; text-shadow: 2px 2px 4px rgba(255, 215, 0, 0.3); }
+.medal-silver { color: #C0C0C0; text-shadow: 2px 2px 4px rgba(192, 192, 192, 0.3); }
+.medal-bronze { color: #CD7F32; text-shadow: 2px 2px 4px rgba(205, 127, 50, 0.3); }
+.medal-hm { color: var(--primary-green); text-shadow: 2px 2px 4px rgba(26, 135, 84, 0.3); }
 
 .stats-card h3 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 700;
-    color: var(--primary-green);
-    margin: 1rem 0 0.5rem;
+    color: var(--text-black);
+    margin: 1rem 0;
+    position: relative;
+    z-index: 2;
 }
 
 .stats-card p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 500;
-    color: var(--black);
+    color: var(--text-black);
     opacity: 0.8;
     margin: 0;
+    position: relative;
+    z-index: 2;
 }
 
-/* Info Section */
 .info-section {
-    padding: 60px 0;
-    background: var(--light-gray);
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--light-green) 0%, var(--pure-white) 100%);
 }
 
 .info-card {
-    background: var(--white);
-    padding: 2.5rem 2rem;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px var(--shadow);
+    background: var(--pure-white);
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
     height: 100%;
-    border: 1px solid rgba(26, 135, 84, 0.1);
+    border: 2px solid transparent;
 }
 
 .info-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(26, 135, 84, 0.2);
+    box-shadow: 0 25px 50px rgba(26, 135, 84, 0.15);
+    border-color: var(--primary-green);
 }
 
 .feature-icon {
-    font-size: 3rem;
+    font-size: 4rem;
     color: var(--primary-green);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .info-card h3 {
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: var(--black);
-    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--text-black);
+    margin-bottom: 1.5rem;
 }
 
 .info-card p {
-    font-size: 1rem;
-    color: var(--black);
+    font-size: 1.1rem;
+    color: var(--text-black);
     opacity: 0.8;
-    margin-bottom: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
 }
 
-.btn-outline-success-custom {
-    background: transparent;
-    color: var(--primary-green);
-    border: 2px solid var(--primary-green);
-    padding: 8px 20px;
-    border-radius: 5px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    font-size: 0.95rem;
-}
-
-.btn-outline-success-custom:hover {
-    background: var(--primary-green);
-    color: var(--white);
-    transform: translateY(-2px);
-}
-
-/* Join Section */
 .join-section {
-    padding: 60px 0;
-    background: var(--white);
+    padding: 80px 0;
+    background: var(--pure-white);
+}
+
+.join-section img {
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.join-section img:hover {
+    transform: scale(1.05);
 }
 
 .join-section h2 {
-    font-size: 2.25rem;
+    font-size: clamp(2rem, 4vw, 2.5rem);
     font-weight: 700;
-    color: var(--black);
+    color: var(--text-black);
     margin-bottom: 1.5rem;
 }
 
 .join-section .lead {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+    color: var(--text-black);
+    margin-bottom: 2rem;
     font-weight: 500;
-    color: var(--black);
-    margin-bottom: 1.5rem;
 }
 
 .join-section ul li {
-    font-size: 1rem;
-    color: var(--black);
-    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: var(--text-black);
+    padding: 10px 0;
     display: flex;
     align-items: flex-start;
 }
 
-.check-icon {
+.join-section ul li i {
+    margin-top: 5px;
+    font-size: 1.2rem;
+}
+
+.link-success {
     color: var(--primary-green);
-    font-size: 1.1rem;
-    margin-right: 0.75rem;
-    margin-top: 0.1rem;
-    flex-shrink: 0;
-}
-
-.btn-success-custom {
-    background: var(--primary-green);
-    color: var(--white);
-    border: none;
-    padding: 10px 25px;
-    border-radius: 5px;
-    font-weight: 600;
     text-decoration: none;
-    transition: all 0.3s ease;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
 }
 
-.btn-success-custom:hover {
-    background: #166b47;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px var(--shadow);
-}
-
-.join-image {
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-    transition: all 0.3s ease;
-    max-width: 100%;
-    height: auto;
-}
-
-.join-image:hover {
-    transform: scale(1.02);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+.link-success:hover {
+    color: var(--hover-green);
+    border-bottom-color: var(--hover-green);
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero-section {
+        padding: 80px 0 60px;
+    }
+    
+    .stats-section, .info-section, .join-section {
         padding: 60px 0;
     }
     
-    .hero-section h1 {
-        font-size: 2.5rem;
-    }
-    
-    .hero-section .lead {
-        font-size: 1.1rem;
-    }
-    
-    .stats-section h2 {
-        font-size: 2rem;
-    }
-    
     .stats-card {
-        margin-bottom: 1.5rem;
+        margin-bottom: 2rem;
     }
     
     .info-card {
         margin-bottom: 2rem;
-    }
-    
-    .join-section {
-        text-align: center;
     }
     
     .join-section .col-lg-6:first-child {
@@ -358,40 +343,47 @@ body {
     
     .join-section .col-lg-6:last-child {
         order: 1;
-    }
-}
-
-@media (max-width: 576px) {
-    .hero-section h1 {
-        font-size: 2rem;
-    }
-    
-    .stats-card h3 {
-        font-size: 2rem;
-    }
-    
-    .medal-icon {
-        width: 50px;
-        height: 50px;
-        font-size: 1.5rem;
-    }
-    
-    .btn-custom {
-        display: block;
-        margin-bottom: 1rem;
         text-align: center;
     }
 }
 
-/* Animation classes */
-.fade-up {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.6s ease;
+@media (max-width: 576px) {
+    .btn {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+        margin: 5px;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .stats-card {
+        padding: 30px 15px;
+    }
+    
+    .medal-icon {
+        font-size: 3rem;
+    }
+    
+    .stats-card h3 {
+        font-size: 2.5rem;
+    }
 }
 
-.fade-up.animated {
+/* Animation classes for AOS */
+[data-aos] {
+    opacity: 0;
+    transition-property: opacity, transform;
+}
+
+[data-aos].aos-animate {
     opacity: 1;
+}
+
+[data-aos="fade-up"] {
+    transform: translateY(50px);
+}
+
+[data-aos="fade-up"].aos-animate {
     transform: translateY(0);
 }
 </style>
@@ -413,7 +405,7 @@ body {
             {% endif %}
         </p>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <a href="#join" class="btn btn-light-custom btn-lg px-4 gap-3">
+            <a href="#join" class="btn btn-light btn-lg px-4 gap-3">
                 {% if page.lang == "en" %}
                 How to join the team?
                 {% else %}
@@ -421,11 +413,11 @@ body {
                 {% endif %}
             </a>
             {% if page.lang == "en" %}
-            <a href="/en/participations" class="btn btn-outline-light-custom btn-lg px-4">
+            <a href="/en/participations" class="btn btn-outline-light btn-lg px-4">
                 Past participations 
             </a>
             {% else %}
-            <a href="/participations" class="btn btn-outline-light-custom btn-lg px-4">
+            <a href="/participations" class="btn btn-outline-light btn-lg px-4">
                 مشاركاتنا السابقة
             </a>
             {% endif %}
@@ -433,112 +425,131 @@ body {
     </div>
 </section>
 
-<div class="container">
+<div class="container-fluid">
     <!-- Stats Section -->
     <section class="stats-section">
-        <div class="row text-center" data-aos="fade-up">
-            <h2 class="fw-bold mb-4">
-                {% if page.lang == "en" %} 
-                Our team's achievements
-                {% else %}
-                إنجازات الفريق 
-                {% endif %}    
-            </h2>
-            <div class="col-md-4 col-sm-6 mb-4">
-                <div class="stats-card">
-                    <div class="medal-icon medal-gold"></div>
-                    <h3 class="fw-bold">{{ page.stats.gold }}</h3>
-                    {% if page.lang == "en" %}
-                    <p class="mb-0">Gold medals</p>
-                    {% else %}
-                    <p class="mb-0">ميداليات ذهبية</p>
-                    {% endif %}
+        <div class="container">
+            <div class="row text-center" data-aos="fade-up">
+                <div class="col-12">
+                    <h2 class="fw-bold mb-5">
+                        {% if page.lang == "en" %} 
+                        Our team's achievements
+                        {% else %}
+                        إنجازات الفريق 
+                        {% endif %}    
+                    </h2>
                 </div>
-            </div>
-            <div class="col-md-4 col-sm-6 mb-4">
-                <div class="stats-card">
-                    <div class="medal-icon medal-silver"></div>
-                    <h3 class="fw-bold">{{ page.stats.silver }}</h3>
-                    {% if page.lang == "en" %}
-                    <p class="mb-0">Silver medals</p>
-                    {% else %}
-                    <p class="mb-0">ميداليات فضية</p>
-                    {% endif %}
+                
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="stats-card">
+                        <div class="medal-icon medal-gold">🥇</div>
+                        <h3 class="fw-bold">{{ page.stats.gold }}</h3>
+                        {% if page.lang == "en" %}
+                        <p class="mb-0">Gold medals</p>
+                        {% else %}
+                        <p class="mb-0">ميداليات ذهبية</p>
+                        {% endif %}
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4 col-sm-6 mb-4">
-                <div class="stats-card">
-                    <div class="medal-icon medal-bronze"></div>
-                    <h3 class="fw-bold">{{ page.stats.bronze }}</h3>
-                    {% if page.lang == "en" %}
-                    <p class="mb-0">Bronze medals</p>
-                    {% else %}
-                    <p class="mb-0">ميداليات برونزية</p>
-                    {% endif %}
+                
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="stats-card">
+                        <div class="medal-icon medal-silver">🥈</div>
+                        <h3 class="fw-bold">{{ page.stats.silver }}</h3>
+                        {% if page.lang == "en" %}
+                        <p class="mb-0">Silver medals</p>
+                        {% else %}
+                        <p class="mb-0">ميداليات فضية</p>
+                        {% endif %}
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6 col-sm-6 mb-4">
-                <div class="stats-card enable-debugger">
-                    <div class="medal-icon medal-hm"></div>
-                    <h3 class="fw-bold">{{ page.stats.hm }}</h3>
-                    {% if page.lang == "en" %}
-                    <p class="mb-0">Honorable mention</p>
-                    {% else %}
-                    <p class="mb-0">شهادات تقدير</p>
-                    {% endif %}
+                
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="stats-card">
+                        <div class="medal-icon medal-bronze">🥉</div>
+                        <h3 class="fw-bold">{{ page.stats.bronze }}</h3>
+                        {% if page.lang == "en" %}
+                        <p class="mb-0">Bronze medals</p>
+                        {% else %}
+                        <p class="mb-0">ميداليات برونزية</p>
+                        {% endif %}
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6 col-sm-12 mb-4">
-                <div class="stats-card">
-                    <div class="medal-icon medal-participation"></div>
-                    <h3 class="fw-bold">{{ page.stats.participations }}</h3>
-                    {% if page.lang == "en" %}
-                    <p class="mb-0">International participation</p>
-                    {% else %}
-                    <p class="mb-0">مشاركة دولية</p>
-                    {% endif %}
+                
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                    <div class="stats-card enable-debugger">
+                        <div class="medal-icon medal-hm">🏅</div>
+                        <h3 class="fw-bold">{{ page.stats.hm }}</h3>
+                        {% if page.lang == "en" %}
+                        <p class="mb-0">Honorable mention</p>
+                        {% else %}
+                        <p class="mb-0">شهادات تقدير</p>
+                        {% endif %}
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="stats-card">
+                        <div class="medal-icon" style="color: var(--primary-green);">🌍</div>
+                        <h3 class="fw-bold">{{ page.stats.participations }}</h3>
+                        {% if page.lang == "en" %}
+                        <p class="mb-0">International participation</p>
+                        {% else %}
+                        <p class="mb-0">مشاركة دولية</p>
+                        {% endif %}
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Info Section -->
-    <section class="info-section py-5">
-        <div class="row justify-content-center">
-            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="info-card">
-                    <div class="text-center mb-4">
-                        <i class="bi bi-calculator feature-icon"></i>
+    <section class="info-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="info-card">
+                        <div class="text-center mb-4">
+                            <i class="bi bi-calculator feature-icon"></i>
+                        </div>
+                        {% if page.lang == "en" %}
+                        <h3 class="text-center">What are math olympiads?</h3>
+                        <p>Math olympiads are competitive mathematical competitions for students under the age of 20. A competition consists of challenging mathematical problems that require creative problem-solving, logical reasoning, and deep mathematical understanding.</p>
+                        <p>This intellectual sport relies on analytical thinking, mathematical creativity, and proof-writing skills to tackle complex problems within a limited time frame.</p>
+                        <div class="text-center">
+                            <a href="/en/olympiads" class="btn btn-outline-success">See olympiads</a>
+                        </div>
+                        {% else %}
+                        <h3 class="text-center">ما هي أولمبيادات الرياضيات؟</h3>
+                        <p>أولمبيادات الرياضيات هي مسابقات رياضية تنافسية للطلاب دون سن 20 عامًا. تتألف المسابقة من مسائل رياضية صعبة تتطلب حل المشكلات الإبداعي والتفكير المنطقي والفهم الرياضي العميق.</p>
+                        <p>تعتمد هذه الرياضة الذهنية على التفكير التحليلي والإبداع الرياضي ومهارات كتابة البراهين لحل المشكلات المعقدة في إطار زمني محدود.</p>
+                        <div class="text-center">
+                            <a href="/olympiads" class="btn btn-outline-success">تعرف على الأولمبياد</a>
+                        </div>
+                        {% endif %}
                     </div>
-                    {% if page.lang == "en" %}
-                    <h3 class="text-center">What are math olympiads?</h3>
-                    <p>Math olympiads are competitive mathematical competitions for students under the age of 20. A competition consists of challenging mathematical problems that require creative problem-solving, logical reasoning, and deep mathematical understanding.</p>
-                    <p>This intellectual sport relies on analytical thinking, mathematical creativity, and proof-writing skills to tackle complex problems within a limited time frame.</p>
-                    <a href="/en/olympiads" class="btn-outline-success-custom">See olympiads</a>
-                    {% else %}
-                    <h3 class="text-center">ما هي أولمبيادات الرياضيات؟</h3>
-                    <p>أولمبيادات الرياضيات هي مسابقات رياضية تنافسية للطلاب دون سن 20 عامًا. تتألف المسابقة من مسائل رياضية صعبة تتطلب حل المشكلات الإبداعي والتفكير المنطقي والفهم الرياضي العميق.</p>
-                    <p>تعتمد هذه الرياضة الذهنية على التفكير التحليلي والإبداع الرياضي ومهارات كتابة البراهين لحل المشكلات المعقدة في إطار زمني محدود.</p>
-                    <a href="/olympiads" class="btn-outline-success-custom">تعرف على الأولمبياد</a>
-                    {% endif %}
                 </div>
-            </div>
-            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="info-card">
-                    <div class="text-center mb-4">
-                        <i class="bi bi-people-fill feature-icon"></i>
+                <div class="col-lg-6 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="info-card">
+                        <div class="text-center mb-4">
+                            <i class="bi bi-people-fill feature-icon"></i>
+                        </div>
+                        {% if page.lang == "en" %}
+                        <h3 class="text-center">Why math team?</h3>
+                        <p>The Saudi Math Team includes the strongest mathematical talents in the Kingdom of Saudi Arabia. Team members are selected through a rigorous selection process that includes competitions and intensive mathematical training.</p>
+                        <p>The team represents the Kingdom in the International Mathematical Olympiad (IMO) and regional competitions, and has achieved many accomplishments at the global level.</p>
+                        <div class="text-center">
+                            <a href="/en/members" class="btn btn-outline-success">Take a look on the members</a>
+                        </div>
+                        {% else %}
+                        <h3 class="text-center">لماذا فريق الرياضيات؟</h3>
+                        <p>يضم فريق الرياضيات السعودي أقوى المواهب الرياضية في المملكة العربية السعودية. يتم اختيار أعضاء الفريق من خلال عملية انتقاء صارمة تشمل مسابقات وتدريبات رياضية مكثفة.</p>
+                        <p>يمثل الفريق المملكة في أولمبياد الرياضيات الدولي (IMO) والمسابقات الإقليمية، وقد حقق العديد من الإنجازات على المستوى العالمي.</p>
+                        <div class="text-center">
+                            <a href="/members" class="btn btn-outline-success">تعرف على أعضاء الفريق</a>
+                        </div>
+                        {% endif %}
                     </div>
-                    {% if page.lang == "en" %}
-                    <h3 class="text-center">Why math team?</h3>
-                    <p>The Saudi Math Team includes the strongest mathematical talents in the Kingdom of Saudi Arabia. Team members are selected through a rigorous selection process that includes competitions and intensive mathematical training.</p>
-                    <p>The team represents the Kingdom in the International Mathematical Olympiad (IMO) and regional competitions, and has achieved many accomplishments at the global level.</p>
-                    <a href="/en/members" class="btn-outline-success-custom">Take a look on the members</a>
-                    {% else %}
-                    <h3 class="text-center">لماذا فريق الرياضيات؟</h3>
-                    <p>يضم فريق الرياضيات السعودي أقوى المواهب الرياضية في المملكة العربية السعودية. يتم اختيار أعضاء الفريق من خلال عملية انتقاء صارمة تشمل مسابقات وتدريبات رياضية مكثفة.</p>
-                    <p>يمثل الفريق المملكة في أولمبياد الرياضيات الدولي (IMO) والمسابقات الإقليمية، وقد حقق العديد من الإنجازات على المستوى العالمي.</p>
-                    <a href="/members" class="btn-outline-success-custom">تعرف على أعضاء الفريق</a>
-                    {% endif %}
                 </div>
             </div>
         </div>
@@ -549,7 +560,7 @@ body {
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 text-center text-lg-end mb-4 mb-lg-0">
-                    <img src="/img/naser_md_thinking.jpg" alt="طلاب يشاركون في مسابقة رياضية" class="img-fluid join-image">
+                    <img src="/img/naser_md_thinking.jpg" alt="طلاب يشاركون في مسابقة رياضية" class="img-fluid rounded shadow">
                 </div>
                 <div class="col-lg-6">
                     {% if page.lang == "en" %}
@@ -561,31 +572,33 @@ body {
                     {% endif %}
                     <ul class="list-unstyled">
                         <li class="mb-3">
-                            <i class="bi bi-check-circle-fill check-icon"></i>
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>
                             <span>
-                            {% if page.lang == "en" %}
-                            Participating in national mathematics competitions and achieving excellent results
-                            {% else %}
-                            المشاركة في المسابقات الرياضية الوطنية وتحقيق نتائج متميزة
-                            {% endif %}
+                                {% if page.lang == "en" %}
+                                Participating in national mathematics competitions and achieving excellent results
+                                {% else %}
+                                المشاركة في المسابقات الرياضية الوطنية وتحقيق نتائج متميزة
+                                {% endif %}
                             </span>
                         </li>
                         <li class="mb-3">
-                            <i class="bi bi-check-circle-fill check-icon"></i>
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>
                             <span>
-                            {% if page.lang == "en" %}
-                            Demonstrating exceptional mathematical problem-solving abilities
-                            {% else %}
-                            إظهار قدرات استثنائية في حل المسائل الرياضية
-                            {% endif %}
+                                {% if page.lang == "en" %}
+                                Qualification via national mathematical competitions organized by educational institutions
+                                {% else %}
+                                التأهل عبر المسابقات الرياضية الوطنية التي تنظمها المؤسسات التعليمية
+                                {% endif %}
                             </span>
                         </li>
                     </ul>
-                    {% if page.lang == "en" %}
-                    <a href="/en/contact" class="btn-success-custom mt-3">Contact us</a>
-                    {% else %}
-                    <a href="/contact" class="btn-success-custom mt-3">تواصل معنا للاستفسار</a>
-                    {% endif %}
+                    <div class="text-center text-lg-start">
+                        {% if page.lang == "en" %}
+                        <a href="/en/contact" class="btn btn-success mt-3">Contact us</a>
+                        {% else %}
+                        <a href="/contact" class="btn btn-success mt-3">تواصل معنا للاستفسار</a>
+                        {% endif %}
+                    </div>
                 </div>
             </div>
         </div>
@@ -604,37 +617,27 @@ body {
 </script>
 
 <script>
-    // Animation on scroll
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animated');
-            }
-        });
-    }, observerOptions);
-
-    // Observe all fade-up elements
-    document.addEventListener('DOMContentLoaded', () => {
-        const fadeElements = document.querySelectorAll('.fade-up');
-        fadeElements.forEach(el => observer.observe(el));
+    // Initialize AOS
+    AOS.init({
+        duration: 800,
+        once: true,
+        offset: 100
     });
-
+    
+    // Initialize code highlighting
+    document.addEventListener('DOMContentLoaded', (event) => {
+        document.querySelectorAll('pre code').forEach((block) => {
+            hljs.highlightBlock(block);
+        });
+    });
+    
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
         });
     });
 </script>
