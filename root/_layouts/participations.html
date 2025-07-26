@@ -4,6 +4,8 @@ layout: default
 ---
 
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+    
     :root {
         --primary-black: #000000;
         --primary-white: #FFFFFF;
@@ -17,11 +19,14 @@ layout: default
         --transition: all 0.3s ease;
     }
 
+    * {
+        font-family: 'Tajawal', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
     .participation-container {
         max-width: 1400px;
         margin: 0 auto;
         padding: 20px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     .page-header {
@@ -136,7 +141,7 @@ layout: default
     .filter-btn {
         padding: 10px 18px;
         border: 2px solid var(--border-gray);
-        background: var(--primary-white);
+        background: #FFFFFF;
         color: var(--primary-black);
         border-radius: 25px;
         cursor: pointer;
@@ -255,23 +260,28 @@ layout: default
     .year-cell {
         font-weight: bold;
         font-size: 1.1rem;
-        color: var(--primary-white);
+        color: var(--primary-black);
         text-align: center;
         border-right: 3px solid var(--primary-green);
         position: relative;
     }
 
-    /* ألوان مختلفة لكل سنة */
-    .year-2024 { background: linear-gradient(135deg, #1A8754, #2a9b66); }
-    .year-2023 { background: linear-gradient(135deg, #2563eb, #3b82f6); }
-    .year-2022 { background: linear-gradient(135deg, #dc2626, #ef4444); }
-    .year-2021 { background: linear-gradient(135deg, #7c3aed, #8b5cf6); }
-    .year-2020 { background: linear-gradient(135deg, #ea580c, #f97316); }
-    .year-2019 { background: linear-gradient(135deg, #0891b2, #06b6d4); }
-    .year-2018 { background: linear-gradient(135deg, #be123c, #e11d48); }
-    .year-2017 { background: linear-gradient(135deg, #059669, #10b981); }
-    .year-2016 { background: linear-gradient(135deg, #7c2d12, #a16207); }
-    .year-2015 { background: linear-gradient(135deg, #4338ca, #6366f1); }
+    /* نمط الألوان الأبيض والرمادي المتناوب للسنوات */
+    .year-2024 { background: #FFFFFF; }
+    .year-2023 { background: #f8f9fa; }
+    .year-2022 { background: #FFFFFF; }
+    .year-2021 { background: #f8f9fa; }
+    .year-2020 { background: #FFFFFF; }
+    .year-2019 { background: #f8f9fa; }
+    .year-2018 { background: #FFFFFF; }
+    .year-2017 { background: #f8f9fa; }
+    .year-2016 { background: #FFFFFF; }
+    .year-2015 { background: #f8f9fa; }
+    .year-2014 { background: #FFFFFF; }
+    .year-2013 { background: #f8f9fa; }
+    .year-2012 { background: #FFFFFF; }
+    .year-2011 { background: #f8f9fa; }
+    .year-2010 { background: #FFFFFF; }
 
     .olympiad-link {
         text-decoration: none;
