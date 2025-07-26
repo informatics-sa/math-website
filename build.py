@@ -12,7 +12,7 @@ import datetime
 countries = get_countries()
 members = get_members()
 olympiads = get_olympiads()
-participations = get_participations() # TODO: make get_participations function to resolve the mess in the function
+participations = get_participations()
 translations = load_json('translations')
 
 
@@ -298,33 +298,44 @@ def build_participations():
         })
 
 def build_participations_index():
-    olympiads = {}
-    min_year = 3000
-    max_year = 2000
-    for participation in participations:
-        year = participation['year']
-        min_year = min(year, min_year)
-        max_year = max(year, max_year)
-        if year not in olympiads:
-            olympiads[year] = []
+    stats = {
+        'total_participations': len(participations),
+        'total_gold': 0,
+        'total_silver': 0,
+        'total_bronze': 0,
+        'total_hm': 0,
+        'total_awards': 0
+    }
 
-        olympiads[year].append(participation)
-
-    written = {
+    page = {
         'layout': 'participations',
         'lang': 'ar',
         'title': translations['ar']['participations'],
-        'start_year': min_year,
-        'last_year': max_year
+        'olympiads': list(get_olympiads().keys()),
+        'stats': stats
     }
 
-    for year, list in olympiads.items():
-        written[year] = list
-    
-    write_file("participations/index.html", written)
-    written['lang'] = 'en'
-    written['title'] = translations['en']['participations']
-    write_file("en/participations/index.html", written)
+    min_year = 3000
+    max_year = 2000
+    for participation in participations:
+        for award in participation['participants'].values():
+            if award:
+                stats[f'total_{award}'] += 1
+                stats['total_awards'] += 1
+        year = participation['year']
+        min_year = min(year, min_year)
+        max_year = max(year, max_year)
+        if year not in page:
+            page[year] = []
+
+        page[year].append(participation)
+    page['start_year'] = min_year
+    page['last_year'] = max_year
+
+    write_file('participations/index.html', page)
+    page['lang'] = 'en'
+    page['title'] = translations['en']['participations']
+    write_file('en/participations/index.html', page)
 
 def build_tst_index():
     tsts = load_json('tsts')
