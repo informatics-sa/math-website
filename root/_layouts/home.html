@@ -397,8 +397,18 @@ body {
     }
     
     .hero-section {
-        padding: 150px 0 100px;
-        min-height: 70vh;
+        padding: 120px 0 80px;
+        min-height: 75vh;
+    }
+    
+    .hero-section h1 {
+        font-size: clamp(2.5rem, 8vw, 4rem);
+        margin-bottom: 2rem;
+    }
+    
+    .hero-section .lead {
+        font-size: clamp(1.2rem, 4vw, 1.6rem);
+        margin-bottom: 2.5rem;
     }
     
     .stats-section, .info-section, .join-section {
@@ -425,11 +435,31 @@ body {
     }
     
     .math-symbol {
-        font-size: 2rem;
+        font-size: 2.2rem;
+        opacity: 0.2 !important;
+    }
+    
+    .math-symbols {
+        display: block !important;
     }
 }
 
 @media (max-width: 576px) {
+    .hero-section {
+        padding: 100px 0 60px;
+        min-height: 70vh;
+    }
+    
+    .hero-section h1 {
+        font-size: clamp(2rem, 10vw, 3.5rem);
+        margin-bottom: 1.5rem;
+    }
+    
+    .hero-section .lead {
+        font-size: clamp(1rem, 5vw, 1.4rem);
+        margin-bottom: 2rem;
+    }
+    
     .btn {
         padding: 14px 28px;
         font-size: 1rem;
@@ -457,8 +487,19 @@ body {
     }
     
     .math-symbol {
-        font-size: 1.8rem;
+        font-size: 1.8rem !important;
+        opacity: 0.15 !important;
     }
+    
+    .math-symbols {
+        display: block !important;
+        z-index: 1 !important;
+    }
+    
+    /* إضافة رموز إضافية للجوال */
+    .math-symbol:nth-child(16) { top: 12%; left: 65%; animation-delay: 5s; }
+    .math-symbol:nth-child(17) { top: 32%; left: 8%; animation-delay: 3.8s; }
+    .math-symbol:nth-child(18) { top: 52%; left: 82%; animation-delay: 4.5s; }
 }
 
 /* Animation classes for AOS */
@@ -498,6 +539,9 @@ body {
         <div class="math-symbol">θ</div>
         <div class="math-symbol">λ</div>
         <div class="math-symbol">Ω</div>
+        <div class="math-symbol">Φ</div>
+        <div class="math-symbol">Ψ</div>
+        <div class="math-symbol">Σ</div>
     </div>
     
     <div class="container">
