@@ -25,7 +25,7 @@ layout: default
     }
 
     .page-header {
-        background: linear-gradient(135deg, var(--primary-black) 0%, #333333 100%);
+        background: linear-gradient(135deg, var(--primary-green) 0%, #2a9b66 100%);
         color: var(--primary-white);
         padding: 40px;
         border-radius: var(--border-radius);
@@ -42,7 +42,7 @@ layout: default
         left: -100%;
         width: 100%;
         height: 100%;
-        background: linear-gradient(90deg, transparent, rgba(26, 135, 84, 0.2), transparent);
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
         animation: shine 3s ease-in-out infinite;
     }
 
@@ -109,28 +109,6 @@ layout: default
         border-radius: var(--border-radius);
         box-shadow: var(--shadow);
         margin-bottom: 30px;
-    }
-
-    .search-container {
-        margin-bottom: 25px;
-    }
-
-    .search-box {
-        width: 100%;
-        max-width: 500px;
-        padding: 15px 20px;
-        border: 2px solid var(--border-gray);
-        border-radius: 50px;
-        font-size: 1.1rem;
-        transition: var(--transition);
-        background: var(--light-gray);
-    }
-
-    .search-box:focus {
-        outline: none;
-        border-color: var(--primary-green);
-        background: var(--primary-white);
-        box-shadow: 0 0 0 3px rgba(26, 135, 84, 0.1);
     }
 
     .filters-section {
@@ -208,34 +186,6 @@ layout: default
         background: var(--primary-black);
     }
 
-    .sort-container {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-        flex-wrap: wrap;
-    }
-
-    .sort-label {
-        font-weight: 600;
-        color: var(--primary-black);
-    }
-
-    .sort-select {
-        padding: 12px 16px;
-        border: 2px solid var(--border-gray);
-        border-radius: var(--border-radius);
-        background: var(--primary-white);
-        font-size: 1rem;
-        cursor: pointer;
-        transition: var(--transition);
-    }
-
-    .sort-select:focus {
-        outline: none;
-        border-color: var(--primary-green);
-        box-shadow: 0 0 0 3px rgba(26, 135, 84, 0.1);
-    }
-
     .results-info {
         display: flex;
         justify-content: space-between;
@@ -303,13 +253,25 @@ layout: default
     }
 
     .year-cell {
-        background: var(--light-gray);
         font-weight: bold;
         font-size: 1.1rem;
-        color: var(--primary-green);
+        color: var(--primary-white);
         text-align: center;
         border-right: 3px solid var(--primary-green);
+        position: relative;
     }
+
+    /* ألوان مختلفة لكل سنة */
+    .year-2024 { background: linear-gradient(135deg, #1A8754, #2a9b66); }
+    .year-2023 { background: linear-gradient(135deg, #2563eb, #3b82f6); }
+    .year-2022 { background: linear-gradient(135deg, #dc2626, #ef4444); }
+    .year-2021 { background: linear-gradient(135deg, #7c3aed, #8b5cf6); }
+    .year-2020 { background: linear-gradient(135deg, #ea580c, #f97316); }
+    .year-2019 { background: linear-gradient(135deg, #0891b2, #06b6d4); }
+    .year-2018 { background: linear-gradient(135deg, #be123c, #e11d48); }
+    .year-2017 { background: linear-gradient(135deg, #059669, #10b981); }
+    .year-2016 { background: linear-gradient(135deg, #7c2d12, #a16207); }
+    .year-2015 { background: linear-gradient(135deg, #4338ca, #6366f1); }
 
     .olympiad-link {
         text-decoration: none;
@@ -351,6 +313,7 @@ layout: default
 
     .medal:hover {
         transform: scale(1.2);
+        filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
     }
 
     .badge {
@@ -446,11 +409,6 @@ layout: default
             font-size: 0.9rem;
         }
 
-        .sort-container {
-            flex-direction: column;
-            align-items: stretch;
-        }
-
         .participation-table {
             font-size: 0.9rem;
         }
@@ -517,10 +475,6 @@ layout: default
     </div>
 
     <div class="controls-section">
-        <div class="search-container">
-            <input type="text" class="search-box" id="searchInput" placeholder="ابحث عن اسم المسابقة، البلد، أو السنة...">
-        </div>
-
         <div class="filters-section">
             <div class="filter-group">
                 <label class="filter-label">تصفية حسب المسابقة:</label>
@@ -538,18 +492,9 @@ layout: default
             </div>
         </div>
 
-        <div class="sort-container">
-            <label class="sort-label">ترتيب حسب:</label>
-            <select class="sort-select" id="sortSelect">
-                <option value="year-desc">الأحدث أولاً</option>
-                <option value="year-asc">الأقدم أولاً</option>
-                <option value="name-asc">ترتيب أبجدي</option>
-            </select>
-            
-            <div class="results-info">
-                <span id="resultsCount">عرض جميع النتائج</span>
-                <button class="clear-filters" id="clearFilters" style="display: none;">مسح جميع المرشحات</button>
-            </div>
+        <div class="results-info">
+            <span id="resultsCount">عرض جميع النتائج</span>
+            <button class="clear-filters" id="clearFilters" style="display: none;">مسح جميع المرشحات</button>
         </div>
     </div>
 
@@ -591,7 +536,7 @@ layout: default
                             data-name="{% if page.lang == 'en' %}{{ page[year][idx].enname }}{% else %}{{ page[year][idx].arname }}{% endif %}">
                             
                             {% if idx == 1 %}
-                            <td class="text-center year-cell" style="vertical-align: middle;" rowspan="{{ page[year].count }}">{{ year }}</td>
+                            <td class="text-center year-cell year-{{ year }}" style="vertical-align: middle;" rowspan="{{ page[year].count }}">{{ year }}</td>
                             {% endif %}
                             
                             <td>
@@ -730,21 +675,12 @@ function updateResultsCount() {
 
 // تطبيق المرشحات
 function applyFilters() {
-    const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-    
     filteredRows = allRows.filter(row => {
-        // فلترة البحث
-        const searchMatch = 
-            row.dataset.name.toLowerCase().includes(searchTerm) ||
-            row.dataset.competition.toLowerCase().includes(searchTerm) ||
-            row.dataset.country.toLowerCase().includes(searchTerm) ||
-            row.dataset.year.includes(searchTerm);
-
         // فلترة المسابقات
         const competitionMatch = activeFilters.has('all') || 
             activeFilters.has(row.dataset.competition);
 
-        return searchMatch && competitionMatch;
+        return competitionMatch;
     });
 
     // إخفاء/إظهار الصفوف
@@ -796,18 +732,13 @@ function updateYearCells() {
 // تحديث زر مسح المرشحات
 function updateClearButton() {
     const clearButton = document.getElementById('clearFilters');
-    const searchInput = document.getElementById('searchInput');
-    const hasActiveFilters = !activeFilters.has('all') || searchInput.value.trim() !== '';
+    const hasActiveFilters = !activeFilters.has('all');
     
     clearButton.style.display = hasActiveFilters ? 'inline-block' : 'none';
 }
 
 // إضافة مستمعي الأحداث
 function setupEventListeners() {
-    // البحث
-    const searchInput = document.getElementById('searchInput');
-    searchInput.addEventListener('input', applyFilters);
-
     // أزرار التصفية
     const filterButtons = document.querySelectorAll('.filter-btn');
     filterButtons.forEach(button => {
@@ -846,75 +777,13 @@ function setupEventListeners() {
         });
     });
 
-    // الترتيب
-    const sortSelect = document.getElementById('sortSelect');
-    sortSelect.addEventListener('change', applySorting);
-
     // مسح المرشحات
     const clearButton = document.getElementById('clearFilters');
     clearButton.addEventListener('click', clearAllFilters);
 }
 
-// تطبيق الترتيب
-function applySorting() {
-    const sortValue = document.getElementById('sortSelect').value;
-    const tbody = document.getElementById('participationTableBody');
-    
-    // إنشاء مصفوفة من الصفوف مع مجموعاتها
-    const rowGroups = [];
-    let currentGroup = [];
-    let currentYear = null;
-    
-    allRows.forEach(row => {
-        const year = row.dataset.year;
-        if (year !== currentYear) {
-            if (currentGroup.length > 0) {
-                rowGroups.push(currentGroup);
-            }
-            currentGroup = [row];
-            currentYear = year;
-        } else {
-            currentGroup.push(row);
-        }
-    });
-    
-    if (currentGroup.length > 0) {
-        rowGroups.push(currentGroup);
-    }
-
-    // ترتيب المجموعات
-    rowGroups.sort((a, b) => {
-        const yearA = parseInt(a[0].dataset.year);
-        const yearB = parseInt(b[0].dataset.year);
-        
-        switch (sortValue) {
-            case 'year-asc':
-                return yearA - yearB;
-            case 'year-desc':
-                return yearB - yearA;
-            case 'name-asc':
-                return a[0].dataset.name.localeCompare(b[0].dataset.name, 'ar');
-            default:
-                return yearB - yearA;
-        }
-    });
-
-    // إعادة ترتيب الصفوف في الجدول
-    rowGroups.forEach(group => {
-        group.forEach(row => {
-            tbody.appendChild(row);
-        });
-    });
-
-    // إعادة تطبيق المرشحات
-    applyFilters();
-}
-
 // مسح جميع المرشحات
 function clearAllFilters() {
-    // مسح البحث
-    document.getElementById('searchInput').value = '';
-    
     // مسح مرشحات المسابقات
     const filterButtons = document.querySelectorAll('.filter-btn');
     filterButtons.forEach(btn => btn.classList.remove('active'));
