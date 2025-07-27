@@ -48,7 +48,7 @@
         "id": "gmo", "website": null,
         "arname": "أولمبياد الخليج للرياضيات",
         "enname": "Gulf Mathematical Olympiad",
-        "ardescription": "هي مسابقة تنظمها دول الخليج لتنمية القدرات الخليجية، تقام كل سنة في دولة مختلفة منذ عام 2013. تقام المسابقة على يوم واحد باختبار مكون من 4 مسائل يتوجب حلها في أربع ساعات ونصف.",
+        "ardescription": "هي مسابقة تنظمها دول الخليج لتنمية القدرات الخليجية، تقام كل سنة في دولة مختلفة منذ عام 2012. تقام المسابقة على يوم واحد باختبار مكون من 4 مسائل يتوجب حلها في أربع ساعات ونصف.",
         "endescription": "It is a competition organized by the Gulf countries to develop regional talents. It has been held annually in a different country since 2013. The competition takes place over one day, with a test consisting of 4 problems to be solved in four and a half hours.",
         "participants_count": 6,
         "official": true
@@ -57,8 +57,8 @@
         "id": "amo", "website": null,
         "arname": "الأولمبياد العربي للرياضيات",
         "enname": "Arab Mathematical Olympiad",
-        "ardescription": "هي مسابقة تنظمها الدول العربية لتنمية القدرات العربية، تقام كل سنة في دولة مختلفة منذ عام 2018. تقام المسابقة على يوم واحد باختبار مكون من 4 مسائل يتوجب حلها في أربع ساعات ونصف.",
-        "endescription": "It is a competition organized by Arab countries to develop Arab talents. It has been held annually in a different country since 2018. The competition takes place over one day, with a test consisting of 4 problems to be solved in four and a half hours.",
+        "ardescription": "هي مسابقة تنظمها الدول العربية لتنمية القدرات العربية، تقام كل سنتين في دولة مختلفة منذ عام 2018. تقام المسابقة على يوم واحد باختبار مكون من 4 مسائل يتوجب حلها في أربع ساعات ونصف.",
+        "endescription": "It is a competition organized by Arab countries to develop Arab talents. It has been held every two years in a different country since 2018. The competition takes place over one day, with a test consisting of 4 problems to be solved in four and a half hours.",
         "participants_count": 4,
         "official": true
     },
