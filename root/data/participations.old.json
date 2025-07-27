@@ -1107,12 +1107,25 @@
         "country": "tm",
         "website": null,
         "participants": {
-            "mohammed_shaiban": "gold",
-            "abdulelah_assaggaf": "gold",
-            "abdullah_alamer": "silver",
             "elyas_alfaraj": "silver",
             "fatimah_buali": "silver",
             "yousif_alkhalawi": "silver"
+        }
+    },
+    {
+        "name": "jiomhss",
+        "year": 2025,
+        "start": "2025/4/21",
+        "end": "2025/4/26",
+        "country": "tm",
+        "website": null,
+        "participants": {
+            "abdulelah_assaggaf": "gold",
+            "mohammed_shaiban": "gold",
+            "abdullah_alamer": "silver",
+            "yasir_habibullah": null,
+            "belal_alhejaili": null
+            
         }
     },
      {
