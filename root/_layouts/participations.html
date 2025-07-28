@@ -251,7 +251,6 @@ function updateStats() {
         honorable += (medals.match(/📜/g) || []).length;
     });
     
-    document.getElementById('totalCompetitions').textContent = filteredRows.length;
     document.getElementById('goldMedals').textContent = gold;
     document.getElementById('silverMedals').textContent = silver;
     document.getElementById('bronzeMedals').textContent = bronze;
