@@ -114,14 +114,9 @@ layout: default
                         </label>
                         <div class="d-flex flex-wrap gap-2">
                             <button class="btn btn-outline-dark btn-sm active filter-btn" data-filter="all">{% if page.lang == "ar" %}الكل{% else %}All{% endif %}</button>
-                            <button class="btn btn-outline-success btn-sm filter-btn" data-filter="IMO">IMO</button>
-                            <button class="btn btn-outline-success btn-sm filter-btn" data-filter="EGMO">EGMO</button>
-                            <button class="btn btn-outline-success btn-sm filter-btn" data-filter="BMO">BMO</button>
-                            <button class="btn btn-outline-success btn-sm filter-btn" data-filter="JBMO">JBMO</button>
-                            <button class="btn btn-outline-success btn-sm filter-btn" data-filter="APMO">APMO</button>
-                            <button class="btn btn-outline-success btn-sm filter-btn" data-filter="GMO">GMO</button>
-                            <button class="btn btn-outline-success btn-sm filter-btn" data-filter="AMO">AMO</button>
-                            <button class="btn btn-outline-success btn-sm filter-btn" data-filter="IOMHSS">IOMHSS</button>
+                            {% for oo in (1..page.olympiads.count) %}
+                            <button class="btn btn-outline-success btn-sm filter-btn" data-filter="{{ page.olympiads[oo] | upcase }}">{{ page.olympiads[oo] | upcase }}</button>
+                            {% endfor %}
                         </div>
                     </div>
 
