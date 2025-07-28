@@ -316,14 +316,6 @@ function applyFilters() {
 
     updateStats();
     updateResultsCount();
-
-    // Not needed I guess
-    const clearBtn = document.getElementById('clearFilters');
-    if (activeFilters.has('all')) {
-        clearBtn.classList.add('d-none');
-    } else {
-        clearBtn.classList.remove('d-none');
-    }
 }
 
 function setupEventListeners() {
