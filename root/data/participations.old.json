@@ -1384,5 +1384,40 @@
             "majid_almarhoumi": "silver",
             "hamzah_shafi": "silver"
         }
+    },
+    {
+        "name": "cmc",
+        "year": 2020,
+        "start": "2020/1/1",
+        "end": "2020/12/31",
+        "country": "us",
+        "website": null,
+        "participants": {
+            "khalid_ajran": "silver",
+            "marwan_alkhayat": "bronze",
+            "nawaf_alghamdi": "bronze",
+            "thnaa_alhydary": "bronze",
+            "hamzah_alshaikhi": "hm",
+            "mohammed_aldubaisi": "hm",
+            "mohammed_alshehri": "hm",
+            "joud_bahuwayni": null
+            
+        }
+    },
+    {
+        "name": "imsc",
+        "year": 2023,
+        "start": "2023/1/1",
+        "end": "2023/12/31",
+        "country": "cn",
+        "website": null,
+        "participants": {
+            "mahdi_albaik": "silver",
+            "ali_alramadan": "bronze",
+            "muath_alqahtani": "bronze",
+            "hadi_alaithan": "bronze",
+            "eyad_alqatari": "hm",
+            "abdulrahman_nassief": "hm"
+        }
     }
 ] 
