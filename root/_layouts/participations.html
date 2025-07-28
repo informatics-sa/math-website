@@ -151,6 +151,8 @@ layout: default
                                 
                                 {% if idx == 1 %}
                                 <td class="text-center year-cell year-{{ year }} align-middle fw-bold" rowspan="{{ page[year].count }}">{{ year }}</td>
+                                {% else %}
+                                <td class="d-none text-center year-cell year-{{ year }} align-middle fw-bold" rowspan="{{ page[year].count }}">{{ year }}</td>
                                 {% endif %}
                                 
                                 <td>
@@ -258,25 +260,51 @@ function applyFilters() {
         return activeFilters.has('all') || activeFilters.has(row.dataset.competition);
     });
 
+    // First, hide all rows
     allRows.forEach(row => {
-        row.style.display = filteredRows.includes(row) ? '' : 'none';
+        row.style.display = 'none';
     });
 
+    // Hide all year cells initially
     document.querySelectorAll('.year-cell').forEach(cell => {
-        const year = cell.textContent;
-        const yearRows = filteredRows.filter(row => row.dataset.year === year);
-        
-        if (yearRows.length > 0) {
-            cell.style.display = '';
-            cell.setAttribute('rowspan', yearRows.length);
-        } else {
-            cell.style.display = 'none';
+        cell.style.display = 'none';
+        cell.removeAttribute('rowspan');
+    });
+
+    // Group filtered rows by year and show them with proper year cell handling
+    const yearGroups = {};
+    filteredRows.forEach(row => {
+        const year = row.dataset.year;
+        if (!yearGroups[year]) {
+            yearGroups[year] = [];
         }
+        yearGroups[year].push(row);
+    });
+
+    // Show filtered rows and set up year cells properly
+    Object.keys(yearGroups).forEach(year => {
+        const yearRows = yearGroups[year];
+        yearRows.forEach((row, index) => {
+            row.style.display = '';
+            const yearCell = row.querySelector('.year-cell');
+            
+            if (index === 0) {
+                // First row of the year - show the year cell with proper rowspan
+                yearCell.style.display = '';
+                yearCell.setAttribute('rowspan', yearRows.length);
+                yearCell.classList.remove('d-none');
+            } else {
+                // Other rows - hide their year cells
+                yearCell.style.display = 'none';
+                yearCell.classList.add('d-none');
+            }
+        });
     });
 
     updateStats();
     updateResultsCount();
-    
+
+    // Not needed I guess
     const clearBtn = document.getElementById('clearFilters');
     if (activeFilters.has('all')) {
         clearBtn.classList.add('d-none');
