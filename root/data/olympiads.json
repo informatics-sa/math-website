@@ -79,5 +79,23 @@
         "endescription": "It is an international mathematics competition for students under 15.5 years old, hosted annually by Turkmenistan since 2024. The competition takes place over one day, with a test consisting of 5 problems to be solved in 5 hours.",
         "participants_count": 4,
         "official": true
+    },
+    {
+        "id": "cmc", "website": null,
+        "arname": "أولمبياد الرياضيات للفضاء السيبراني",
+        "enname": "Cyberspace Math Olympiad",
+        "ardescription": "",
+        "endescription": "",
+        "participants_count": 8,
+        "official": true
+    },
+    {
+        "id": "imsc", "website": null,
+        "arname": "الملتقى الصيفي الدولي للرياضيات",
+        "enname": "International Mathematical Summer Camp",
+        "ardescription": "",
+        "endescription": "",
+        "participants_count": 6,
+        "official": true
     }
 ]
