@@ -698,16 +698,16 @@
         "country": "br",
         "website": "https://www.apmo-official.org/country_report/sau/2025",
         "participants": {
-            "yosuf_bakheet": null,
-            "muath_alqahtani": null,
-            "mohammed_alghamdi": null,
-            "ahmed_alshehri": null,
-            "elyas_alfaraj": null,
-            "fatimah_buali": null,
-            "abdullah_alamer": null,
-            "ahmed_alkhalawi": null,
-            "yousif_alkhalawi": null,
-            "abdulsalam_alsulami": null
+            "ahmed_alkhalawi": "bronze",
+            "yosuf_bakheet": "bronze",
+            "abdulsalam_alsulami": "bronze",
+            "muath_alqahtani": "bronze",
+            "ahmed_alshehri": "bronze",
+            "elyas_alfaraj": "bronze",
+            "abdullah_alamer": "hm",
+            "mohammed_alghamdi": "hm",
+            "fatimah_buali": "hm",
+            "yousif_alkhalawi": "hm"
         }
     },
     {
