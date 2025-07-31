@@ -29,76 +29,10 @@ layout: default
 </style>
 
 <div class="container-fluid px-3 px-lg-4">
-    
-    <!-- <div class="page-header text-white p-4 p-lg-5 text-center mb-4 mt-4">
-        <h1 class="display-4 fw-bold mb-2">🏆 
-            <span>
-                {% if page.lang == "ar" %}مشاركات المملكة العربية السعودية{% else %}Saudi Arabia Participations{% endif %}
-            </span>
-        </h1>
-        <p class="lead opacity-75">
-            <span>
-                {% if page.lang == "ar" %}في أولمبياد الرياضيات الدولية والإقليمية{% else %}in International and Regional Mathematics Olympiads{% endif %}
-            </span>
-        </p>
-    </div> -->
 
     <div class="row g-3 g-lg-4 mb-4 mt-1">
         <div class="col-12 col-md-6 col-lg-6">
             <div class="row mb-4 mt-1">
-<<<<<<< HEAD
-
-                
-                <div class="col-2 col-md-2 col-lg">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center h3">
-                            <span class="fw-bold text-success d-block" id="totalCompetitions">{{ page.stats.total_participations }}</span>
-                            <i class="bi-globe-europe-africa"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2 col-md-2 col-lg">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center h3">
-                            <span class="fw-bold text-warning d-block" id="goldMedals">{{ page.stats.total_gold }}</span>
-                            <i class="bi-award medal-gold"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2 col-md-2 col-lg">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center h3">
-                            <span class="fw-bold text-secondary d-block" id="silverMedals">{{ page.stats.total_silver }}</span>
-                            <i class="bi-award medal-silver"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2 col-md-2 col-lg">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center h3">
-                            <span class="fw-bold text-danger d-block" id="bronzeMedals">{{ page.stats.total_bronze }}</span>
-                            <i class="bi-award medal-bronze"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2 col-md-2 col-lg">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center h3">
-                            <span class="fw-bold text-info d-block" id="honorableMentions">{{ page.stats.total_hm }}</span>
-                            <i class="bi-award bi-patch-check-fill"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2 col-md-2 col-lg">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center h3">
-                            <span class="fw-bold text-success d-block" id="totalMedals">{{ page.stats.total_awards }}</span>
-                            <i class="bi-patch-check-fill"></i>
-                        </div>
-                    </div>
-                </div>
-
-=======
                 <div class="col-sm-2 col-md-2 col-lg">
                     <div class="card h-100 shadow-sm">
                         <div class="card-body text-center h3">
@@ -153,7 +87,6 @@ layout: default
                     </div>
                 </div>
 
->>>>>>> 2fa09fb9ffb388140b1070655df2e4755bc56acc
             </div>
         </div>
     
@@ -168,20 +101,9 @@ layout: default
                         </label>
                         <div class="d-flex flex-wrap gap-2">
                             <button class="btn btn-outline-dark btn-sm active filter-btn" data-filter="all">{% if page.lang == "ar" %}الكل{% else %}All{% endif %}</button>
-<<<<<<< HEAD
-                            <button class="btn btn-outline-success btn-sm filter-btn" data-filter="IMO">IMO</button>
-                            <button class="btn btn-outline-success btn-sm filter-btn" data-filter="EGMO">EGMO</button>
-                            <button class="btn btn-outline-success btn-sm filter-btn" data-filter="BMO">BMO</button>
-                            <button class="btn btn-outline-success btn-sm filter-btn" data-filter="JBMO">JBMO</button>
-                            <button class="btn btn-outline-success btn-sm filter-btn" data-filter="APMO">APMO</button>
-                            <button class="btn btn-outline-success btn-sm filter-btn" data-filter="GMO">GMO</button>
-                            <button class="btn btn-outline-success btn-sm filter-btn" data-filter="AMO">AMO</button>
-                            <button class="btn btn-outline-success btn-sm filter-btn" data-filter="IOMHSS">IOMHSS</button>
-=======
                             {% for oo in (1..page.olympiads.count) %}
                             <button class="btn btn-outline-success btn-sm filter-btn" data-filter="{{ page.olympiads[oo] | upcase }}">{{ page.olympiads[oo] | upcase }}</button>
                             {% endfor %}
->>>>>>> 2fa09fb9ffb388140b1070655df2e4755bc56acc
                         </div>
                     </div>
 
@@ -198,11 +120,7 @@ layout: default
 
     </div>
 
-<<<<<<< HEAD
-    <div class="card shadow-sm">
-=======
     <div class="card shadow-sm mb-4">
->>>>>>> 2fa09fb9ffb388140b1070655df2e4755bc56acc
         <div class="table-responsive">
             <table class="table mb-0" id="participationTable">
                 <thead class="table-dark">
@@ -234,36 +152,6 @@ layout: default
                                 
                                 {% if idx == 1 %}
                                 <td class="text-center year-cell year-{{ year }} align-middle fw-bold" rowspan="{{ page[year].count }}">{{ year }}</td>
-<<<<<<< HEAD
-                                {% endif %}
-                                
-                                <td>
-                                    <a href="{% if page.lang == "en" %}/en{% endif %}/participations/{{olyid}}" class="text-decoration-none fw-semibold">
-                                        
-                                        {% if page.lang == "en" %}  
-                                            {{ page[year][idx].enname }}
-                                        {% else %}
-                                            {{ page[year][idx].arname }}
-                                        {% endif %}
-                                        <span class="small text-muted">
-                                            ({{ page[year][idx].name | upcase }})
-                                        </span>
-                                    </a>
-                                    <!-- <div class="small text-muted"></div> -->
-                                </td>
-                                
-                                <td>
-                                    <input type="hidden" id="olstart-{{olyid}}" value="{{ page[year][idx].start }}">
-                                    <input type="hidden" id="olend-{{olyid}}" value="{{ page[year][idx].end }}">
-                                    {% if page[year][idx].start == page[year][idx].end %}
-                                        {{ page[year][idx].start }}
-                                    {% else %}
-                                        {{ page[year][idx].start }} - {{ page[year][idx].end }}
-                                    {% endif %}
-                                </td>
-                                
-                                <td>
-=======
                                 {% else %}
                                 <td class="d-none text-center year-cell year-{{ year }} align-middle fw-bold" rowspan="{{ page[year].count }}">{{ year }}</td>
                                 {% endif %}
@@ -294,7 +182,6 @@ layout: default
                                 </td>
                                 
                                 <td>
->>>>>>> 2fa09fb9ffb388140b1070655df2e4755bc56acc
                                     {% if page.lang == 'ar' %}
                                         {{ page[year][idx].country_arname }}
                                     {% else %}
@@ -333,10 +220,12 @@ layout: default
 let allRows = [];
 let filteredRows = [];
 let activeFilters = new Set(['all']);
+let filterButtons = [];
 
 function init() {
     allRows = Array.from(document.querySelectorAll('.participation-row'));
     filteredRows = [...allRows];
+    filterButtons = document.querySelectorAll('.filter-btn');
     setupEventListeners();
     updateDateBadges();
 }
@@ -351,15 +240,12 @@ function updateStats() {
         honorable += (medals.match(/📜/g) || []).length;
     });
     
-<<<<<<< HEAD
-    document.getElementById('totalCompetitions').textContent = filteredRows.length;
-=======
->>>>>>> 2fa09fb9ffb388140b1070655df2e4755bc56acc
+    // document.getElementById('totalCompetitions').textContent = filteredRows.length;
     document.getElementById('goldMedals').textContent = gold;
     document.getElementById('silverMedals').textContent = silver;
     document.getElementById('bronzeMedals').textContent = bronze;
     document.getElementById('honorableMentions').textContent = honorable;
-    document.getElementById('totalMedals').textContent = gold + silver + bronze;
+    document.getElementById('totalMedals').textContent = gold + silver + bronze + honorable;
 }
 
 function updateResultsCount() {
@@ -377,21 +263,6 @@ function applyFilters() {
         return activeFilters.has('all') || activeFilters.has(row.dataset.competition);
     });
 
-<<<<<<< HEAD
-    allRows.forEach(row => {
-        row.style.display = filteredRows.includes(row) ? '' : 'none';
-    });
-
-    document.querySelectorAll('.year-cell').forEach(cell => {
-        const year = cell.textContent;
-        const yearRows = filteredRows.filter(row => row.dataset.year === year);
-        
-        if (yearRows.length > 0) {
-            cell.style.display = '';
-            cell.setAttribute('rowspan', yearRows.length);
-        } else {
-            cell.style.display = 'none';
-=======
     // First, hide all rows
     allRows.forEach(row => {
         row.style.display = 'none';
@@ -409,22 +280,10 @@ function applyFilters() {
         const year = row.dataset.year;
         if (!yearGroups[year]) {
             yearGroups[year] = [];
->>>>>>> 2fa09fb9ffb388140b1070655df2e4755bc56acc
         }
         yearGroups[year].push(row);
     });
 
-<<<<<<< HEAD
-    updateStats();
-    updateResultsCount();
-    
-    const clearBtn = document.getElementById('clearFilters');
-    if (activeFilters.has('all')) {
-        clearBtn.classList.add('d-none');
-    } else {
-        clearBtn.classList.remove('d-none');
-    }
-=======
     // Show filtered rows and set up year cells properly
     Object.keys(yearGroups).forEach(year => {
         const yearRows = yearGroups[year];
@@ -447,47 +306,44 @@ function applyFilters() {
 
     updateStats();
     updateResultsCount();
->>>>>>> 2fa09fb9ffb388140b1070655df2e4755bc56acc
 }
 
 function setupEventListeners() {
     document.querySelectorAll('.filter-btn').forEach(btn => {
-        const filterButtons = document.querySelectorAll('.filter-btn');
-        filterButtons.forEach(button => {
-            button.addEventListener('click', (e) => {
-                const filter = e.currentTarget.dataset.filter;
+        btn.addEventListener('click', (e) => {
+            console.log(btn);
+            const filter = btn.dataset.filter;
+            
+            if (filter === 'all') {
+                // إزالة جميع المرشحات الأخرى
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                e.currentTarget.classList.add('active');
+                activeFilters.clear();
+                activeFilters.add('all');
+            }
+            else {
+                // إزالة "الكل" إذا تم اختيار مرشح آخر
+                const allButton = document.querySelector('[data-filter="all"]');
+                allButton.classList.remove('active');
+                activeFilters.delete('all');
                 
-                if (filter === 'all') {
-                    // إزالة جميع المرشحات الأخرى
-                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                // تبديل حالة المرشح الحالي
+                if (activeFilters.has(filter)) {
+                    activeFilters.delete(filter);
+                    e.currentTarget.classList.remove('active');
+                } else {
+                    activeFilters.add(filter);
                     e.currentTarget.classList.add('active');
-                    activeFilters.clear();
+                }
+                
+                // إذا لم يبق أي مرشح، اختر "الكل"
+                if (activeFilters.size === 0) {
+                    allButton.classList.add('active');
                     activeFilters.add('all');
                 }
-                else {
-                    // إزالة "الكل" إذا تم اختيار مرشح آخر
-                    const allButton = document.querySelector('[data-filter="all"]');
-                    allButton.classList.remove('active');
-                    activeFilters.delete('all');
-                    
-                    // تبديل حالة المرشح الحالي
-                    if (activeFilters.has(filter)) {
-                        activeFilters.delete(filter);
-                        e.currentTarget.classList.remove('active');
-                    } else {
-                        activeFilters.add(filter);
-                        e.currentTarget.classList.add('active');
-                    }
-                    
-                    // إذا لم يبق أي مرشح، اختر "الكل"
-                    if (activeFilters.size === 0) {
-                        allButton.classList.add('active');
-                        activeFilters.add('all');
-                    }
-                }
-                
-                applyFilters();
-            });
+            }
+            
+            applyFilters();
         });
     });
 }
@@ -542,8 +398,4 @@ function updateDateBadges() {
 }
 
 document.addEventListener('DOMContentLoaded', init);
-<<<<<<< HEAD
 </script>
-=======
-</script>
->>>>>>> 2fa09fb9ffb388140b1070655df2e4755bc56acc

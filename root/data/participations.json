@@ -55,12 +55,24 @@
         "country": "tm",
         "website": null,
         "participants": {
-            "74": "gold",
-            "3": "gold",
-            "6": "silver",
             "36": "silver",
             "41": "silver",
             "106": "silver"
+        }
+    },
+    {
+        "name": "jiomhss",
+        "year": 2025,
+        "start": "2025/4/21",
+        "end": "2025/4/26",
+        "country": "tm",
+        "website": null,
+        "participants": {
+            "3": "gold",
+            "74": "gold",
+            "6": "silver",
+            "103": null,
+            "34": null
         }
     },
     {
@@ -305,6 +317,22 @@
             "76": "silver",
             "5": "silver",
             "54": "silver"
+        }
+    },
+    {
+        "name": "imsc",
+        "year": 2023,
+        "start": "2023/1/1",
+        "end": "2023/12/31",
+        "country": "cn",
+        "website": null,
+        "participants": {
+            "62": "silver",
+            "25": "bronze",
+            "76": "bronze",
+            "45": "bronze",
+            "37": "hm",
+            "11": "hm"
         }
     },
     {
@@ -565,6 +593,24 @@
             "101": "hm",
             "14": "hm",
             "69": "hm"
+        }
+    },
+    {
+        "name": "cmc",
+        "year": 2020,
+        "start": "2020/1/1",
+        "end": "2020/12/31",
+        "country": "us",
+        "website": null,
+        "participants": {
+            "58": "silver",
+            "67": "bronze",
+            "79": "bronze",
+            "101": "bronze",
+            "46": "hm",
+            "69": "hm",
+            "72": "hm",
+            "56": null
         }
     },
     {
