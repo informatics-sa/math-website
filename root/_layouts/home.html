@@ -14,22 +14,26 @@ description: "Official website"
     --hover-green: #156b45;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background: var(--pure-white);
     color: var(--text-black);
     line-height: 1.7;
-    font-size: 18px;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .hero-section {
     background: linear-gradient(135deg, var(--primary-green) 0%, var(--hover-green) 100%);
     color: var(--pure-white);
-    padding: 100px 0;
+    padding: clamp(60px, 15vh, 100px) 0;
     position: relative;
     overflow: hidden;
-    min-height: 70vh;
+    min-height: clamp(50vh, 70vh, 80vh);
 }
 
 .hero-section::before {
@@ -43,7 +47,6 @@ body {
     opacity: 0.4;
 }
 
-/* رموز رياضية ثابتة بشفافية موحدة */
 .math-symbols {
     position: absolute;
     top: 0;
@@ -58,50 +61,48 @@ body {
 .math-symbol {
     position: absolute;
     color: rgba(255, 255, 255, 0.15);
-    font-size: 2.5rem;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
     font-weight: bold;
     user-select: none;
-    /* animation: gentleFloat 8s ease-in-out infinite; */
 }
 
-/* توزيع أفضل للرموز لتجنب التراكب */
-.math-symbol:nth-child(1) { top: 5%; left: 8%; animation-delay: 0s; }
-.math-symbol:nth-child(2) { top: 8%; left: 85%; animation-delay: 1s; }
-.math-symbol:nth-child(3) { top: 20%; left: 25%; animation-delay: 2s; }
-.math-symbol:nth-child(4) { top: 25%; left: 75%; animation-delay: 0.5s; }
-.math-symbol:nth-child(5) { top: 40%; left: 12%; animation-delay: 1.5s; }
-.math-symbol:nth-child(6) { top: 45%; left: 88%; animation-delay: 2.5s; }
-.math-symbol:nth-child(7) { top: 60%; left: 30%; animation-delay: 3s; }
-.math-symbol:nth-child(8) { top: 65%; left: 70%; animation-delay: 0.8s; }
-.math-symbol:nth-child(9) { top: 80%; left: 15%; animation-delay: 1.8s; }
-.math-symbol:nth-child(10) { top: 85%; left: 80%; animation-delay: 2.2s; }
-.math-symbol:nth-child(11) { top: 15%; left: 50%; animation-delay: 3.5s; }
-.math-symbol:nth-child(12) { top: 50%; left: 50%; animation-delay: 4s; }
-
-@keyframes gentleFloat {
-    0%, 100% { transform: translateY(0px) rotate(0deg); }
-    50% { transform: translateY(-10px) rotate(3deg); }
-}
+/* Responsive symbol positioning */
+.math-symbol:nth-child(1) { top: 5%; left: 8%; }
+.math-symbol:nth-child(2) { top: 8%; left: 85%; }
+.math-symbol:nth-child(3) { top: 20%; left: 25%; }
+.math-symbol:nth-child(4) { top: 25%; left: 75%; }
+.math-symbol:nth-child(5) { top: 40%; left: 12%; }
+.math-symbol:nth-child(6) { top: 45%; left: 88%; }
+.math-symbol:nth-child(7) { top: 60%; left: 30%; }
+.math-symbol:nth-child(8) { top: 65%; left: 70%; }
+.math-symbol:nth-child(9) { top: 80%; left: 15%; }
+.math-symbol:nth-child(10) { top: 85%; left: 80%; }
+.math-symbol:nth-child(11) { top: 15%; left: 50%; }
+.math-symbol:nth-child(12) { top: 50%; left: 50%; }
 
 .hero-section .container {
     position: relative;
     z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 clamp(15px, 5vw, 40px);
 }
 
 .hero-section h1 {
-    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-size: clamp(2rem, 8vw, 4.5rem);
     font-weight: 800;
-    margin-bottom: 2rem;
+    margin-bottom: clamp(1rem, 4vw, 2rem);
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
     line-height: 1.2;
+    word-break: break-word;
 }
 
 .hero-section .lead {
-    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    font-size: clamp(1rem, 4vw, 1.8rem);
     font-weight: 500;
     opacity: 0.95;
     max-width: 700px;
-    margin: 0 auto 2.5rem;
+    margin: 0 auto clamp(1.5rem, 4vw, 2.5rem);
     text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
     line-height: 1.4;
 }
@@ -110,13 +111,15 @@ body {
     font-family: 'Tajawal', sans-serif;
     font-weight: 600;
     border-radius: 25px;
-    padding: 15px 30px;
-    font-size: 1.1rem;
+    padding: clamp(12px, 3vw, 15px) clamp(20px, 5vw, 30px);
+    font-size: clamp(0.95rem, 2.5vw, 1.1rem);
     transition: all 0.3s ease;
     border: 2px solid transparent;
     text-decoration: none;
     display: inline-block;
-    margin: 5px;
+    margin: clamp(5px, 2vw, 8px);
+    min-width: 160px;
+    text-align: center;
 }
 
 .btn-light {
@@ -172,16 +175,29 @@ body {
     box-shadow: 0 8px 20px rgba(26, 135, 84, 0.3);
 }
 
+.container-fluid {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 clamp(15px, 5vw, 40px);
+    width: 100%;
+}
+
 .stats-section {
-    padding: 80px 0;
+    padding: clamp(50px, 10vh, 80px) 0;
     background: var(--pure-white);
 }
 
 .stats-section h2 {
-    font-size: clamp(2rem, 4vw, 3rem);
+    font-size: clamp(1.8rem, 6vw, 3rem);
     font-weight: 800;
     color: var(--text-black);
-    margin-bottom: 3rem;
+    margin-bottom: clamp(2rem, 6vw, 3rem);
     position: relative;
     text-align: center;
 }
@@ -192,15 +208,30 @@ body {
     bottom: -15px;
     left: 50%;
     transform: translateX(-50%);
-    width: 80px;
+    width: clamp(60px, 15vw, 80px);
     height: 4px;
     background: linear-gradient(90deg, var(--primary-green), var(--hover-green));
     border-radius: 2px;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+    justify-content: center;
+}
+
+.col {
+    padding: 0 10px;
+    margin-bottom: clamp(1rem, 4vw, 2rem);
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+}
+
 .stats-card {
     background: var(--pure-white);
-    padding: 40px 20px;
+    padding: clamp(30px, 6vw, 40px) clamp(15px, 4vw, 20px);
     border-radius: 20px;
     text-align: center;
     transition: all 0.3s ease;
@@ -210,7 +241,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 2rem;
 }
 
 .stats-card:hover {
@@ -220,14 +250,14 @@ body {
 }
 
 .stats-icon {
-    font-size: 3.5rem;
-    margin-bottom: 1.5rem;
+    font-size: clamp(2.5rem, 6vw, 3.5rem);
+    margin-bottom: clamp(1rem, 3vw, 1.5rem);
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80px;
-    width: 80px;
-    margin: 0 auto 1.5rem;
+    height: clamp(60px, 15vw, 80px);
+    width: clamp(60px, 15vw, 80px);
+    margin: 0 auto clamp(1rem, 3vw, 1.5rem);
 }
 
 .medal-gold { 
@@ -242,24 +272,20 @@ body {
     color: #CD7F32; 
     text-shadow: 2px 2px 4px rgba(205, 127, 50, 0.3);
 }
-.medal-hm { 
+.medal-hm, .medal-participation { 
     color: var(--primary-green); 
-    text-shadow: 2px 2px 4px rgba(26, 135, 84, 0.3);
-}
-.medal-participation {
-    color: var(--primary-green);
     text-shadow: 2px 2px 4px rgba(26, 135, 84, 0.3);
 }
 
 .stats-card h3 {
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 5vw, 2.5rem);
     font-weight: 800;
     color: var(--text-black);
-    margin: 1rem 0;
+    margin: clamp(0.5rem, 2vw, 1rem) 0;
 }
 
 .stats-card p {
-    font-size: 1.1rem;
+    font-size: clamp(1rem, 2.5vw, 1.1rem);
     font-weight: 500;
     color: var(--text-black);
     opacity: 0.8;
@@ -267,19 +293,20 @@ body {
 }
 
 .info-section {
-    padding: 80px 0;
+    padding: clamp(50px, 10vh, 80px) 0;
     background: linear-gradient(135deg, var(--light-green) 0%, var(--pure-white) 100%);
 }
 
 .info-card {
     background: var(--pure-white);
-    padding: 40px 30px;
+    padding: clamp(30px, 6vw, 40px) clamp(20px, 5vw, 30px);
     border-radius: 20px;
     box-shadow: 0 15px 35px rgba(0,0,0,0.05);
     transition: all 0.3s ease;
     height: 100%;
     border: 2px solid transparent;
-    margin-bottom: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .info-card:hover {
@@ -289,29 +316,41 @@ body {
 }
 
 .feature-icon {
-    font-size: 3.5rem;
+    font-size: clamp(2.5rem, 6vw, 3.5rem);
     color: var(--primary-green);
-    margin-bottom: 2rem;
+    margin-bottom: clamp(1.5rem, 4vw, 2rem);
 }
 
 .info-card h3 {
-    font-size: 1.8rem;
+    font-size: clamp(1.5rem, 4vw, 1.8rem);
     font-weight: 700;
     color: var(--text-black);
-    margin-bottom: 2rem;
+    margin-bottom: clamp(1.5rem, 4vw, 2rem);
 }
 
 .info-card p {
-    font-size: 1.1rem;
+    font-size: clamp(1rem, 2.5vw, 1.1rem);
     color: var(--text-black);
     opacity: 0.8;
     line-height: 1.6;
-    margin-bottom: 2rem;
+    margin-bottom: clamp(1.5rem, 4vw, 2rem);
 }
 
 .join-section {
-    padding: 80px 0;
+    padding: clamp(50px, 10vh, 80px) 0;
     background: var(--pure-white);
+}
+
+.join-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: clamp(2rem, 5vw, 4rem);
+}
+
+.join-image, .join-content {
+    flex: 1;
+    min-width: 300px;
 }
 
 .join-section img {
@@ -320,6 +359,7 @@ body {
     transition: transform 0.3s ease;
     width: 100%;
     max-width: 500px;
+    height: auto;
 }
 
 .join-section img:hover {
@@ -327,31 +367,32 @@ body {
 }
 
 .join-section h2 {
-    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
     font-weight: 800;
     color: var(--text-black);
-    margin-bottom: 2rem;
+    margin-bottom: clamp(1.5rem, 4vw, 2rem);
 }
 
 .join-section .lead {
-    font-size: 1.3rem;
+    font-size: clamp(1.1rem, 3vw, 1.3rem);
     color: var(--text-black);
-    margin-bottom: 2.5rem;
+    margin-bottom: clamp(2rem, 4vw, 2.5rem);
     font-weight: 500;
 }
 
 .join-section ul li {
-    font-size: 1.1rem;
+    font-size: clamp(1rem, 2.5vw, 1.1rem);
     color: var(--text-black);
-    padding: 15px 0;
+    padding: clamp(10px, 3vw, 15px) 0;
     display: flex;
     align-items: flex-start;
 }
 
 .join-section ul li i {
     margin-top: 5px;
-    font-size: 1.2rem;
-    margin-left: 10px;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    margin-left: clamp(8px, 2vw, 10px);
+    flex-shrink: 0;
 }
 
 .link-success {
@@ -367,195 +408,130 @@ body {
     border-bottom-color: var(--hover-green);
 }
 
-/* Responsive Design محسّن */
+/* Button container for hero section */
+.btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(10px, 3vw, 15px);
+    margin-top: clamp(1.5rem, 4vw, 2rem);
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 clamp(20px, 4vw, 30px);
+    }
+}
+
 @media (max-width: 992px) {
-    .stats-section .row {
-        justify-content: center;
+    .col {
+        min-width: 280px;
+        max-width: 350px;
     }
     
-    .stats-card {
-        max-width: 280px;
-        margin: 0 auto 2rem;
+    .join-row {
+        flex-direction: column;
+        text-align: center;
     }
     
-    .info-section .row {
-        justify-content: center;
+    .join-image {
+        order: 1;
     }
     
-    .info-card {
-        max-width: 450px;
-        margin: 0 auto 2rem;
+    .join-content {
+        order: 2;
     }
 }
 
 @media (max-width: 768px) {
-    body {
-        font-size: 16px;
+    .col {
+        min-width: 100%;
+        max-width: 400px;
     }
     
-    .hero-section {
-        padding: 80px 0 60px;
-        min-height: 60vh;
-    }
-    
-    .hero-section h1 {
-        font-size: clamp(2rem, 8vw, 3.5rem);
-        margin-bottom: 1.5rem;
-    }
-    
-    .hero-section .lead {
-        font-size: clamp(1rem, 4vw, 1.4rem);
-        margin-bottom: 2rem;
-    }
-    
-    .stats-section, .info-section, .join-section {
-        padding: 60px 0;
-    }
-    
-    .stats-card {
-        padding: 35px 20px;
-        margin-bottom: 2rem;
-        max-width: 100%;
-    }
-    
-    .info-card {
-        padding: 35px 25px;
-        margin-bottom: 2rem;
-        max-width: 100%;
-    }
-    
-    .join-section .col-lg-6:first-child {
-        order: 2;
-        margin-top: 2rem;
-    }
-    
-    .join-section .col-lg-6:last-child {
-        order: 1;
-        text-align: center;
-    }
-    
-    .math-symbol {
-        font-size: 2rem !important;
+    .btn-container {
+        flex-direction: column;
+        align-items: center;
     }
     
     .btn {
-        padding: 14px 25px;
-        font-size: 1rem;
-        margin: 8px 5px;
-        width: auto;
-        min-width: 180px;
+        width: 100%;
+        max-width: 280px;
+        margin: 5px 0;
     }
     
-    /* إخفاء بعض الرموز في الأجهزة المتوسطة */
+    .join-section ul {
+        text-align: left;
+        padding-left: 0;
+    }
+    
+    /* Hide some math symbols on smaller screens */
     .math-symbol:nth-child(n+9) {
         display: none;
     }
 }
 
 @media (max-width: 576px) {
-    body {
-        font-size: 15px;
-        padding: 0;
-        margin: 0;
-    }
-    
-    .container, .container-fluid {
-        padding-left: 15px !important;
-        padding-right: 15px !important;
-        margin: 0 !important;
-        max-width: 100% !important;
-        width: 100% !important;
+    .container {
+        padding: 0 15px;
     }
     
     .hero-section {
-        padding: 60px 0 50px;
-        min-height: 50vh;
-        margin: 0;
+        padding: clamp(40px, 12vh, 60px) 0;
     }
     
-    .hero-section h1 {
-        font-size: clamp(1.8rem, 10vw, 3rem);
-        margin-bottom: 1rem;
+    .stats-section, .info-section, .join-section {
+        padding: clamp(40px, 8vh, 60px) 0;
     }
     
-    .hero-section .lead {
-        font-size: clamp(0.9rem, 5vw, 1.3rem);
+    .col {
+        padding: 0 5px;
+        margin-bottom: 1.5rem;
+    }
+    
+    .stats-card, .info-card {
         margin-bottom: 1.5rem;
     }
     
     .btn {
         padding: 12px 20px;
-        font-size: 0.95rem;
-        margin: 6px 0;
-        width: 100%;
-        max-width: 250px;
-        min-width: auto;
-    }
-    
-    .stats-section, .info-section, .join-section {
-        padding: 50px 0;
-        margin: 0;
-    }
-    
-    .stats-card {
-        padding: 30px 15px;
-        margin-bottom: 2rem;
-        max-width: 100%;
-        border-radius: 15px;
-    }
-    
-    .stats-icon {
-        font-size: 3rem;
-        height: 70px;
-        width: 70px;
-    }
-    
-    .stats-card h3 {
-        font-size: 2.2rem;
-    }
-    
-    .stats-card p {
         font-size: 1rem;
+        min-width: 200px;
     }
     
-    .info-card {
-        padding: 30px 20px;
-        margin-bottom: 2rem;
-        border-radius: 15px;
-    }
-    
-    .info-card h3 {
-        font-size: 1.6rem;
-    }
-    
-    .info-card p {
-        font-size: 1rem;
-    }
-    
-    .join-section .lead {
-        font-size: 1.1rem;
-    }
-    
-    .join-section ul li {
-        font-size: 1rem;
-    }
-    
-    .math-symbol {
-        font-size: 1.5rem !important;
-    }
-    
-    /* إخفاء معظم الرموز في الأجهزة الصغيرة */
+    /* Hide more math symbols on very small screens */
     .math-symbol:nth-child(n+7) {
         display: none;
     }
     
-    .row {
-        margin: 0 !important;
+    .join-image, .join-content {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        padding: 0 10px;
     }
     
-    .col-lg-2, .col-lg-3, .col-lg-6, .col-md-4, .col-md-6, .col-md-8, .col-sm-6, .col-sm-12 {
-        padding-left: 10px !important;
-        padding-right: 10px !important;
+    .btn {
+        min-width: 180px;
+        padding: 10px 18px;
+        font-size: 0.95rem;
+    }
+    
+    .stats-card {
+        padding: 25px 15px;
+    }
+    
+    .info-card {
+        padding: 25px 20px;
+    }
+    
+    /* Minimal math symbols for very small screens */
+    .math-symbol:nth-child(n+5) {
+        display: none;
     }
 }
 
@@ -575,6 +551,31 @@ body {
 
 [data-aos="fade-up"].aos-animate {
     transform: translateY(0);
+}
+
+/* Ensure proper text direction for RTL languages */
+[dir="rtl"] .join-section ul li i {
+    margin-left: 0;
+    margin-right: clamp(8px, 2vw, 10px);
+}
+
+/* Print styles */
+@media print {
+    .math-symbols,
+    .btn,
+    .hero-section::before {
+        display: none !important;
+    }
+    
+    .hero-section {
+        background: none !important;
+        color: var(--text-black) !important;
+    }
+    
+    * {
+        box-shadow: none !important;
+        transform: none !important;
+    }
 }
 </style>
 
@@ -610,8 +611,8 @@ body {
             نمثل المملكة العربية السعودية في أولمبيادات الرياضيات الدولية
             {% endif %}
         </p>
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <a href="#join" class="btn btn-light btn-lg px-4 gap-3">
+        <div class="btn-container">
+            <a href="#join" class="btn btn-light btn-lg">
                 {% if page.lang == "en" %}
                 How to join the team?
                 {% else %}
@@ -619,11 +620,11 @@ body {
                 {% endif %}
             </a>
             {% if page.lang == "en" %}
-            <a href="/en/participations" class="btn btn-outline-light btn-lg px-4">
+            <a href="/en/participations" class="btn btn-outline-light btn-lg">
                 Past participations 
             </a>
             {% else %}
-            <a href="/participations" class="btn btn-outline-light btn-lg px-4">
+            <a href="/participations" class="btn btn-outline-light btn-lg">
                 مشاركاتنا السابقة
             </a>
             {% endif %}
@@ -635,9 +636,9 @@ body {
     <!-- Stats Section -->
     <section class="stats-section">
         <div class="container">
-            <div class="row text-center" data-aos="fade-up">
-                <div class="col-12">
-                    <h2 class="fw-bold mb-5">
+            <div class="row" data-aos="fade-up">
+                <div class="col" style="flex: 1 1 100%; margin-bottom: 3rem;">
+                    <h2 class="fw-bold">
                         {% if page.lang == "en" %} 
                         Our team's achievements
                         {% else %}
@@ -647,8 +648,8 @@ body {
                 </div>
             </div>
             
-            <div class="row justify-content-center">
-                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+            <div class="row">
+                <div class="col">
                     <div class="stats-card">
                         <div class="stats-icon medal-gold">
                             <i class="bi bi-award-fill"></i>
@@ -662,7 +663,7 @@ body {
                     </div>
                 </div>
                 
-                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <div class="col">
                     <div class="stats-card">
                         <div class="stats-icon medal-silver">
                             <i class="bi bi-award-fill"></i>
@@ -676,7 +677,7 @@ body {
                     </div>
                 </div>
                 
-                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <div class="col">
                     <div class="stats-card">
                         <div class="stats-icon medal-bronze">
                             <i class="bi bi-award-fill"></i>
@@ -690,7 +691,7 @@ body {
                     </div>
                 </div>
                 
-                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                <div class="col">
                     <div class="stats-card enable-debugger">
                         <div class="stats-icon medal-hm">
                             <i class="bi bi-patch-check-fill"></i>
@@ -704,7 +705,7 @@ body {
                     </div>
                 </div>
                 
-                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                <div class="col">
                     <div class="stats-card">
                         <div class="stats-icon medal-participation">
                             <i class="bi bi-globe-americas"></i>
@@ -721,11 +722,11 @@ body {
         </div>
     </section>
 
-    <!-- Info Section (تم حذف قسم "لماذا فريق الرياضيات" والاحتفاظ بقسم واحد فقط) -->
+    <!-- Info Section -->
     <section class="info-section">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 col-md-10 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="row">
+                <div class="col" style="flex: 1 1 100%;" data-aos="fade-up" data-aos-delay="100">
                     <div class="info-card">
                         <div class="text-center mb-4">
                             <i class="bi bi-calculator feature-icon"></i>
@@ -751,14 +752,14 @@ body {
         </div>
     </section>
 
-    <!-- Join Section محسّن للجوال -->
+    <!-- Join Section -->
     <section id="join" class="join-section" data-aos="fade-up">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 text-center mb-4 mb-lg-0">
+            <div class="join-row">
+                <div class="join-image text-center">
                     <img src="/img/naser_md_thinking.jpg" alt="طلاب يشاركون في مسابقة رياضية" class="img-fluid rounded shadow">
                 </div>
-                <div class="col-lg-6 text-center text-lg-start">
+                <div class="join-content text-center text-lg-start">
                     {% if page.lang == "en" %}
                     <h2 class="fw-bold mb-4">How to join the team?</h2>
                     <p class="lead">You can join Saudi Math Team through:</p>
@@ -822,26 +823,25 @@ body {
         });
     }
     
-    // Initialize code highlighting
-    // document.addEventListener('DOMContentLoaded', (event) => {
-    //     if (typeof hljs !== 'undefined') {
-    //         document.querySelectorAll('pre code').forEach((block) => {
-    //             hljs.highlightBlock(block);
-    //         });
-    //     }
-    // });
-    
     // Smooth scrolling for anchor links
-    // document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    //     anchor.addEventListener('click', function (e) {
-    //         e.preventDefault();
-    //         const target = document.querySelector(this.getAttribute('href'));
-    //         if (target) {
-    //             target.scrollIntoView({
-    //                 behavior: 'smooth',
-    //                 block: 'start'
-    //             });
-    //         }
-    //     });
-    // });
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+    
+    // Handle window resize for better responsiveness
+    window.addEventListener('resize', function() {
+        // Recalculate any dynamic elements if needed
+        if (typeof AOS !== 'undefined') {
+            AOS.refresh();
+        }
+    });
 </script>

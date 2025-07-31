@@ -11,6 +11,7 @@ root/*
 root/_data/*
 !root/_data/ar.yml
 !root/_data/en.yml
+!root/_data/settings.yml
 !root/img
 !root/img/*
 !root/data
