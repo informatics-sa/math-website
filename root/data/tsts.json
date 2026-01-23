@@ -18,5 +18,15 @@
         "imo": {
             "exams": ["2022_IMO_day_1", "2022_IMO_day_2", "2022_IMO_day_3", "2022_IMO_day_4"]
         }
+    }،
+    "2021": {
+        "imo": {
+            "exams": ["2021_IMO_day_1", "2021_IMO_day_2", "2021_IMO_day_3", "2021_IMO_day_4"]
+        }
+    },
+    "2020": {
+        "imo": {
+            "exams": ["2020_IMO_pre_tst", "2020_IMO_day_1", "2020_IMO_day_2", "2020_IMO_day_3", "2020_IMO_day_4"]
+        }
     }
 }
