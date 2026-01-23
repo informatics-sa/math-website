@@ -342,7 +342,7 @@
             
         },
         "problems": ["Problem 10", "Problem 11", "Problem 12"]
-    }،
+    },
      "2021_IMO_day_1": {
         "id": "2021_IMO_day_1",
         "name": "TST 2021 Day 1",
@@ -372,7 +372,7 @@
             
         },
         "problems": ["Problem 1", "Problem 2", "Problem 3"]
-    }،
+    },
      "2021_IMO_day_2": {
         "id": "2021_IMO_day_2",
         "name": "TST 2021 Day 2",
@@ -402,7 +402,7 @@
             
         },
         "problems": ["Problem 4", "Problem 5", "Problem 6"]
-    }،
+    },
      "2021_IMO_day_3": {
         "id": "2021_IMO_day_3",
         "name": "TST 2021 Day 3",
@@ -432,7 +432,7 @@
             
         },
         "problems": ["Problem 7", "Problem 8", "Problem 9"]
-    }،
+    },
      "2021_IMO_day_4": {
         "id": "2021_IMO_day_4",
         "name": "TST 2021 Day 4",
@@ -462,7 +462,7 @@
             
         },
         "problems": ["Problem 10", "Problem 11", "Problem 12"]
-    }،
+    },
      "2020_IMO_pre_tst": {
         "id": "2020_IMO_pre_tst",
         "name": "Pre IMO TST 2020",
@@ -486,7 +486,7 @@
             
         },
         "problems": ["Pre TST After Scaled To 16%"]
-    }،
+    },
      "2020_IMO_day_1": {
         "id": "2020_IMO_day_1",
         "name": "TST 2020 Day 1",
@@ -509,7 +509,7 @@
             
         },
         "problems": ["Problem 1", "Problem 2", "Problem 3"]
-    }،
+    },
      "2020_IMO_day_2": {
         "id": "2020_IMO_day_2",
         "name": "TST 2020 Day 2",
@@ -532,7 +532,7 @@
             
         },
         "problems": ["Problem 4", "Problem 5", "Problem 6"]
-    }،
+    },
       "2020_IMO_day_3": {
         "id": "2020_IMO_day_3",
         "name": "TST 2020 Day 3",
@@ -555,7 +555,7 @@
             
         },
         "problems": ["Problem 7", "Problem 8", "Problem 9"]
-    }،
+    },
      "2020_IMO_day_4": {
         "id": "2020_IMO_day_4",
         "name": "TST 2020 Day 4",
