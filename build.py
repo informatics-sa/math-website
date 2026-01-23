@@ -1,6 +1,7 @@
-from helper import update_participations, sort_by_date, generate_members
+from helper import update_participations, sort_by_date, generate_members, update_exams
 generate_members()
 update_participations()
+update_exams()
 sort_by_date()
 print("Called helper functions")
 
@@ -371,8 +372,8 @@ def build_tst_index():
                 exam_index += 1
                 if eid not in exams:
                     continue
-                ar_exam_names[eid] = exams[eid]['arname']
-                en_exam_names[eid] = exams[eid]['enname']
+                ar_exam_names[eid] = exams[eid]['name'] 
+                en_exam_names[eid] = exams[eid]['name']
                 for uid, res in exams[eid]['participants'].items():
                     if uid in members:
                         # if members[uid]['level'] < 0:
@@ -534,11 +535,11 @@ def main():
     build_participations_index()
     print("Built participations index")
 
-    # build_tst_index()
-    # print("Built TST index")
+    build_tst_index()
+    print("Built TST index")
 
-    # build_exams()
-    # print("Built exams")
+    build_exams()
+    print("Built exams")
 
 if __name__ == '__main__':
     main()

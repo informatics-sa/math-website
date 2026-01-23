@@ -14,14 +14,14 @@ def update_participations():
     write_text('./root/data/participations.json', parts_str)
 
 def update_exams():
-    members = get_members()
-    with open('./root/data/exams.json', encoding='utf-8') as f:
+    members = load_json('people')
+    with open('./root/data/exams.old.json', encoding='utf-8') as f:
         parts_str = f.read()
-    for k, v in members.items():
-        id = v['id']
+    for v in members:
+        oid = v['id']
         iid = v['iid']
-        parts_str = parts_str.replace(f'"{id}"', f'"{iid}"')
-    write_text('./exams.2.json', parts_str)
+        parts_str = parts_str.replace(f'"{oid}"', f'"{iid}"')
+    write_text('./root/data/exams.json', parts_str)
 
 
 def check_distinct_ids():

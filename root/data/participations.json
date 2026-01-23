@@ -85,7 +85,7 @@
         "participants": {
             "41": "silver",
             "98": "bronze",
-            "110": "hm",
+            "109": "hm",
             "21": "hm"
         }
     },
@@ -97,16 +97,16 @@
         "country": "br",
         "website": "https://www.apmo-official.org/country_report/sau/2025",
         "participants": {
-            "105": null,
-            "76": null,
-            "70": null,
-            "17": null,
-            "36": null,
-            "41": null,
-            "6": null,
-            "15": null,
-            "106": null,
-            "12": null
+            "15": "bronze",
+            "105": "bronze",
+            "12": "bronze",
+            "76": "bronze",
+            "17": "bronze",
+            "36": "bronze",
+            "6": "hm",
+            "70": "hm",
+            "41": "hm",
+            "106": "hm"
         }
     },
     {
@@ -196,7 +196,7 @@
         "website": "https://www.egmo.org/egmos/egmo13/",
         "participants": {
             "41": "bronze",
-            "110": "hm",
+            "109": "hm",
             "98": null,
             "60": null
         }
@@ -278,7 +278,7 @@
         "website": "https://www.egmo.org/egmos/egmo12/",
         "participants": {
             "54": "bronze",
-            "110": null,
+            "109": null,
             "39": null,
             "41": "hm"
         }
@@ -626,7 +626,7 @@
             "101": "gold",
             "79": "gold",
             "59": "silver",
-            "112": "silver"
+            "111": "silver"
         }
     },
     {
@@ -750,7 +750,7 @@
         "website": "https://www.hms.gr/22jbmo2018/",
         "participants": {
             "75": "bronze",
-            "10": "silver",
+            "111": "silver",
             "59": "silver",
             "67": "silver",
             "16": "bronze",
@@ -1230,7 +1230,7 @@
             "27": "silver",
             "52": "silver",
             "95": "silver",
-            "111": "silver"
+            "110": "silver"
         }
     },
     {
@@ -1264,7 +1264,7 @@
             "26": "silver",
             "93": "bronze",
             "10": "bronze",
-            "114": "bronze",
+            "35": "bronze",
             "49": "bronze",
             "50": null
         }
@@ -1307,7 +1307,7 @@
         "website": null,
         "participants": {
             "26": "gold",
-            "114": "silver",
+            "35": "silver",
             "49": "silver",
             "50": "silver",
             "10": "silver",
@@ -1385,7 +1385,7 @@
             "9": "bronze",
             "78": null,
             "8": null,
-            "109": null,
+            "108": null,
             "18": null
         }
     },

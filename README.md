@@ -32,13 +32,9 @@ python build.py && bundle exec jekyll serve -s ./root
 ## Maintainers
 This website needs people who maintain the data up-to-date.
 
-The main goal is to have at any time **at least 3 active maintainers**.
-
-### Current maintainers:
-
-- Ali Alsalman
-- Sultan Alaiban
-- Omar Muharib
+TCurrently, there are no maintainers except:
+- Muaath Alqarni
+- Mohammed Shaiban
 
 ## License
 This project is licensed under the GNU General Public License v3.0.

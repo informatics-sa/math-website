@@ -1,5 +1,5 @@
 {
-    "TST_2025_Day_1": {
+    "2025_IMO_day_1": {
         "id": "2025_IMO_day_1",
         "name": "TST 2025 Day 1",
         "date": "2025-05-26",
@@ -19,7 +19,7 @@
         "problems": ["Problem 1", "Problem 2", "Problem 3"]
     },
     
-    "TST_2025_Day_2": {
+    "2025_IMO_day_2": {
         "id": "2025_IMO_day_2",
         "name": "TST 2025 Day 2",
         "date": "2025-05-26",
@@ -39,7 +39,7 @@
         "problems": ["Problem 4", "Problem 5", "Problem 6"]
     },
     
-    "TST_2025_Day_3": {
+    "2025_IMO_day_3": {
         "id": "2025_IMO_day_3",
         "name": "TST 2025 Day 3",
         "date": "2025-05-26",
@@ -59,7 +59,7 @@
         "problems": ["Problem 7", "Problem 8", "Problem 9"]
     },
     
-    "TST_2025_Day_4": {
+    "2025_IMO_day_4": {
         "id": "2025_IMO_day_4",
         "name": "TST 2025 Day 4",
         "date": "2025-05-26",
@@ -79,7 +79,7 @@
         "problems": ["Problem 10", "Problem 11", "Problem 12"]
     },
     
-    "TST_2024_Day_1": {
+    "2024_IMO_day_1": {
         "id": "2024_IMO_day_1",
         "name": "TST 2024 Day 1",
         "date": "2024-05-26",
@@ -98,7 +98,7 @@
         },
         "problems": ["Problem 1", "Problem 2", "Problem 3"]
     },
-     "TST_2024_Day_2": {
+     "2024_IMO_day_2": {
         "id": "2024_IMO_day_2",
         "name": "TST 2024 Day 2",
         "date": "2024-05-26",
@@ -117,7 +117,7 @@
         },
         "problems": ["Problem 4", "Problem 5", "Problem 6"]
     },
-     "TST_2024_Day_3": {
+     "2024_IMO_day_3": {
         "id": "2024_IMO_day_3",
         "name": "TST 2024 Day 3",
         "date": "2024-05-26",
@@ -136,7 +136,7 @@
         },
         "problems": ["Problem 7", "Problem 8", "Problem 9"]
     },
-   "TST_2024_Day_4": {
+   "2024_IMO_day_4": {
         "id": "2024_IMO_day_4",
         "name": "TST 2024 Day 4",
         "date": "2024-05-26",
@@ -155,7 +155,7 @@
         },
         "problems": ["Problem 10", "Problem 11", "Problem 12"]
     },
-    "TST_2023_Day_1": {
+    "2023_IMO_day_1": {
         "id": "2023_IMO_day_1",
         "name": "TST 2023 Day 1",
         "date": "2023-05-26",
@@ -175,7 +175,7 @@
         },
         "problems": ["Problem 1", "Problem 2", "Problem 3"]
     },
-    "TST_2023_Day_2": {
+    "2023_IMO_day_2": {
         "id": "2023_IMO_day_2",
         "name": "TST 2023 Day 2",
         "date": "2023-05-26",
@@ -195,7 +195,7 @@
         },
         "problems": ["Problem 4", "Problem 5", "Problem 6"]
     },
-   "TST_2023_Day_3": {
+   "2023_IMO_day_3": {
         "id": "2023_IMO_day_3",
         "name": "TST 2023 Day 3",
         "date": "2023-05-26",
@@ -215,7 +215,7 @@
         },
         "problems": ["Problem 7", "Problem 8", "Problem 9"]
     },
-    "TST_2023_Day_4": {
+    "2023_IMO_day_4": {
         "id": "2023_IMO_day_4",
         "name": "TST 2023 Day 4",
         "date": "2023-05-26",
@@ -235,7 +235,7 @@
         },
         "problems": ["Problem 10", "Problem 11", "Problem 12"]
     },
-     "TST_2022_Day_1": {
+     "2022_IMO_day_1": {
         "id": "2022_IMO_day_1",
         "name": "TST 2022 Day 1",
         "date": "2022-05-26",
@@ -262,7 +262,7 @@
         },
         "problems": ["Problem 1", "Problem 2", "Problem 3"]
     },
-     "TST_2022_Day_2": {
+     "2022_IMO_day_2": {
         "id": "2022_IMO_day_2",
         "name": "TST 2022 Day 2",
         "date": "2022-05-26",
@@ -289,7 +289,7 @@
         },
         "problems": ["Problem 4", "Problem 5", "Problem 6"]
     },
-     "TST_2022_Day_3": {
+     "2022_IMO_day_3": {
         "id": "2022_IMO_day_3",
         "name": "TST 2022 Day 3",
         "date": "2022-05-26",
@@ -316,7 +316,7 @@
         },
         "problems": ["Problem 7", "Problem 8", "Problem 9"]
     },
-     "TST_2022_Day_4": {
+     "2022_IMO_day_4": {
         "id": "2022_IMO_day_4",
         "name": "TST 2022 Day 4",
         "date": "2022-05-26",

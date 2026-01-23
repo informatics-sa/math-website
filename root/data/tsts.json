@@ -1,1 +1,22 @@
-{}
+{
+    "2025": {
+        "imo": {
+            "exams": ["2025_IMO_day_1", "2025_IMO_day_2", "2025_IMO_day_3", "2025_IMO_day_4"]
+        }
+    },
+    "2024": {
+        "imo": {
+            "exams": ["2024_IMO_day_1", "2024_IMO_day_2", "2024_IMO_day_3", "2024_IMO_day_4"]
+        }
+    },
+    "2023": {
+        "imo": {
+            "exams": ["2023_IMO_day_1", "2023_IMO_day_2", "2023_IMO_day_3", "2023_IMO_day_4"]
+        }
+    },
+    "2022": {
+        "imo": {
+            "exams": ["2022_IMO_day_1", "2022_IMO_day_2", "2022_IMO_day_3", "2022_IMO_day_4"]
+        }
+    }
+}
