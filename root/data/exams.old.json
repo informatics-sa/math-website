@@ -473,7 +473,7 @@
             "mohammed_alshehri":[11.45],
             "khalid_ajran":[14.22],
             "marwan_alkhayat": [13.6],
-            "thnaa_alhydary":[11.63]
+            "thnaa_alhydary":[11.63],
             "mustafa_alelg":[8.92],
             "mohammed_aldubaisi":[10.95],
             "nawaf_alghamdi":[12.55],
@@ -497,7 +497,7 @@
             "mohammed_alshehri":[7,0,2],
             "khalid_ajran":[5,7,2],
             "marwan_alkhayat": [0,0,4],
-            "thnaa_alhydary":[0,4,1]
+            "thnaa_alhydary":[0,4,1],
             "mustafa_alelg":[2,7,2],
             "mohammed_aldubaisi":[7,0,0],
             "nawaf_alghamdi":[0,0,0],
@@ -520,7 +520,7 @@
             "mohammed_alshehri":[7,7,4],
             "khalid_ajran":[7,0,0],
             "marwan_alkhayat": [0,6,7],
-            "thnaa_alhydary":[7,0,7]
+            "thnaa_alhydary":[7,0,7],
             "mustafa_alelg":[7,5,2],
             "mohammed_aldubaisi":[3,0,0],
             "nawaf_alghamdi":[7,0,1],
@@ -543,7 +543,7 @@
             "mohammed_alshehri":[7,1,0],
             "khalid_ajran":[7,0,7],
             "marwan_alkhayat": [7,2,0],
-            "thnaa_alhydary":[3,1,7]
+            "thnaa_alhydary":[3,1,7],
             "mustafa_alelg":[0,0,7],
             "mohammed_aldubaisi":[6,3,0],
             "nawaf_alghamdi":[4,1,7],
@@ -566,7 +566,7 @@
             "mohammed_alshehri":[7,7,0],
             "khalid_ajran":[0,0,0],
             "marwan_alkhayat": [7,0,2],
-            "thnaa_alhydary":[0,0,0]
+            "thnaa_alhydary":[0,0,0],
             "mustafa_alelg":[0,0,0],
             "mohammed_aldubaisi":[2,1,0],
             "nawaf_alghamdi":[0,0,0],
