@@ -1,5 +1,7 @@
 ---
+layout: default
 title: Editor pages guide
+lang: en
 ---
 
 ## Idea
