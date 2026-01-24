@@ -235,7 +235,7 @@ document.getElementById('participantSearch').oninput = function(e) {
     }
     
     results.innerHTML = filtered.map(p => {
-        const id = p.id || p.iid.toString();
+        const id = p.iid;
         return `<div class="search-result-item" onclick="addParticipant('${id}', '${p.enname}')">${p.enname} (${id})</div>`;
     }).join('');
     results.style.display = 'block';
