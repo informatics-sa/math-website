@@ -13,7 +13,11 @@
     "2024": {
         "imo": {
             "exams": ["2024_IMO_day_1", "2024_IMO_day_2", "2024_IMO_day_3", "2024_IMO_day_4"]
+        },
+        "jbmo": {
+            "exams": ["2024_JBMO_day_1", "2024_JBMO_day_2"]
         }
+        
     },
     "2023": {
         "imo": {
