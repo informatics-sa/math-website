@@ -2,14 +2,10 @@
     "2025": {
         "imo": {
             "exams": ["2025_IMO_day_1", "2025_IMO_day_2", "2025_IMO_day_3", "2025_IMO_day_4"]
-        }
-    },
-    2025": {
+        },
         "bmo": {
             "exams": ["2025_IMO_day_1", "2025_IMO_day_2", "2025_IMO_day_3", "2025_IMO_day_4"]
-        }
-    },
-    "2025": {
+        },
         "jbmo": {
             "exams": ["2025_JBMO_day_1", "2025_JBMO_day_2"]
         }
