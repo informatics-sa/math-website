@@ -20,6 +20,8 @@ root/_data/*
 !root/resources/*
 !root/404.html
 !root/debug.html
+!root/editor
+!root/editor/*
 # END BUILD ARTIFACTS
 
 .DS_Store
