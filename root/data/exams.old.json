@@ -2,7 +2,7 @@
     "2025_IMO_day_1": {
         "id": "2025_IMO_day_1",
         "name": "TST 2025 Day 1",
-        "date": "2025-05-26",
+        "date": "2025-02-18",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
         "participants": {
             "yosuf_bakheet": [2,7,0],
@@ -22,7 +22,7 @@
     "2025_IMO_day_2": {
         "id": "2025_IMO_day_2",
         "name": "TST 2025 Day 2",
-        "date": "2025-05-26",
+        "date": "2025-02-19",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
         "participants": {
             "yosuf_bakheet": [7,2,1],
@@ -42,7 +42,7 @@
     "2025_IMO_day_3": {
         "id": "2025_IMO_day_3",
         "name": "TST 2025 Day 3",
-        "date": "2025-05-26",
+        "date": "2025-02-22",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
         "participants": {
             "yosuf_bakheet": [7,7,0],
@@ -62,7 +62,7 @@
     "2025_IMO_day_4": {
         "id": "2025_IMO_day_4",
         "name": "TST 2025 Day 4",
-        "date": "2025-05-26",
+        "date": "2025-02-23",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
         "participants": {
             "yosuf_bakheet": [1,3,0],
@@ -82,7 +82,7 @@
     "2024_IMO_day_1": {
         "id": "2024_IMO_day_1",
         "name": "TST 2024 Day 1",
-        "date": "2024-05-26",
+        "date": "2024-02-26",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
         "participants": {
             "hadi_alaithan": [7,7,5],
@@ -101,7 +101,7 @@
      "2024_IMO_day_2": {
         "id": "2024_IMO_day_2",
         "name": "TST 2024 Day 2",
-        "date": "2024-05-26",
+        "date": "2024-02-27",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
         "participants": {
             "hadi_alaithan": [7,0,4],
@@ -120,7 +120,7 @@
      "2024_IMO_day_3": {
         "id": "2024_IMO_day_3",
         "name": "TST 2024 Day 3",
-        "date": "2024-05-26",
+        "date": "2024-03-02",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
         "participants": {
             "hadi_alaithan": [7,7,7],
@@ -139,7 +139,7 @@
    "2024_IMO_day_4": {
         "id": "2024_IMO_day_4",
         "name": "TST 2024 Day 4",
-        "date": "2024-05-26",
+        "date": "2024-03-03",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
         "participants": {
             "hadi_alaithan": [7,4,0],
@@ -158,7 +158,7 @@
     "2023_IMO_day_1": {
         "id": "2023_IMO_day_1",
         "name": "TST 2023 Day 1",
-        "date": "2023-05-26",
+        "date": "2023-03-01",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
         "participants": {
             "hadi_alaithan": [7,7,2],
@@ -178,7 +178,7 @@
     "2023_IMO_day_2": {
         "id": "2023_IMO_day_2",
         "name": "TST 2023 Day 2",
-        "date": "2023-05-26",
+        "date": "2023-03-02",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
         "participants": {
             "hadi_alaithan": [7,7,0],
@@ -198,7 +198,7 @@
    "2023_IMO_day_3": {
         "id": "2023_IMO_day_3",
         "name": "TST 2023 Day 3",
-        "date": "2023-05-26",
+        "date": "2023-03-04",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
         "participants": {
             "hadi_alaithan": [7,3,5],
@@ -218,7 +218,7 @@
     "2023_IMO_day_4": {
         "id": "2023_IMO_day_4",
         "name": "TST 2023 Day 4",
-        "date": "2023-05-26",
+        "date": "2023-03-05",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
         "participants": {
             "hadi_alaithan": [7,0,3],
@@ -625,6 +625,44 @@
             "salma_almutawah":[10,2,0,0],
             "ammar_aldawood":[5,0,4,0],
             "shahad_alharbi":[0,0,1,2]
+            
+        },
+        "problems": ["Problem 5", "Problem 6", "Problem 7", "Problem 8"]
+    },
+     "2024_JBMO_day_1": {
+        "id": "2024_JBMO_day_1",
+        "name": "TST 2024 Day 1",
+        "date": "2024-02-17",
+        "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
+        "participants": {
+            "abdullah_alamer":[4,9,10,10],
+            "mohammed_shaiban": [3,9,3,10],
+            "fatimah_almarhoun":[4,1,0,10],
+            "albatool_alaidarous":[3,0,0,10],
+            "arar_alajmi":[6,9,0,4],
+            "belal_alhejaili":[2,0,10,3],
+            "yasir_habibullah":[5,9,0,4],
+            "abdarahman_mansour":[3,1,0,2],
+            "atheer_tounesi":[2,9,0,0]
+            
+        },
+        "problems": ["Problem 1", "Problem 2", "Problem 3", "Problem 4"]
+    },
+     "2024_JBMO_day_2": {
+        "id": "2024_JBMO_day_2",
+        "name": "TST 2024 Day 2",
+        "date": "2024-02-18",
+        "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
+        "participants": {
+            "abdullah_alamer":[10,4,10,0],
+            "mohammed_shaiban": [10,4,10,0],
+            "fatimah_almarhoun":[10,10,10,0],
+            "albatool_alaidarous":[10,10,10,0],
+            "arar_alajmi":[10,0,10,0],
+            "belal_alhejaili":[10,2,10,0],
+            "yasir_habibullah":[10,2,6,0],
+            "abdarahman_mansour":[10,10,8,0],
+            "atheer_tounesi":[3,3,10,0]
             
         },
         "problems": ["Problem 5", "Problem 6", "Problem 7", "Problem 8"]
