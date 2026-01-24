@@ -1,9 +1,9 @@
 from helper import update_participations, sort_by_date, generate_members, update_exams
-generate_members()
-update_participations()
-update_exams()
-sort_by_date()
-print("Called helper functions")
+# generate_members()
+# update_participations()
+# update_exams()
+# sort_by_date()
+# print("Called helper functions")
 
 from lib import *
 from lib.utils import * # target to remove this.
