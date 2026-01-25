@@ -666,6 +666,50 @@
             
         },
         "problems": ["Problem 5", "Problem 6", "Problem 7", "Problem 8"]
+    },
+     "2023_JBMO_day_1": {
+        "id": "2023_JBMO_day_1",
+        "name": "TST 2023 Day 1",
+        "date": "2023-02-17",
+        "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
+        "participants": {
+            "ahmed_alshehri":[10,10,10,10],
+            "mohammed_alsaeed":[10,10,10,10],
+            "elyas_alfaraj": [10,10,4,1],
+            "abdulsalam_alsulami":[2,10,10,0],
+            "abdullah_alamer":[2,7,5,2],
+            "ruqaya_alobaidan":[2,0,10,1],
+            "yousif_alkhalawi":[10,0,7,0],
+            "abdarahman_mansour":[0,7,3,0],
+            "lana_nouri":[2,0,3,1],
+            "dhia_alnufaili":[0,5,3,0],
+            "ghadeer_alabdullah":[2,7,2,0],
+            "atheer_tounesi":[2,0,3,1]
+            
+        },
+        "problems": ["Problem 1", "Problem 2", "Problem 3", "Problem 4"]
+    },
+     "2023_JBMO_day_2": {
+        "id": "2023_JBMO_day_2",
+        "name": "TST 2023 Day 2",
+        "date": "2023-02-18",
+        "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
+        "participants": {
+            "ahmed_alshehri":[10,10,10,10],
+            "mohammed_alsaeed":[10,10,10,10],
+            "elyas_alfaraj": [10,10,9,10],
+            "abdulsalam_alsulami":[8,4,4,10],
+            "abdullah_alamer":[9,3,6,10],
+            "ruqaya_alobaidan":[4,3,10,10],
+            "yousif_alkhalawi":[4,7,0,10],
+            "abdarahman_mansour":[4,5,2,10],
+            "lana_nouri":[2,0,8,10],
+            "dhia_alnufaili":[6,1,1,10],
+            "ghadeer_alabdullah":[1,8,2,1],
+            "atheer_tounesi":[1,0,2,10]
+            
+        },
+        "problems": ["Problem 5", "Problem 6", "Problem 7", "Problem 8"]
     }
     
     
