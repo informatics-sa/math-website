@@ -22,6 +22,9 @@
     "2023": {
         "imo": {
             "exams": ["2023_IMO_day_1", "2023_IMO_day_2", "2023_IMO_day_3", "2023_IMO_day_4"]
+        },
+        "jbmo": {
+            "exams": ["2023_JBMO_day_1", "2023_JBMO_day_2"]
         }
     },
     "2022": {
