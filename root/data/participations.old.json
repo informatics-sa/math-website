@@ -14,6 +14,14 @@
             "ali_alhaddad": null,
             "ahmed_khan": null
         }
+        "scores": {
+            "wael_alsaeed": [7, 3, 0, 7, 1, 0],
+            "abdullah_alsaeed": [7, 1, 0, 7, 0, 0],
+            "abdulmajeed_alqasem": [7, 0, 0, 0, 0, 0],
+            "nawaf_alansari": [7, 0, 0, 0, 0, 0],
+            "ali_alhaddad": [5, 0, 0, 0, 0, 0],
+            "ahmed_khan": [3, 0, 0, 0, 0, 0]
+        }
     },
     {
         "name": "imo",
@@ -29,6 +37,14 @@
             "abdulrahman_alharbi": null,
             "ali_alhaddad": null,
             "hyder_alkhalifah": null
+        }
+        "scores": {
+            "wael_alsaeed": [7, 0, 0, 7, 7, 0],
+            "alyazeed_basuni": [7, 0, 4, 3, 2, 0],
+            "saud_sufayan": [2, 0, 0, 1, 2, 0],
+            "abdulrahman_alharbi": [2, 0, 0, 1, 2, 0],
+            "ali_alhaddad": [1, 0, 0, 1, 2, 0],
+            "hyder_alkhalifah": [2, 0, 0, 0, 0, 0]
         }
     },
     {
@@ -46,6 +62,14 @@
             "wael_alsaeed": "bronze",
             "hasan_eid": null
         }
+        "scores": {
+            "alyazeed_basuni": [7, 7, 0, 7, 2, 0],
+            "husain_eid": [7, 7, 0, 7, 0, 0],
+            "saleh_algamdi": [7, 7, 0, 3, 3, 0],
+            "abdulrahman_alharbi": [7, 7, 0, 4, 0, 0],
+            "wael_alsaeed": [7, 7, 0, 3, 0, 0],
+            "hasan_eid": [5, 0, 0, 1, 0, 0]
+        }
     },
     {
         "name": "jbmo",
@@ -61,6 +85,14 @@
             "ibrahim_abughararh": null,
             "sanad_saleh": null,
             "omar_alrabiah": null
+        }
+        "scores": {
+            "alzubair_habibullah": [10, 10, 10, 4],
+            "albader_alhydary": [8, 1, 2, 0],
+            "osama_khawjah": [8, 2, 1, 0],
+            "ibrahim_abughararh": [8, 0, 0, 0],
+            "sanad_saleh": [9, 0, 1, 0],
+            "omar_alrabiah": [8, 0, 1, 1]
         }
     },
     
@@ -78,6 +110,14 @@
             "abdulrahman_alharbi": "bronze",
             "alzubair_habibullah": null,
             "ali_alnasser": null
+        }
+        "scores": {
+            "alyazeed_basuni": [7, 7, 0, 7, 0, 0],
+            "ibraheem_khan": [5, 7, 0, 7, 0, 0],
+            "sameh_zawawi": [7, 0, 0, 7, 1, 0],
+            "abdulrahman_alharbi": [0, 7, 0, 7, 1, 0],
+            "alzubair_habibullah": [0, 0, 1, 6, 1, 0],
+            "ali_alnasser": [1, 0, 0, 5, 0, 0]
         }
     },
     {
@@ -171,6 +211,14 @@
             "shaden_alshammari": "hm",
             "salman_saleh": "hm"
         }
+        "scores": {
+            "omar_alrabiah": [7, 7, 0, 7, 0, 0],
+            "mahdi_alshaikh": [7, 5, 0, 7, 0, 0],
+            "ibraheem_khan": [7, 7, 1, 2, 1, 0],
+            "alzubair_habibullah": [7, 2, 0, 7, 0, 0],
+            "shaden_alshammari": [6, 2, 0, 7, 0, 0],
+            "salman_saleh": [7, 0, 0, 7, 0, 0]
+        }
     },
     
     {
@@ -217,6 +265,14 @@
             "shaden_alshammari": "bronze",
             "alhamzah_alnufaili": "hm",
             "ammar_alqatari": "hm"
+        }
+        "scores": {
+            "alzubair_habibullah": [7, 2, 0, 7, 3, 0],
+            "salman_saleh": [6, 1, 0, 7, 1, 0],
+            "omar_alrabiah": [4, 2, 1, 7, 1, 0],
+            "shaden_alshammari": [7, 0, 0, 4, 3, 0],
+            "alhamzah_alnufaili": [1, 1, 0, 7, 1, 0],
+            "ammar_alqatari": [0, 0, 0, 7, 1, 0]
         }
     },
     {
@@ -271,6 +327,14 @@
             "ibrahim_abughararh": "hm",
             "hamzah_shafi": "hm"
         }
+        "scores": {
+            "alzubair_habibullah": [7, 1, 1, 7, 4, 0],
+            "omar_alrabiah": [7, 1, 0, 7, 4, 0],
+            "majid_almarhoumi": [7, 3, 0, 7, 2, 0],
+            "shaden_alshammari": [7, 2, 0, 7, 1, 0],
+            "ibrahim_abughararh": [7, 1, 0, 7, 0, 0],
+            "hamzah_shafi": [7, 0, 0, 7, 0, 0]
+        }
     },
     {
         "name": "apmo",
@@ -324,6 +388,14 @@
             "omar_habibullah": "hm",
             "mohammed_alansari": null
         }
+        "scores": {
+            "omar_alrabiah": [7, 3, 0, 7, 7, 0],
+            "alzubair_habibullah": [7, 5, 0, 7, 0, 0],
+            "shaden_alshammari": [7, 4, 0, 7, 0, 0],
+            "joud_saleh": [7, 3, 0, 7, 0, 0],
+            "omar_habibullah": [7, 0, 0, 7, 0, 0],
+            "mohammed_alansari": [5, 2, 0, 1, 0, 0]
+        }
     },
     {
         "name": "apmo",
@@ -374,6 +446,14 @@
             "mohammed_alansari": null,
             "asaad_mohammedsaleh": null,
             "mahdi_buali": null
+        }
+        "scores": {
+            "omar_habibullah": [7, 7, 0, 7, 3, 1],
+            "renad_abualjamal": [7, 7, 0, 3, 7, 0],
+            "abdulhamid_aldoobi": [7, 1, 0, 0, 1, 0],
+            "mohammed_alansari": [1, 0, 0, 5, 0, 0],
+            "asaad_mohammedsaleh": [0, 1, 0, 0, 1, 1],
+            "mahdi_buali": [0, 0, 0, 0, 2, 0]
         }
     },
     {
@@ -426,6 +506,14 @@
             "asaad_mohammedsaleh": "bronze",
             "khalid_ajran": "bronze",
             "thnaa_alhydary": null
+        }
+        "scores": {
+            "omar_habibullah": [7, 6, 0, 6, 7, 0],
+            "nawaf_alghamdi": [7, 2, 0, 7, 7, 0],
+            "marwan_alkhayat": [7, 2, 0, 7, 7, 0],
+            "asaad_mohammedsaleh": [7, 2, 0, 7, 7, 0],
+            "khalid_ajran": [7, 7, 0, 1, 7, 0],
+            "thnaa_alhydary": [6, 0, 0, 1, 0, 0]
         }
     },
     {
@@ -480,6 +568,14 @@
             "hamzah_alshaikhi": "hm",
             "mohammed_alshehri": "hm"
         }
+        "scores": {
+            "marwan_alkhayat": [0, 2, 0, 7, 7, 1],
+            "mustafa_alelg": [7, 2, 3, 4, 0, 0],
+            "khalid_ajran": [7, 0, 4, 3, 0, 0],
+            "thnaa_alhydary": [7, 0, 1, 5, 0, 0],
+            "hamzah_alshaikhi": [7, 0, 0, 5, 0, 0],
+            "mohammed_alshehri": [7, 2, 0, 0, 1, 0]
+        }
     },
     {
         "name": "apmo",
@@ -533,6 +629,14 @@
             "muath_alghamdi": "hm",
             "mohammed_aldubaisi": "hm"
         }
+        "scores": {
+            "marwan_alkhayat": [7, 0, 0, 7, 7, 0],
+            "hamzah_alshaikhi": [7, 0, 1, 7, 3, 0],
+            "ali_alramadan": [1, 0, 1, 7, 7, 0],
+            "hadi_alaithan": [7, 0, 0, 7, 0, 0],
+            "muath_alghamdi": [4, 0, 0, 7, 0, 0],
+            "mohammed_aldubaisi": [3, 0, 0, 7, 0, 0]
+        }
     },
     {
         "name": "apmo",
@@ -584,6 +688,14 @@
             "mohammed_aldubaisi": "bronze",
             "mahdi_albaik": "bronze",
             "muath_alghamdi": "bronze"
+        }
+        "scores": {
+            "hadi_alaithan": [7, 7, 3, 7, 7, 1],
+            "marwan_alkhayat": [7, 7, 2, 7, 6, 1],
+            "ali_alramadan": [7, 7, 0, 7, 7, 0],
+            "mohammed_aldubaisi": [7, 7, 0, 7, 7, 0],
+            "mahdi_albaik": [7, 7, 0, 7, 5, 0],
+            "muath_alghamdi": [7, 5, 1, 7, 4, 0]
         }
     },
     {
@@ -637,6 +749,14 @@
             "abdulrahman_nassief": "hm",
             "eyad_alqatari": "hm"
         }
+        "scores": {
+            "hadi_alaithan": [7, 7, 1, 7, 7, 0],
+            "mahdi_albaik": [7, 7, 1, 7, 2, 0],
+            "muath_alqahtani": [7, 7, 1, 7, 2, 0],
+            "ali_alramadan": [7, 7, 0, 7, 3, 0],
+            "abdulrahman_nassief": [7, 1, 0, 7, 2, 0],
+            "eyad_alqatari": [7, 4, 0, 1, 0, 0]
+        }
     },
     {
         "name": "apmo",
@@ -689,6 +809,14 @@
             "ahmed_alshehri": "bronze",
             "mohammed_alghamdi": "hm"
         }
+        "scores": {
+            "hadi_alaithan": [7, 7, 2, 7, 1, 0],
+            "yosuf_bakheet": [7, 0, 0, 7, 7, 0],
+            "mohammed_hafez": [5, 7, 0, 7, 1, 0],
+            "muath_alqahtani": [7, 2, 0, 7, 1, 0],
+            "ahmed_alshehri": [7, 2, 0, 7, 0, 0],
+            "mohammed_alghamdi": [6, 0, 0, 7, 0, 0]
+        }
     },
     {
         "name": "apmo",
@@ -737,9 +865,17 @@
             "yosuf_bakheet": "bronze",
             "abdulsalam_alsulami": "bronze",
             "muath_alqahtani": "bronze",
-            "ahmed_alshehri": "hm",
             "ahmed_alkhalawi": "hm",
+            "ahmed_alshehri": "hm",
             "mohammed_alghamdi": "hm"
+        }
+        "scores": {
+            "yosuf_bakheet": [7, 7, 5, 7, 0, 0],
+            "abdulsalam_alsulami": [7, 7, 0, 7, 3, 0],
+            "muath_alqahtani": [7, 5, 0, 7, 0, 0],
+            "ahmed_alkhalawi": [7, 1, 2, 7, 1, 0],
+            "ahmed_alshehri": [7, 1, 0, 7, 1, 0],
+            "mohammed_alghamdi": [7, 1, 0, 6, 1, 0]
         }
     },
     {
