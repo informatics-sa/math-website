@@ -13,7 +13,7 @@
             "nawaf_alansari": "hm",
             "ali_alhaddad": null,
             "ahmed_khan": null
-        }
+        },
         "scores": {
             "wael_alsaeed": [7, 3, 0, 7, 1, 0],
             "abdullah_alsaeed": [7, 1, 0, 7, 0, 0],
@@ -37,7 +37,7 @@
             "abdulrahman_alharbi": null,
             "ali_alhaddad": null,
             "hyder_alkhalifah": null
-        }
+        },
         "scores": {
             "wael_alsaeed": [7, 0, 0, 7, 7, 0],
             "alyazeed_basuni": [7, 0, 4, 3, 2, 0],
@@ -61,7 +61,7 @@
             "abdulrahman_alharbi": "bronze",
             "wael_alsaeed": "bronze",
             "hasan_eid": null
-        }
+        },
         "scores": {
             "alyazeed_basuni": [7, 7, 0, 7, 2, 0],
             "husain_eid": [7, 7, 0, 7, 0, 0],
@@ -85,7 +85,7 @@
             "ibrahim_abughararh": null,
             "sanad_saleh": null,
             "omar_alrabiah": null
-        }
+        },
         "scores": {
             "alzubair_habibullah": [10, 10, 10, 4],
             "albader_alhydary": [8, 1, 2, 0],
@@ -110,7 +110,7 @@
             "abdulrahman_alharbi": "bronze",
             "alzubair_habibullah": null,
             "ali_alnasser": null
-        }
+        },
         "scores": {
             "alyazeed_basuni": [7, 7, 0, 7, 0, 0],
             "ibraheem_khan": [5, 7, 0, 7, 0, 0],
@@ -210,7 +210,7 @@
             "alzubair_habibullah": "bronze",
             "shaden_alshammari": "hm",
             "salman_saleh": "hm"
-        }
+        },
         "scores": {
             "omar_alrabiah": [7, 7, 0, 7, 0, 0],
             "mahdi_alshaikh": [7, 5, 0, 7, 0, 0],
@@ -265,7 +265,7 @@
             "shaden_alshammari": "bronze",
             "alhamzah_alnufaili": "hm",
             "ammar_alqatari": "hm"
-        }
+        },
         "scores": {
             "alzubair_habibullah": [7, 2, 0, 7, 3, 0],
             "salman_saleh": [6, 1, 0, 7, 1, 0],
@@ -326,7 +326,7 @@
             "shaden_alshammari": "bronze",
             "ibrahim_abughararh": "hm",
             "hamzah_shafi": "hm"
-        }
+        },
         "scores": {
             "alzubair_habibullah": [7, 1, 1, 7, 4, 0],
             "omar_alrabiah": [7, 1, 0, 7, 4, 0],
@@ -387,7 +387,7 @@
             "joud_saleh": "bronze",
             "omar_habibullah": "hm",
             "mohammed_alansari": null
-        }
+        },
         "scores": {
             "omar_alrabiah": [7, 3, 0, 7, 7, 0],
             "alzubair_habibullah": [7, 5, 0, 7, 0, 0],
@@ -446,7 +446,7 @@
             "mohammed_alansari": null,
             "asaad_mohammedsaleh": null,
             "mahdi_buali": null
-        }
+        },
         "scores": {
             "omar_habibullah": [7, 7, 0, 7, 3, 1],
             "renad_abualjamal": [7, 7, 0, 3, 7, 0],
@@ -506,7 +506,7 @@
             "asaad_mohammedsaleh": "bronze",
             "khalid_ajran": "bronze",
             "thnaa_alhydary": null
-        }
+        },
         "scores": {
             "omar_habibullah": [7, 6, 0, 6, 7, 0],
             "nawaf_alghamdi": [7, 2, 0, 7, 7, 0],
@@ -567,7 +567,7 @@
             "thnaa_alhydary": "hm",
             "hamzah_alshaikhi": "hm",
             "mohammed_alshehri": "hm"
-        }
+        },
         "scores": {
             "marwan_alkhayat": [0, 2, 0, 7, 7, 1],
             "mustafa_alelg": [7, 2, 3, 4, 0, 0],
@@ -628,7 +628,7 @@
             "hadi_alaithan": "bronze",
             "muath_alghamdi": "hm",
             "mohammed_aldubaisi": "hm"
-        }
+        },
         "scores": {
             "marwan_alkhayat": [7, 0, 0, 7, 7, 0],
             "hamzah_alshaikhi": [7, 0, 1, 7, 3, 0],
@@ -688,7 +688,7 @@
             "mohammed_aldubaisi": "bronze",
             "mahdi_albaik": "bronze",
             "muath_alghamdi": "bronze"
-        }
+        },
         "scores": {
             "hadi_alaithan": [7, 7, 3, 7, 7, 1],
             "marwan_alkhayat": [7, 7, 2, 7, 6, 1],
@@ -748,7 +748,7 @@
             "ali_alramadan": "bronze",
             "abdulrahman_nassief": "hm",
             "eyad_alqatari": "hm"
-        }
+        },
         "scores": {
             "hadi_alaithan": [7, 7, 1, 7, 7, 0],
             "mahdi_albaik": [7, 7, 1, 7, 2, 0],
@@ -808,7 +808,7 @@
             "muath_alqahtani": "bronze",
             "ahmed_alshehri": "bronze",
             "mohammed_alghamdi": "hm"
-        }
+        },
         "scores": {
             "hadi_alaithan": [7, 7, 2, 7, 1, 0],
             "yosuf_bakheet": [7, 0, 0, 7, 7, 0],
@@ -868,7 +868,7 @@
             "ahmed_alkhalawi": "hm",
             "ahmed_alshehri": "hm",
             "mohammed_alghamdi": "hm"
-        }
+        },
         "scores": {
             "yosuf_bakheet": [7, 7, 5, 7, 0, 0],
             "abdulsalam_alsulami": [7, 7, 0, 7, 3, 0],
