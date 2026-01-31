@@ -1096,6 +1096,11 @@
             "doha_aljeddawi": null,
             "abrar_alsheikh": "bronze",
             "amaal_alsunaidi": null
+        },
+        "scores": {
+            "doha_aljeddawi": [0, 0, 0, 0, 6, 5, 0, 0],
+            "abrar_alsheikh": [7, 1, 2, 0, 7, 0, 0, 0],
+            "amaal_alsunaidi": [0, 0, 0, 0, 1, 0, 0, 0]
         }
     },
     {
@@ -1110,6 +1115,12 @@
             "shaden_alshammari": null,
             "ghufran_alkhamis": null,
             "ruba_aldhaheri": null
+        },
+        "scores": {
+            "renad_abualjamal": [0, 0, 0, 2, 1, 0],
+            "shaden_alshammari": [0, 2, 0, 0, 0, 0],
+            "ghufran_alkhamis": [0, 0, 0, 0, 0, 1],
+            "ruba_aldhaheri": [1, 0, 0, 0, 0, 0]
         }
     },
     {
@@ -1124,6 +1135,12 @@
             "omniyyah_khawajah": null,
             "amal_meer": "hm",
             "joud_saleh": "hm"
+        },
+        "scores": {
+            "shaden_alshammari": [7, 5, 0, 0, 2, 0],
+            "omniyyah_khawajah": [1, 0, 0, 0, 0, 0],
+            "amal_meer": [7, 0, 1, 0, 1, 0],
+            "joud_saleh": [7, 2, 0, 0, 0, 0]
         }
     },
     {
@@ -1138,6 +1155,12 @@
             "renad_abualjamal": "bronze",
             "razan_alghamdi": null,
             "joud_saleh": "bronze"
+        },
+        "scores": {
+            "shaden_alshammari": [7, 7, 2, 7, 1, 7],
+            "renad_abualjamal": [7, 2, 1, 0, 1, 0],
+            "razan_alghamdi": [0, 1, 0, 1, 0, 0],
+            "joud_saleh": [3, 3, 0, 7, 0, 0]
         }
     },
     {
@@ -1152,6 +1175,12 @@
             "joud_saleh": "silver",
             "renad_abualjamal": "bronze",
             "manar_kurdi": "hm"
+        },
+        "scores": {
+            "shaden_alshammari": [7, 7, 6, 1, 6, 7],
+            "joud_saleh": [7, 0, 0, 5, 2, 5],
+            "renad_abualjamal": [7, 2, 1, 7, 1, 0],
+            "manar_kurdi": [7, 0, 2, 0, 0, 0]
         }
     },
     {
@@ -1166,6 +1195,12 @@
             "thnaa_alhydary": "silver",
             "joud_saleh": "silver",
             "ghadeer_daghistani": null
+        },
+        "scores": {
+            "renad_abualjamal": [7, 2, 0, 7, 1, 0],
+            "thnaa_alhydary": [7, 1, 0, 7, 7, 0],
+            "joud_saleh": [7, 1, 3, 7, 7, 0],
+            "ghadeer_daghistani": [5, 1, 0, 0, 1, 0]
         }
     },
     {
@@ -1180,6 +1215,12 @@
             "ghadeer_daghistani": "silver",
             "rafaa_qanash": "hm",
             "jana_alzahrani": null
+        },
+        "scores": {
+            "thnaa_alhydary": [6, 3, 0, 7, 3, 1],
+            "ghadeer_daghistani": [7, 0, 7, 7, 1, 0],
+            "rafaa_qanash": [7, 1, 0, 0, 0, 0],
+            "jana_alzahrani": [2, 0, 0, 0, 1, 0]
         }
     },
     {
@@ -1194,6 +1235,12 @@
             "rafaa_qanash": null,
             "joud_bahuwayni": "bronze",
             "lara_monagel": "hm"
+        },
+        "scores": {
+            "thnaa_alhydary": [7, 0, 1, 4, 7, 0],
+            "rafaa_qanash": [4, 0, 2, 2, 1, 0],
+            "joud_bahuwayni": [7, 0, 1, 0, 7, 0],
+            "lara_monagel": [1, 0, 1, 0, 7, 0]
         }
     },
     {
@@ -1208,6 +1255,12 @@
             "joud_bahuwayni": "bronze",
             "lara_monagel": "bronze",
             "fatimeh_alghannam": "bronze"
+        },
+        "scores": {
+            "rafaa_qanash": [2, 2, 1, 6, 7, 0],
+            "joud_bahuwayni": [2, 1, 2, 4, 0, 0],
+            "lara_monagel": [1, 0, 1, 7, 0, 0],
+            "fatimeh_alghannam": [1, 0, 1, 2, 6, 0]
         }
     },
     {
@@ -1222,6 +1275,12 @@
             "lara_monagel": "hm",
             "joud_bahuwayni": "hm",
             "jana_aldossari": "hm"
+        },
+        "scores": {
+            "rafaa_qanash": [7, 0, 0, 7, 5, 1],
+            "lara_monagel": [7, 0, 0, 3, 1, 0],
+            "joud_bahuwayni": [7, 0, 0, 0, 1, 2],
+            "jana_aldossari": [2, 0, 0, 7, 3, 0]
         }
     },
     {
@@ -1236,6 +1295,12 @@
             "retaj_alsaleh": null,
             "farhah_alameer": null,
             "fatimah_buali": "hm"
+        },
+        "scores": {
+            "jana_aldossari": [1, 1, 7, 7, 7, 0],
+            "retaj_alsaleh": [0, 2, 0, 1, 0, 0],
+            "farhah_alameer": [0, 2, 0, 1, 0, 0],
+            "fatimah_buali": [0, 7, 2, 0, 1, 1]
         }
     },
     {
@@ -1250,6 +1315,12 @@
             "retaj_alsaleh": "hm",
             "sarah_aljughayman": null,
             "lana_nouri": null
+        },
+        "scores": {
+            "fatimah_buali": [7, 7, 0, 0, 7, 0],
+            "retaj_alsaleh": [2, 7, 0, 0, 1, 0],
+            "sarah_aljughayman": [0, 0, 0, 0, 1, 0],
+            "lana_nouri": [1, 0, 0, 0, 0, 0]
         }
     },
     {
@@ -1264,6 +1335,12 @@
             "sarah_aljughayman": "bronze",
             "retaj_alsaleh": "hm",
             "albatool_alaidarous": "hm"
+        },
+        "scores": {
+            "fatimah_buali": [7, 1, 0, 7, 7, 0],
+            "sarah_aljughayman": [7, 0, 0, 6, 3, 0],
+            "retaj_alsaleh": [3, 0, 0, 7, 2, 0],
+            "albatool_alaidarous": [7, 0, 0, 3, 2, 0]
         }
     },
     {
@@ -1280,6 +1357,14 @@
             "abdulsalam_alsulami": null,
             "muath_alqahtani": "silver",
             "mohammed_alghamdi": "bronze"
+        },
+        "scores": {
+            "yosuf_bakheet": [10, 10, 4, 0],
+            "ahmed_alkhalawi": [10, 10, 2, 0],
+            "ahmed_alshehri": [10, 10, 0, 0],
+            "abdulsalam_alsulami": [4, 3, 0, 0],
+            "muath_alqahtani": [10, 10, 10, 0],
+            "mohammed_alghamdi": [9, 2, 0, 0]
         }
     },
     {
@@ -1296,6 +1381,14 @@
             "ahmed_alshehri": "hm",
             "ahmed_alkhalawi": "bronze",
             "elyas_alfaraj": "bronze"
+        },
+        "scores": {
+            "muath_alqahtani": [10, 10, 9, 0],
+            "mohammed_hafez": [10, 1, 0, 9],
+            "yosuf_bakheet": [10, 10, 1, 0],
+            "ahmed_alshehri": [10, 1, 0, 0],
+            "ahmed_alkhalawi": [10, 2, 0, 3],
+            "elyas_alfaraj": [10, 10, 0, 0]
         }
     },
     {
@@ -1312,6 +1405,14 @@
             "muath_alqahtani": "bronze",
             "eyad_alqatari": "bronze",
             "abdulrahman_nassief": "bronze"
+        },
+        "scores": {
+            "hadi_alaithan": [10, 10, 1, 1],
+            "ali_alramadan": [10, 10, 10, 1],
+            "mahdi_albaik": [10, 3, 8, 1],
+            "muath_alqahtani": [10, 10, 1, 1],
+            "eyad_alqatari": [10, 10, 3, 1],
+            "abdulrahman_nassief": [10, 10, 2, 1]
         }
     },
     {
@@ -1320,14 +1421,22 @@
         "start": "2022/5/4",
         "end": "2022/5/9",
         "country": "cy",
-        "website": "https://bmo2020.ssmr.ro/",
+        "website": "https://www.cms.org.cy/pages/competitions/bmo-2022-4-9-may-2022/39th-balkan-mathematical-olympiad-–-bmo-2022-second-announcement1647515569",
         "participants": {
-            "mohammed_aldubaisi": "silver",
             "muath_alghamdi": "silver",
             "marwan_alkhayat": "silver",
+            "mohammed_aldubaisi": "silver",
             "hadi_alaithan": "silver",
             "mahdi_albaik": "silver",
             "ali_alramadan": "bronze"
+        },
+        "scores": {
+            "hadi_alaithan": [10, 9, 2, 1],
+            "mahdi_albaik": [10, 9, 2, 1],
+            "mohammed_aldubaisi": [10, 10, 4, 1],
+            "muath_alghamdi": [10, 10, 4, 0],
+            "marwan_alkhayat": [10, 8, 4, 1],
+            "ali_alramadan": [10, 8, 1, 1]
         }
     },
     {
@@ -1336,14 +1445,22 @@
         "start": "2020/10/30",
         "end": "2020/11/5",
         "country": "ro",
-        "website": null,
+        "website": "https://bmo2020.ssmr.ro",
         "participants": {
             "hamzah_alshaikhi": "silver",
-            "ahmed_albahrani": "bronze",
-            "mahdi_albaik": "bronze",
+            "muath_alghamdi": "hm"
             "mohammed_aldubaisi": "bronze",
             "marwan_alkhayat": "bronze",
-            "muath_alghamdi": "hm"
+            "ahmed_albahrani": "bronze",
+            "mahdi_albaik": "bronze",
+        },
+        "scores": {
+            "hamzah_alshaikhi": [10, 10, 8, 0],
+            "muath_alghamdi": [10, 5, 0, 1],
+            "mohammed_aldubaisi": [10, 10, 0, 0],
+            "marwan_alkhayat": [8, 4, 8, 0],
+            "ahmed_albahrani": [10, 10, 2, 0],
+            "mahdi_albaik": [10, 10, 0, 2]
         }
     },
         {
@@ -1360,6 +1477,14 @@
             "omar_habibullah": "bronze",
             "marwan_alkhayat": null,
             "thnaa_alhydary": null
+        },
+        "scores": {
+            "asaad_mohammedsaleh": [10, 8, 10, 0],
+            "nawaf_alghamdi": [10, 4, 10, 0],
+            "khalid_ajran": [10, 4, 7, 0],
+            "omar_habibullah": [0, 7, 10, 0],
+            "marwan_alkhayat": [5, 3, 2, 0],
+            "thnaa_alhydary": [2, 0, 6, 0]
         }
     },
     {
@@ -1376,6 +1501,14 @@
             "asaad_mohammedsaleh": "bronze",
             "mahdi_buali": "bronze",
             "renad_abualjamal": "bronze"
+        },
+        "scores": {
+            "mohammed_alansari": [10, 5, 10, 0],
+            "omar_habibullah": [10, 4, 10, 0],
+            "omar_jamal": [10, 3, 7, 1],
+            "asaad_mohammedsaleh": [10, 7, 1, 0],
+            "mahdi_buali": [8, 5, 5, 0],
+            "renad_abualjamal": [8, 4, 5, 0]
         }
     },
     {
@@ -1392,7 +1525,6 @@
             "aous_khan": "hm",
             "ibrahim_abughararh": null,
             "joud_saleh": null
-
         }
     },
     {
@@ -1403,12 +1535,20 @@
         "country": "al",
         "website": null,
         "participants": {
+            "alzubair_habibullah": "bronze",
             "omar_alrabiah": "gold",
             "shaden_alshammari": "gold",
-            "alzubair_habibullah": "bronze",
-            "hamzah_shafi": "bronze",
+            "joud_saleh": null,
             "majid_almarhoumi": "bronze",
-            "joud_saleh": null
+            "hamzah_shafi": "bronze"
+        },
+        "scores": {
+            "alzubair_habibullah": [4, 10, 10, 2],
+            "shaden_alshammari": [10, 10, 10, 2],
+            "omar_alrabiah": [10, 10, 10, 3],
+            "joud_saleh": [0, 6, 4, 0],
+            "majid_almarhoumi": [10, 0, 10, 0],
+            "hamzah_shafi": [10, 4, 10, 0]
         }
     },
     {
@@ -1421,9 +1561,16 @@
         "participants": {
             "alzubair_habibullah": "bronze",
             "omar_alrabiah": "bronze",
-            "salman_saleh": "bronze",
             "alhamzah_alnufaili": "bronze" ,
+            "salman_saleh": "bronze",
             "renad_abualjamal": null 
+        },
+        "scores": {
+            "alzubair_habibullah": [10, 10, 0, 1],
+            "omar_alrabiah": [10, 10, 0, 0],
+            "alhamzah_alnufaili": [10, 4, 0, 0],
+            "salman_saleh": [10, 10, 10, 0],
+            "renad_abualjamal": [4, 0, 0, 0]
         }
     },
     {
@@ -1440,7 +1587,8 @@
             "ibraheem_khan": null,
             "ammar_alqatari": "hm",
             "shaden_alshammari": null
-        }
+        },
+        
     },
     {
         "name": "iomhss",
