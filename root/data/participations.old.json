@@ -194,6 +194,14 @@
             "ibrahim_abughararh": "bronze",
             "joud_saleh": "bronze",
             "amal_meer": "bronze"
+        },
+        "scores": {
+            "omar_alrabiah": [10, 10, 10, 2],
+            "renad_abualjamal": [10, 5, 10, 4],
+            "aous_khan": [10, 0, 10, 1],
+            "ibrahim_abughararh": [10, 2, 10, 1],
+            "joud_saleh": [10, 4, 10, 0],
+            "amal_meer": [10, 5, 10, 0]
         }
     },
     {
@@ -235,6 +243,14 @@
             "zeyad_aljaali": "bronze",
             "asaad_mohammedsaleh": "bronze",
             "abdulhamid_aldoobi": "bronze"
+        },
+        "scores": {
+            "renad_abualjamal": [10, 10, 10, 6],
+            "omar_shaikh": [10, 0, 7, 0],
+            "mohammed_alansari": [10, 10, 10, 0],
+            "zeyad_aljaali": [10, 1, 1, 0],
+            "asaad_mohammedsaleh": [10, 1, 4, 0],
+            "abdulhamid_aldoobi": [6, 2, 4, 0]
         }
     },
     {
@@ -313,7 +329,7 @@
         "start": "2016/6/24",
         "end": "2016/6/29",
         "country": "ro",
-        "website": "https://jbmo.ssmr.ro/",
+        "website": "https://jbmo.ssmr.ro",
         "participants": {
             "asaad_mohammedsaleh": "silver",
             "mohammed_alansari": "bronze",
@@ -321,7 +337,14 @@
             "manar_kurdi": "bronze",
             "fares_alsaygh": "bronze",
             "thnaa_alhydary": "bronze"
-
+        },
+        "scores": {
+            "asaad_mohammedsaleh": [10, 10, 2, 0],
+            "mohammed_alansari": [5, 2, 4, 1],
+            "omar_habibullah": [10, 3, 2, 2],
+            "manar_kurdi": [10, 1, 0, 6],
+            "fares_alsaygh": [4, 0, 2, 0],
+            "thnaa_alhydary": [1, 0, 5, 7]
         }
     },
     {
@@ -467,6 +490,14 @@
             "marwan_alkhayat": "silver",
             "ahmed_almeshal": "bronze",
             "mohammed_alshehri": "bronze"
+        },
+        "scores": {
+            "muath_alghamdi": [0, 4, 5, 0],
+            "abdulrahman_alahmadi": [7, 10, 1, 2],
+            "khalid_aljabri": [9, 10, 0, 1],
+            "marwan_alkhayat": [2, 2, 6, 10],
+            "ahmed_almeshal": [7, 10, 0, 0],
+            "mohammed_alshehri": [1, 2, 0, 3]
         }
     },
     {
@@ -539,6 +570,13 @@
             "marwan_alkhayat": "gold",
             "hamzah_alshaikhi": "gold",
             "mohammed_alshehri": "silver"
+        },
+        "scores": {
+            "mohammed_aldubaisi": [9, 10, 10, 3],
+            "muath_alghamdi": [4, 10, 2, 0],
+            "marwan_alkhayat": [10, 10, 10, 10],
+            "hamzah_alshaikhi": [9, 7, 10, 10],
+            "mohammed_alshehri": [10, 10, 10, 0]
         }
     },
     {
@@ -612,6 +650,14 @@
             "hadi_alaithan": "bronze",
             "abdulrahman_nassief": "silver",
             "ali_alramadan": "silver"
+        },
+        "scores": {
+            "hamzah_alshaikhi": [9, 10, 1, 9],
+            "mohammed_aldubaisi": [10, 10, 0, 2],
+            "mahdi_albaik": [10, 10, 7, 5],
+            "hadi_alaithan": [9, 10, 0, 0],
+            "abdulrahman_nassief": [9, 10, 0, 1],
+            "ali_alramadan": [10, 10, 0, 3]
         }
     },
     {
@@ -685,6 +731,14 @@
             "abdulelah_altaf": "bronze",
             "mohammed_hafez": "silver",
             "muath_alqahtani": "bronze"
+        },
+        "scores": {
+            "mohammed_aldubaisi": [7, 10, 10, 8],
+            "mahdi_albaik": [10, 10, 10, 3],
+            "hadi_alaithan": [10, 10, 10, 2],
+            "abdulelah_altaf": [10, 5, 0, 1],
+            "mohammed_hafez": [2, 10, 10, 1],
+            "muath_alqahtani": [5, 10, 1, 0]
         }
     },
     {
@@ -757,6 +811,14 @@
             "yosuf_bakheet": "silver",
             "abdulkareem_alsalem": "silver",
             "mohammed_alsaeed": "silver"
+        },
+        "scores": {
+            "muath_alqahtani": [10, 10, 10, 10],
+            "mohammed_alghamdi": [5, 2, 6, 2],
+            "ahmed_alshehri": [10, 10, 7, 0],
+            "yosuf_bakheet": [10, 10, 8, 2],
+            "abdulkareem_alsalem": [10, 10, 4, 5],
+            "mohammed_alsaeed": [10, 1, 10, 0]
         }
     },
     {
@@ -821,14 +883,22 @@
         "start": "2023/6/23",
         "end": "2023/6/28",
         "country": "al",
-        "website": null,
+        "website": "https://jbmo2023.al",
         "participants": {
-            "ahmed_alshehri": "bronze",
-            "mohammed_alsaeed": "bronze",
-            "elyas_alfaraj": "silver",
-            "abdulsalam_alsulami": "silver",
             "abdullah_alamer": "bronze",
-            "ruqaya_alobaidan": null
+            "abdulsalam_alsulami": "silver",
+            "ahmed_alshehri": "bronze",
+            "elyas_alfaraj": "silver",
+            "ruqaya_alobaidan": null,
+            "mohammed_alsaeed": "bronze"
+        },
+        "scores": {
+            "abdullah_alamer": [10, 8, 0, 0],
+            "abdulsalam_alsulami": [10, 8, 2, 0],
+            "ahmed_alshehri": [10, 0, 0, 1],
+            "elyas_alfaraj": [10, 7, 5, 0],
+            "ruqaya_alobaidan": [4, 0, 2, 0],
+            "mohammed_alsaeed": [10, 0, 5, 1]
         }
     },
     {
@@ -901,6 +971,14 @@
             "albatool_alaidarous": null,
             "arar_alajmi": "bronze",
             "belal_alhejaili": "bronze"
+        },
+        "scores": {
+            "abdullah_alamer": [10, 10, 10, 0],
+            "mohammed_shaiban": [10, 3, 3, 0],
+            "fatimah_almarhoun": [10, 3, 1, 0],
+            "albatool_alaidarous": [0, 2, 8, 0],
+            "arar_alajmi": [10, 3, 1, 0],
+            "belal_alhejaili": [10, 0, 5, 0]
         }
     },
     {
@@ -973,6 +1051,14 @@
             "mohammed_shaiban": "silver",
             "yasir_habibullah": "silver",
             "belal_alhejaili": "bronze"
+        },
+        "scores": {
+            "abdullah_alamer": [10, 9, 10, 10],
+            "abdulelah_assaggaf": [10, 10, 10, 5],
+            "abdarahman_mansour": [4, 1, 10, 0],
+            "mohammed_shaiban": [10, 2, 10, 2],
+            "yasir_habibullah": [10, 6, 10, 0],
+            "belal_alhejaili": [10, 2, 3, 0]
         }
     },
     {
