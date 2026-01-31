@@ -489,7 +489,7 @@
             "khalid_aljabri": "silver",
             "marwan_alkhayat": "silver",
             "ahmed_almeshal": "bronze",
-            "mohammed_alshehri": "bronze"
+            "mohammed_alshehri": null
         },
         "scores": {
             "muath_alghamdi": [0, 4, 5, 0],
