@@ -1,4 +1,124 @@
 {
+    "2026_IMO_Cancelled_day_1": {
+        "id": "2026_IMO_day_1",
+        "name": "TST 2026 Cancelled Day 1",
+        "date": "2026-03-28",
+        "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
+        "participants": {
+            "abdulsalam_alsulami":[7,7,1],
+            "abdulelah_assaggaf":[7,7,1],
+            "abdullah_alamer":[3,1,0],
+            "fares_alkanhal":[7,0,0],
+            "yosuf_bakheet": [3,4,0],
+            "elyas_alfaraj":[1,7,0],
+            "yousif_alkhalawi":[7,6,0],
+            "mohammed_shaiban": [3,1,0],
+            "arar_alajmi":[1,1,0],
+            "mohammed_alhassan":[1,1,0],   
+            "ali_alhussain":[1,1,0],
+            "yasir_habibullah":[1,1,0],
+            "abdarahman_mansour":[1,1,0],
+            "belal_alhejaili":[7,1,0]
+            
+        },
+        "problems": ["Problem 1", "Problem 2", "Problem 3"]
+    },
+    "2026_IMO_day_1": {
+        "id": "2026_IMO_day_1",
+        "name": "TST 2026 Day 1",
+        "date": "2026-04-02",
+        "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
+        "participants": {
+             "abdulsalam_alsulami":[7,7,1],
+            "abdulelah_assaggaf":[7,7,1],
+            "abdullah_alamer":[7,4,0],
+            "fares_alkanhal":[7,3,0],
+            "yosuf_bakheet": [7,1,1],
+            "elyas_alfaraj":[7,7,0],
+            "yousif_alkhalawi":[7,7,0],
+            "mohammed_shaiban": [7,2,0],
+            "arar_alajmi":[7,7,0],
+            "mohammed_alhassan":[2,1,0],   
+            "ali_alhussain":[4,0,0],
+            "yasir_habibullah":[7,1,0],
+            "abdarahman_mansour":[4,2,0],
+            "belal_alhejaili":[3,0,0]
+        },
+        "problems": ["Problem 13", "Problem 14", "Problem 15"]
+    },
+    
+    "2026_IMO_day_2": {
+        "id": "2026_IMO_day_2",
+        "name": "TST 2026 Day 2",
+        "date": "2026-03-29",
+        "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
+        "participants": {
+            "abdulsalam_alsulami":[7,5,0],
+            "abdulelah_assaggaf":[7,6,0],
+            "abdullah_alamer":[4,0,0],
+            "fares_alkanhal":[7,0,0],
+            "yosuf_bakheet": [7,1,0],
+            "elyas_alfaraj":[2,3,0],
+            "yousif_alkhalawi":[2,0,0],
+            "mohammed_shaiban": [7,0,0],
+            "arar_alajmi":[3,0,0],
+            "mohammed_alhassan":[3,0,0],   
+            "ali_alhussain":[2,0,0],
+            "yasir_habibullah":[4,0,0],
+            "abdarahman_mansour":[4,0,0],
+            "belal_alhejaili":[1,0,0]
+        },
+        "problems": ["Problem 4", "Problem 5", "Problem 6"]
+    },
+    
+    "2026_IMO_day_3": {
+        "id": "2026_IMO_day_3",
+        "name": "TST 2026 Day 3",
+        "date": "2026-03-31",
+        "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
+        "participants": {
+            "abdulsalam_alsulami":[7,7,2],
+            "abdulelah_assaggaf":[7,7,0],
+            "abdullah_alamer":[7,7,1],
+            "fares_alkanhal":[7,3,0],
+            "yosuf_bakheet": [7,7,0],
+            "elyas_alfaraj":[7,2,0],
+            "yousif_alkhalawi":[7,3,0],
+            "mohammed_shaiban": [7,0,0],
+            "arar_alajmi":[1,4,0],
+            "mohammed_alhassan":[7,1,0],   
+            "ali_alhussain":[7,0,0],
+            "yasir_habibullah":[6,1,0],
+            "abdarahman_mansour":[6,1,0],
+            "belal_alhejaili":[7,1,0]
+        },
+        "problems": ["Problem 7", "Problem 8", "Problem 9"]
+    },
+    
+    "2026_IMO_day_4": {
+        "id": "2026_IMO_day_4",
+        "name": "TST 2026 Day 4",
+        "date": "2026-04-01",
+        "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
+        "participants": {
+            "abdulsalam_alsulami":[6,7,0],
+            "abdulelah_assaggaf":[7,2,0],
+            "abdullah_alamer":[7,2,0],
+            "fares_alkanhal":[1,2,0],
+            "yosuf_bakheet": [4,7,0],
+            "elyas_alfaraj":[7,1,0],
+            "yousif_alkhalawi":[7,0,0],
+            "mohammed_shaiban": [2,3,0],
+            "arar_alajmi":[1,2,0],
+            "mohammed_alhassan":[2,4,0],   
+            "ali_alhussain":[0,6,0],
+            "yasir_habibullah":[3,2,0],
+            "abdarahman_mansour":[1,3,0],
+            "belal_alhejaili":[1,1,0]
+        },
+        "problems": ["Problem 10", "Problem 11", "Problem 12"]
+    },
+    
     "2025_IMO_day_1": {
         "id": "2025_IMO_day_1",
         "name": "TST 2025 Day 1",
