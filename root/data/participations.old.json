@@ -1344,6 +1344,50 @@
         }
     },
     {
+        "name": "egmo",
+        "year": 2026,
+        "start": "2026/04/09",
+        "end": "2026/04/15",
+        "country": "fr",
+        "website": "https://www.egmo.org/egmos/egmo15/",
+        "participants": {
+            "albatool_alaidarous": "bronze",
+            "tala_tulbah": "bronze",
+            "fatimah_almarhoun": "hm",
+            "lana_nouri": null
+        },
+        "scores": {
+            "albatool_alaidarous": [2, 2, 0, 7, 1, 0],
+            "tala_tulbah": [1, 1, 0, 7, 2, 0],
+            "fatimah_almarhoun": [1, 0, 0, 7, 1, 0],
+            "lana_nouri": [3, 0, 0, 0, 1, 0]
+        }
+    },
+    {
+        "name": "bmo",
+        "year": 2026,
+        "start": "2026/5/3",
+        "end": "2026/5/8",
+        "country": "gr",
+        "website": "https://hms.gr/43bmo2026/",
+        "participants": {
+            "abdulelah_assaggaf": "gold",
+            "abdulsalam_alsulami": "gold",
+            "elyas_alfaraj": "bronze",
+            "mohammed_shaiban":null,
+            "abdullah_alamer": null,
+            "yasir_habibullah": null
+        },
+        "scores": {
+            "abdulelah_assaggaf" [10, 10, 10, 7],
+            "abdulsalam_alsulami": [7, 10, 10, 1],
+            "elyas_alfaraj": [6, 5, 0, 1],
+            "mohammed_shaiban": [7, 0, 1, 1],
+            "abdullah_alamer": [7, 0, 0, 0],
+            "yasir_habibullah": [6, 0, 1, 0]
+        }
+    },
+    {
         "name": "bmo",
         "year": 2025,
         "start": "2025/4/25",
