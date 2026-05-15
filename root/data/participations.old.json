@@ -1379,7 +1379,7 @@
             "yasir_habibullah": null
         },
         "scores": {
-            "abdulelah_assaggaf" [10, 10, 10, 7],
+            "abdulelah_assaggaf" : [10, 10, 10, 7],
             "abdulsalam_alsulami": [7, 10, 10, 1],
             "elyas_alfaraj": [6, 5, 0, 1],
             "mohammed_shaiban": [7, 0, 1, 1],
