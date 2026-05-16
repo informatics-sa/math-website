@@ -1944,7 +1944,7 @@
         "start": "2023/1/1",
         "end": "2023/12/31",
         "country": "cn",
-        "website": https://bimsa.net/imsc/program.html,
+        "website": "https://bimsa.net/imsc/program.html",
         "participants": {
             "mahdi_albaik": "silver",
             "ali_alramadan": "bronze",
