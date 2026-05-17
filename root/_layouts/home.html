@@ -8,10 +8,17 @@ description: "Official website"
 <style>
 :root {
     --primary-green: #1A8754;
-    --text-black: #000000;
-    --pure-white: #FFFFFF;
+    --text-color: #000000;
+    --background-color: #FFFFFF;
     --light-green: rgba(26, 135, 84, 0.1);
     --hover-green: #156b45;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #FFFFFF;
+        --background-color: #000000;
+    }
 }
 
 * {
@@ -19,8 +26,8 @@ description: "Official website"
 }
 
 body {
-    background: var(--pure-white);
-    color: var(--text-black);
+    background: var(--background-color);
+    color: var(--text-color);
     line-height: 1.7;
     margin: 0;
     padding: 0;
@@ -29,7 +36,7 @@ body {
 
 .hero-section {
     background: linear-gradient(135deg, var(--primary-green) 0%, var(--hover-green) 100%);
-    color: var(--pure-white);
+    color: var(--background-color);
     padding: clamp(60px, 15vh, 100px) 0;
     position: relative;
     overflow: hidden;
@@ -123,27 +130,27 @@ body {
 }
 
 .btn-light {
-    background: var(--pure-white);
+    background: var(--background-color);
     color: var(--primary-green);
-    border-color: var(--pure-white);
+    border-color: var(--background-color);
 }
 
 .btn-light:hover {
     background: transparent;
-    color: var(--pure-white);
-    border-color: var(--pure-white);
+    color: var(--background-color);
+    border-color: var(--background-color);
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
 .btn-outline-light {
     background: transparent;
-    color: var(--pure-white);
-    border-color: var(--pure-white);
+    color: var(--background-color);
+    border-color: var(--background-color);
 }
 
 .btn-outline-light:hover {
-    background: var(--pure-white);
+    background: var(--background-color);
     color: var(--primary-green);
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
@@ -151,7 +158,7 @@ body {
 
 .btn-success {
     background: var(--primary-green);
-    color: var(--pure-white);
+    color: var(--background-color);
     border-color: var(--primary-green);
 }
 
@@ -170,7 +177,7 @@ body {
 
 .btn-outline-success:hover {
     background: var(--primary-green);
-    color: var(--pure-white);
+    color: var(--background-color);
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(26, 135, 84, 0.3);
 }
@@ -190,13 +197,13 @@ body {
 
 .stats-section {
     padding: clamp(50px, 10vh, 80px) 0;
-    background: var(--pure-white);
+    background: var(--background-color);
 }
 
 .stats-section h2 {
     font-size: clamp(1.8rem, 6vw, 3rem);
     font-weight: 800;
-    color: var(--text-black);
+    color: var(--text-color);
     margin-bottom: clamp(2rem, 6vw, 3rem);
     position: relative;
     text-align: center;
@@ -230,7 +237,7 @@ body {
 }
 
 .stats-card {
-    background: var(--pure-white);
+    background: var(--background-color);
     padding: clamp(30px, 6vw, 40px) clamp(15px, 4vw, 20px);
     border-radius: 20px;
     text-align: center;
@@ -280,25 +287,25 @@ body {
 .stats-card h3 {
     font-size: clamp(2rem, 5vw, 2.5rem);
     font-weight: 800;
-    color: var(--text-black);
+    color: var(--text-color);
     margin: clamp(0.5rem, 2vw, 1rem) 0;
 }
 
 .stats-card p {
     font-size: clamp(1rem, 2.5vw, 1.1rem);
     font-weight: 500;
-    color: var(--text-black);
+    color: var(--text-color);
     opacity: 0.8;
     margin: 0;
 }
 
 .info-section {
     padding: clamp(50px, 10vh, 80px) 0;
-    background: linear-gradient(135deg, var(--light-green) 0%, var(--pure-white) 100%);
+    background: linear-gradient(135deg, var(--light-green) 0%, var(--background-color) 100%);
 }
 
 .info-card {
-    background: var(--pure-white);
+    background: var(--background-color);
     padding: clamp(30px, 6vw, 40px) clamp(20px, 5vw, 30px);
     border-radius: 20px;
     box-shadow: 0 15px 35px rgba(0,0,0,0.05);
@@ -324,13 +331,13 @@ body {
 .info-card h3 {
     font-size: clamp(1.5rem, 4vw, 1.8rem);
     font-weight: 700;
-    color: var(--text-black);
+    color: var(--text-color);
     margin-bottom: clamp(1.5rem, 4vw, 2rem);
 }
 
 .info-card p {
     font-size: clamp(1rem, 2.5vw, 1.1rem);
-    color: var(--text-black);
+    color: var(--text-color);
     opacity: 0.8;
     line-height: 1.6;
     margin-bottom: clamp(1.5rem, 4vw, 2rem);
@@ -338,7 +345,7 @@ body {
 
 .join-section {
     padding: clamp(50px, 10vh, 80px) 0;
-    background: var(--pure-white);
+    background: var(--background-color);
 }
 
 .join-row {
@@ -369,20 +376,20 @@ body {
 .join-section h2 {
     font-size: clamp(1.8rem, 5vw, 2.8rem);
     font-weight: 800;
-    color: var(--text-black);
+    color: var(--text-color);
     margin-bottom: clamp(1.5rem, 4vw, 2rem);
 }
 
 .join-section .lead {
     font-size: clamp(1.1rem, 3vw, 1.3rem);
-    color: var(--text-black);
+    color: var(--text-color);
     margin-bottom: clamp(2rem, 4vw, 2.5rem);
     font-weight: 500;
 }
 
 .join-section ul li {
     font-size: clamp(1rem, 2.5vw, 1.1rem);
-    color: var(--text-black);
+    color: var(--text-color);
     padding: clamp(10px, 3vw, 15px) 0;
     display: flex;
     align-items: flex-start;
@@ -569,7 +576,7 @@ body {
     
     .hero-section {
         background: none !important;
-        color: var(--text-black) !important;
+        color: var(--text-color) !important;
     }
     
     * {
