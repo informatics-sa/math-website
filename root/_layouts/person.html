@@ -51,13 +51,13 @@ usechartjs: true
                     </td>
                     <td>
                         {% if page.participations[i].award == 'gold' %}
-                        🥇
+                        <span class="bi-award medal-gold"></span>
                         {% elsif page.participations[i].award == 'silver' %}
-                        🥈
+                        <span class="bi-award medal-silver"></span>
                         {% elsif page.participations[i].award == 'bronze' %}
-                        🥉
+                        <span class="bi-award medal-bronze"></span>
                         {% elsif page.participations[i].award == 'hm' %}
-                        📜
+                        <span class="bi-award medal-hm"></span>
                         {% else %}
                         -
                         {% endif %}

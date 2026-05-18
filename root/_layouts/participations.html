@@ -202,8 +202,14 @@ layout: default
                                 <td class="awards-cell" id="olawards-{{olyid}}">
                                     {% assign medals = page[year][idx].awards | split: '' %}
                                     {% for medal in medals %}
-                                        {% if medal == '🥇' or medal == '🥈' or medal == '🥉' or medal == '📜' %}
-                                            <span class="fs-5 me-1">{{ medal }}</span>
+                                        {% if medal == '🥇' %}
+                                            <span class="bi-award medal-gold"></span>
+                                        {% elsif medal == '🥈' %}
+                                            <span class="bi-award medal-silver"></span>
+                                        {% elsif medal == '🥉' %}
+                                            <span class="bi-award medal-bronze"></span>
+                                        {% elsif medal == '📜' %}
+                                            <span class="bi-award medal-hm"></span>
                                         {% endif %}
                                     {% endfor %}
                                 </td>
