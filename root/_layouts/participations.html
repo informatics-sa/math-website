@@ -12,6 +12,7 @@ layout: default
 .year-cell {
     border-right: 3px solid var(--bs-success);
     font-weight: bold;
+    --bs-table-striped-bg: transparent;
 }
 
 .year-2024, .year-2022, .year-2020, .year-2018, .year-2016, .year-2014, .year-2012, .year-2010 { 
@@ -128,7 +129,7 @@ layout: default
 
     <div class="card shadow-sm mb-4">
         <div class="table-responsive">
-            <table class="table mb-0" id="participationTable">
+            <table class="table mb-0 table-striped" id="participationTable">
                 <thead class="table-dark">
                     <tr>
                         {% if page.lang == "ar" %}
