@@ -24,6 +24,8 @@ root/_data/*
 !root/editor/*
 # END BUILD ARTIFACTS
 
+vendor/
+.bundle
 .DS_Store
 .ruby-version
 .jekyll-cache
