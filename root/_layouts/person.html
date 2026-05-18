@@ -7,7 +7,7 @@ usechartjs: true
     <div class="col-md-6 col-sm-12 p-1">
         {% if page.lang == "en" %}
         <ul>
-            <li>Name: {{ page.full_name }}</li>
+            <h2>Name: {{ page.full_name }}</h2>
             {% if page.graduation %}
             <li>Graduation year: {{ page.graduation }}</li>
             {% endif %}
@@ -17,7 +17,7 @@ usechartjs: true
         </ul>
         {% else %}
         <ul>
-            <li>الاسم: {{ page.full_name }}</li>
+            <h2>الاسم: {{ page.full_name }}</h2>
             {% if page.graduation %}
             <li>سنة التخرج: {{ page.graduation }}</li>
             {% endif %}
