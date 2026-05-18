@@ -37,7 +37,9 @@ layout: default
                     <div class="card h-100 shadow-sm">
                         <div class="card-body text-center h3">
                             <span class="fw-bold text-warning d-block" id="goldMedals">{{ page.stats.total_gold }}</span>
-                            <i class="bi-award medal-gold"></i>
+                            <div class="stats-icon medal-gold">
+                                <i class="bi bi-award-fill"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -45,7 +47,9 @@ layout: default
                     <div class="card h-100 shadow-sm">
                         <div class="card-body text-center h3">
                             <span class="fw-bold text-secondary d-block" id="silverMedals">{{ page.stats.total_silver }}</span>
-                            <i class="bi-award medal-silver"></i>
+                            <div class="stats-icon medal-silver">
+                                <i class="bi bi-award-fill"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -53,7 +57,9 @@ layout: default
                     <div class="card h-100 shadow-sm">
                         <div class="card-body text-center h3">
                             <span class="fw-bold text-danger d-block" id="bronzeMedals">{{ page.stats.total_bronze }}</span>
-                            <i class="bi-award medal-bronze"></i>
+                            <div class="stats-icon medal-bronze">
+                                <i class="bi bi-award-fill"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -100,7 +106,7 @@ layout: default
                             </span>
                         </label>
                         <div class="d-flex flex-wrap gap-2">
-                            <button class="btn btn-outline-dark btn-sm active filter-btn" data-filter="all">{% if page.lang == "ar" %}الكل{% else %}All{% endif %}</button>
+                            <button class="btn btn-outline-success btn-sm active filter-btn" data-filter="all">{% if page.lang == "ar" %}الكل{% else %}All{% endif %}</button>
                             {% for oo in (1..page.olympiads.count) %}
                             <button class="btn btn-outline-success btn-sm filter-btn" data-filter="{{ page.olympiads[oo] | upcase }}">{{ page.olympiads[oo] | upcase }}</button>
                             {% endfor %}
