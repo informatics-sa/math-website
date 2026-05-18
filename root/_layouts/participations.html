@@ -245,11 +245,11 @@ function init() {
 function updateStats() {
     let gold = 0, silver = 0, bronze = 0, honorable = 0;
     filteredRows.forEach(row => {
-        const medals = row.querySelector('.awards-cell').textContent;
-        gold += (medals.match(/🥇/g) || []).length;
-        silver += (medals.match(/🥈/g) || []).length;
-        bronze += (medals.match(/🥉/g) || []).length;
-        honorable += (medals.match(/📜/g) || []).length;
+        const cell = row.querySelector('.awards-cell');
+        gold += cell.querySelectorAll('.medal-gold').length;
+        silver += cell.querySelectorAll('.medal-silver').length;
+        bronze += cell.querySelectorAll('.medal-bronze').length;
+        honorable += cell.querySelectorAll('.medal-hm').length;
     });
     
     // document.getElementById('totalCompetitions').textContent = filteredRows.length;
