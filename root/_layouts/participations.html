@@ -12,14 +12,14 @@ layout: default
 .year-cell {
     border-right: 3px solid var(--bs-success);
     font-weight: bold;
-    --bs-table-striped-bg: transparent;
+    --bs-table-bg: var(--bs-body-bg);
 }
 
-.year-2024, .year-2022, .year-2020, .year-2018, .year-2016, .year-2014, .year-2012, .year-2010 { 
-    background-color: var(--bs-body-bg); 
+.row-even{ 
+    --bs-table-bg: rgba(var(--bs-emphasis-color-rgb), 0.05);
 }
-.year-2023, .year-2021, .year-2019, .year-2017, .year-2015, .year-2013, .year-2011 { 
-    background-color: var(--bs-secondary-bg, var(--bs-light)); 
+.row-odd{ 
+    --bs-table-bg: var(--bs-body-bg);
 }
 
 .certificate-icon {
@@ -129,7 +129,7 @@ layout: default
 
     <div class="card shadow-sm mb-4">
         <div class="table-responsive">
-            <table class="table mb-0 table-striped" id="participationTable">
+            <table class="table mb-0" id="participationTable">
                 <thead class="table-dark">
                     <tr>
                         {% if page.lang == "ar" %}
@@ -241,6 +241,7 @@ function init() {
     filterButtons = document.querySelectorAll('.filter-btn');
     setupEventListeners();
     updateDateBadges();
+    applyFilters();
 }
 
 function updateStats() {
@@ -319,6 +320,14 @@ function applyFilters() {
 
     updateStats();
     updateResultsCount();
+
+    let colorIndex = 0;
+    filteredRows.forEach(row => {
+        row.classList.remove('row-even', 'row-odd');
+        row.classList.add(colorIndex % 2 === 0 ? 'row-even' : 'row-odd');
+        colorIndex++;
+    });
+
 }
 
 function setupEventListeners() {
