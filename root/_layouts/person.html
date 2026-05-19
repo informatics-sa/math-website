@@ -4,7 +4,7 @@ usechartjs: true
 ---
 
 <div class="row">
-    <div class="col-md-6 col-sm-12 p-1 mt-3">
+    <div class="col-md-6 col-sm-12 p-1 ">
         {% if page.lang == "en" %}
         <ul>
             <h2>Name: {{ page.full_name }}</h2>
@@ -28,7 +28,7 @@ usechartjs: true
         {% endif %}
     </div>
     {% if page.participations.count > 0 %}
-    <div class="col-md-6 col-sm-12 p-1 mt-3">
+    <div class="col-md-6 col-sm-12 p-1 ">
         <table class="table table-bordered table-striped">
             <thead>
                 <th>{% if page.lang == "en" %} Name {% else %} الاسم {% endif %}</th>
