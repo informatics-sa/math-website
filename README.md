@@ -1,7 +1,7 @@
-# Saudi Informatics Team Website
-This website is made by the students on the Saudi Team, to preserve history of Saudi Informatics Team (SIT) in one place.
+# Saudi Math Team Website
+This website is made by the students on the Saudi Team, to preserve history of Saudi Math Team in one place.
 
-This website includes: olympiads, participations, members, contact, and image library.
+This website includes: olympiads, participations, members, and exams.
 
 ## Documentation
 Read [Website public data files](https://sainformatics.org/data/) documentation.
@@ -32,7 +32,7 @@ python build.py && bundle exec jekyll serve -s ./root
 ## Maintainers
 This website needs people who maintain the data up-to-date.
 
-Currently, there are no maintainers except:
+Current maintainers:
 - Muaath Alqarni
 - Mohammed Shaiban
 - Ali Alsalman
