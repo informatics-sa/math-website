@@ -37,7 +37,7 @@ layout: default
                 <div class="col-sm-2 col-md-2 col-lg">
                     <div class="card h-100 shadow-sm">
                         <div class="card-body text-center h3">
-                            <span class="fw-bold text-warning d-block" id="goldMedals">{{ page.stats.total_gold }}</span>
+                            <span class="fw-bold d-block medal-gold" id="goldMedals">{{ page.stats.total_gold }}</span>
                             <div class="stats-icon medal-gold">
                                 <i class="bi bi-award-fill"></i>
                             </div>
@@ -47,7 +47,7 @@ layout: default
                 <div class="col-sm-2 col-md-2 col-lg">
                     <div class="card h-100 shadow-sm">
                         <div class="card-body text-center h3">
-                            <span class="fw-bold text-secondary d-block" id="silverMedals">{{ page.stats.total_silver }}</span>
+                            <span class="fw-bold d-block medal-silver" id="silverMedals">{{ page.stats.total_silver }}</span>
                             <div class="stats-icon medal-silver">
                                 <i class="bi bi-award-fill"></i>
                             </div>
@@ -57,7 +57,7 @@ layout: default
                 <div class="col-sm-2 col-md-2 col-lg">
                     <div class="card h-100 shadow-sm">
                         <div class="card-body text-center h3">
-                            <span class="fw-bold text-danger d-block" id="bronzeMedals">{{ page.stats.total_bronze }}</span>
+                            <span class="fw-bold d-block medal-bronze" id="bronzeMedals">{{ page.stats.total_bronze }}</span>
                             <div class="stats-icon medal-bronze">
                                 <i class="bi bi-award-fill"></i>
                             </div>
@@ -67,21 +67,10 @@ layout: default
                 <div class="col-sm-2 col-md-2 col-lg">
                     <div class="card h-100 shadow-sm">
                         <div class="card-body text-center h3">
-                            <span class="fw-bold text-info d-block" id="honorableMentions">{{ page.stats.total_hm }}</span>
-                            <svg class="certificate-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <!-- خلفية الشهادة -->
-                              <rect x="3" y="4.5" width="18" height="12" rx="1" fill="#f8f9fa" stroke="#6c757d" stroke-width="0.5"/>
-                              
-                              <!-- خطوط النص -->
-                              <line x1="5" y1="7" x2="17" y2="7" stroke="#495057" stroke-width="0.5"/>
-                              <line x1="5" y1="9" x2="15" y2="9" stroke="#495057" stroke-width="0.5"/>
-                              <line x1="5" y1="11" x2="16.5" y2="11" stroke="#495057" stroke-width="0.5"/>
-                              <line x1="5" y1="13" x2="13.5" y2="13" stroke="#495057" stroke-width="0.5"/>
-                              
-                              <!-- ختم الشهادة -->
-                              <circle cx="17" cy="14" r="1.8" fill="#dc3545" opacity="0.8"/>
-                              <circle cx="17" cy="14" r="1.2" fill="none" stroke="#ffffff" stroke-width="0.3"/>
-                            </svg>
+                            <span class="fw-bold d-block medal-hm" id="honorableMentions">{{ page.stats.total_hm }}</span>
+                            <div class="stats-icon medal-hm">
+                                <i class="bi bi-check-circle"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -89,7 +78,7 @@ layout: default
                     <div class="card h-100 shadow-sm">
                         <div class="card-body text-center h3">
                             <span class="fw-bold text-success d-block" id="totalMedals">{{ page.stats.total_awards }}</span>
-                            <i class="bi-patch-check-fill"></i>
+                            <i class="bi-people text-success"></i>
                         </div>
                     </div>
                 </div>
@@ -210,13 +199,13 @@ layout: default
                                     {% assign medals = page[year][idx].awards | split: '' %}
                                     {% for medal in medals %}
                                         {% if medal == '🥇' %}
-                                            <span class="bi-award medal-gold"></span>
+                                            <span class="bi-award-fill medal-gold"></span>
                                         {% elsif medal == '🥈' %}
-                                            <span class="bi-award medal-silver"></span>
+                                            <span class="bi-award-fill medal-silver"></span>
                                         {% elsif medal == '🥉' %}
-                                            <span class="bi-award medal-bronze"></span>
+                                            <span class="bi-award-fill medal-bronze"></span>
                                         {% elsif medal == '📜' %}
-                                            <span class="bi-award medal-hm"></span>
+                                            <span class="bi-check-circle medal-hm"></span>
                                         {% endif %}
                                     {% endfor %}
                                 </td>
