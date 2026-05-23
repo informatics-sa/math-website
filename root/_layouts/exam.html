@@ -11,38 +11,40 @@ layout: default
     </div>
 </div>
 
-<table class="table table-striped table-bordered">
-    <thead>
-        <th>#</th>
-        {% if page.lang == "en" %} 
-        <th>Name</th>
-        <th>Sum</th>
-        {% else %}
-        <th>الاسم</th>
-        <th>المجموع</th>
-        {% endif %}
+<div class="table-responsive">
+    <table class="table table-striped table-bordered">
+        <thead>
+            <th>#</th>
+            {% if page.lang == "en" %} 
+            <th>Name</th>
+            <th>Sum</th>
+            {% else %}
+            <th>الاسم</th>
+            <th>المجموع</th>
+            {% endif %}
 
-        {% for probidx in (1..page.exam.problems.count) %}
-        <th>{{ page.exam.problems[probidx] }}</th>
-        {% endfor %}
-    </thead>
-    <tbody>
-        {% for usr in page.exam.participants%}
-        <tr>
-            <td>{{ forloop.index }}</td>
-            <td>
-                {% assign uid = usr[0] %}
-                <a href="{%if page.lang=="en"%}/en{%endif%}/members/{{ uid }}">
-                    {{ page.names[uid] }}
-                </a>
-            </td>
-            <td>{{ page.sums[uid] | round: 3 }}</td>
-            {% for idx in (1..page.exam.problems.count) %}
-            <td>{{ page.exam.participants[uid][idx] | round: 3 }}</td>
+            {% for probidx in (1..page.exam.problems.count) %}
+            <th>{{ page.exam.problems[probidx] }}</th>
             {% endfor %}
-        </tr>
-        {% endfor %}
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            {% for usr in page.exam.participants%}
+            <tr>
+                <td>{{ forloop.index }}</td>
+                <td>
+                    {% assign uid = usr[0] %}
+                    <a href="{%if page.lang=="en"%}/en{%endif%}/members/{{ uid }}">
+                        {{ page.names[uid] }}
+                    </a>
+                </td>
+                <td>{{ page.sums[uid] | round: 3 }}</td>
+                {% for idx in (1..page.exam.problems.count) %}
+                <td>{{ page.exam.participants[uid][idx] | round: 3 }}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
 
 <script src="/resources/modal_settings.js"></script>

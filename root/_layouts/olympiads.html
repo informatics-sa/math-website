@@ -28,22 +28,24 @@ id: olympiads
                     {% endif %}
                 </p>
                 <div class="card-footer">
-                    <table class="table table-bordered d-inline">
-                        <thead>
-                            <th><span class="bi-award-fill medal-gold"></span></th>
-                            <th><span class="bi-award-fill medal-silver"></span></th>
-                            <th><span class="bi-award-fill medal-bronze"></span></th>
-                            <th><span class="bi-check-circle medal-hm"></span></th>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>{{ page.olympiads[i].gold }}</td>
-                                <td>{{ page.olympiads[i].silver }}</td>
-                                <td>{{ page.olympiads[i].bronze }}</td>
-                                <td>{{ page.olympiads[i].hm }}</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="table-responsive">
+                        <table class="table table-bordered d-inline">
+                            <thead>
+                                <th><span class="bi-award-fill medal-gold"></span></th>
+                                <th><span class="bi-award-fill medal-silver"></span></th>
+                                <th><span class="bi-award-fill medal-bronze"></span></th>
+                                <th><span class="bi-check-circle medal-hm"></span></th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>{{ page.olympiads[i].gold }}</td>
+                                    <td>{{ page.olympiads[i].silver }}</td>
+                                    <td>{{ page.olympiads[i].bronze }}</td>
+                                    <td>{{ page.olympiads[i].hm }}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>            
             </div>
         </div>        
