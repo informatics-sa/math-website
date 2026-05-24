@@ -4,17 +4,18 @@ layout: default
 
 <div class="row m-3">
     <div class="col">
-        <div class="btn-group" role="group" aria-label="TST Years">
-            {% assign yr = page.year | to_integer %}
-            {% for y in (site.data.tst.min_year..site.data.tst.max_year) %}
-                {% if y == yr %}
-                <a href="{% if page.lang=="en" %}/en{% endif %}/tst/{{ y }}" class="btn btn-primary">{{ y }}</a>
-                {% else %}
-                <a href="{% if page.lang=="en" %}/en{% endif %}/tst/{{ y }}" class="btn btn-outline-primary">{{ y }}</a>
-                {% endif %}
-            {% endfor %}
+
+        <div class="dropdown" role="group" aria-label="TST Years">
+            <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                {% assign yr = page.year | to_integer %}
+                {{ yr }}
+            </button>
+            <ul class="dropdown-menu">
+                {% for y in (site.data.tst.min_year..site.data.tst.max_year) %}
+                <li><a class="dropdown-item {% if y == yr %} active {% endif %}" href="{% if page.lang=='en' %}/en{% endif %}/tst/{{ y }}">{{ y }}</a></li>
+                {% endfor %}
+            </ul>
         </div>
-    </div>
 
     <div class="col d-none debug-only">
         <div class="form-check">

@@ -104,6 +104,13 @@ footer {
     margin-bottom: 1rem;
 }
 
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: var(--theme-color) !important;
+}
+
+
+
 /*
 .btn-success {
     background-color: var(--bs-success) /* #1A8754 /;
