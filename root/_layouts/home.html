@@ -257,7 +257,6 @@ body {
 }
 
 .medal-gold { 
-    color: #FFD700; 
     text-shadow: 2px 2px 4px rgba(255, 215, 0, 0.3);
 }
 .medal-silver { 
@@ -265,12 +264,10 @@ body {
     text-shadow: 2px 2px 4px rgba(192, 192, 192, 0.3);
 }
 .medal-bronze { 
-    color: #CD7F32; 
     text-shadow: 2px 2px 4px rgba(205, 127, 50, 0.3);
 }
 .medal-hm, .medal-participation { 
-    color: var(--primary-green); 
-    text-shadow: 2px 2px 4px rgba(26, 135, 84, 0.3);
+    text-shadow: 2px 2px 4px rgba(97, 26, 135, 0.3);
 }
 
 .stats-card h3 {
@@ -690,7 +687,7 @@ body {
                 <div class="col">
                     <div class="stats-card enable-debugger">
                         <div class="stats-icon medal-hm">
-                            <i class="bi bi-patch-check-fill"></i>
+                            <i class="bi bi-hm"></i>
                         </div>
                         <h3 class="fw-bold">{{ page.stats.hm }}</h3>
                         {% if page.lang == "en" %}
@@ -703,7 +700,7 @@ body {
                 
                 <div class="col">
                     <div class="stats-card">
-                        <div class="stats-icon medal-participation">
+                        <div class="stats-icon" style="color: var(--primary-green)">
                             <i class="bi bi-globe-americas"></i>
                         </div>
                         <h3 class="fw-bold">{{ page.stats.participations }}</h3>

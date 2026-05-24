@@ -74,7 +74,7 @@ layout: default
                         <div class="card-body text-center h3">
                             <span class="fw-bold d-block medal-hm" id="honorableMentions">{{ page.stats.total_hm }}</span>
                             <div class="stats-icon medal-hm">
-                                <i class="bi bi-check-circle"></i>
+                                <i class="bi bi-hm"></i>
                             </div>
                         </div>
                     </div>
@@ -200,17 +200,17 @@ layout: default
                                     {% endif %}
                                 </td>
                                 
-                                <td class="awards-cell" id="olawards-{{olyid}}">
+                                <td class="awards-cell" style="font-size: 18px;" id="olawards-{{olyid}}">
                                     {% assign medals = page[year][idx].awards | split: '' %}
                                     {% for medal in medals %}
                                         {% if medal == '🥇' %}
-                                            <span class="bi-award-fill medal-gold"></span>
+                                            <span class="bi-award-fill medal-gold "></span>
                                         {% elsif medal == '🥈' %}
-                                            <span class="bi-award-fill medal-silver"></span>
+                                            <span class="bi-award-fill medal-silver "></span>
                                         {% elsif medal == '🥉' %}
-                                            <span class="bi-award-fill medal-bronze"></span>
+                                            <span class="bi-award-fill medal-bronze "></span>
                                         {% elsif medal == '📜' %}
-                                            <span class="bi-check-circle medal-hm"></span>
+                                            <span class="bi-hm medal-hm "></span>
                                         {% endif %}
                                     {% endfor %}
                                 </td>
