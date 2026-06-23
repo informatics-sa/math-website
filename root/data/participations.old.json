@@ -1062,6 +1062,30 @@
         }
     },
     {
+        "name": "jbmo",
+        "year": 2026,
+        "start": "2026/6/15",
+        "end": "2026/6/20",
+        "country": "ro",
+        "website": "https://jbmo2026.ssmr.ro",
+        "participants": {
+            "hussain_alomran": "gold",
+            "fares_alkanhal": "silver",
+            "anwar_ghunaim": "silver",
+            "jawad_alnasser": "bronze",
+            "moammal_alsaihati": "bronze",
+            "muhsen_khan": "bronze"
+        },
+        "scores": {
+            "hussain_alomran": [10, 9, 5, 10],
+            "fares_alkanhal": [10, 7, 10, 5],
+            "anwar_ghunaim": [10, 7, 5, 0],
+            "jawad_alnasser": [10, 9, 2, 0],
+            "moammal_alsaihati": [10, 6, 0, 1],
+            "muhsen_khan": [10, 0, 6, 0]
+        }
+    },
+    {
         "name": "imo",
         "year": 2025,
         "start": "2025/7/10",
