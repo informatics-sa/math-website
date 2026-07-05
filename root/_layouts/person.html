@@ -39,7 +39,7 @@ usechartjs: true
                     {% for i in (1..page.participations.count) %}
                     <tr>
                         <td>
-                            <a href="{% if page.lang == 'en' %}/en{% endif %}/participations/{{ page.participations[i].olympiad }}_{{ page.participations[i].year }}">
+                            <a href="{% if page.lang == 'en' %}/en{% endif %}/olympiads/{{ page.participations[i].olympiad }}/{{ page.participations[i].year }}">
                                 {% if page.lang == "en" %}
                                 {{ page.participations[i].enname }}
                                 {% else %}
@@ -71,6 +71,31 @@ usechartjs: true
     </div>
     {% endif %}
 </div>
-<div class="row debug-only">
-
+{% if page.exams %}
+<div class="row debug-only justify-content-center">
+    <div class="col-6">
+        <details>
+            <summary>{{ site.data[page.lang].view_exams_record }}</summary>
+            <table class="table table-striped">
+                <thead>
+                    <th>{{ site.data[page.lang].name }}</th>
+                    <th>{{ site.data[page.lang].date }}</th>
+                    <th>{{ site.data[page.lang].sum }}</th>
+                    <th>{{ site.data[page.lang].rank }}</th>
+                </thead>
+                <tbody>
+                    {% for i in (1..page.exams.count) %}
+                    <tr>
+                        <td><a href="{% if page.lang != site.data.build.primary_lang %}/{{ page.lang }}{% endif %}/exams/{{ page.exams[i].exam.id }}">{{ page.exams[i].exam.name }}</a></td>
+                        <td>{{ page.exams[i].exam.date }}</td>
+                        <td>{{ page.exams[i].sum | round: 2 }}</td>
+                        <td>{{ page.exams[i].rank }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </details>
+    </div>
 </div>
+{% endif %}
+

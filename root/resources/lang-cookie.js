@@ -40,7 +40,7 @@ const LANG_COOKIE_NAME = 'lang';
 const notMultiLingualPrefixes = [
     '/debug',
     '/data',
-    '/editor'
+    '/files'
 ];
 
 function redirectToLang(lang) {

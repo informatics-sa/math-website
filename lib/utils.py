@@ -4,6 +4,20 @@ ROOT_DIR = './root'
 LANGS = ['ar', 'en']
 BLOCKED_FLAGS = ['se']
 
+def load_secret_json(filename):
+    return {}
+    # TEMP
+    with open(f'./lib/Database/{filename}.json', 'r', encoding='utf-8') as f:
+        return json.load(f)
+
+def load_json(filename):
+    try:
+        with open(f'{ROOT_DIR}/data/{filename}.json', 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except FileNotFoundError:
+        return {}
+
+translations = load_json('translations')
 
 def award_emoji(award, dashing_none=False):
     if award == 'gold':
@@ -21,7 +35,7 @@ def default_person(id: str):
         'id': id,
         'participations': [],
         'arname': id,
-        'enname': id.replace('_', ' '), # TODO: split undersc
+        'enname': id.replace('_', ' ').title(), # TODO: split undersc
         'level': -4,
         'graduation': None,
         'codeforces': None
@@ -41,6 +55,10 @@ def format_yml(data: dict, indent_level: int = 0) -> str:
     indent = " " * indent_level
 
     for key, val in data.items():
+
+        if isinstance(key, str) and key.isdigit():
+            key = f'"{key}"'
+
         if type(val) is dict:
             res += indent + f"{str(key)}:\n"
             res += format_yml(val, indent_level + 2)
@@ -51,16 +69,12 @@ def format_yml(data: dict, indent_level: int = 0) -> str:
                 res += format_yml({i + 1: val[i]}, indent_level + 2)
         elif val is None:
             res += indent + f"{str(key)}: null\n"
-        elif type(val) is bool or type(val) is int:
+        elif isinstance(val, (bool, int, float)):
             res += indent + f"{str(key)}: {str(val).lower()}\n"
         else:
             res += indent + f"{str(key)}: \"{str(val)}\"\n"
 
     return res
-
-def load_json(filename):
-    with open(f'{ROOT_DIR}/data/{filename}.json', 'r', encoding='utf-8') as f:
-        return json.load(f)
 
 def write_text(filename: str, txt: str):
     os.makedirs(os.path.dirname(filename), exist_ok=True)
@@ -75,16 +89,21 @@ def write_file(filename: str, data: dict):
         f.write(format_yml(data))
         f.write("---\n")
 
-def write_page(lang: str, filename: str, data: dict):
-    if lang not in LANGS:
-        print(f"Invalid language '{lang}' for page: {filename}")
-        exit(1)
-    data['lang'] = lang
-    
-    if lang == LANGS[0]:
-        write_file('./' + filename, data)
-    else:
-        write_file(lang + '/' + filename, data)
+def write_page(filename: str, data: dict):
+    for lang in LANGS:
+        data['lang'] = lang
+        remove = []
+        for key in data:
+            if isinstance(key, str) and key[0] == '$':
+                remove.append(key)
+                
+        for r in remove:
+            data[r[1:]] = translations[lang][data[r]]
+            del data[r]
+        if lang == LANGS[0]:
+            write_file(f'./{filename}.html', data)
+        else:
+            write_file(f'{lang}/{filename}.html', data)
 
 def test_utils(log: bool = True):
     assert flag_emoji('sa') == '🇸🇦'
