@@ -1,4 +1,9 @@
 {
+    "2026": {
+        "imo": {
+            "exams": ["2026_IMO_day_2", "2026_IMO_day_3", "2026_IMO_day_4"]
+        }
+    },
     "2025": {
         "imo": {
             "exams": ["2025_IMO_day_1", "2025_IMO_day_2", "2025_IMO_day_3", "2025_IMO_day_4"]
