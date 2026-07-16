@@ -6,5 +6,5 @@
     "old_id_system": true,
     "enable_exams_page": true,
     "enable_members_index": false,
-    "enable_image_library": false
+    "enable_image_library": true
 }
