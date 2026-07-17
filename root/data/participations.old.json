@@ -1961,5 +1961,85 @@
             "abdulrahman_nassief": [7, 2, 0, 7, 1, 1],
             "eyad_alqatari": [7, 2, 0, 7, 1, 0]
         }
+    },
+    {
+        "name": "imsc",
+        "year": 2023,
+        "start": "2023-06-19",
+        "end": "2023-07-01",
+        "country": "cn",
+        "website": "https://bimsa.net/imsc/program.html",
+        "participants": {
+            "mahdi_albaik": "silver",
+            "ali_alramadan": "bronze",
+            "muath_alqahtani": "bronze",
+            "hadi_alaithan": "bronze",
+            "abdulrahman_nassief": "hm",
+            "eyad_alqatari": "hm"
+        },
+        "scores": {
+            "mahdi_albaik": [7, 7, 0, 7, 7, 6],
+            "ali_alramadan": [7, 3, 1, 7, 7, 1],
+            "muath_alqahtani": [7, 5, 0, 7, 7, 0],
+            "hadi_alaithan": [5, 2, 0, 7, 7, 3],
+            "abdulrahman_nassief": [7, 2, 0, 7, 1, 1],
+            "eyad_alqatari": [7, 2, 0, 7, 1, 0]
+        }
+    },
+    {
+        "name": "jbmo",
+        "year": 2026,
+        "start": "2026-06-15",
+        "end": "2026-06-20",
+        "country": "ro",
+        "website": "https://jbmo2026.ssmr.ro/results/",
+        "participants": {
+            "faris_alkanhal": "silver",
+            "hussain_alomran": "gold",
+            "mommal_alsaihati": "bronze",
+            "anwar_ghunaim": "silver",
+            "jawad_alnasser": "bronze",
+            "muhsen_khan": "bronze"
+        },
+        "scores": {
+            "faris_alkanhal": [10, 7, 10, 5],
+            "hussain_alomran": [10, 9, 5, 10],
+            "mommal_alsaihati": [10, 6, 0, 1],
+            "anwar_ghunaim": [10, 7, 5, 0],
+            "jawad_alnasser": [10, 9, 2, 0],
+            "muhsen_khan": [10, 0, 6, 0]
+        }
+    },
+    {
+        "name": "apmo",
+        "year": 2026,
+        "start": "2026-03-10",
+        "end": "2026-03-10",
+        "country": "vn",
+        "website": "https://www.apmo-official.org/country_report/SAU/2026",
+        "participants": {
+            "abdulsalam_alsulami": "bronze",
+            "elyas_alfaraj": "bronze",
+            "yousif_alkhalawi": "bronze",
+            "abdulelah_assaggaf": "hm",
+            "mohammed_shaiban": "hm",
+            "abdullah_alamer": "hm",
+            "mohammed_baqer": "hm",
+            "yasir_habibullah": "hm",
+            "abdarahman_mansour": "hm",
+            "ali_alhassan": "hm"
+        },
+        "scores": {
+            "abdulsalam_alsulami": [7, 0, 7, 1, 0],
+            "elyas_alfaraj": [7, 0, 7, 1, 0],
+            "yousif_alkhalawi": [7, 0, 7, 0, 0],
+            "abdulelah_assaggaf": [7, 1, 2, 0, 0],
+            "mohammed_shaiban": [7, 0, 0, 1, 0],
+            "abdullah_alamer": [7, 0, 0, 0, 0],
+            "mohammed_baqer": [7, 0, 0, 0, 0],
+            "yasir_habibullah": [7, 0, 0, 0, 0],
+            "abdarahman_mansour": [7, 0, 0, 0, 0],
+            "ali_alhassan": [7, 0, 0, 0, 0]
+        }
     }
 ] 
