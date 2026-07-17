@@ -2041,5 +2041,21 @@
             "abdarahman_mansour": [7, 0, 0, 0, 0],
             "ali_alhassan": [7, 0, 0, 0, 0]
         }
+    },
+    {
+        "name": "imo",
+        "year": 2026,
+        "start": "2026-07-10",
+        "end": "2026-07-20",
+        "country": "cn",
+        "website": "https://www.imo-official.org/team_r.aspx?code=sau&year=2026",
+        "participants": {
+            "abdullah_alamer": null,
+            "abdulelah_assaggaf": null,
+            "abdulsalam_alsulami": null,
+            "elyas_alfaraj": null,
+            "faris_alkanhal": null,
+            "yosuf_bakheet": null
+        }
     }
 ] 
