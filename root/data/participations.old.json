@@ -2,8 +2,8 @@
     {
         "name": "imo",
         "year": 2010,
-        "start": "2010/7/2",
-        "end": "2010/7/14",
+        "start": "2010-07-02",
+        "end": "2010-07-14",
         "country": "kz",
         "website": "https://www.imo-official.org/team_r.aspx?code=sau&year=2010",
         "participants": {
@@ -26,8 +26,8 @@
     {
         "name": "bmo",
         "year": 2010,
-        "start": "2010/11/25",
-        "end": "2010/11/29",
+        "start": "2010-11-25",
+        "end": "2010-11-29",
         "country": "ro",
         "website": null,
         "participants": {
@@ -42,8 +42,8 @@
     {
         "name": "imo",
         "year": 2011,
-        "start": "2011/7/16",
-        "end": "2011/7/24",
+        "start": "2011-07-16",
+        "end": "2011-07-24",
         "country": "nl",
         "website": "https://www.imo-official.org/team_r.aspx?code=sau&year=2011",
         "participants": {
@@ -66,8 +66,8 @@
     {
         "name": "apmo",
         "year": 2011,
-        "start": "2011/3/8",
-        "end": "2011/3/8",
+        "start": "2011-03-08",
+        "end": "2011-03-08",
         "country": "jp",
         "website": null,
         "participants": {
@@ -79,8 +79,8 @@
     {
         "name": "bmo",
         "year": 2011,
-        "start": "2011/11/25",
-        "end": "2011/11/29",
+        "start": "2011-11-25",
+        "end": "2011-11-29",
         "country": "ro",
         "website": null,
         "participants": {
@@ -97,8 +97,8 @@
     {
         "name": "imo",
         "year": 2012,
-        "start": "2012/7/8",
-        "end": "2012/7/18",
+        "start": "2012-07-08",
+        "end": "2012-07-18",
         "country": "ar",
         "website": "https://www.imo-official.org/team_r.aspx?code=sau&year=2012",
         "participants": {
@@ -121,8 +121,8 @@
     {
         "name": "apmo",
         "year": 2012,
-        "start": "2012/3/8",
-        "end": "2012/3/8",
+        "start": "2012-03-08",
+        "end": "2012-03-08",
         "country": "jp",
         "website": null,
         "participants": {
@@ -135,8 +135,8 @@
     {
         "name": "bmo",
         "year": 2012,
-        "start": "2012/11/25",
-        "end": "2012/11/29",
+        "start": "2012-11-25",
+        "end": "2012-11-29",
         "country": "tr",
         "website": null,
         "participants": {
@@ -153,8 +153,8 @@
     {
         "name": "gmo",
         "year": 2012,
-        "start": "2012/4/2",
-        "end": "2012/4/6",
+        "start": "2012-04-02",
+        "end": "2012-04-06",
         "country": "ae",
         "website": null,
         "participants": {
@@ -169,8 +169,8 @@
     {
         "name": "egmo",
         "year": 2012,
-        "start": "2012/4/10",
-        "end": "2012/4/16",
+        "start": "2012-04-10",
+        "end": "2012-04-16",
         "country": "gb",
         "website": "https://www.egmo.org/egmos/egmo1/",
         "participants": {
@@ -187,8 +187,8 @@
     {
         "name": "jbmo",
         "year": 2013,
-        "start": "2013/6/21",
-        "end": "2013/6/26",
+        "start": "2013-06-21",
+        "end": "2013-06-26",
         "country": "tr",
         "website": "https://jbmo2013.tubitak.gov.tr/",
         "participants": {
@@ -212,8 +212,8 @@
     {
         "name": "imo",
         "year": 2013,
-        "start": "2013/7/18",
-        "end": "2013/7/28",
+        "start": "2013-07-18",
+        "end": "2013-07-28",
         "country": "co",
         "website": "https://www.imo-official.org/team_r.aspx?code=sau&year=2013",
         "participants": {
@@ -236,8 +236,8 @@
     {
         "name": "apmo",
         "year": 2013,
-        "start": "2013/03/08",
-        "end": "2013/03/08",
+        "start": "2013-03-08",
+        "end": "2013-03-08",
         "country": "kz",
         "website": null,
         "participants": {
@@ -256,8 +256,8 @@
     {
         "name": "gmo",
         "year": 2013,
-        "start": "2013/4/1",
-        "end": "2013/4/4",
+        "start": "2013-04-01",
+        "end": "2013-04-04",
         "country": "qa",
         "website": null,
         "participants": {
@@ -272,8 +272,8 @@
     {
         "name": "apmo",
         "year": 2014,
-        "start": "2014/03/08",
-        "end": "2014/03/08",
+        "start": "2014-03-08",
+        "end": "2014-03-08",
         "country": "kz",
         "website": null,
         "participants": {
@@ -285,8 +285,8 @@
     {
         "name": "jbmo",
         "year": 2014,
-        "start": "2014/6/21",
-        "end": "2014/6/26",
+        "start": "2014-06-21",
+        "end": "2014-06-26",
         "country": "mk",
         "website": null,
         "participants": {
@@ -309,8 +309,8 @@
     {
         "name": "imo",
         "year": 2014,
-        "start": "2014/7/3",
-        "end": "2014/7/13",
+        "start": "2014-07-03",
+        "end": "2014-07-13",
         "country": "za",
         "website": "https://www.imo-official.org/team_r.aspx?code=sau&year=2014",
         "participants": {
@@ -333,8 +333,8 @@
     {
         "name": "egmo",
         "year": 2014,
-        "start": "2014/4/14",
-        "end": "2014/4/20",
+        "start": "2014-04-14",
+        "end": "2014-04-20",
         "country": "tr",
         "website": "https://www.egmo.org/egmos/egmo3/",
         "participants": {
@@ -353,8 +353,8 @@
     {
         "name": "bmo",
         "year": 2014,
-        "start": "2014/5/2",
-        "end": "2014/5/7",
+        "start": "2014-05-02",
+        "end": "2014-05-07",
         "country": "bg",
         "website": null,
         "participants": {
@@ -369,8 +369,8 @@
     {
         "name": "gmo",
         "year": 2014,
-        "start": "2014/4/6",
-        "end": "2014/4/9",
+        "start": "2014-04-06",
+        "end": "2014-04-09",
         "country": "om",
         "website": null,
         "participants": {
@@ -385,8 +385,8 @@
     {
         "name": "jbmo",
         "year": 2015,
-        "start": "2015/6/24",
-        "end": "2015/6/29",
+        "start": "2015-06-24",
+        "end": "2015-06-29",
         "country": "rs",
         "website": "https://www.dms.rs/jbmo/",
         "participants": {
@@ -409,8 +409,8 @@
     {
         "name": "apmo",
         "year": 2015,
-        "start": "2015/3/8",
-        "end": "2015/3/8",
+         "start": "2015-03-08",
+        "end": "2015-03-08",
         "country": "kz",
         "website": null,
         "participants": {
@@ -423,8 +423,8 @@
     {
         "name": "imo",
         "year": 2015,
-        "start": "2015/7/4",
-        "end": "2015/7/16",
+        "start": "2015-07-04",
+        "end": "2015-07-16",
         "country": "th",
         "website": "https://www.imo-official.org/team_r.aspx?code=sau&year=2015",
         "participants": {
@@ -447,8 +447,8 @@
     {
         "name": "gmo",
         "year": 2015,
-        "start": "2015/3/21",
-        "end": "2015/3/24",
+        "start": "2015-03-21",
+        "end": "2015-03-24",
         "country": "kw",
         "website": null,
         "participants": {
@@ -463,8 +463,8 @@
     {
         "name": "bmo",
         "year": 2015,
-        "start": "2015/5/3",
-        "end": "2015/5/8",
+        "start": "2015-05-03",
+        "end": "2015-05-08",
         "country": "gr",
         "website": "https://www.hms.gr/32bmo2015/main.htm",
         "participants": {
@@ -485,8 +485,8 @@
     {
         "name": "egmo",
         "year": 2015,
-        "start": "2015/4/10",
-        "end": "2015/4/16",
+        "start": "2015-04-10",
+        "end": "2015-04-16",
         "country": "by",
         "website": "https://www.egmo.org/egmos/egmo4/",
         "participants": {
@@ -505,8 +505,8 @@
     {
         "name": "apmo",
         "year": 2016,
-        "start": "2016/3/8",
-        "end": "2016/3/8",
+        "start": "2016-03-08",
+        "end": "2016-03-08",
         "country": "mx",
         "website": "https://www.apmo-official.org/country_report/sau/2016",
         "participants": {
@@ -537,8 +537,8 @@
     {
         "name": "jbmo",
         "year": 2016,
-        "start": "2016/6/24",
-        "end": "2016/6/29",
+        "start": "2016-06-24",
+        "end": "2016-06-29",
         "country": "ro",
         "website": "https://jbmo.ssmr.ro",
         "participants": {
@@ -561,8 +561,8 @@
     {
         "name": "imo",
         "year": 2016,
-        "start": "2016/7/6",
-        "end": "2016/7/16",
+        "start": "2016-07-06",
+        "end": "2016-07-16",
         "country": "hk",
         "website": "https://www.imo-official.org/team_r.aspx?code=sau&year=2016",
         "participants": {
@@ -585,8 +585,8 @@
     {
         "name": "gmo",
         "year": 2016,
-        "start": "2016/4/3",
-        "end": "2016/4/6",
+        "start": "2016-04-03",
+        "end": "2016-04-06",
         "country": "sa",
         "website": null,
         "participants": {
@@ -601,8 +601,8 @@
     {
         "name": "egmo",
         "year": 2016,
-        "start": "2016/4/10",
-        "end": "2016/4/16",
+        "start": "2016-04-10",
+        "end": "2016-04-16",
         "country": "ro",
         "website": "https://www.egmo.org/egmos/egmo5/",
         "participants": {
@@ -621,8 +621,8 @@
     {
         "name": "bmo",
         "year": 2016,
-        "start": "2016/5/5",
-        "end": "2016/5/10",
+        "start": "2016-05-05",
+        "end": "2016-05-10",
         "country": "al",
         "website": null,
         "participants": {
@@ -645,8 +645,8 @@
     {
         "name": "apmo",
         "year": 2017,
-        "start": "2017/3/14",
-        "end": "2017/3/14",
+       "start": "2017-03-14",
+        "end": "2017-03-14",
         "country": "mx",
         "website": "https://www.apmo-official.org/country_report/sau/2017",
         "participants": {
@@ -678,8 +678,8 @@
     {
         "name": "jbmo",
         "year": 2017,
-        "start": "2017/6/24",
-        "end": "2017/6/29",
+        "start": "2017-06-24",
+        "end": "2017-06-29",
         "country": "bg",
         "website": "https://www.jbmo2017.bg/",
         "participants": {
@@ -694,8 +694,8 @@
     {
         "name": "imo",
         "year": 2017,
-        "start": "2017/7/17",
-        "end": "2017/7/23",
+        "start": "2017-07-17",
+        "end": "2017-07-23",
         "country": "br",
         "website": "https://www.imo-official.org/team_r.aspx?code=sau&year=2017",
         "participants": {
@@ -718,8 +718,8 @@
     {
         "name": "gmo",
         "year": 2017,
-        "start": "2017/10/11",
-        "end": "2017/10/15",
+        "start": "2017-10-11",
+        "end": "2017-10-15",
         "country": "sa",
         "website": null,
         "participants": {
@@ -734,8 +734,8 @@
     {
         "name": "egmo",
         "year": 2017,
-        "start": "2017/4/6",
-        "end": "2017/4/12",
+        "start": "2017-04-06",
+        "end": "2017-04-12",
         "country": "ch",
         "website": "https://www.egmo.org/egmos/egmo6/",
         "participants": {
@@ -754,8 +754,8 @@
     {
         "name": "bmo",
         "year": 2017,
-        "start": "2017/5/2",
-        "end": "2017/5/7",
+        "start": "2017-05-02",
+        "end": "2017-05-07",
         "country": "mk",
         "website": null,
         "participants": {
@@ -770,8 +770,8 @@
     {
         "name": "apmo",
         "year": 2018,
-        "start": "2018/3/13",
-        "end": "2018/3/13",
+        "start": "2018-03-13",
+        "end": "2018-03-13",
         "country": "mx",
         "website": "https://www.apmo-official.org/country_report/sau/2018",
         "participants": {
@@ -802,8 +802,8 @@
     {
         "name": "jbmo",
         "year": 2018,
-        "start": "2018/6/19",
-        "end": "2018/6/24",
+        "start": "2018-06-19",
+        "end": "2018-06-24",
         "country": "gr",
         "website": "https://www.hms.gr/22jbmo2018/",
         "participants": {
@@ -826,8 +826,8 @@
     {
         "name": "imo",
         "year": 2018,
-        "start": "2018/7/8",
-        "end": "2018/7/14",
+        "start": "2018-07-08",
+        "end": "2018-07-14",
         "country": "ro",
         "website": "https://www.imo-official.org/team_r.aspx?code=sau&year=2018",
         "participants": {
@@ -850,8 +850,8 @@
     {
         "name": "amo",
         "year": 2018,
-        "start": "2018/11/25",
-        "end": "2018/11/29",
+        "start": "2018-11-25",
+        "end": "2018-11-29",
         "country": "sa",
         "website": null,
         "participants": {
@@ -864,8 +864,8 @@
     {
         "name": "egmo",
         "year": 2018,
-        "start": "2018/4/9",
-        "end": "2018/4/15",
+        "start": "2018-04-09",
+        "end": "2018-04-15",
         "country": "it",
         "website": "https://www.egmo.org/egmos/egmo7/",
         "participants": {
@@ -884,8 +884,8 @@
     {
         "name": "bmo",
         "year": 2018,
-        "start": "2018/5/7",
-        "end": "2018/5/12",
+        "start": "2018-05-07",
+        "end": "2018-05-12",
         "country": "rs",
         "website": "https://bmo2018.dms.rs/",
         "participants": {
@@ -908,8 +908,8 @@
     {
         "name": "apmo",
         "year": 2019,
-        "start": "2019/3/12",
-        "end": "2019/3/12",
+        "start": "2019-03-12",
+        "end": "2019-03-12",
         "country": "mx",
         "website": "https://www.apmo-official.org/country_report/sau/2019",
         "participants": {
@@ -940,8 +940,8 @@
     {
         "name": "jbmo",
         "year": 2019,
-        "start": "2019/6/20",
-        "end": "2019/6/25",
+        "start": "2019-06-20",
+        "end": "2019-06-25",
         "country": "cy",
         "website": "https://www.cms.org.cy/pages/competitions/jbmo-2019/jbmo-2019",
         "participants": {
@@ -963,8 +963,8 @@
     {
         "name": "imo",
         "year": 2019,
-        "start": "2019/7/11",
-        "end": "2019/7/22",
+        "start": "2019-07-11",
+        "end": "2019-07-22",
         "country": "gb",
         "website": "https://www.imo-official.org/team_r.aspx?code=sau&year=2019",
         "participants": {
@@ -987,8 +987,8 @@
     {
         "name": "gmo",
         "year": 2019,
-        "start": "2019/10/6",
-        "end": "2019/10/10",
+        "start": "2019-10-06",
+        "end": "2019-10-10",
         "country": "om",
         "website": null,
         "participants": {
@@ -1003,8 +1003,8 @@
     {
         "name": "egmo",
         "year": 2019,
-        "start": "2019/4/7",
-        "end": "2019/4/13",
+        "start": "2019-04-07",
+        "end": "2019-04-13",
         "country": "ua",
         "website": "https://www.egmo.org/egmos/egmo8/",
         "participants": {
@@ -1023,8 +1023,8 @@
     {
         "name": "bmo",
         "year": 2019,
-        "start": "2019/4/30",
-        "end": "2019/5/5",
+        "start": "2019-04-30",
+        "end": "2019-05-05",
         "country": "md",
         "website": null,
         "participants": {
@@ -1047,8 +1047,8 @@
     {
         "name": "apmo",
         "year": 2020,
-        "start": "2020/3/10",
-        "end": "2020/3/10",
+        "start": "2020-03-10",
+        "end": "2020-03-10",
         "country": "id",
         "website": "https://www.apmo-official.org/country_report/sau/2020",
         "participants": {
@@ -1080,8 +1080,8 @@
     {
         "name": "jbmo",
         "year": 2020,
-        "start": "2020/9/9",
-        "end": "2020/9/13",
+        "start": "2020-09-09",
+        "end": "2020-09-13",
         "country": "gr",
         "website": "https://www.hms.gr/24jbmo2020/index.html",
         "participants": {
@@ -1104,8 +1104,8 @@
     {
         "name": "imo",
         "year": 2020,
-        "start": "2020/9/21",
-        "end": "2020/9/22",
+        "start": "2020-09-21",
+        "end": "2020-09-22",
         "country": "ru",
         "website": "https://www.imo-official.org/team_r.aspx?code=sau&year=2020",
         "participants": {
@@ -1128,8 +1128,8 @@
     {
         "name": "cmc",
         "year": 2020,
-        "start": "2020/1/1",
-        "end": "2020/12/31",
+        "start": "2020-07-13",
+        "end": "2020-07-14",
         "country": "us",
         "website": null,
         "participants": {
@@ -1147,8 +1147,8 @@
     {
         "name": "egmo",
         "year": 2020,
-        "start": "2020/4/15",
-        "end": "2020/4/21",
+        "start": "2020-04-15",
+        "end": "2020-04-21",
         "country": "nl",
         "website": "https://www.egmo.org/egmos/egmo9/",
         "participants": {
@@ -1167,8 +1167,8 @@
     {
         "name": "bmo",
         "year": 2020,
-        "start": "2020/10/30",
-        "end": "2020/11/5",
+        "start": "2020-10-30",
+        "end": "2020-11-05",
         "country": "ro",
         "website": "https://bmo2020.ssmr.ro",
         "participants": {
@@ -1191,8 +1191,8 @@
     {
         "name": "apmo",
         "year": 2021,
-        "start": "2021/3/9",
-        "end": "2021/3/9",
+        "start": "2021-03-09",
+        "end": "2021-03-09",
         "country": "id",
         "website": "https://www.apmo-official.org/country_report/sau/2021",
         "participants": {
@@ -1223,8 +1223,8 @@
     {
         "name": "jbmo",
         "year": 2021,
-        "start": "2021/6/29",
-        "end": "2021/7/5",
+        "start": "2021-06-29",
+        "end": "2021-07-05",
         "country": "md",
         "website": "https://jbmo2021.ance.gov.md/",
         "participants": {
@@ -1247,8 +1247,8 @@
     {
         "name": "imo",
         "year": 2021,
-        "start": "2021/7/14",
-        "end": "2021/7/24",
+        "start": "2021-07-14",
+        "end": "2021-07-24",
         "country": "ru",
         "website": "https://www.imo-official.org/team_r.aspx?code=sau&year=2021",
         "participants": {
@@ -1271,8 +1271,8 @@
     {
         "name": "amo",
         "year": 2021,
-        "start": "2021/12/21",
-        "end": "2021/12/26",
+        "start": "2021-12-21",
+        "end": "2021-12-26",
         "country": "sa",
         "website": null,
         "participants": {
@@ -1286,8 +1286,8 @@
     {
         "name": "egmo",
         "year": 2021,
-        "start": "2021/4/9",
-        "end": "2021/4/15",
+        "start": "2021-04-09",
+        "end": "2021-04-15",
         "country": "ge",
         "website": "https://www.egmo.org/egmos/egmo10/",
         "participants": {
@@ -1306,8 +1306,8 @@
     {
         "name": "apmo",
         "year": 2022,
-        "start": "2022/3/8",
-        "end": "2022/3/8",
+        "start": "2022-03-08",
+        "end": "2022-03-08",
         "country": "id",
         "website": "https://www.apmo-official.org/country_report/sau/2022",
         "participants": {
@@ -1338,8 +1338,8 @@
     {
         "name": "jbmo",
         "year": 2022,
-        "start": "2022/6/28",
-        "end": "2022/7/3",
+        "start": "2022-06-28",
+        "end": "2022-07-03",
         "country": "ba",
         "website": "https://jbmo2022.pmf.unsa.ba/",
         "participants": {
@@ -1362,8 +1362,8 @@
     {
         "name": "imo",
         "year": 2022,
-        "start": "2022/7/10",
-        "end": "2022/7/18",
+        "start": "2022-07-10",
+        "end": "2022-07-18",
         "country": "no",
         "website": "https://www.imo-official.org/team_r.aspx?code=sau&year=2022",
         "participants": {
@@ -1386,8 +1386,8 @@
     {
         "name": "gmo",
         "year": 2022,
-        "start": "2022/3/13",
-        "end": "2022/3/17",
+        "start": "2022-03-13",
+        "end": "2022-03-17",
         "country": "sa",
         "website": null,
         "participants": {
@@ -1402,8 +1402,8 @@
     {
         "name": "egmo",
         "year": 2022,
-        "start": "2022/4/6",
-        "end": "2022/4/12",
+        "start": "2022-04-06",
+        "end": "2022-04-12",
         "country": "hu",
         "website": "https://www.egmo.org/egmos/egmo11/",
         "participants": {
@@ -1422,8 +1422,8 @@
     {
         "name": "bmo",
         "year": 2022,
-        "start": "2022/5/4",
-        "end": "2022/5/9",
+        "start": "2022-05-04",
+        "end": "2022-05-09",
         "country": "cy",
         "website": "https://www.cms.org.cy/pages/competitions/bmo-2022-4-9-may-2022/39th-balkan-mathematical-olympiad-–-bmo-2022-second-announcement1647515569",
         "participants": {
@@ -1446,8 +1446,8 @@
     {
         "name": "apmo",
         "year": 2023,
-        "start": "2023/3/14",
-        "end": "2023/3/14",
+        "start": "2023-03-14",
+        "end": "2023-03-14",
         "country": "br",
         "website": "https://www.apmo-official.org/country_report/sau/2023",
         "participants": {
@@ -1478,8 +1478,8 @@
     {
         "name": "jbmo",
         "year": 2023,
-        "start": "2023/6/23",
-        "end": "2023/6/28",
+        "start": "2023-06-23",
+        "end": "2023-06-28",
         "country": "al",
         "website": "https://jbmo2023.al",
         "participants": {
@@ -1502,8 +1502,8 @@
     {
         "name": "imo",
         "year": 2023,
-        "start": "2023/7/2",
-        "end": "2023/7/13",
+        "start": "2023-07-02",
+        "end": "2023-07-13",
         "country": "jp",
         "website": "https://www.imo-official.org/team_r.aspx?code=sau&year=2023",
         "participants": {
@@ -1526,8 +1526,8 @@
     {
         "name": "imsc",
         "year": 2023,
-        "start": "2023/1/1",
-        "end": "2023/12/31",
+        "start": "2023-06-19",
+        "end": "2023-07-01",
         "country": "cn",
         "website": "https://bimsa.net/imsc/program.html",
         "participants": {
@@ -1550,8 +1550,8 @@
     {
         "name": "egmo",
         "year": 2023,
-        "start": "2023/4/13",
-        "end": "2023/4/19",
+        "start": "2023-04-13",
+        "end": "2023-04-19",
         "country": "si",
         "website": "https://www.egmo.org/egmos/egmo12/",
         "participants": {
@@ -1570,8 +1570,8 @@
     {
         "name": "bmo",
         "year": 2023,
-        "start": "2023/5/8",
-        "end": "2023/5/13",
+        "start": "2023-05-08",
+        "end": "2023-05-13",
         "country": "tr",
         "website": "https://bmo2023.tubitak.gov.tr/",
         "participants": {
@@ -1594,8 +1594,8 @@
     {
         "name": "gmo",
         "year": 2023,
-        "start": "2023/3/10",
-        "end": "2023/3/14",
+        "start": "2023-03-10",
+        "end": "2023-03-14",
         "country": "bh",
         "website": null,
         "participants": {
@@ -1610,8 +1610,8 @@
     {
         "name": "apmo",
         "year": 2024,
-        "start": "2024/3/12",
-        "end": "2024/3/12",
+        "start": "2024-03-12",
+        "end": "2024-03-12",
         "country": "br",
         "website": "https://www.apmo-official.org/country_report/sau/2024",
         "participants": {
@@ -1642,8 +1642,8 @@
     {
         "name": "jbmo",
         "year": 2024,
-        "start": "2024/6/25",
-        "end": "2024/6/30",
+        "start": "2024-06-25",
+        "end": "2024-06-30",
         "country": "tr",
         "website": "https://jbmo2024.tubitak.gov.tr/participants",
         "participants": {
@@ -1666,8 +1666,8 @@
     {
         "name": "imo",
         "year": 2024,
-        "start": "2024/7/10",
-        "end": "2024/7/20",
+        "start": "2024-07-10",
+        "end": "2024-07-20",
         "country": "gb",
         "website": "https://www.imo-official.org/team_r.aspx?code=sau&year=2024",
         "participants": {
@@ -1690,8 +1690,8 @@
     {
         "name": "egmo",
         "year": 2024,
-        "start": "2024/4/11",
-        "end": "2024/4/17",
+        "start": "2024-04-11",
+        "end": "2024-04-17",
         "country": "ge",
         "website": "https://www.egmo.org/egmos/egmo13/",
         "participants": {
@@ -1710,8 +1710,8 @@
     {
         "name": "bmo",
         "year": 2024,
-        "start": "2024/5/27",
-        "end": "2024/5/2",
+        "start": "2024-04-27",
+        "end": "2024-05-02",
         "country": "bg",
         "website": "https://bmo2024.org/",
         "participants": {
@@ -1734,8 +1734,8 @@
     {
         "name": "amo",
         "year": 2024,
-        "start": "2024/11/10",
-        "end": "2024/11/14",
+        "start": "2024-11-10",
+        "end": "2024-11-14",
         "country": "qa",
         "website": null,
         "participants": {
@@ -1749,8 +1749,8 @@
     {
         "name": "gmo",
         "year": 2024,
-        "start": "2024/10/11",
-        "end": "2024/10/15",
+        "start": "2024-10-11",
+        "end": "2024-10-15",
         "country": "sa",
         "website": null,
         "participants": {
@@ -1765,8 +1765,8 @@
     {
         "name": "apmo",
         "year": 2025,
-        "start": "2025/3/12",
-        "end": "2025/3/12",
+        "start": "2025-03-12",
+        "end": "2025-03-12",
         "country": "br",
         "website": "https://www.apmo-official.org/country_report/sau/2025",
         "participants": {
@@ -1797,8 +1797,8 @@
     {
         "name": "jbmo",
         "year": 2025,
-        "start": "2025/6/24",
-        "end": "2025/6/29",
+        "start": "2025-06-24",
+        "end": "2025-06-29",
         "country": "mk",
         "website": "https://jbmo2025.mk/",
         "participants": {
@@ -1821,8 +1821,8 @@
     {
         "name": "imo",
         "year": 2025,
-        "start": "2025/7/10",
-        "end": "2025/7/20",
+        "start": "2025-07-10",
+        "end": "2025-07-20",
         "country": "au",
         "website": "https://www.imo-official.org/team_r.aspx?code=sau&year=2025",
         "participants": {
@@ -1845,8 +1845,8 @@
     {
         "name": "egmo",
         "year": 2025,
-        "start": "2025/4/11",
-        "end": "2025/4/17",
+        "start": "2025-04-11",
+        "end": "2025-04-17",
         "country": "xk",
         "website": "https://www.egmo.org/egmos/egmo14/",
         "participants": {
@@ -1865,8 +1865,8 @@
     {
         "name": "bmo",
         "year": 2025,
-        "start": "2025/4/25",
-        "end": "2025/4/30",
+       "start": "2025-04-25",
+        "end": "2025-04-30",
         "country": "ba",
         "website": "https://bmo2025.pmf.unsa.ba/",
         "participants": {
@@ -1889,8 +1889,8 @@
     {
         "name": "iomhss",
         "year": 2025,
-        "start": "2025/4/21",
-        "end": "2025/4/26",
+        "start": "2025-04-21",
+        "end": "2025-04-26",
         "country": "tm",
         "website": null,
         "participants": {
@@ -1902,8 +1902,8 @@
     {
         "name": "jiomhss",
         "year": 2025,
-        "start": "2025/4/21",
-        "end": "2025/4/26",
+        "start": "2025-04-21",
+        "end": "2025-04-26",
         "country": "tm",
         "website": null,
         "participants": {
@@ -1918,8 +1918,8 @@
     {
         "name": "egmo",
         "year": 2026,
-        "start": "2026/4/9",
-        "end": "2026/4/15",
+         "start": "2026-04-09",
+        "end": "2026-04-15",
         "country": "fr",
         "website": "https://www.egmo.org/egmos/egmo15/",
         "participants": {
@@ -1938,8 +1938,8 @@
     {
         "name": "bmo",
         "year": 2026,
-        "start": "2026/5/3",
-        "end": "2026/5/8",
+        "start": "2026-05-03",
+        "end": "2026-05-08",
         "country": "gr",
         "website": "https://hms.gr/43bmo2026/",
         "participants": {
@@ -1962,13 +1962,13 @@
     {
         "name": "jbmo",
         "year": 2026,
-        "start": "2026/6/15",
-        "end": "2026/6/20",
+        "start": "2026-06-15",
+        "end": "2026-06-20",
         "country": "ro",
         "website": "https://jbmo2026.ssmr.ro",
         "participants": {
             "hussain_alomran": "gold",
-            "fares_alkanhal": "silver",
+            "faris_alkanhal": "silver",
             "anwar_ghunaim": "silver",
             "jawad_alnasser": "bronze",
             "moammal_alsaihati": "bronze",
@@ -1976,7 +1976,7 @@
         },
         "scores": {
             "hussain_alomran": [10, 9, 5, 10],
-            "fares_alkanhal": [10, 7, 10, 5],
+            "faris_alkanhal": [10, 7, 10, 5],
             "anwar_ghunaim": [10, 7, 5, 0],
             "jawad_alnasser": [10, 9, 2, 0],
             "moammal_alsaihati": [10, 6, 0, 1],
@@ -1986,8 +1986,8 @@
     {
         "name": "apmo",
         "year": 2026,
-        "start": "2026/3/12",
-        "end": "2026/3/12",
+         "start": "2026-03-10",
+        "end": "2026-03-10",
         "country": "vn",
         "website": "https://www.apmo-official.org/country_report/SAU/2026",
         "participants": {
