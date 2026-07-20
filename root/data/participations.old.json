@@ -2023,20 +2023,20 @@
         "country": "cn",
         "website": "https://www.imo-official.org/team_r.aspx?code=sau&year=2026",
         "participants": {
-            "abdullah_alamer": "bronze",
-            "abdulelah_assaggaf": "silver",
             "abdulsalam_alsulami": "silver",
+            "abdulelah_assaggaf": "silver",
+            "yosuf_bakheet": "silver",
+            "abdullah_alamer": "bronze",
             "elyas_alfaraj": "bronze",
-            "faris_alkanhal": "bronze",
-            "yosuf_bakheet": "silver"
+            "faris_alkanhal": "bronze"
         },
         "scores": {
-            "abdullah_alamer": [7, 2, 0, 7, 2, 0],
-            "abdulelah_assaggaf": [7, 1, 0, 7, 7, 1],
             "abdulsalam_alsulami": [7, 4, 0, 7, 5, 0],
+            "abdulelah_assaggaf": [7, 1, 0, 7, 7, 1],
+            "yosuf_bakheet": [7, 4, 0, 7, 7, 0],
+            "abdullah_alamer": [7, 2, 0, 7, 2, 0],
             "elyas_alfaraj": [7, 1, 1, 7, 3, 0],
-            "faris_alkanhal": [7, 1, 0, 6, 2, 0],
-            "yosuf_bakheet": [7, 4, 0, 7, 7, 0]
+            "faris_alkanhal": [7, 1, 0, 6, 2, 0]
         }
     }
 ] 
