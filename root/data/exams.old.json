@@ -1,6 +1,7 @@
 {
     "2026_IMO_Cancelled_day_1": {
         "id": "2026_IMO_Cancelled_day_1",
+		"name": "TST 2026 Cancelled Day 1",
 		"arname": "TST 2026 Cancelled Day 1",
 		"enname": "TST 2026 Cancelled Day 1",
         "date": "2026-03-28",
@@ -26,7 +27,8 @@
     },
     "2026_IMO_day_1": {
         "id": "2026_IMO_day_1",
-        "arname": "TST 2026 Day 1",
+        "name": "TST 2026 Day 1",
+		"arname": "TST 2026 Day 1",
 		"enname": "TST 2026 Day 1",
         "date": "2026-04-02",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
@@ -51,7 +53,8 @@
     
     "2026_IMO_day_2": {
         "id": "2026_IMO_day_2",
-        "arname": "TST 2026 Day 2",
+        "name": "TST 2026 Day 2",
+		"arname": "TST 2026 Day 2",
 		"enname": "TST 2026 Day 2",
         "date": "2026-03-29",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
@@ -76,7 +79,8 @@
     
     "2026_IMO_day_3": {
         "id": "2026_IMO_day_3",
-        "arname": "TST 2026 Day 3",
+        "name": "TST 2026 Day 3",
+		"arname": "TST 2026 Day 3",
 		"enname": "TST 2026 Day 3",
         "date": "2026-03-31",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
@@ -101,7 +105,8 @@
     
     "2026_IMO_day_4": {
         "id": "2026_IMO_day_4",
-        "arname": "TST 2026 Day 4",
+        "name": "TST 2026 Day 4",
+		"arname": "TST 2026 Day 4",
 		"enname": "TST 2026 Day 4",
         "date": "2026-04-01",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
@@ -126,7 +131,8 @@
     
     "2025_IMO_day_1": {
         "id": "2025_IMO_day_1",
-        "arname": "TST 2025 Day 1",
+        "name": "TST 2025 Day 1",
+		"arname": "TST 2025 Day 1",
 		"enname": "TST 2025 Day 1",
         "date": "2025-02-18",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
@@ -147,7 +153,8 @@
     
     "2025_IMO_day_2": {
         "id": "2025_IMO_day_2",
-        "arname": "TST 2025 Day 2",
+        "name": "TST 2025 Day 2",
+		"arname": "TST 2025 Day 2",
 		"enname": "TST 2025 Day 2",
         "date": "2025-02-19",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
@@ -168,7 +175,8 @@
     
     "2025_IMO_day_3": {
         "id": "2025_IMO_day_3",
-        "arname": "TST 2025 Day 3",
+        "name": "TST 2025 Day 3",
+		"arname": "TST 2025 Day 3",
 		"enname": "TST 2025 Day 3",
         "date": "2025-02-22",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
@@ -189,7 +197,8 @@
     
     "2025_IMO_day_4": {
         "id": "2025_IMO_day_4",
-        "arname": "TST 2025 Day 4",
+        "name": "TST 2025 Day 4",
+		"arname": "TST 2025 Day 4",
 		"enname": "TST 2025 Day 4",
         "date": "2025-02-23",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
@@ -210,7 +219,8 @@
     
     "2024_IMO_day_1": {
         "id": "2024_IMO_day_1",
-        "arname": "TST 2024 Day 1",
+        "name": "TST 2024 Day 1",
+		"arname": "TST 2024 Day 1",
 		"enname": "TST 2024 Day 1",
         "date": "2024-02-26",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
@@ -230,7 +240,8 @@
     },
      "2024_IMO_day_2": {
         "id": "2024_IMO_day_2",
-        "arname": "TST 2024 Day 2",
+        "name": "TST 2024 Day 2",
+		"arname": "TST 2024 Day 2",
 		"enname": "TST 2024 Day 2",
         "date": "2024-02-27",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
@@ -250,7 +261,8 @@
     },
      "2024_IMO_day_3": {
         "id": "2024_IMO_day_3",
-        "arname": "TST 2024 Day 3",
+        "name": "TST 2024 Day 3",
+		"arname": "TST 2024 Day 3",
 		"enname": "TST 2024 Day 3",
         "date": "2024-03-02",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
@@ -270,7 +282,8 @@
     },
    "2024_IMO_day_4": {
         "id": "2024_IMO_day_4",
-        "arname": "TST 2024 Day 4",
+        "name": "TST 2024 Day 4",
+		"arname": "TST 2024 Day 4",
 		"enname": "TST 2024 Day 4",
         "date": "2024-03-03",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
@@ -290,7 +303,8 @@
     },
     "2023_IMO_day_1": {
         "id": "2023_IMO_day_1",
-        "arname": "TST 2023 Day 1",
+        "name": "TST 2023 Day 1",
+		"arname": "TST 2023 Day 1",
 		"enname": "TST 2023 Day 1",
         "date": "2023-03-01",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
@@ -311,7 +325,8 @@
     },
     "2023_IMO_day_2": {
         "id": "2023_IMO_day_2",
-        "arname": "TST 2023 Day 2",
+        "name": "TST 2023 Day 2",
+		"arname": "TST 2023 Day 2",
 		"enname": "TST 2023 Day 2",
         "date": "2023-03-02",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
@@ -332,7 +347,8 @@
     },
    "2023_IMO_day_3": {
         "id": "2023_IMO_day_3",
-        "arname": "TST 2023 Day 3",
+        "name": "TST 2023 Day 3",
+		"arname": "TST 2023 Day 3",
 		"enname": "TST 2023 Day 3",
         "date": "2023-03-04",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
@@ -353,7 +369,8 @@
     },
     "2023_IMO_day_4": {
         "id": "2023_IMO_day_4",
-        "arname": "TST 2023 Day 4",
+        "name": "TST 2023 Day 4",
+		"arname": "TST 2023 Day 4",
 		"enname": "TST 2023 Day 4",
         "date": "2023-03-05",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
@@ -374,7 +391,8 @@
     },
      "2022_IMO_day_1": {
         "id": "2022_IMO_day_1",
-        "arname": "TST 2022 Day 1",
+        "name": "TST 2022 Day 1",
+		"arname": "TST 2022 Day 1",
 		"enname": "TST 2022 Day 1",
         "date": "2022-05-26",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
@@ -402,7 +420,8 @@
     },
      "2022_IMO_day_2": {
         "id": "2022_IMO_day_2",
-        "arname": "TST 2022 Day 2",
+        "name": "TST 2022 Day 2",
+		"arname": "TST 2022 Day 2",
 		"enname": "TST 2022 Day 2",
         "date": "2022-05-26",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
@@ -430,7 +449,8 @@
     },
      "2022_IMO_day_3": {
         "id": "2022_IMO_day_3",
-        "arname": "TST 2022 Day 3",
+        "name": "TST 2022 Day 3",
+		"arname": "TST 2022 Day 3",
 		"enname": "TST 2022 Day 3",
         "date": "2022-05-26",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
@@ -458,7 +478,8 @@
     },
      "2022_IMO_day_4": {
         "id": "2022_IMO_day_4",
-        "arname": "TST 2022 Day 4",
+        "name": "TST 2022 Day 4",
+		"arname": "TST 2022 Day 4",
 		"enname": "TST 2022 Day 4",
         "date": "2022-05-26",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
@@ -486,7 +507,8 @@
     },
      "2021_IMO_day_1": {
         "id": "2021_IMO_day_1",
-        "arname": "TST 2021 Day 1",
+        "name": "TST 2021 Day 1",
+		"arname": "TST 2021 Day 1",
 		"enname": "TST 2021 Day 1",
         "date": "2021-05-26",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
@@ -517,7 +539,8 @@
     },
      "2021_IMO_day_2": {
         "id": "2021_IMO_day_2",
-        "arname": "TST 2021 Day 2",
+        "name": "TST 2021 Day 2",
+		"arname": "TST 2021 Day 2",
 		"enname": "TST 2021 Day 2",
         "date": "2021-05-26",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
@@ -548,7 +571,8 @@
     },
      "2021_IMO_day_3": {
         "id": "2021_IMO_day_3",
-        "arname": "TST 2021 Day 3",
+        "name": "TST 2021 Day 3",
+		"arname": "TST 2021 Day 3",
 		"enname": "TST 2021 Day 3",
         "date": "2021-05-26",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
@@ -579,7 +603,8 @@
     },
      "2021_IMO_day_4": {
         "id": "2021_IMO_day_4",
-        "arname": "TST 2021 Day 4",
+        "name": "TST 2021 Day 4",
+		"arname": "TST 2021 Day 4",
 		"enname": "TST 2021 Day 4",
         "date": "2021-05-26",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
@@ -610,7 +635,8 @@
     },
      "2020_IMO_pre_tst": {
         "id": "2020_IMO_pre_tst",
-        "arname": "Pre IMO TST 2020",
+        "name": "Pre IMO TST 2020",
+		"arname": "Pre IMO TST 2020",
 		"enname": "Pre IMO TST 2020",
         "date": "2020-05-26",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
@@ -635,7 +661,8 @@
     },
      "2020_IMO_day_1": {
         "id": "2020_IMO_day_1",
-        "arname": "TST 2020 Day 1",
+        "name": "TST 2020 Day 1",
+		"arname": "TST 2020 Day 1",
 		"enname": "TST 2020 Day 1",
         "date": "2020-05-26",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
@@ -659,7 +686,8 @@
     },
      "2020_IMO_day_2": {
         "id": "2020_IMO_day_2",
-        "arname": "TST 2020 Day 2",
+        "name": "TST 2020 Day 2",
+		"arname": "TST 2020 Day 2",
 		"enname": "TST 2020 Day 2",
         "date": "2020-05-26",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
@@ -683,7 +711,8 @@
     },
       "2020_IMO_day_3": {
         "id": "2020_IMO_day_3",
-        "arname": "TST 2020 Day 3",
+        "name": "TST 2020 Day 3",
+		"arname": "TST 2020 Day 3",
 		"enname": "TST 2020 Day 3",
         "date": "2020-05-26",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
@@ -707,7 +736,8 @@
     },
      "2020_IMO_day_4": {
         "id": "2020_IMO_day_4",
-        "arname": "TST 2020 Day 4",
+        "name": "TST 2020 Day 4",
+		"arname": "TST 2020 Day 4",
 		"enname": "TST 2020 Day 4",
         "date": "2020-05-26",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
@@ -731,7 +761,8 @@
     },
      "2025_JBMO_day_1": {
         "id": "2025_JBMO_day_1",
-        "arname": "TST 2025 Day 1",
+        "name": "TST 2025 Day 1",
+		"arname": "TST 2025 Day 1",
 		"enname": "TST 2025 Day 1",
         "date": "2025-05-18",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
@@ -757,7 +788,8 @@
     },
      "2025_JBMO_day_2": {
         "id": "2025_JBMO_day_2",
-        "arname": "TST 2025 Day 2",
+        "name": "TST 2025 Day 2",
+		"arname": "TST 2025 Day 2",
 		"enname": "TST 2025 Day 2",
         "date": "2025-05-19",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
@@ -783,7 +815,8 @@
     },
      "2024_JBMO_day_1": {
         "id": "2024_JBMO_day_1",
-        "arname": "TST 2024 Day 1",
+        "name": "TST 2024 Day 1",
+		"arname": "TST 2024 Day 1",
 		"enname": "TST 2024 Day 1",
         "date": "2024-02-17",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
@@ -803,7 +836,8 @@
     },
      "2024_JBMO_day_2": {
         "id": "2024_JBMO_day_2",
-        "arname": "TST 2024 Day 2",
+        "name": "TST 2024 Day 2",
+		"arname": "TST 2024 Day 2",
 		"enname": "TST 2024 Day 2",
         "date": "2024-02-18",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
@@ -823,7 +857,8 @@
     },
      "2023_JBMO_day_1": {
         "id": "2023_JBMO_day_1",
-        "arname": "TST 2023 Day 1",
+        "name": "TST 2023 Day 1",
+		"arname": "TST 2023 Day 1",
 		"enname": "TST 2023 Day 1",
         "date": "2023-02-17",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
@@ -846,7 +881,8 @@
     },
      "2023_JBMO_day_2": {
         "id": "2023_JBMO_day_2",
-        "arname": "TST 2023 Day 2",
+        "name": "TST 2023 Day 2",
+		"arname": "TST 2023 Day 2",
 		"enname": "TST 2023 Day 2",
         "date": "2023-02-18",
         "url": "https://arena.petlja.org/en/competition/2025-05-26-tst-upsolve",
