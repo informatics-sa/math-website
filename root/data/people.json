@@ -88,6 +88,7 @@
         "id": "abrar_alsheikh",
         "arname": "أبرار الشيخ",
         "enname": "Abrar Alsheikh",
+        "is_female": true,
         "soid": "c9d43f8f-524f-4aa5-aee2-1df468153e26"
     },
     {
@@ -144,6 +145,7 @@
         "id": "albatool_alaidarous",
         "arname": "البتول العيدروس",
         "enname": "Albatool Alaidarous",
+        "is_female": true,
         "soid": "5dddff70-6155-4ee5-a7ac-629d71a41a63"
     },
     {
@@ -193,6 +195,7 @@
         "id": "amaal_alsunaidi",
         "arname": "آمال السنيدي",
         "enname": "Amaal Alsunaidi",
+        "is_female": true,
         "soid": "a498d247-8c9f-4140-a9c4-01871e4c0014"
     },
     {
@@ -200,6 +203,7 @@
         "id": "amal_meer",
         "arname": "أمل مير",
         "enname": "Amal Meer",
+        "is_female": true,
         "soid": "922d25da-5bf2-4ead-9e00-598bf67d0380"
     },
     {
@@ -242,6 +246,7 @@
         "id": "doha_aljeddawi",
         "arname": "ضحى الجداوي",
         "enname": "Doha Aljeddawi",
+        "is_female": true,
         "soid": "f3da9b46-16f8-48a1-8d90-ece8bbfac774"
     },
     {
@@ -270,6 +275,7 @@
         "id": "farhah_alameer",
         "arname": "فرح الأمير",
         "enname": "Farhah Alameer",
+        "is_female": true,
         "soid": "3069aaa7-2594-48d1-8a2b-9f67dc203f2e"
     },
     {
@@ -277,6 +283,7 @@
         "id": "fatimah_almarhoun",
         "arname": "فاطمة المرهون",
         "enname": "Fatimah Almarhoun",
+        "is_female": true,
         "soid": "b260325c-df2e-4a5a-a7e8-91e5867a5c1a"
     },
     {
@@ -284,6 +291,7 @@
         "id": "fatimah_buali",
         "arname": "فاطمة بوعلي",
         "enname": "Fatimah Buali",
+        "is_female": true,
         "soid": "f0cde160-8c6c-4514-83cf-1a6d19e18e25"
     },
     {
@@ -291,6 +299,7 @@
         "id": "fatimeh_alghannam",
         "arname": "فاطمة الغنام",
         "enname": "Fatimeh Alghannam",
+        "is_female": true,
         "soid": "2ee083ef-727b-463e-8868-217196c792bc"
     },
     {
@@ -298,6 +307,7 @@
         "id": "ghadeer_daghistani",
         "arname": "غدير داغستاني",
         "enname": "Ghadeer Daghistani",
+        "is_female": true,
         "soid": "21bf481b-a8c8-40d5-84a8-1a306459ad53"
     },
     {
@@ -375,6 +385,7 @@
         "id": "jana_aldossari",
         "arname": "جنى الدوسري",
         "enname": "Jana Aldossari",
+        "is_female": true,
         "soid": "91b0a0d9-e362-41e1-9480-4c0dffc46cd0"
     },
     {
@@ -382,6 +393,7 @@
         "id": "jana_alzahrani",
         "arname": "جنى الزهراني",
         "enname": "Jana Alzahrani",
+        "is_female": true,
         "soid": "a94bb5ad-4ab1-4ed9-8e98-a96b273a8c66"
     },
     {
@@ -389,6 +401,7 @@
         "id": "joud_bahuwayni",
         "arname": "جود باهويني",
         "enname": "Joud Bahuwayni",
+        "is_female": true,
         "soid": "b630112f-f69d-4068-997b-089f11a175c6"
     },
     {
@@ -396,6 +409,7 @@
         "id": "joud_saleh",
         "arname": "جود صالح",
         "enname": "Joud Saleh",
+        "is_female": true,
         "soid": "a8529f1b-2f2e-4bd6-b9e2-efaa5506bb2a"
     },
     {
@@ -417,6 +431,7 @@
         "id": "lana_nouri",
         "arname": "لانا نوري",
         "enname": "Lana Nouri",
+        "is_female": true,
         "soid": "d2dc13e6-bebe-4dd4-bbac-52bdf26f2f6a"
     },
     {
@@ -424,6 +439,7 @@
         "id": "lara_monagel",
         "arname": "لارا منقل",
         "enname": "Lara Monagel",
+        "is_female": true,
         "soid": "c986578d-5066-4ebe-be2f-b99948d0220b"
     },
     {
@@ -459,6 +475,7 @@
         "id": "manar_kurdi",
         "arname": "منار كردي",
         "enname": "Manar Kurdi",
+        "is_female": true,
         "soid": "286f2a80-25bc-4df0-89fa-e5f82c522f7f"
     },
     {
@@ -585,6 +602,7 @@
         "id": "omniyyah_khawajah",
         "arname": "أمنية خواجة",
         "enname": "Omniyyah Khawajah",
+        "is_female": true,
         "soid": "cf8bcd4c-3ed6-40c5-a8dc-eb568b490b32"
     },
     {
@@ -599,6 +617,7 @@
         "id": "rafaa_qanash",
         "arname": "رفا قنش",
         "enname": "Rafaa Qanash",
+        "is_female": true,
         "soid": "9e819bf3-2337-4178-82a0-ccfe26882c06"
     },
     {
@@ -606,6 +625,7 @@
         "id": "razan_alghamdi",
         "arname": "رزان الغامدي",
         "enname": "Razan Alghamdi",
+        "is_female": true,
         "soid": "9805aebf-7a3f-4f00-91f6-9aa620f1e3c3"
     },
     {
@@ -613,20 +633,15 @@
         "id": "renad_abualjamal",
         "arname": "ريناد أبو الجمال",
         "enname": "Renad Abualjamal",
+        "is_female": true,
         "soid": "82ad43d5-225c-49e9-81ba-1662dd040a46"
-    },
-    {
-        "iid": 89,
-        "id": "ريتاج الصالح",
-        "arname": "retaj_alsaleh",
-        "enname": "retaj_alsaleh",
-        "soid": "7a41594f-fc62-470d-b8ed-38be31dad74f"
     },
     {
         "iid": 90,
         "id": "ruba_aldhaheri",
         "arname": "ربا الظاهري",
         "enname": "Ruba Aldhaheri",
+        "is_female": true,
         "soid": "403d0738-fda1-4874-b62e-b5b55bd4bd89"
     },
     {
@@ -634,6 +649,7 @@
         "id": "ruqaya_alobaidan",
         "arname": "رقية العبيدان",
         "enname": "Ruqaya Alobaidan",
+        "is_female": true,
         "soid": "c05ac317-29e0-4b20-b156-21288e3124a7"
     },
     {
@@ -683,6 +699,7 @@
         "id": "sarah_aljughayman",
         "arname": "سارة الجغيمان",
         "enname": "Sarah Aljughayman",
+        "is_female": true,
         "soid": "1f22df0e-67a6-4314-8092-73f9d8bcfe26"
     },
     {
@@ -697,6 +714,7 @@
         "id": "shaden_alshammari",
         "arname": "شادن الشمري",
         "enname": "Shaden Alshammari",
+        "is_female": true,
         "soid": "b945189e-db58-4228-931f-c49e8c92e6d5"
     },
     {
@@ -704,6 +722,7 @@
         "id": "thnaa_alhydary",
         "arname": "ثناء الحيدري",
         "enname": "Thnaa Alhydary",
+        "is_female": true,
         "soid": "4f415fe3-edf9-4b69-955c-a7349504d61a"
     },
     {
@@ -761,6 +780,7 @@
         "id": "retaj_alsaleh",
         "arname": "ريتاج الصالح",
         "enname": "Retaj Alsaleh",
+        "is_female": true,
         "soid": "8d31948f-135f-4d5a-b42b-a8df355fb506"
     },
     {
@@ -817,6 +837,7 @@
         "iid": 117,
         "arname": "تالة طلبه",
         "enname": "Tala Tulbah",
+        "is_female": true,
         "soid": "8f27f570-c769-4b28-a516-b0289328e630"
     },
     {
@@ -852,6 +873,7 @@
         "iid": 122,
         "arname": "شهد الحربي",
         "enname": "Shahad Alharbi",
+        "is_female": true,
         "soid": "aa8d746b-307c-4ec0-aa68-99e18523abce"
     },
     {
@@ -866,6 +888,7 @@
         "iid": 124,
         "arname": "سلمى المطاوعة",
         "enname": "Salma Almutawah",
+        "is_female": true,
         "soid": "e53c7ae0-8246-43cc-a5a6-dac1c8d0ffc6"
     },
     {
@@ -873,6 +896,7 @@
         "iid": 125,
         "arname": "أثير تونسي",
         "enname": "Atheer Tounesi",
+        "is_female": true,
         "soid": "bbe13ac9-662c-49b2-a9f3-36a00c4dfffe"
     },
     {
@@ -887,6 +911,7 @@
         "iid": 127,
         "arname": "غدير العبدالله",
         "enname": "Ghadeer Alabdullah",
+        "is_female": true,
         "soid": "cdb7e3a2-f542-4b2e-97dc-66df9d28ee6d"
     },
     {
